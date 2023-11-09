@@ -1,0 +1,596 @@
+2023-11-03 12:42:23,546 - fewshot_scanobjectnn_linear_classification - INFO - Copy the Config file from cfgs/fewshot_scanobjectnn_linear_classification.yaml to ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/config.yaml
+2023-11-03 12:42:23,546 - fewshot_scanobjectnn_linear_classification - INFO - args.config : cfgs/fewshot_scanobjectnn_linear_classification.yaml
+2023-11-03 12:42:23,547 - fewshot_scanobjectnn_linear_classification - INFO - args.launcher : none
+2023-11-03 12:42:23,547 - fewshot_scanobjectnn_linear_classification - INFO - args.local_rank : 0
+2023-11-03 12:42:23,547 - fewshot_scanobjectnn_linear_classification - INFO - args.num_workers : 8
+2023-11-03 12:42:23,547 - fewshot_scanobjectnn_linear_classification - INFO - args.seed : 0
+2023-11-03 12:42:23,547 - fewshot_scanobjectnn_linear_classification - INFO - args.deterministic : False
+2023-11-03 12:42:23,547 - fewshot_scanobjectnn_linear_classification - INFO - args.sync_bn : True
+2023-11-03 12:42:23,547 - fewshot_scanobjectnn_linear_classification - INFO - args.large_group : 5
+2023-11-03 12:42:23,547 - fewshot_scanobjectnn_linear_classification - INFO - args.small_group : 10
+2023-11-03 12:42:23,547 - fewshot_scanobjectnn_linear_classification - INFO - args.large_patch : 6
+2023-11-03 12:42:23,547 - fewshot_scanobjectnn_linear_classification - INFO - args.small_patch : 3
+2023-11-03 12:42:23,547 - fewshot_scanobjectnn_linear_classification - INFO - args.queue_length : 8192
+2023-11-03 12:42:23,548 - fewshot_scanobjectnn_linear_classification - INFO - args.epoch_queue_starts : 10
+2023-11-03 12:42:23,548 - fewshot_scanobjectnn_linear_classification - INFO - args.nmb_crops : 64
+2023-11-03 12:42:23,548 - fewshot_scanobjectnn_linear_classification - INFO - args.sample_num : 16
+2023-11-03 12:42:23,548 - fewshot_scanobjectnn_linear_classification - INFO - args.fea_dim : 384
+2023-11-03 12:42:23,548 - fewshot_scanobjectnn_linear_classification - INFO - args.hidden_mlp : 256
+2023-11-03 12:42:23,548 - fewshot_scanobjectnn_linear_classification - INFO - args.output_dim : 128
+2023-11-03 12:42:23,548 - fewshot_scanobjectnn_linear_classification - INFO - args.nmb_prototypes : 200
+2023-11-03 12:42:23,548 - fewshot_scanobjectnn_linear_classification - INFO - args.temperature : 0.1
+2023-11-03 12:42:23,548 - fewshot_scanobjectnn_linear_classification - INFO - args.epsilon : 0.05
+2023-11-03 12:42:23,548 - fewshot_scanobjectnn_linear_classification - INFO - args.sinkhorn_iterations : 3
+2023-11-03 12:42:23,548 - fewshot_scanobjectnn_linear_classification - INFO - args.world_size : 1
+2023-11-03 12:42:23,548 - fewshot_scanobjectnn_linear_classification - INFO - args.exp_name : lr0.0015
+2023-11-03 12:42:23,549 - fewshot_scanobjectnn_linear_classification - INFO - args.loss : cd1
+2023-11-03 12:42:23,549 - fewshot_scanobjectnn_linear_classification - INFO - args.start_ckpts : None
+2023-11-03 12:42:23,549 - fewshot_scanobjectnn_linear_classification - INFO - args.ckpts : ./experiments/pretrain_MaskSurf/cfgs/add_as_normal/ckpt-last.pth
+2023-11-03 12:42:23,549 - fewshot_scanobjectnn_linear_classification - INFO - args.val_freq : 1
+2023-11-03 12:42:23,549 - fewshot_scanobjectnn_linear_classification - INFO - args.vote : False
+2023-11-03 12:42:23,549 - fewshot_scanobjectnn_linear_classification - INFO - args.resume : False
+2023-11-03 12:42:23,549 - fewshot_scanobjectnn_linear_classification - INFO - args.test : False
+2023-11-03 12:42:23,549 - fewshot_scanobjectnn_linear_classification - INFO - args.finetune_model : True
+2023-11-03 12:42:23,549 - fewshot_scanobjectnn_linear_classification - INFO - args.scratch_model : False
+2023-11-03 12:42:23,549 - fewshot_scanobjectnn_linear_classification - INFO - args.mode : None
+2023-11-03 12:42:23,549 - fewshot_scanobjectnn_linear_classification - INFO - args.way : 10
+2023-11-03 12:42:23,549 - fewshot_scanobjectnn_linear_classification - INFO - args.shot : 20
+2023-11-03 12:42:23,550 - fewshot_scanobjectnn_linear_classification - INFO - args.fold : 3
+2023-11-03 12:42:23,550 - fewshot_scanobjectnn_linear_classification - INFO - args.experiment_path : ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015
+2023-11-03 12:42:23,550 - fewshot_scanobjectnn_linear_classification - INFO - args.tfboard_path : ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/TFBoard/lr0.0015
+2023-11-03 12:42:23,550 - fewshot_scanobjectnn_linear_classification - INFO - args.log_name : fewshot_scanobjectnn_linear_classification
+2023-11-03 12:42:23,550 - fewshot_scanobjectnn_linear_classification - INFO - args.use_gpu : True
+2023-11-03 12:42:23,550 - fewshot_scanobjectnn_linear_classification - INFO - args.distributed : False
+2023-11-03 12:42:23,550 - fewshot_scanobjectnn_linear_classification - INFO - config.optimizer = edict()
+2023-11-03 12:42:23,550 - fewshot_scanobjectnn_linear_classification - INFO - config.optimizer.type : AdamW
+2023-11-03 12:42:23,550 - fewshot_scanobjectnn_linear_classification - INFO - config.optimizer.part : only_new
+2023-11-03 12:42:23,550 - fewshot_scanobjectnn_linear_classification - INFO - config.optimizer.kwargs = edict()
+2023-11-03 12:42:23,550 - fewshot_scanobjectnn_linear_classification - INFO - config.optimizer.kwargs.lr : 0.0015
+2023-11-03 12:42:23,550 - fewshot_scanobjectnn_linear_classification - INFO - config.optimizer.kwargs.weight_decay : 0.05
+2023-11-03 12:42:23,550 - fewshot_scanobjectnn_linear_classification - INFO - config.scheduler = edict()
+2023-11-03 12:42:23,550 - fewshot_scanobjectnn_linear_classification - INFO - config.scheduler.type : CosLR
+2023-11-03 12:42:23,550 - fewshot_scanobjectnn_linear_classification - INFO - config.scheduler.kwargs = edict()
+2023-11-03 12:42:23,550 - fewshot_scanobjectnn_linear_classification - INFO - config.scheduler.kwargs.epochs : 150
+2023-11-03 12:42:23,551 - fewshot_scanobjectnn_linear_classification - INFO - config.scheduler.kwargs.initial_epochs : 10
+2023-11-03 12:42:23,551 - fewshot_scanobjectnn_linear_classification - INFO - config.dataset = edict()
+2023-11-03 12:42:23,551 - fewshot_scanobjectnn_linear_classification - INFO - config.dataset.train = edict()
+2023-11-03 12:42:23,551 - fewshot_scanobjectnn_linear_classification - INFO - config.dataset.train._base_ = edict()
+2023-11-03 12:42:23,551 - fewshot_scanobjectnn_linear_classification - INFO - config.dataset.train._base_.NAME : ModelNetFewShot
+2023-11-03 12:42:23,551 - fewshot_scanobjectnn_linear_classification - INFO - config.dataset.train._base_.DATA_PATH : data/ScanObjectNN_hardest_fewshot
+2023-11-03 12:42:23,551 - fewshot_scanobjectnn_linear_classification - INFO - config.dataset.train._base_.N_POINTS : 2048
+2023-11-03 12:42:23,551 - fewshot_scanobjectnn_linear_classification - INFO - config.dataset.train._base_.NUM_CATEGORY : 15
+2023-11-03 12:42:23,551 - fewshot_scanobjectnn_linear_classification - INFO - config.dataset.train._base_.USE_NORMALS : False
+2023-11-03 12:42:23,551 - fewshot_scanobjectnn_linear_classification - INFO - config.dataset.train.others = edict()
+2023-11-03 12:42:23,551 - fewshot_scanobjectnn_linear_classification - INFO - config.dataset.train.others.subset : train
+2023-11-03 12:42:23,551 - fewshot_scanobjectnn_linear_classification - INFO - config.dataset.train.others.bs : 32
+2023-11-03 12:42:23,551 - fewshot_scanobjectnn_linear_classification - INFO - config.dataset.val = edict()
+2023-11-03 12:42:23,551 - fewshot_scanobjectnn_linear_classification - INFO - config.dataset.val._base_ = edict()
+2023-11-03 12:42:23,551 - fewshot_scanobjectnn_linear_classification - INFO - config.dataset.val._base_.NAME : ModelNetFewShot
+2023-11-03 12:42:23,551 - fewshot_scanobjectnn_linear_classification - INFO - config.dataset.val._base_.DATA_PATH : data/ScanObjectNN_hardest_fewshot
+2023-11-03 12:42:23,551 - fewshot_scanobjectnn_linear_classification - INFO - config.dataset.val._base_.N_POINTS : 2048
+2023-11-03 12:42:23,551 - fewshot_scanobjectnn_linear_classification - INFO - config.dataset.val._base_.NUM_CATEGORY : 15
+2023-11-03 12:42:23,552 - fewshot_scanobjectnn_linear_classification - INFO - config.dataset.val._base_.USE_NORMALS : False
+2023-11-03 12:42:23,552 - fewshot_scanobjectnn_linear_classification - INFO - config.dataset.val.others = edict()
+2023-11-03 12:42:23,552 - fewshot_scanobjectnn_linear_classification - INFO - config.dataset.val.others.subset : test
+2023-11-03 12:42:23,552 - fewshot_scanobjectnn_linear_classification - INFO - config.dataset.val.others.bs : 64
+2023-11-03 12:42:23,552 - fewshot_scanobjectnn_linear_classification - INFO - config.dataset.test = edict()
+2023-11-03 12:42:23,552 - fewshot_scanobjectnn_linear_classification - INFO - config.dataset.test._base_ = edict()
+2023-11-03 12:42:23,552 - fewshot_scanobjectnn_linear_classification - INFO - config.dataset.test._base_.NAME : ScanObjectNN_hardest
+2023-11-03 12:42:23,552 - fewshot_scanobjectnn_linear_classification - INFO - config.dataset.test._base_.ROOT : data/ScanObjectNN/main_split
+2023-11-03 12:42:23,552 - fewshot_scanobjectnn_linear_classification - INFO - config.dataset.test.others = edict()
+2023-11-03 12:42:23,552 - fewshot_scanobjectnn_linear_classification - INFO - config.dataset.test.others.subset : test
+2023-11-03 12:42:23,552 - fewshot_scanobjectnn_linear_classification - INFO - config.dataset.test.others.bs : 32
+2023-11-03 12:42:23,552 - fewshot_scanobjectnn_linear_classification - INFO - config.model = edict()
+2023-11-03 12:42:23,552 - fewshot_scanobjectnn_linear_classification - INFO - config.model.NAME : PointTransformerLinearClassification
+2023-11-03 12:42:23,552 - fewshot_scanobjectnn_linear_classification - INFO - config.model.trans_dim : 384
+2023-11-03 12:42:23,552 - fewshot_scanobjectnn_linear_classification - INFO - config.model.depth : 12
+2023-11-03 12:42:23,552 - fewshot_scanobjectnn_linear_classification - INFO - config.model.drop_path_rate : 0.1
+2023-11-03 12:42:23,552 - fewshot_scanobjectnn_linear_classification - INFO - config.model.cls_dim : 15
+2023-11-03 12:42:23,552 - fewshot_scanobjectnn_linear_classification - INFO - config.model.num_heads : 6
+2023-11-03 12:42:23,553 - fewshot_scanobjectnn_linear_classification - INFO - config.model.group_size : 32
+2023-11-03 12:42:23,553 - fewshot_scanobjectnn_linear_classification - INFO - config.model.num_group : 64
+2023-11-03 12:42:23,553 - fewshot_scanobjectnn_linear_classification - INFO - config.model.encoder_dims : 384
+2023-11-03 12:42:23,553 - fewshot_scanobjectnn_linear_classification - INFO - config.npoints : 1024
+2023-11-03 12:42:23,553 - fewshot_scanobjectnn_linear_classification - INFO - config.total_bs : 32
+2023-11-03 12:42:23,553 - fewshot_scanobjectnn_linear_classification - INFO - config.step_per_update : 1
+2023-11-03 12:42:23,553 - fewshot_scanobjectnn_linear_classification - INFO - config.max_epoch : 150
+2023-11-03 12:42:23,553 - fewshot_scanobjectnn_linear_classification - INFO - config.grad_norm_clip : 10
+2023-11-03 12:42:23,553 - fewshot_scanobjectnn_linear_classification - INFO - Distributed training: False
+2023-11-03 12:42:23,553 - fewshot_scanobjectnn_linear_classification - INFO - Set random seed to 0, deterministic: False
+2023-11-03 12:42:26,212 - fewshot_scanobjectnn_linear_classification - INFO - Using Data parallel ...
+2023-11-03 12:42:33,982 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 0 EpochTime = 7.765 (s) Losses = ['2.8182', '2.6042'] lr = 0.000001
+2023-11-03 12:42:34,893 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:42:37,453 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 1 EpochTime = 2.558 (s) Losses = ['2.7967', '3.6458'] lr = 0.000151
+2023-11-03 12:42:40,325 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 1  acc = 1.5000
+2023-11-03 12:42:41,726 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-best.pth
+2023-11-03 12:42:41,727 - fewshot_scanobjectnn_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-03 12:42:42,941 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:42:44,740 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 2 EpochTime = 1.797 (s) Losses = ['2.6831', '5.2083'] lr = 0.000301
+2023-11-03 12:42:46,748 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 2  acc = 5.5000
+2023-11-03 12:42:47,193 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-best.pth
+2023-11-03 12:42:47,193 - fewshot_scanobjectnn_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-03 12:42:47,617 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:42:50,064 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 3 EpochTime = 2.445 (s) Losses = ['2.4907', '9.8958'] lr = 0.000451
+2023-11-03 12:42:52,070 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 3  acc = 11.0000
+2023-11-03 12:42:52,668 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-best.pth
+2023-11-03 12:42:52,669 - fewshot_scanobjectnn_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-03 12:42:53,480 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:42:55,707 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 4 EpochTime = 2.224 (s) Losses = ['2.3602', '13.0208'] lr = 0.000601
+2023-11-03 12:42:57,380 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 4  acc = 9.5000
+2023-11-03 12:42:57,953 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:43:00,396 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 5 EpochTime = 2.441 (s) Losses = ['2.3340', '10.9375'] lr = 0.000751
+2023-11-03 12:43:01,792 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 5  acc = 10.5000
+2023-11-03 12:43:02,491 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:43:04,810 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 6 EpochTime = 2.316 (s) Losses = ['2.2910', '11.4583'] lr = 0.000900
+2023-11-03 12:43:06,410 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 6  acc = 18.0000
+2023-11-03 12:43:07,002 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-best.pth
+2023-11-03 12:43:07,002 - fewshot_scanobjectnn_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-03 12:43:07,516 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:43:10,012 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 7 EpochTime = 2.494 (s) Losses = ['2.2375', '16.1458'] lr = 0.001050
+2023-11-03 12:43:11,642 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 7  acc = 26.5000
+2023-11-03 12:43:12,215 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-best.pth
+2023-11-03 12:43:12,215 - fewshot_scanobjectnn_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-03 12:43:12,749 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:43:15,439 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 8 EpochTime = 2.689 (s) Losses = ['2.1748', '25.0000'] lr = 0.001200
+2023-11-03 12:43:16,795 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 8  acc = 23.0000
+2023-11-03 12:43:18,202 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:43:21,347 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 9 EpochTime = 3.144 (s) Losses = ['2.1783', '20.8333'] lr = 0.001350
+2023-11-03 12:43:22,754 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 9  acc = 23.5000
+2023-11-03 12:43:23,635 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:43:26,394 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 10 EpochTime = 2.757 (s) Losses = ['2.0939', '27.6042'] lr = 0.001484
+2023-11-03 12:43:27,782 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 10  acc = 25.5000
+2023-11-03 12:43:29,808 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:43:32,963 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 11 EpochTime = 3.153 (s) Losses = ['2.0386', '27.6042'] lr = 0.001480
+2023-11-03 12:43:35,174 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 11  acc = 26.0000
+2023-11-03 12:43:35,932 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:43:38,055 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 12 EpochTime = 2.121 (s) Losses = ['1.9608', '29.6875'] lr = 0.001476
+2023-11-03 12:43:40,165 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 12  acc = 31.5000
+2023-11-03 12:43:40,830 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-best.pth
+2023-11-03 12:43:40,830 - fewshot_scanobjectnn_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-03 12:43:42,159 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:43:44,046 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 13 EpochTime = 1.836 (s) Losses = ['1.9452', '32.8125'] lr = 0.001472
+2023-11-03 12:43:46,273 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 13  acc = 29.0000
+2023-11-03 12:43:46,840 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:43:49,746 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 14 EpochTime = 2.903 (s) Losses = ['1.9400', '31.2500'] lr = 0.001468
+2023-11-03 12:43:51,161 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 14  acc = 27.0000
+2023-11-03 12:43:52,242 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:43:55,325 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 15 EpochTime = 3.081 (s) Losses = ['1.8324', '36.9792'] lr = 0.001463
+2023-11-03 12:43:57,078 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 15  acc = 30.5000
+2023-11-03 12:43:58,506 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:44:01,154 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 16 EpochTime = 2.647 (s) Losses = ['1.8570', '36.4583'] lr = 0.001458
+2023-11-03 12:44:03,243 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 16  acc = 35.5000
+2023-11-03 12:44:04,127 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-best.pth
+2023-11-03 12:44:04,127 - fewshot_scanobjectnn_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-03 12:44:05,999 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:44:09,362 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 17 EpochTime = 3.361 (s) Losses = ['1.8165', '35.4167'] lr = 0.001453
+2023-11-03 12:44:11,253 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 17  acc = 32.5000
+2023-11-03 12:44:12,532 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:44:15,541 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 18 EpochTime = 3.006 (s) Losses = ['1.8058', '39.5833'] lr = 0.001447
+2023-11-03 12:44:17,133 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 18  acc = 32.0000
+2023-11-03 12:44:19,079 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:44:21,631 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 19 EpochTime = 2.550 (s) Losses = ['1.8110', '38.5417'] lr = 0.001441
+2023-11-03 12:44:23,060 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 19  acc = 37.5000
+2023-11-03 12:44:23,896 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-best.pth
+2023-11-03 12:44:23,896 - fewshot_scanobjectnn_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-03 12:44:25,188 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:44:27,825 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 20 EpochTime = 2.634 (s) Losses = ['1.7318', '45.8333'] lr = 0.001435
+2023-11-03 12:44:29,339 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 20  acc = 27.5000
+2023-11-03 12:44:29,890 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:44:32,758 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 21 EpochTime = 2.866 (s) Losses = ['1.6911', '51.0417'] lr = 0.001429
+2023-11-03 12:44:34,440 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 21  acc = 38.0000
+2023-11-03 12:44:36,539 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-best.pth
+2023-11-03 12:44:36,539 - fewshot_scanobjectnn_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-03 12:44:37,092 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:44:40,125 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 22 EpochTime = 3.031 (s) Losses = ['1.6860', '46.8750'] lr = 0.001422
+2023-11-03 12:44:41,529 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 22  acc = 35.0000
+2023-11-03 12:44:42,238 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:44:45,416 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 23 EpochTime = 3.175 (s) Losses = ['1.7124', '39.5833'] lr = 0.001415
+2023-11-03 12:44:46,854 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 23  acc = 32.0000
+2023-11-03 12:44:49,415 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:44:52,728 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 24 EpochTime = 3.311 (s) Losses = ['1.7028', '41.6667'] lr = 0.001407
+2023-11-03 12:44:54,271 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 24  acc = 33.0000
+2023-11-03 12:44:55,020 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:44:57,968 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 25 EpochTime = 2.947 (s) Losses = ['1.5827', '52.6042'] lr = 0.001400
+2023-11-03 12:45:00,093 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 25  acc = 37.0000
+2023-11-03 12:45:00,731 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:45:03,216 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 26 EpochTime = 2.484 (s) Losses = ['1.5524', '51.0417'] lr = 0.001392
+2023-11-03 12:45:04,693 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 26  acc = 38.5000
+2023-11-03 12:45:05,197 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-best.pth
+2023-11-03 12:45:05,197 - fewshot_scanobjectnn_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-03 12:45:05,846 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:45:08,362 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 27 EpochTime = 2.514 (s) Losses = ['1.5524', '52.6042'] lr = 0.001383
+2023-11-03 12:45:09,902 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 27  acc = 36.5000
+2023-11-03 12:45:10,498 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:45:12,698 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 28 EpochTime = 2.199 (s) Losses = ['1.5162', '52.6042'] lr = 0.001375
+2023-11-03 12:45:14,401 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 28  acc = 37.5000
+2023-11-03 12:45:14,989 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:45:17,386 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 29 EpochTime = 2.394 (s) Losses = ['1.5934', '47.9167'] lr = 0.001366
+2023-11-03 12:45:18,791 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 29  acc = 39.5000
+2023-11-03 12:45:20,534 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-best.pth
+2023-11-03 12:45:20,534 - fewshot_scanobjectnn_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-03 12:45:21,336 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:45:24,046 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 30 EpochTime = 2.708 (s) Losses = ['1.5186', '54.1667'] lr = 0.001357
+2023-11-03 12:45:25,559 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 30  acc = 39.5000
+2023-11-03 12:45:26,820 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:45:29,572 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 31 EpochTime = 2.750 (s) Losses = ['1.5163', '51.0417'] lr = 0.001347
+2023-11-03 12:45:30,938 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 31  acc = 39.5000
+2023-11-03 12:45:31,513 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:45:33,630 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 32 EpochTime = 2.115 (s) Losses = ['1.5019', '52.0833'] lr = 0.001338
+2023-11-03 12:45:35,521 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 32  acc = 41.0000
+2023-11-03 12:45:36,077 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-best.pth
+2023-11-03 12:45:36,078 - fewshot_scanobjectnn_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-03 12:45:36,704 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:45:39,301 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 33 EpochTime = 2.595 (s) Losses = ['1.4657', '50.5208'] lr = 0.001328
+2023-11-03 12:45:41,283 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 33  acc = 37.5000
+2023-11-03 12:45:41,912 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:45:44,418 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 34 EpochTime = 2.504 (s) Losses = ['1.4634', '56.2500'] lr = 0.001318
+2023-11-03 12:45:45,824 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 34  acc = 40.5000
+2023-11-03 12:45:47,210 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:45:50,084 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 35 EpochTime = 2.872 (s) Losses = ['1.4334', '56.2500'] lr = 0.001307
+2023-11-03 12:45:51,460 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 35  acc = 44.0000
+2023-11-03 12:45:52,894 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-best.pth
+2023-11-03 12:45:52,894 - fewshot_scanobjectnn_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-03 12:45:54,068 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:45:56,964 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 36 EpochTime = 2.894 (s) Losses = ['1.4339', '56.2500'] lr = 0.001297
+2023-11-03 12:45:58,362 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 36  acc = 34.5000
+2023-11-03 12:45:59,051 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:46:01,878 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 37 EpochTime = 2.826 (s) Losses = ['1.4065', '59.3750'] lr = 0.001286
+2023-11-03 12:46:03,250 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 37  acc = 39.5000
+2023-11-03 12:46:04,679 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:46:07,438 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 38 EpochTime = 2.758 (s) Losses = ['1.3858', '61.4583'] lr = 0.001275
+2023-11-03 12:46:09,312 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 38  acc = 42.0000
+2023-11-03 12:46:10,449 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:46:13,431 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 39 EpochTime = 2.979 (s) Losses = ['1.3861', '61.4583'] lr = 0.001264
+2023-11-03 12:46:15,841 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 39  acc = 36.0000
+2023-11-03 12:46:17,820 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:46:20,286 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 40 EpochTime = 2.465 (s) Losses = ['1.3819', '58.8542'] lr = 0.001252
+2023-11-03 12:46:22,561 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 40  acc = 37.5000
+2023-11-03 12:46:23,619 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:46:26,150 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 41 EpochTime = 2.530 (s) Losses = ['1.3929', '58.8542'] lr = 0.001240
+2023-11-03 12:46:28,337 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 41  acc = 41.5000
+2023-11-03 12:46:29,987 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:46:32,320 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 42 EpochTime = 2.331 (s) Losses = ['1.3877', '59.8958'] lr = 0.001228
+2023-11-03 12:46:33,818 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 42  acc = 44.5000
+2023-11-03 12:46:34,339 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-best.pth
+2023-11-03 12:46:34,340 - fewshot_scanobjectnn_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-03 12:46:35,012 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:46:37,171 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 43 EpochTime = 2.157 (s) Losses = ['1.3282', '59.8958'] lr = 0.001216
+2023-11-03 12:46:38,888 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 43  acc = 41.5000
+2023-11-03 12:46:39,488 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:46:42,328 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 44 EpochTime = 2.838 (s) Losses = ['1.4228', '56.7708'] lr = 0.001204
+2023-11-03 12:46:43,703 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 44  acc = 42.5000
+2023-11-03 12:46:44,549 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:46:47,350 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 45 EpochTime = 2.798 (s) Losses = ['1.3388', '57.2917'] lr = 0.001191
+2023-11-03 12:46:48,744 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 45  acc = 42.0000
+2023-11-03 12:46:49,810 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:46:52,857 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 46 EpochTime = 3.045 (s) Losses = ['1.3391', '61.4583'] lr = 0.001178
+2023-11-03 12:46:55,034 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 46  acc = 41.5000
+2023-11-03 12:46:55,835 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:46:58,823 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 47 EpochTime = 2.987 (s) Losses = ['1.3340', '61.4583'] lr = 0.001165
+2023-11-03 12:47:01,386 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 47  acc = 42.5000
+2023-11-03 12:47:02,008 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:47:04,059 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 48 EpochTime = 2.049 (s) Losses = ['1.3290', '58.3333'] lr = 0.001152
+2023-11-03 12:47:05,874 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 48  acc = 42.5000
+2023-11-03 12:47:06,650 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:47:08,599 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 49 EpochTime = 1.895 (s) Losses = ['1.3030', '64.0625'] lr = 0.001139
+2023-11-03 12:47:10,554 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 49  acc = 39.0000
+2023-11-03 12:47:11,163 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:47:13,685 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 50 EpochTime = 2.521 (s) Losses = ['1.2507', '67.7083'] lr = 0.001125
+2023-11-03 12:47:15,040 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 50  acc = 42.5000
+2023-11-03 12:47:16,238 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:47:18,048 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 51 EpochTime = 1.809 (s) Losses = ['1.3201', '58.3333'] lr = 0.001112
+2023-11-03 12:47:19,961 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 51  acc = 41.0000
+2023-11-03 12:47:20,469 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:47:23,275 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 52 EpochTime = 2.803 (s) Losses = ['1.2455', '63.5417'] lr = 0.001098
+2023-11-03 12:47:25,792 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 52  acc = 40.5000
+2023-11-03 12:47:26,388 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:47:29,346 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 53 EpochTime = 2.956 (s) Losses = ['1.2246', '62.5000'] lr = 0.001084
+2023-11-03 12:47:31,431 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 53  acc = 43.0000
+2023-11-03 12:47:31,991 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:47:34,584 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 54 EpochTime = 2.590 (s) Losses = ['1.2257', '68.7500'] lr = 0.001070
+2023-11-03 12:47:36,051 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 54  acc = 42.0000
+2023-11-03 12:47:36,602 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:47:38,738 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 55 EpochTime = 2.134 (s) Losses = ['1.2174', '64.0625'] lr = 0.001055
+2023-11-03 12:47:40,704 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 55  acc = 40.5000
+2023-11-03 12:47:42,815 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:47:45,060 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 56 EpochTime = 2.242 (s) Losses = ['1.2215', '70.3125'] lr = 0.001041
+2023-11-03 12:47:46,825 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 56  acc = 41.5000
+2023-11-03 12:47:47,630 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:47:50,064 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 57 EpochTime = 2.431 (s) Losses = ['1.2203', '66.6667'] lr = 0.001026
+2023-11-03 12:47:52,076 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 57  acc = 44.0000
+2023-11-03 12:47:53,078 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:47:55,980 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 58 EpochTime = 2.900 (s) Losses = ['1.1978', '66.6667'] lr = 0.001012
+2023-11-03 12:47:57,792 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 58  acc = 41.0000
+2023-11-03 12:47:59,025 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:48:01,804 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 59 EpochTime = 2.777 (s) Losses = ['1.1942', '67.7083'] lr = 0.000997
+2023-11-03 12:48:03,849 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 59  acc = 42.0000
+2023-11-03 12:48:04,952 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:48:07,511 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 60 EpochTime = 2.557 (s) Losses = ['1.2206', '66.1458'] lr = 0.000982
+2023-11-03 12:48:09,534 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 60  acc = 44.5000
+2023-11-03 12:48:10,356 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:48:12,843 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 61 EpochTime = 2.485 (s) Losses = ['1.1859', '68.7500'] lr = 0.000967
+2023-11-03 12:48:15,621 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 61  acc = 42.0000
+2023-11-03 12:48:16,358 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:48:19,039 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 62 EpochTime = 2.680 (s) Losses = ['1.2091', '67.7083'] lr = 0.000952
+2023-11-03 12:48:20,897 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 62  acc = 41.0000
+2023-11-03 12:48:21,464 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:48:23,901 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 63 EpochTime = 2.436 (s) Losses = ['1.1119', '73.9583'] lr = 0.000937
+2023-11-03 12:48:25,274 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 63  acc = 44.0000
+2023-11-03 12:48:25,815 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:48:28,084 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 64 EpochTime = 2.267 (s) Losses = ['1.1345', '70.3125'] lr = 0.000922
+2023-11-03 12:48:29,937 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 64  acc = 40.0000
+2023-11-03 12:48:30,433 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:48:32,875 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 65 EpochTime = 2.441 (s) Losses = ['1.1511', '68.7500'] lr = 0.000906
+2023-11-03 12:48:34,454 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 65  acc = 41.0000
+2023-11-03 12:48:35,037 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:48:37,905 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 66 EpochTime = 2.866 (s) Losses = ['1.1531', '69.7917'] lr = 0.000891
+2023-11-03 12:48:39,780 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 66  acc = 42.5000
+2023-11-03 12:48:40,660 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:48:43,569 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 67 EpochTime = 2.908 (s) Losses = ['1.1088', '71.3542'] lr = 0.000875
+2023-11-03 12:48:45,808 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 67  acc = 42.5000
+2023-11-03 12:48:46,391 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:48:49,488 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 68 EpochTime = 3.096 (s) Losses = ['1.1333', '69.7917'] lr = 0.000860
+2023-11-03 12:48:51,711 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 68  acc = 46.5000
+2023-11-03 12:48:52,336 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-best.pth
+2023-11-03 12:48:52,336 - fewshot_scanobjectnn_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-03 12:48:53,009 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:48:55,841 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 69 EpochTime = 2.830 (s) Losses = ['1.1520', '65.1042'] lr = 0.000844
+2023-11-03 12:48:57,900 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 69  acc = 43.0000
+2023-11-03 12:48:59,220 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:49:01,398 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 70 EpochTime = 2.177 (s) Losses = ['1.1797', '66.1458'] lr = 0.000829
+2023-11-03 12:49:03,722 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 70  acc = 45.0000
+2023-11-03 12:49:04,255 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:49:06,065 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 71 EpochTime = 1.808 (s) Losses = ['1.0818', '75.0000'] lr = 0.000813
+2023-11-03 12:49:07,869 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 71  acc = 43.0000
+2023-11-03 12:49:08,623 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:49:11,191 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 72 EpochTime = 2.567 (s) Losses = ['1.1687', '66.6667'] lr = 0.000798
+2023-11-03 12:49:13,002 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 72  acc = 43.5000
+2023-11-03 12:49:13,943 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:49:16,920 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 73 EpochTime = 2.976 (s) Losses = ['1.1159', '68.2292'] lr = 0.000782
+2023-11-03 12:49:18,532 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 73  acc = 44.0000
+2023-11-03 12:49:19,859 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:49:22,752 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 74 EpochTime = 2.892 (s) Losses = ['1.0894', '71.3542'] lr = 0.000766
+2023-11-03 12:49:24,558 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 74  acc = 45.0000
+2023-11-03 12:49:25,206 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:49:28,063 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 75 EpochTime = 2.856 (s) Losses = ['1.0845', '72.9167'] lr = 0.000751
+2023-11-03 12:49:29,425 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 75  acc = 43.0000
+2023-11-03 12:49:30,569 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:49:33,646 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 76 EpochTime = 3.075 (s) Losses = ['1.0523', '75.0000'] lr = 0.000735
+2023-11-03 12:49:35,639 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 76  acc = 41.0000
+2023-11-03 12:49:36,208 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:49:38,711 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 77 EpochTime = 2.501 (s) Losses = ['1.1206', '68.7500'] lr = 0.000719
+2023-11-03 12:49:40,087 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 77  acc = 42.5000
+2023-11-03 12:49:41,934 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:49:44,513 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 78 EpochTime = 2.578 (s) Losses = ['1.0860', '71.3542'] lr = 0.000703
+2023-11-03 12:49:45,964 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 78  acc = 43.5000
+2023-11-03 12:49:47,052 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:49:49,456 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 79 EpochTime = 2.403 (s) Losses = ['1.0962', '68.2292'] lr = 0.000688
+2023-11-03 12:49:50,821 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 79  acc = 46.0000
+2023-11-03 12:49:52,508 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:49:55,030 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 80 EpochTime = 2.520 (s) Losses = ['1.0655', '71.8750'] lr = 0.000672
+2023-11-03 12:49:56,604 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 80  acc = 40.0000
+2023-11-03 12:49:57,874 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:50:00,534 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 81 EpochTime = 2.659 (s) Losses = ['1.0500', '72.9167'] lr = 0.000657
+2023-11-03 12:50:02,549 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 81  acc = 40.5000
+2023-11-03 12:50:04,312 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:50:07,358 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 82 EpochTime = 3.044 (s) Losses = ['1.0747', '73.4375'] lr = 0.000641
+2023-11-03 12:50:09,545 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 82  acc = 47.0000
+2023-11-03 12:50:11,422 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-best.pth
+2023-11-03 12:50:11,422 - fewshot_scanobjectnn_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-03 12:50:12,748 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:50:14,699 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 83 EpochTime = 1.949 (s) Losses = ['1.0892', '70.3125'] lr = 0.000626
+2023-11-03 12:50:16,720 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 83  acc = 41.5000
+2023-11-03 12:50:17,359 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:50:19,708 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 84 EpochTime = 2.346 (s) Losses = ['1.0971', '70.8333'] lr = 0.000610
+2023-11-03 12:50:22,136 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 84  acc = 43.0000
+2023-11-03 12:50:22,641 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:50:25,479 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 85 EpochTime = 2.835 (s) Losses = ['1.0519', '71.8750'] lr = 0.000595
+2023-11-03 12:50:27,196 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 85  acc = 42.5000
+2023-11-03 12:50:27,760 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:50:30,794 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 86 EpochTime = 3.033 (s) Losses = ['1.0377', '71.3542'] lr = 0.000579
+2023-11-03 12:50:32,408 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 86  acc = 43.5000
+2023-11-03 12:50:32,918 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:50:35,762 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 87 EpochTime = 2.843 (s) Losses = ['1.0530', '76.0417'] lr = 0.000564
+2023-11-03 12:50:37,199 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 87  acc = 44.0000
+2023-11-03 12:50:38,865 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:50:40,939 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 88 EpochTime = 2.071 (s) Losses = ['1.0613', '73.9583'] lr = 0.000549
+2023-11-03 12:50:42,338 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 88  acc = 43.0000
+2023-11-03 12:50:43,234 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:50:46,211 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 89 EpochTime = 2.975 (s) Losses = ['1.0494', '65.1042'] lr = 0.000534
+2023-11-03 12:50:48,452 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 89  acc = 42.0000
+2023-11-03 12:50:49,087 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:50:52,233 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 90 EpochTime = 3.143 (s) Losses = ['1.0172', '76.0417'] lr = 0.000519
+2023-11-03 12:50:54,046 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 90  acc = 43.5000
+2023-11-03 12:50:54,585 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:50:57,035 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 91 EpochTime = 2.447 (s) Losses = ['0.9784', '76.0417'] lr = 0.000504
+2023-11-03 12:50:58,527 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 91  acc = 44.0000
+2023-11-03 12:50:59,123 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:51:01,189 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 92 EpochTime = 2.064 (s) Losses = ['1.0392', '73.4375'] lr = 0.000489
+2023-11-03 12:51:03,057 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 92  acc = 44.0000
+2023-11-03 12:51:04,118 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:51:07,148 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 93 EpochTime = 3.028 (s) Losses = ['1.0000', '74.4792'] lr = 0.000475
+2023-11-03 12:51:08,498 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 93  acc = 43.0000
+2023-11-03 12:51:09,818 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:51:12,234 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 94 EpochTime = 2.415 (s) Losses = ['0.9851', '76.0417'] lr = 0.000460
+2023-11-03 12:51:14,578 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 94  acc = 44.0000
+2023-11-03 12:51:15,399 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:51:17,203 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 95 EpochTime = 1.802 (s) Losses = ['1.0437', '70.3125'] lr = 0.000446
+2023-11-03 12:51:19,166 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 95  acc = 45.0000
+2023-11-03 12:51:19,731 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:51:22,155 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 96 EpochTime = 2.422 (s) Losses = ['1.0160', '73.4375'] lr = 0.000431
+2023-11-03 12:51:23,585 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 96  acc = 42.5000
+2023-11-03 12:51:24,760 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:51:27,682 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 97 EpochTime = 2.920 (s) Losses = ['1.0053', '75.0000'] lr = 0.000417
+2023-11-03 12:51:29,073 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 97  acc = 45.0000
+2023-11-03 12:51:31,176 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:51:34,310 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 98 EpochTime = 3.132 (s) Losses = ['1.0485', '74.4792'] lr = 0.000403
+2023-11-03 12:51:35,775 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 98  acc = 44.5000
+2023-11-03 12:51:37,931 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:51:39,708 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 99 EpochTime = 1.776 (s) Losses = ['1.0520', '70.3125'] lr = 0.000389
+2023-11-03 12:51:41,592 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 99  acc = 40.5000
+2023-11-03 12:51:42,150 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:51:44,837 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 100 EpochTime = 2.685 (s) Losses = ['1.0343', '74.4792'] lr = 0.000376
+2023-11-03 12:51:46,469 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 100  acc = 41.0000
+2023-11-03 12:51:47,138 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:51:50,066 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 101 EpochTime = 2.926 (s) Losses = ['0.9810', '74.4792'] lr = 0.000362
+2023-11-03 12:51:51,581 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 101  acc = 43.5000
+2023-11-03 12:51:52,103 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:51:54,209 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 102 EpochTime = 2.104 (s) Losses = ['0.9712', '78.1250'] lr = 0.000349
+2023-11-03 12:51:56,223 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 102  acc = 44.5000
+2023-11-03 12:51:56,836 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:51:59,486 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 103 EpochTime = 2.648 (s) Losses = ['0.9783', '77.0833'] lr = 0.000336
+2023-11-03 12:52:00,896 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 103  acc = 43.5000
+2023-11-03 12:52:01,910 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:52:04,082 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 104 EpochTime = 2.169 (s) Losses = ['1.0133', '74.4792'] lr = 0.000323
+2023-11-03 12:52:05,443 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 104  acc = 43.0000
+2023-11-03 12:52:06,829 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:52:08,626 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 105 EpochTime = 1.796 (s) Losses = ['1.0455', '70.8333'] lr = 0.000310
+2023-11-03 12:52:10,360 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 105  acc = 44.0000
+2023-11-03 12:52:11,066 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:52:12,928 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 106 EpochTime = 1.861 (s) Losses = ['0.9925', '78.1250'] lr = 0.000297
+2023-11-03 12:52:14,453 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 106  acc = 42.5000
+2023-11-03 12:52:15,059 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:52:18,197 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 107 EpochTime = 3.136 (s) Losses = ['0.9558', '74.4792'] lr = 0.000285
+2023-11-03 12:52:19,684 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 107  acc = 44.5000
+2023-11-03 12:52:21,430 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:52:24,134 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 108 EpochTime = 2.702 (s) Losses = ['0.9915', '77.0833'] lr = 0.000273
+2023-11-03 12:52:25,523 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 108  acc = 43.5000
+2023-11-03 12:52:26,611 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:52:29,846 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 109 EpochTime = 3.233 (s) Losses = ['0.9752', '76.0417'] lr = 0.000261
+2023-11-03 12:52:31,324 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 109  acc = 43.5000
+2023-11-03 12:52:32,171 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:52:35,278 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 110 EpochTime = 3.104 (s) Losses = ['0.9893', '75.0000'] lr = 0.000249
+2023-11-03 12:52:36,906 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 110  acc = 43.5000
+2023-11-03 12:52:37,876 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:52:40,086 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 111 EpochTime = 2.209 (s) Losses = ['0.9798', '73.4375'] lr = 0.000237
+2023-11-03 12:52:41,748 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 111  acc = 44.0000
+2023-11-03 12:52:42,270 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:52:44,744 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 112 EpochTime = 2.472 (s) Losses = ['0.9818', '75.0000'] lr = 0.000226
+2023-11-03 12:52:46,824 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 112  acc = 45.0000
+2023-11-03 12:52:47,797 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:52:50,414 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 113 EpochTime = 2.614 (s) Losses = ['0.9858', '76.0417'] lr = 0.000215
+2023-11-03 12:52:52,486 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 113  acc = 44.0000
+2023-11-03 12:52:53,561 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:52:55,983 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 114 EpochTime = 2.421 (s) Losses = ['0.9592', '71.8750'] lr = 0.000204
+2023-11-03 12:52:58,225 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 114  acc = 45.0000
+2023-11-03 12:52:58,789 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:53:01,695 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 115 EpochTime = 2.905 (s) Losses = ['0.9660', '74.4792'] lr = 0.000194
+2023-11-03 12:53:03,075 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 115  acc = 45.0000
+2023-11-03 12:53:04,252 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:53:06,452 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 116 EpochTime = 2.198 (s) Losses = ['1.0407', '72.3958'] lr = 0.000183
+2023-11-03 12:53:08,268 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 116  acc = 44.5000
+2023-11-03 12:53:08,817 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:53:11,834 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 117 EpochTime = 3.015 (s) Losses = ['0.9695', '76.0417'] lr = 0.000173
+2023-11-03 12:53:13,204 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 117  acc = 45.0000
+2023-11-03 12:53:14,435 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:53:17,607 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 118 EpochTime = 3.170 (s) Losses = ['0.9786', '78.1250'] lr = 0.000163
+2023-11-03 12:53:19,389 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 118  acc = 44.5000
+2023-11-03 12:53:20,306 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:53:23,331 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 119 EpochTime = 3.024 (s) Losses = ['0.9370', '77.0833'] lr = 0.000154
+2023-11-03 12:53:24,912 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 119  acc = 45.0000
+2023-11-03 12:53:26,431 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:53:28,788 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 120 EpochTime = 2.355 (s) Losses = ['0.9773', '74.4792'] lr = 0.000144
+2023-11-03 12:53:30,702 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 120  acc = 47.0000
+2023-11-03 12:53:31,336 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:53:34,244 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 121 EpochTime = 2.906 (s) Losses = ['0.9905', '73.4375'] lr = 0.000135
+2023-11-03 12:53:35,869 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 121  acc = 47.5000
+2023-11-03 12:53:37,591 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-best.pth
+2023-11-03 12:53:37,680 - fewshot_scanobjectnn_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-03 12:53:39,229 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:53:42,543 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 122 EpochTime = 3.312 (s) Losses = ['0.9685', '77.6042'] lr = 0.000126
+2023-11-03 12:53:44,402 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 122  acc = 46.0000
+2023-11-03 12:53:45,179 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:53:47,300 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 123 EpochTime = 2.119 (s) Losses = ['0.9793', '73.9583'] lr = 0.000118
+2023-11-03 12:53:49,118 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 123  acc = 45.0000
+2023-11-03 12:53:49,660 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:53:52,593 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 124 EpochTime = 2.930 (s) Losses = ['0.9480', '79.1667'] lr = 0.000109
+2023-11-03 12:53:53,959 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 124  acc = 44.5000
+2023-11-03 12:53:55,299 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:53:58,596 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 125 EpochTime = 3.296 (s) Losses = ['0.9614', '77.6042'] lr = 0.000101
+2023-11-03 12:54:00,592 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 125  acc = 44.5000
+2023-11-03 12:54:01,769 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:54:03,894 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 126 EpochTime = 2.123 (s) Losses = ['0.9912', '70.8333'] lr = 0.000094
+2023-11-03 12:54:05,826 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 126  acc = 45.5000
+2023-11-03 12:54:06,409 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:54:09,507 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 127 EpochTime = 3.097 (s) Losses = ['0.9259', '79.1667'] lr = 0.000086
+2023-11-03 12:54:11,671 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 127  acc = 45.5000
+2023-11-03 12:54:12,386 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:54:14,913 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 128 EpochTime = 2.525 (s) Losses = ['0.9434', '79.6875'] lr = 0.000079
+2023-11-03 12:54:16,501 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 128  acc = 45.0000
+2023-11-03 12:54:17,542 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:54:20,394 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 129 EpochTime = 2.850 (s) Losses = ['0.9163', '81.2500'] lr = 0.000072
+2023-11-03 12:54:21,775 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 129  acc = 43.5000
+2023-11-03 12:54:22,284 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:54:25,097 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 130 EpochTime = 2.810 (s) Losses = ['0.9475', '76.5625'] lr = 0.000066
+2023-11-03 12:54:26,490 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 130  acc = 43.5000
+2023-11-03 12:54:27,606 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:54:30,346 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 131 EpochTime = 2.738 (s) Losses = ['0.9578', '78.1250'] lr = 0.000060
+2023-11-03 12:54:31,721 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 131  acc = 44.0000
+2023-11-03 12:54:34,975 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:54:37,164 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 132 EpochTime = 2.187 (s) Losses = ['0.9808', '71.8750'] lr = 0.000054
+2023-11-03 12:54:38,582 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 132  acc = 44.5000
+2023-11-03 12:54:39,185 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:54:42,418 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 133 EpochTime = 3.231 (s) Losses = ['0.9192', '79.1667'] lr = 0.000048
+2023-11-03 12:54:43,799 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 133  acc = 45.0000
+2023-11-03 12:54:44,786 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:54:47,297 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 134 EpochTime = 2.508 (s) Losses = ['0.9186', '78.6458'] lr = 0.000043
+2023-11-03 12:54:48,700 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 134  acc = 44.5000
+2023-11-03 12:54:50,023 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:54:52,526 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 135 EpochTime = 2.501 (s) Losses = ['1.0180', '72.3958'] lr = 0.000038
+2023-11-03 12:54:54,191 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 135  acc = 45.0000
+2023-11-03 12:54:54,857 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:54:57,377 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 136 EpochTime = 2.518 (s) Losses = ['0.9242', '81.7708'] lr = 0.000033
+2023-11-03 12:54:58,763 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 136  acc = 45.5000
+2023-11-03 12:54:59,435 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:55:01,204 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 137 EpochTime = 1.767 (s) Losses = ['0.9618', '77.0833'] lr = 0.000029
+2023-11-03 12:55:03,091 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 137  acc = 45.5000
+2023-11-03 12:55:04,369 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:55:06,554 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 138 EpochTime = 2.166 (s) Losses = ['0.9672', '76.0417'] lr = 0.000025
+2023-11-03 12:55:08,389 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 138  acc = 45.5000
+2023-11-03 12:55:10,272 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:55:12,038 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 139 EpochTime = 1.765 (s) Losses = ['0.9673', '77.0833'] lr = 0.000021
+2023-11-03 12:55:14,265 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 139  acc = 46.0000
+2023-11-03 12:55:14,841 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:55:17,105 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 140 EpochTime = 2.263 (s) Losses = ['0.9654', '73.4375'] lr = 0.000017
+2023-11-03 12:55:18,881 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 140  acc = 46.0000
+2023-11-03 12:55:19,498 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:55:21,943 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 141 EpochTime = 2.443 (s) Losses = ['0.9445', '76.5625'] lr = 0.000014
+2023-11-03 12:55:23,421 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 141  acc = 45.5000
+2023-11-03 12:55:24,587 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:55:26,186 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-epoch-141.pth
+2023-11-03 12:55:28,001 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 142 EpochTime = 1.814 (s) Losses = ['0.9834', '77.0833'] lr = 0.000011
+2023-11-03 12:55:29,955 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 142  acc = 45.0000
+2023-11-03 12:55:30,683 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:55:32,512 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-epoch-142.pth
+2023-11-03 12:55:34,380 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 143 EpochTime = 1.866 (s) Losses = ['0.9905', '75.0000'] lr = 0.000009
+2023-11-03 12:55:36,255 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 143  acc = 44.5000
+2023-11-03 12:55:38,077 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:55:39,697 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-epoch-143.pth
+2023-11-03 12:55:42,601 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 144 EpochTime = 2.798 (s) Losses = ['0.9674', '76.5625'] lr = 0.000007
+2023-11-03 12:55:44,635 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 144  acc = 44.0000
+2023-11-03 12:55:45,444 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:55:47,091 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-epoch-144.pth
+2023-11-03 12:55:49,716 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 145 EpochTime = 2.623 (s) Losses = ['0.9864', '75.0000'] lr = 0.000005
+2023-11-03 12:55:51,546 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 145  acc = 44.0000
+2023-11-03 12:55:52,625 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:55:53,616 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-epoch-145.pth
+2023-11-03 12:55:56,186 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 146 EpochTime = 2.567 (s) Losses = ['0.9534', '80.2083'] lr = 0.000004
+2023-11-03 12:55:57,614 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 146  acc = 44.0000
+2023-11-03 12:55:58,566 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:56:00,212 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-epoch-146.pth
+2023-11-03 12:56:01,981 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 147 EpochTime = 1.768 (s) Losses = ['0.9639', '73.9583'] lr = 0.000002
+2023-11-03 12:56:03,432 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 147  acc = 44.0000
+2023-11-03 12:56:04,047 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:56:05,519 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-epoch-147.pth
+2023-11-03 12:56:07,372 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 148 EpochTime = 1.850 (s) Losses = ['0.9159', '79.6875'] lr = 0.000002
+2023-11-03 12:56:09,136 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 148  acc = 44.0000
+2023-11-03 12:56:10,297 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:56:11,768 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-epoch-148.pth
+2023-11-03 12:56:14,548 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 149 EpochTime = 2.778 (s) Losses = ['0.9417', '75.0000'] lr = 0.000001
+2023-11-03 12:56:16,748 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 149  acc = 44.0000
+2023-11-03 12:56:18,366 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:56:20,090 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-epoch-149.pth
+2023-11-03 12:56:21,895 - fewshot_scanobjectnn_linear_classification - INFO - [Training] EPOCH: 150 EpochTime = 1.802 (s) Losses = ['0.9335', '77.0833'] lr = 0.000001
+2023-11-03 12:56:24,159 - fewshot_scanobjectnn_linear_classification - INFO - [Validation] EPOCH: 150  acc = 44.0000
+2023-11-03 12:56:24,885 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-last.pth
+2023-11-03 12:56:25,954 - fewshot_scanobjectnn_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_linear_classification/cfgs/lr0.0015/ckpt-epoch-150.pth
