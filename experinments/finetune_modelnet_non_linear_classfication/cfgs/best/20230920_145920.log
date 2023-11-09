@@ -1,0 +1,1062 @@
+2023-09-20 14:59:20,933 - finetune_modelnet_non_linear_classification - INFO - Copy the Config file from cfgs/finetune_modelnet_non_linear_classification.yaml to ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/config.yaml
+2023-09-20 14:59:20,933 - finetune_modelnet_non_linear_classification - INFO - args.config : cfgs/finetune_modelnet_non_linear_classification.yaml
+2023-09-20 14:59:20,933 - finetune_modelnet_non_linear_classification - INFO - args.launcher : none
+2023-09-20 14:59:20,933 - finetune_modelnet_non_linear_classification - INFO - args.local_rank : 0
+2023-09-20 14:59:20,934 - finetune_modelnet_non_linear_classification - INFO - args.num_workers : 8
+2023-09-20 14:59:20,934 - finetune_modelnet_non_linear_classification - INFO - args.seed : 0
+2023-09-20 14:59:20,934 - finetune_modelnet_non_linear_classification - INFO - args.deterministic : False
+2023-09-20 14:59:20,934 - finetune_modelnet_non_linear_classification - INFO - args.sync_bn : True
+2023-09-20 14:59:20,934 - finetune_modelnet_non_linear_classification - INFO - args.update_weights_every : 1
+2023-09-20 14:59:20,934 - finetune_modelnet_non_linear_classification - INFO - args.main_task : 0
+2023-09-20 14:59:20,934 - finetune_modelnet_non_linear_classification - INFO - args.nashmtl_optim_niter : 20
+2023-09-20 14:59:20,934 - finetune_modelnet_non_linear_classification - INFO - args.c : 0.4
+2023-09-20 14:59:20,934 - finetune_modelnet_non_linear_classification - INFO - args.dwa_temp : 2.0
+2023-09-20 14:59:20,934 - finetune_modelnet_non_linear_classification - INFO - args.method_params_lr : 0.025
+2023-09-20 14:59:20,934 - finetune_modelnet_non_linear_classification - INFO - args.method : nashmtl
+2023-09-20 14:59:20,934 - finetune_modelnet_non_linear_classification - INFO - args.gpu : 5
+2023-09-20 14:59:20,934 - finetune_modelnet_non_linear_classification - INFO - args.large_group : 5
+2023-09-20 14:59:20,934 - finetune_modelnet_non_linear_classification - INFO - args.small_group : 10
+2023-09-20 14:59:20,934 - finetune_modelnet_non_linear_classification - INFO - args.large_patch : 6
+2023-09-20 14:59:20,934 - finetune_modelnet_non_linear_classification - INFO - args.small_patch : 3
+2023-09-20 14:59:20,934 - finetune_modelnet_non_linear_classification - INFO - args.queue_length : 8192
+2023-09-20 14:59:20,934 - finetune_modelnet_non_linear_classification - INFO - args.epoch_queue_starts : 10
+2023-09-20 14:59:20,934 - finetune_modelnet_non_linear_classification - INFO - args.nmb_crops : [5, 10]
+2023-09-20 14:59:20,934 - finetune_modelnet_non_linear_classification - INFO - args.fea_dim : 384
+2023-09-20 14:59:20,934 - finetune_modelnet_non_linear_classification - INFO - args.hidden_mlp : 256
+2023-09-20 14:59:20,935 - finetune_modelnet_non_linear_classification - INFO - args.output_dim : 128
+2023-09-20 14:59:20,935 - finetune_modelnet_non_linear_classification - INFO - args.nmb_prototypes : 200
+2023-09-20 14:59:20,935 - finetune_modelnet_non_linear_classification - INFO - args.temperature : 0.1
+2023-09-20 14:59:20,935 - finetune_modelnet_non_linear_classification - INFO - args.epsilon : 0.05
+2023-09-20 14:59:20,935 - finetune_modelnet_non_linear_classification - INFO - args.sinkhorn_iterations : 3
+2023-09-20 14:59:20,935 - finetune_modelnet_non_linear_classification - INFO - args.world_size : 1
+2023-09-20 14:59:20,935 - finetune_modelnet_non_linear_classification - INFO - args.exp_name : add_as_normal
+2023-09-20 14:59:20,935 - finetune_modelnet_non_linear_classification - INFO - args.loss : cd1
+2023-09-20 14:59:20,935 - finetune_modelnet_non_linear_classification - INFO - args.start_ckpts : None
+2023-09-20 14:59:20,935 - finetune_modelnet_non_linear_classification - INFO - args.ckpts : ./experiments/pretrain_MaskSurf/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 14:59:20,935 - finetune_modelnet_non_linear_classification - INFO - args.val_freq : 1
+2023-09-20 14:59:20,935 - finetune_modelnet_non_linear_classification - INFO - args.vote : False
+2023-09-20 14:59:20,935 - finetune_modelnet_non_linear_classification - INFO - args.resume : False
+2023-09-20 14:59:20,935 - finetune_modelnet_non_linear_classification - INFO - args.test : False
+2023-09-20 14:59:20,935 - finetune_modelnet_non_linear_classification - INFO - args.finetune_model : True
+2023-09-20 14:59:20,935 - finetune_modelnet_non_linear_classification - INFO - args.scratch_model : False
+2023-09-20 14:59:20,935 - finetune_modelnet_non_linear_classification - INFO - args.mode : None
+2023-09-20 14:59:20,935 - finetune_modelnet_non_linear_classification - INFO - args.way : -1
+2023-09-20 14:59:20,935 - finetune_modelnet_non_linear_classification - INFO - args.shot : -1
+2023-09-20 14:59:20,935 - finetune_modelnet_non_linear_classification - INFO - args.fold : -1
+2023-09-20 14:59:20,935 - finetune_modelnet_non_linear_classification - INFO - args.experiment_path : ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal
+2023-09-20 14:59:20,935 - finetune_modelnet_non_linear_classification - INFO - args.tfboard_path : ./experiments/finetune_modelnet_non_linear_classification/cfgs/TFBoard/add_as_normal
+2023-09-20 14:59:20,935 - finetune_modelnet_non_linear_classification - INFO - args.log_name : finetune_modelnet_non_linear_classification
+2023-09-20 14:59:20,936 - finetune_modelnet_non_linear_classification - INFO - args.use_gpu : True
+2023-09-20 14:59:20,936 - finetune_modelnet_non_linear_classification - INFO - args.distributed : False
+2023-09-20 14:59:20,936 - finetune_modelnet_non_linear_classification - INFO - config.optimizer = edict()
+2023-09-20 14:59:20,936 - finetune_modelnet_non_linear_classification - INFO - config.optimizer.type : AdamW
+2023-09-20 14:59:20,936 - finetune_modelnet_non_linear_classification - INFO - config.optimizer.part : only_new
+2023-09-20 14:59:20,936 - finetune_modelnet_non_linear_classification - INFO - config.optimizer.kwargs = edict()
+2023-09-20 14:59:20,936 - finetune_modelnet_non_linear_classification - INFO - config.optimizer.kwargs.lr : 0.0005
+2023-09-20 14:59:20,936 - finetune_modelnet_non_linear_classification - INFO - config.optimizer.kwargs.weight_decay : 0.05
+2023-09-20 14:59:20,936 - finetune_modelnet_non_linear_classification - INFO - config.scheduler = edict()
+2023-09-20 14:59:20,936 - finetune_modelnet_non_linear_classification - INFO - config.scheduler.type : CosLR
+2023-09-20 14:59:20,936 - finetune_modelnet_non_linear_classification - INFO - config.scheduler.kwargs = edict()
+2023-09-20 14:59:20,936 - finetune_modelnet_non_linear_classification - INFO - config.scheduler.kwargs.epochs : 300
+2023-09-20 14:59:20,936 - finetune_modelnet_non_linear_classification - INFO - config.scheduler.kwargs.initial_epochs : 10
+2023-09-20 14:59:20,936 - finetune_modelnet_non_linear_classification - INFO - config.dataset = edict()
+2023-09-20 14:59:20,936 - finetune_modelnet_non_linear_classification - INFO - config.dataset.train = edict()
+2023-09-20 14:59:20,936 - finetune_modelnet_non_linear_classification - INFO - config.dataset.train._base_ = edict()
+2023-09-20 14:59:20,936 - finetune_modelnet_non_linear_classification - INFO - config.dataset.train._base_.NAME : ModelNet
+2023-09-20 14:59:20,936 - finetune_modelnet_non_linear_classification - INFO - config.dataset.train._base_.DATA_PATH : data/ModelNet/modelnet40_normal_resampled
+2023-09-20 14:59:20,936 - finetune_modelnet_non_linear_classification - INFO - config.dataset.train._base_.N_POINTS : 8192
+2023-09-20 14:59:20,936 - finetune_modelnet_non_linear_classification - INFO - config.dataset.train._base_.NUM_CATEGORY : 40
+2023-09-20 14:59:20,936 - finetune_modelnet_non_linear_classification - INFO - config.dataset.train._base_.USE_NORMALS : False
+2023-09-20 14:59:20,936 - finetune_modelnet_non_linear_classification - INFO - config.dataset.train.others = edict()
+2023-09-20 14:59:20,936 - finetune_modelnet_non_linear_classification - INFO - config.dataset.train.others.subset : train
+2023-09-20 14:59:20,937 - finetune_modelnet_non_linear_classification - INFO - config.dataset.train.others.bs : 32
+2023-09-20 14:59:20,937 - finetune_modelnet_non_linear_classification - INFO - config.dataset.val = edict()
+2023-09-20 14:59:20,937 - finetune_modelnet_non_linear_classification - INFO - config.dataset.val._base_ = edict()
+2023-09-20 14:59:20,937 - finetune_modelnet_non_linear_classification - INFO - config.dataset.val._base_.NAME : ModelNet
+2023-09-20 14:59:20,937 - finetune_modelnet_non_linear_classification - INFO - config.dataset.val._base_.DATA_PATH : data/ModelNet/modelnet40_normal_resampled
+2023-09-20 14:59:20,937 - finetune_modelnet_non_linear_classification - INFO - config.dataset.val._base_.N_POINTS : 8192
+2023-09-20 14:59:20,937 - finetune_modelnet_non_linear_classification - INFO - config.dataset.val._base_.NUM_CATEGORY : 40
+2023-09-20 14:59:20,937 - finetune_modelnet_non_linear_classification - INFO - config.dataset.val._base_.USE_NORMALS : False
+2023-09-20 14:59:20,937 - finetune_modelnet_non_linear_classification - INFO - config.dataset.val.others = edict()
+2023-09-20 14:59:20,937 - finetune_modelnet_non_linear_classification - INFO - config.dataset.val.others.subset : test
+2023-09-20 14:59:20,937 - finetune_modelnet_non_linear_classification - INFO - config.dataset.val.others.bs : 64
+2023-09-20 14:59:20,937 - finetune_modelnet_non_linear_classification - INFO - config.dataset.test = edict()
+2023-09-20 14:59:20,937 - finetune_modelnet_non_linear_classification - INFO - config.dataset.test._base_ = edict()
+2023-09-20 14:59:20,937 - finetune_modelnet_non_linear_classification - INFO - config.dataset.test._base_.NAME : ModelNet
+2023-09-20 14:59:20,937 - finetune_modelnet_non_linear_classification - INFO - config.dataset.test._base_.DATA_PATH : data/ModelNet/modelnet40_normal_resampled
+2023-09-20 14:59:20,937 - finetune_modelnet_non_linear_classification - INFO - config.dataset.test._base_.N_POINTS : 8192
+2023-09-20 14:59:20,937 - finetune_modelnet_non_linear_classification - INFO - config.dataset.test._base_.NUM_CATEGORY : 40
+2023-09-20 14:59:20,937 - finetune_modelnet_non_linear_classification - INFO - config.dataset.test._base_.USE_NORMALS : False
+2023-09-20 14:59:20,937 - finetune_modelnet_non_linear_classification - INFO - config.dataset.test.others = edict()
+2023-09-20 14:59:20,937 - finetune_modelnet_non_linear_classification - INFO - config.dataset.test.others.subset : test
+2023-09-20 14:59:20,937 - finetune_modelnet_non_linear_classification - INFO - config.dataset.test.others.bs : 32
+2023-09-20 14:59:20,937 - finetune_modelnet_non_linear_classification - INFO - config.model = edict()
+2023-09-20 14:59:20,937 - finetune_modelnet_non_linear_classification - INFO - config.model.NAME : PointTransformer
+2023-09-20 14:59:20,938 - finetune_modelnet_non_linear_classification - INFO - config.model.trans_dim : 384
+2023-09-20 14:59:20,938 - finetune_modelnet_non_linear_classification - INFO - config.model.depth : 12
+2023-09-20 14:59:20,938 - finetune_modelnet_non_linear_classification - INFO - config.model.drop_path_rate : 0.1
+2023-09-20 14:59:20,938 - finetune_modelnet_non_linear_classification - INFO - config.model.cls_dim : 40
+2023-09-20 14:59:20,938 - finetune_modelnet_non_linear_classification - INFO - config.model.num_heads : 6
+2023-09-20 14:59:20,938 - finetune_modelnet_non_linear_classification - INFO - config.model.group_size : 32
+2023-09-20 14:59:20,938 - finetune_modelnet_non_linear_classification - INFO - config.model.num_group : 64
+2023-09-20 14:59:20,938 - finetune_modelnet_non_linear_classification - INFO - config.model.encoder_dims : 384
+2023-09-20 14:59:20,938 - finetune_modelnet_non_linear_classification - INFO - config.npoints : 1024
+2023-09-20 14:59:20,938 - finetune_modelnet_non_linear_classification - INFO - config.total_bs : 32
+2023-09-20 14:59:20,938 - finetune_modelnet_non_linear_classification - INFO - config.step_per_update : 1
+2023-09-20 14:59:20,938 - finetune_modelnet_non_linear_classification - INFO - config.max_epoch : 300
+2023-09-20 14:59:20,938 - finetune_modelnet_non_linear_classification - INFO - config.grad_norm_clip : 10
+2023-09-20 14:59:20,938 - finetune_modelnet_non_linear_classification - INFO - Distributed training: False
+2023-09-20 14:59:20,938 - finetune_modelnet_non_linear_classification - INFO - Set random seed to 0, deterministic: False
+2023-09-20 14:59:24,334 - finetune_modelnet_non_linear_classification - INFO - Using Data parallel ...
+2023-09-20 15:00:23,867 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 0 EpochTime = 59.529 (s) Losses = ['3.7863', '3.0639'] lr = 0.000001
+2023-09-20 15:00:24,335 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 15:01:20,714 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 1 EpochTime = 56.377 (s) Losses = ['3.7639', '3.8681'] lr = 0.000051
+2023-09-20 15:01:31,527 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 1  acc = 4.4571
+2023-09-20 15:01:31,991 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-20 15:01:31,992 - finetune_modelnet_non_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-20 15:01:32,429 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 15:02:28,668 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 2 EpochTime = 56.237 (s) Losses = ['3.2579', '21.0200'] lr = 0.000101
+2023-09-20 15:02:38,749 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 2  acc = 39.6272
+2023-09-20 15:02:39,208 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-20 15:02:39,208 - finetune_modelnet_non_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-20 15:02:39,638 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 15:03:35,969 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 3 EpochTime = 56.329 (s) Losses = ['2.3961', '44.7577'] lr = 0.000151
+2023-09-20 15:03:46,059 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 3  acc = 57.7391
+2023-09-20 15:03:46,530 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-20 15:03:46,530 - finetune_modelnet_non_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-20 15:03:46,962 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 15:04:43,197 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 4 EpochTime = 56.233 (s) Losses = ['1.7970', '58.2044'] lr = 0.000201
+2023-09-20 15:04:53,150 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 4  acc = 69.9757
+2023-09-20 15:04:53,619 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-20 15:04:53,619 - finetune_modelnet_non_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-20 15:04:54,047 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 15:05:50,278 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 5 EpochTime = 56.229 (s) Losses = ['1.3465', '68.1901'] lr = 0.000251
+2023-09-20 15:06:00,261 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 5  acc = 78.2010
+2023-09-20 15:06:00,691 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-20 15:06:00,691 - finetune_modelnet_non_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-20 15:06:01,132 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 15:06:57,372 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 6 EpochTime = 56.239 (s) Losses = ['1.0401', '73.9312'] lr = 0.000300
+2023-09-20 15:07:07,336 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 6  acc = 84.0357
+2023-09-20 15:07:07,799 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-20 15:07:07,799 - finetune_modelnet_non_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-20 15:07:08,264 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 15:08:04,497 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 7 EpochTime = 56.232 (s) Losses = ['0.8183', '79.0615'] lr = 0.000350
+2023-09-20 15:08:14,463 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 7  acc = 86.7099
+2023-09-20 15:08:14,972 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-20 15:08:14,972 - finetune_modelnet_non_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-20 15:08:15,414 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 15:09:11,658 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 8 EpochTime = 56.242 (s) Losses = ['0.6857', '81.5045'] lr = 0.000400
+2023-09-20 15:09:21,647 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 8  acc = 87.3177
+2023-09-20 15:09:22,099 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-20 15:09:22,099 - finetune_modelnet_non_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-20 15:09:22,521 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 15:10:18,801 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 9 EpochTime = 56.278 (s) Losses = ['0.6052', '82.7769'] lr = 0.000450
+2023-09-20 15:10:28,812 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 9  acc = 88.8979
+2023-09-20 15:10:29,276 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-20 15:10:29,276 - finetune_modelnet_non_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-20 15:10:29,715 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 15:11:25,895 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 10 EpochTime = 56.178 (s) Losses = ['0.5703', '83.7541'] lr = 0.000499
+2023-09-20 15:11:35,855 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 10  acc = 89.1815
+2023-09-20 15:11:36,311 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-20 15:11:36,312 - finetune_modelnet_non_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-20 15:11:37,387 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 15:12:33,796 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 11 EpochTime = 56.407 (s) Losses = ['0.5337', '83.6625'] lr = 0.000498
+2023-09-20 15:12:43,820 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 11  acc = 89.0600
+2023-09-20 15:12:44,280 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 15:13:40,564 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 12 EpochTime = 56.281 (s) Losses = ['0.5068', '84.5480'] lr = 0.000498
+2023-09-20 15:13:50,632 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 12  acc = 89.9514
+2023-09-20 15:13:51,091 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-20 15:13:51,091 - finetune_modelnet_non_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-20 15:13:51,604 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 15:14:48,071 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 13 EpochTime = 56.465 (s) Losses = ['0.4878', '85.3115'] lr = 0.000498
+2023-09-20 15:14:58,110 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 13  acc = 90.4781
+2023-09-20 15:14:58,594 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-20 15:14:58,594 - finetune_modelnet_non_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-20 15:14:59,039 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 15:15:55,325 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 14 EpochTime = 56.284 (s) Losses = ['0.4575', '86.0138'] lr = 0.000497
+2023-09-20 15:16:05,337 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 14  acc = 90.4781
+2023-09-20 15:16:05,796 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 15:17:02,074 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 15 EpochTime = 56.276 (s) Losses = ['0.4298', '86.8689'] lr = 0.000497
+2023-09-20 15:17:12,103 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 15  acc = 89.3031
+2023-09-20 15:17:12,534 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 15:18:08,792 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 16 EpochTime = 56.257 (s) Losses = ['0.4323', '86.7976'] lr = 0.000497
+2023-09-20 15:18:18,783 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 16  acc = 91.1669
+2023-09-20 15:18:19,204 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-20 15:18:19,204 - finetune_modelnet_non_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-20 15:18:19,658 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 15:19:15,888 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 17 EpochTime = 56.228 (s) Losses = ['0.4252', '86.7060'] lr = 0.000496
+2023-09-20 15:19:25,878 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 17  acc = 90.9238
+2023-09-20 15:19:26,336 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 15:20:22,592 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 18 EpochTime = 56.255 (s) Losses = ['0.4093', '87.1641'] lr = 0.000496
+2023-09-20 15:20:32,572 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 18  acc = 88.8979
+2023-09-20 15:20:33,028 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 15:21:29,244 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 19 EpochTime = 56.215 (s) Losses = ['0.3999', '87.1844'] lr = 0.000495
+2023-09-20 15:21:39,236 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 19  acc = 91.1264
+2023-09-20 15:21:39,692 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 15:22:35,943 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 20 EpochTime = 56.250 (s) Losses = ['0.4020', '87.0114'] lr = 0.000495
+2023-09-20 15:22:45,967 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 20  acc = 91.2480
+2023-09-20 15:22:46,443 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-20 15:22:46,443 - finetune_modelnet_non_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-20 15:22:46,873 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 15:23:43,130 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 21 EpochTime = 56.256 (s) Losses = ['0.3878', '87.7545'] lr = 0.000494
+2023-09-20 15:23:53,117 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 21  acc = 91.2480
+2023-09-20 15:23:53,591 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 15:24:49,867 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 22 EpochTime = 56.274 (s) Losses = ['0.3741', '88.4263'] lr = 0.000493
+2023-09-20 15:24:59,912 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 22  acc = 90.9643
+2023-09-20 15:25:00,368 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 15:25:56,605 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 23 EpochTime = 56.236 (s) Losses = ['0.3823', '88.0395'] lr = 0.000493
+2023-09-20 15:26:06,580 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 23  acc = 90.5592
+2023-09-20 15:26:07,066 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 15:27:03,276 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 24 EpochTime = 56.209 (s) Losses = ['0.3735', '88.3652'] lr = 0.000492
+2023-09-20 15:27:13,253 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 24  acc = 91.1264
+2023-09-20 15:27:13,732 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 15:28:09,958 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 25 EpochTime = 56.225 (s) Losses = ['0.3758', '88.2838'] lr = 0.000491
+2023-09-20 15:28:19,941 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 25  acc = 91.0049
+2023-09-20 15:28:20,415 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 15:29:16,675 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 26 EpochTime = 56.258 (s) Losses = ['0.3617', '88.2838'] lr = 0.000491
+2023-09-20 15:29:26,666 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 26  acc = 91.8963
+2023-09-20 15:29:27,159 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-20 15:29:27,159 - finetune_modelnet_non_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-20 15:29:27,586 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 15:30:23,793 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 27 EpochTime = 56.205 (s) Losses = ['0.3700', '88.3449'] lr = 0.000490
+2023-09-20 15:30:33,812 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 27  acc = 91.9773
+2023-09-20 15:30:34,316 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-20 15:30:34,317 - finetune_modelnet_non_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-20 15:30:34,805 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 15:31:31,169 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 28 EpochTime = 56.363 (s) Losses = ['0.3530', '88.5179'] lr = 0.000489
+2023-09-20 15:31:41,212 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 28  acc = 91.3290
+2023-09-20 15:31:41,671 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 15:32:38,059 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 29 EpochTime = 56.386 (s) Losses = ['0.3535', '88.6401'] lr = 0.000489
+2023-09-20 15:32:48,129 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 29  acc = 91.3695
+2023-09-20 15:32:48,607 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 15:33:44,888 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 30 EpochTime = 56.279 (s) Losses = ['0.3498', '88.7826'] lr = 0.000488
+2023-09-20 15:33:54,911 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 30  acc = 91.3695
+2023-09-20 15:33:55,327 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 15:34:51,572 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 31 EpochTime = 56.243 (s) Losses = ['0.3424', '88.9862'] lr = 0.000487
+2023-09-20 15:35:01,598 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 31  acc = 91.0859
+2023-09-20 15:35:02,069 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 15:35:58,299 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 32 EpochTime = 56.228 (s) Losses = ['0.3323', '89.2915'] lr = 0.000486
+2023-09-20 15:36:08,310 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 32  acc = 91.8152
+2023-09-20 15:36:08,813 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 15:37:05,079 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 33 EpochTime = 56.264 (s) Losses = ['0.3322', '89.1287'] lr = 0.000485
+2023-09-20 15:37:15,191 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 33  acc = 91.4100
+2023-09-20 15:37:15,687 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 15:38:12,047 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 34 EpochTime = 56.358 (s) Losses = ['0.3307', '89.3730'] lr = 0.000484
+2023-09-20 15:38:22,201 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 34  acc = 91.7342
+2023-09-20 15:38:22,703 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 15:39:18,996 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 35 EpochTime = 56.291 (s) Losses = ['0.3308', '89.6376'] lr = 0.000483
+2023-09-20 15:39:29,016 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 35  acc = 91.9368
+2023-09-20 15:39:29,484 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 15:40:25,754 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 36 EpochTime = 56.269 (s) Losses = ['0.3322', '89.0574'] lr = 0.000482
+2023-09-20 15:40:35,776 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 36  acc = 91.8152
+2023-09-20 15:40:36,677 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 15:41:32,975 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 37 EpochTime = 56.296 (s) Losses = ['0.3229', '89.6682'] lr = 0.000482
+2023-09-20 15:41:42,969 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 37  acc = 91.8152
+2023-09-20 15:41:43,500 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 15:42:39,771 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 38 EpochTime = 56.269 (s) Losses = ['0.3183', '89.6376'] lr = 0.000481
+2023-09-20 15:42:49,750 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 38  acc = 91.1264
+2023-09-20 15:42:50,214 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 15:43:46,426 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 39 EpochTime = 56.210 (s) Losses = ['0.3159', '89.7089'] lr = 0.000479
+2023-09-20 15:43:56,458 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 39  acc = 91.8558
+2023-09-20 15:43:56,995 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 15:44:53,453 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 40 EpochTime = 56.456 (s) Losses = ['0.3164', '89.6376'] lr = 0.000478
+2023-09-20 15:45:03,451 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 40  acc = 91.2075
+2023-09-20 15:45:03,903 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 15:46:00,132 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 41 EpochTime = 56.227 (s) Losses = ['0.3116', '90.2280'] lr = 0.000477
+2023-09-20 15:46:10,124 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 41  acc = 91.3290
+2023-09-20 15:46:10,578 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 15:47:06,845 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 42 EpochTime = 56.266 (s) Losses = ['0.3095', '89.7292'] lr = 0.000476
+2023-09-20 15:47:16,846 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 42  acc = 91.4506
+2023-09-20 15:47:17,320 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 15:48:13,716 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 43 EpochTime = 56.394 (s) Losses = ['0.3178', '89.5257'] lr = 0.000475
+2023-09-20 15:48:23,725 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 43  acc = 91.9773
+2023-09-20 15:48:24,195 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 15:49:20,525 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 44 EpochTime = 56.328 (s) Losses = ['0.3093', '90.1364'] lr = 0.000474
+2023-09-20 15:49:30,526 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 44  acc = 91.2885
+2023-09-20 15:49:30,988 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 15:50:27,243 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 45 EpochTime = 56.253 (s) Losses = ['0.3084', '89.8819'] lr = 0.000473
+2023-09-20 15:50:37,293 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 45  acc = 92.2204
+2023-09-20 15:50:37,771 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-20 15:50:37,772 - finetune_modelnet_non_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-20 15:50:38,232 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 15:51:34,523 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 46 EpochTime = 56.290 (s) Losses = ['0.2872', '90.1771'] lr = 0.000472
+2023-09-20 15:51:44,519 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 46  acc = 91.9773
+2023-09-20 15:51:44,975 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 15:52:41,255 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 47 EpochTime = 56.278 (s) Losses = ['0.2962', '90.2178'] lr = 0.000470
+2023-09-20 15:52:51,273 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 47  acc = 92.1394
+2023-09-20 15:52:51,740 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 15:53:47,994 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 48 EpochTime = 56.253 (s) Losses = ['0.3007', '90.1873'] lr = 0.000469
+2023-09-20 15:53:58,002 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 48  acc = 91.8558
+2023-09-20 15:53:58,527 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 15:54:54,814 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 49 EpochTime = 56.285 (s) Losses = ['0.2961', '90.2280'] lr = 0.000468
+2023-09-20 15:55:04,860 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 49  acc = 92.3015
+2023-09-20 15:55:05,327 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-20 15:55:05,327 - finetune_modelnet_non_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-20 15:55:05,755 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 15:56:02,058 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 50 EpochTime = 56.301 (s) Losses = ['0.2953', '90.1669'] lr = 0.000467
+2023-09-20 15:56:12,124 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 50  acc = 91.7342
+2023-09-20 15:56:12,572 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 15:57:08,947 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 51 EpochTime = 56.373 (s) Losses = ['0.2912', '90.8286'] lr = 0.000465
+2023-09-20 15:57:18,999 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 51  acc = 91.7747
+2023-09-20 15:57:19,443 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 15:58:15,754 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 52 EpochTime = 56.309 (s) Losses = ['0.2874', '90.7879'] lr = 0.000464
+2023-09-20 15:58:25,779 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 52  acc = 91.8963
+2023-09-20 15:58:26,279 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 15:59:22,591 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 53 EpochTime = 56.310 (s) Losses = ['0.2855', '90.6657'] lr = 0.000463
+2023-09-20 15:59:32,608 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 53  acc = 91.4100
+2023-09-20 15:59:33,088 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 16:00:29,465 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 54 EpochTime = 56.376 (s) Losses = ['0.2853', '90.8693'] lr = 0.000461
+2023-09-20 16:00:39,457 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 54  acc = 91.1669
+2023-09-20 16:00:39,892 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 16:01:36,224 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 55 EpochTime = 56.331 (s) Losses = ['0.2698', '90.9202'] lr = 0.000460
+2023-09-20 16:01:46,237 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 55  acc = 91.5316
+2023-09-20 16:01:46,728 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 16:02:43,126 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 56 EpochTime = 56.396 (s) Losses = ['0.2760', '90.6454'] lr = 0.000458
+2023-09-20 16:02:53,130 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 56  acc = 91.8152
+2023-09-20 16:02:53,604 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 16:03:49,902 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 57 EpochTime = 56.297 (s) Losses = ['0.2768', '90.6555'] lr = 0.000457
+2023-09-20 16:03:59,978 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 57  acc = 91.1264
+2023-09-20 16:04:00,439 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 16:04:56,672 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 58 EpochTime = 56.232 (s) Losses = ['0.2768', '91.0423'] lr = 0.000455
+2023-09-20 16:05:06,707 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 58  acc = 91.6937
+2023-09-20 16:05:07,211 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 16:06:03,483 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 59 EpochTime = 56.270 (s) Losses = ['0.2841', '90.8286'] lr = 0.000454
+2023-09-20 16:06:13,563 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 59  acc = 91.4506
+2023-09-20 16:06:14,019 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 16:07:10,388 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 60 EpochTime = 56.367 (s) Losses = ['0.2725', '91.0016'] lr = 0.000452
+2023-09-20 16:07:20,382 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 60  acc = 92.8282
+2023-09-20 16:07:20,975 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-20 16:07:20,975 - finetune_modelnet_non_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-20 16:07:21,918 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 16:08:18,223 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 61 EpochTime = 56.304 (s) Losses = ['0.2752', '90.9406'] lr = 0.000451
+2023-09-20 16:08:28,217 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 61  acc = 91.8152
+2023-09-20 16:08:28,680 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 16:09:24,976 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 62 EpochTime = 56.294 (s) Losses = ['0.2769', '90.7166'] lr = 0.000449
+2023-09-20 16:09:34,968 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 62  acc = 92.1394
+2023-09-20 16:09:35,422 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 16:10:31,764 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 63 EpochTime = 56.340 (s) Losses = ['0.2738', '90.9406'] lr = 0.000448
+2023-09-20 16:10:41,789 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 63  acc = 91.5721
+2023-09-20 16:10:42,271 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 16:11:38,528 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 64 EpochTime = 56.255 (s) Losses = ['0.2686', '91.2154'] lr = 0.000446
+2023-09-20 16:11:48,526 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 64  acc = 92.1799
+2023-09-20 16:11:49,008 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 16:12:45,267 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 65 EpochTime = 56.258 (s) Losses = ['0.2656', '91.1340'] lr = 0.000444
+2023-09-20 16:12:55,281 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 65  acc = 92.0989
+2023-09-20 16:12:55,712 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 16:13:52,004 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 66 EpochTime = 56.290 (s) Losses = ['0.2705', '90.9609'] lr = 0.000443
+2023-09-20 16:14:02,024 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 66  acc = 92.1799
+2023-09-20 16:14:02,472 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 16:14:58,843 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 67 EpochTime = 56.369 (s) Losses = ['0.2723', '90.9406'] lr = 0.000441
+2023-09-20 16:15:08,843 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 67  acc = 92.0989
+2023-09-20 16:15:09,260 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 16:16:05,504 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 68 EpochTime = 56.242 (s) Losses = ['0.2658', '91.2561'] lr = 0.000439
+2023-09-20 16:16:15,506 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 68  acc = 91.7747
+2023-09-20 16:16:15,983 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 16:17:12,304 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 69 EpochTime = 56.319 (s) Losses = ['0.2718', '91.1034'] lr = 0.000438
+2023-09-20 16:17:22,304 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 69  acc = 92.0989
+2023-09-20 16:17:22,780 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 16:18:19,153 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 70 EpochTime = 56.371 (s) Losses = ['0.2738', '90.7573'] lr = 0.000436
+2023-09-20 16:18:29,407 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 70  acc = 92.7066
+2023-09-20 16:18:29,952 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 16:19:26,179 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 71 EpochTime = 56.225 (s) Losses = ['0.2673', '91.2459'] lr = 0.000434
+2023-09-20 16:19:36,205 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 71  acc = 91.2480
+2023-09-20 16:19:36,672 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 16:20:32,913 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 72 EpochTime = 56.239 (s) Losses = ['0.2575', '91.5513'] lr = 0.000432
+2023-09-20 16:20:42,925 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 72  acc = 92.0989
+2023-09-20 16:20:43,533 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 16:21:39,762 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 73 EpochTime = 56.227 (s) Losses = ['0.2512', '91.4393'] lr = 0.000431
+2023-09-20 16:21:49,762 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 73  acc = 91.6937
+2023-09-20 16:21:50,229 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 16:22:46,577 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 74 EpochTime = 56.347 (s) Losses = ['0.2610', '91.3783'] lr = 0.000429
+2023-09-20 16:22:56,613 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 74  acc = 92.2609
+2023-09-20 16:22:57,073 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 16:23:53,294 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 75 EpochTime = 56.219 (s) Losses = ['0.2475', '91.5513'] lr = 0.000427
+2023-09-20 16:24:03,297 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 75  acc = 92.3825
+2023-09-20 16:24:03,696 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 16:24:59,938 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 76 EpochTime = 56.241 (s) Losses = ['0.2580', '91.5004'] lr = 0.000425
+2023-09-20 16:25:09,955 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 76  acc = 92.4230
+2023-09-20 16:25:10,369 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 16:26:06,677 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 77 EpochTime = 56.307 (s) Losses = ['0.2446', '91.7549'] lr = 0.000423
+2023-09-20 16:26:16,711 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 77  acc = 92.0989
+2023-09-20 16:26:17,160 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 16:27:13,432 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 78 EpochTime = 56.270 (s) Losses = ['0.2491', '91.6938'] lr = 0.000421
+2023-09-20 16:27:23,440 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 78  acc = 91.9773
+2023-09-20 16:27:23,905 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 16:28:20,294 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 79 EpochTime = 56.388 (s) Losses = ['0.2587', '91.3070'] lr = 0.000419
+2023-09-20 16:28:30,291 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 79  acc = 92.0178
+2023-09-20 16:28:30,755 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 16:29:27,010 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 80 EpochTime = 56.254 (s) Losses = ['0.2469', '91.6327'] lr = 0.000417
+2023-09-20 16:29:37,100 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 80  acc = 91.0454
+2023-09-20 16:29:37,520 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 16:30:33,824 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 81 EpochTime = 56.302 (s) Losses = ['0.2628', '91.2154'] lr = 0.000415
+2023-09-20 16:30:43,845 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 81  acc = 92.7066
+2023-09-20 16:30:44,311 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 16:31:40,569 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 82 EpochTime = 56.256 (s) Losses = ['0.2500', '91.6429'] lr = 0.000414
+2023-09-20 16:31:50,566 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 82  acc = 92.3015
+2023-09-20 16:31:51,028 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 16:32:47,308 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 83 EpochTime = 56.278 (s) Losses = ['0.2518', '91.5717'] lr = 0.000412
+2023-09-20 16:32:57,371 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 83  acc = 91.6937
+2023-09-20 16:32:57,842 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 16:33:54,071 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 84 EpochTime = 56.227 (s) Losses = ['0.2500', '91.9381'] lr = 0.000410
+2023-09-20 16:34:04,078 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 84  acc = 91.6532
+2023-09-20 16:34:04,543 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 16:35:01,009 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 85 EpochTime = 56.464 (s) Losses = ['0.2469', '91.7243'] lr = 0.000408
+2023-09-20 16:35:11,075 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 85  acc = 92.6256
+2023-09-20 16:35:11,499 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 16:36:07,884 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 86 EpochTime = 56.382 (s) Losses = ['0.2340', '92.0501'] lr = 0.000405
+2023-09-20 16:36:17,857 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 86  acc = 92.3825
+2023-09-20 16:36:18,323 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 16:37:14,645 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 87 EpochTime = 56.320 (s) Losses = ['0.2473', '91.7549'] lr = 0.000403
+2023-09-20 16:37:24,628 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 87  acc = 91.7342
+2023-09-20 16:37:25,067 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 16:38:21,300 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 88 EpochTime = 56.232 (s) Losses = ['0.2452', '91.4800'] lr = 0.000401
+2023-09-20 16:38:31,301 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 88  acc = 91.6532
+2023-09-20 16:38:31,755 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 16:39:27,982 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 89 EpochTime = 56.225 (s) Losses = ['0.2470', '92.0297'] lr = 0.000399
+2023-09-20 16:39:37,958 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 89  acc = 92.1799
+2023-09-20 16:39:38,415 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 16:40:34,640 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 90 EpochTime = 56.224 (s) Losses = ['0.2469', '91.7854'] lr = 0.000397
+2023-09-20 16:40:44,680 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 90  acc = 92.6256
+2023-09-20 16:40:45,168 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 16:41:41,416 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 91 EpochTime = 56.246 (s) Losses = ['0.2419', '92.1722'] lr = 0.000395
+2023-09-20 16:41:51,415 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 91  acc = 92.3825
+2023-09-20 16:41:51,871 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 16:42:48,194 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 92 EpochTime = 56.321 (s) Losses = ['0.2400', '92.0501'] lr = 0.000393
+2023-09-20 16:42:58,204 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 92  acc = 92.4230
+2023-09-20 16:42:58,635 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 16:43:55,001 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 93 EpochTime = 56.364 (s) Losses = ['0.2359', '92.3249'] lr = 0.000391
+2023-09-20 16:44:05,027 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 93  acc = 92.3825
+2023-09-20 16:44:05,480 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 16:45:01,731 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 94 EpochTime = 56.250 (s) Losses = ['0.2406', '92.0908'] lr = 0.000389
+2023-09-20 16:45:11,724 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 94  acc = 91.8152
+2023-09-20 16:45:12,193 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 16:46:08,457 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 95 EpochTime = 56.263 (s) Losses = ['0.2309', '92.1621'] lr = 0.000386
+2023-09-20 16:46:18,506 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 95  acc = 92.2609
+2023-09-20 16:46:18,928 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 16:47:15,227 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 96 EpochTime = 56.298 (s) Losses = ['0.2486', '91.8160'] lr = 0.000384
+2023-09-20 16:47:25,254 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 96  acc = 92.0178
+2023-09-20 16:47:25,666 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 16:48:22,035 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 97 EpochTime = 56.367 (s) Losses = ['0.2332', '92.0908'] lr = 0.000382
+2023-09-20 16:48:32,013 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 97  acc = 92.5041
+2023-09-20 16:48:32,435 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 16:49:28,650 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 98 EpochTime = 56.214 (s) Losses = ['0.2347', '92.1213'] lr = 0.000380
+2023-09-20 16:49:38,656 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 98  acc = 92.1799
+2023-09-20 16:49:39,098 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 16:50:35,306 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 99 EpochTime = 56.206 (s) Losses = ['0.2320', '92.0501'] lr = 0.000378
+2023-09-20 16:50:45,283 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 99  acc = 92.3420
+2023-09-20 16:50:45,745 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 16:51:41,979 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 100 EpochTime = 56.233 (s) Losses = ['0.2388', '92.1824'] lr = 0.000375
+2023-09-20 16:51:51,945 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 100  acc = 92.0989
+2023-09-20 16:51:52,503 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 16:52:48,706 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 101 EpochTime = 56.201 (s) Losses = ['0.2281', '92.2842'] lr = 0.000373
+2023-09-20 16:52:58,663 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 101  acc = 92.8282
+2023-09-20 16:52:59,144 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 16:53:55,419 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 102 EpochTime = 56.274 (s) Losses = ['0.2306', '92.2333'] lr = 0.000371
+2023-09-20 16:54:05,407 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 102  acc = 92.4230
+2023-09-20 16:54:05,935 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 16:55:02,382 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 103 EpochTime = 56.445 (s) Losses = ['0.2257', '92.3249'] lr = 0.000368
+2023-09-20 16:55:12,357 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 103  acc = 92.4635
+2023-09-20 16:55:12,880 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 16:56:09,171 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 104 EpochTime = 56.289 (s) Losses = ['0.2409', '92.2129'] lr = 0.000366
+2023-09-20 16:56:19,196 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 104  acc = 92.1394
+2023-09-20 16:56:19,560 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 16:57:15,841 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 105 EpochTime = 56.280 (s) Losses = ['0.2350', '92.1621'] lr = 0.000364
+2023-09-20 16:57:25,821 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 105  acc = 91.7342
+2023-09-20 16:57:26,276 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 16:58:22,503 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 106 EpochTime = 56.225 (s) Losses = ['0.2268', '92.4572'] lr = 0.000361
+2023-09-20 16:58:32,532 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 106  acc = 91.7747
+2023-09-20 16:58:33,010 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 16:59:29,235 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 107 EpochTime = 56.223 (s) Losses = ['0.2211', '92.7015'] lr = 0.000359
+2023-09-20 16:59:39,312 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 107  acc = 92.3420
+2023-09-20 16:59:39,815 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 17:00:36,056 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 108 EpochTime = 56.239 (s) Losses = ['0.2203', '92.4878'] lr = 0.000357
+2023-09-20 17:00:46,127 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 108  acc = 92.0583
+2023-09-20 17:00:46,619 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 17:01:42,894 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 109 EpochTime = 56.273 (s) Losses = ['0.2245', '92.2537'] lr = 0.000354
+2023-09-20 17:01:52,923 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 109  acc = 92.1394
+2023-09-20 17:01:53,369 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 17:02:49,809 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 110 EpochTime = 56.438 (s) Losses = ['0.2217', '92.5998'] lr = 0.000352
+2023-09-20 17:02:59,846 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 110  acc = 91.8963
+2023-09-20 17:03:00,310 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 17:03:56,603 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 111 EpochTime = 56.292 (s) Losses = ['0.2256', '92.3147'] lr = 0.000350
+2023-09-20 17:04:06,691 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 111  acc = 92.4230
+2023-09-20 17:04:07,112 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 17:05:03,635 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 112 EpochTime = 56.522 (s) Losses = ['0.2138', '92.8135'] lr = 0.000347
+2023-09-20 17:05:13,685 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 112  acc = 91.9773
+2023-09-20 17:05:14,140 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 17:06:10,391 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 113 EpochTime = 56.250 (s) Losses = ['0.2128', '92.8848'] lr = 0.000345
+2023-09-20 17:06:20,425 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 113  acc = 92.2609
+2023-09-20 17:06:20,876 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 17:07:17,189 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 114 EpochTime = 56.311 (s) Losses = ['0.2120', '92.7423'] lr = 0.000342
+2023-09-20 17:07:27,229 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 114  acc = 92.3420
+2023-09-20 17:07:27,644 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 17:08:24,039 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 115 EpochTime = 56.393 (s) Losses = ['0.2189', '92.6812'] lr = 0.000340
+2023-09-20 17:08:34,070 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 115  acc = 92.0989
+2023-09-20 17:08:34,480 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 17:09:30,765 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 116 EpochTime = 56.284 (s) Losses = ['0.2217', '92.3249'] lr = 0.000337
+2023-09-20 17:09:40,799 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 116  acc = 92.0989
+2023-09-20 17:09:41,316 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 17:10:37,645 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 117 EpochTime = 56.327 (s) Losses = ['0.2258', '92.3656'] lr = 0.000335
+2023-09-20 17:10:47,697 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 117  acc = 91.7747
+2023-09-20 17:10:48,159 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 17:11:44,466 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 118 EpochTime = 56.305 (s) Losses = ['0.2217', '92.5387'] lr = 0.000333
+2023-09-20 17:11:54,528 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 118  acc = 91.6126
+2023-09-20 17:11:54,999 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 17:12:51,359 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 119 EpochTime = 56.359 (s) Losses = ['0.2148', '92.6914'] lr = 0.000330
+2023-09-20 17:13:01,448 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 119  acc = 92.9903
+2023-09-20 17:13:01,903 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-20 17:13:01,903 - finetune_modelnet_non_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-20 17:13:02,335 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 17:13:58,708 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 120 EpochTime = 56.371 (s) Losses = ['0.2205', '92.5896'] lr = 0.000328
+2023-09-20 17:14:08,936 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 120  acc = 92.0583
+2023-09-20 17:14:09,375 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 17:15:05,760 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 121 EpochTime = 56.384 (s) Losses = ['0.2156', '92.5794'] lr = 0.000325
+2023-09-20 17:15:15,841 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 121  acc = 92.2609
+2023-09-20 17:15:16,307 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 17:16:12,778 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 122 EpochTime = 56.470 (s) Losses = ['0.2136', '92.8135'] lr = 0.000323
+2023-09-20 17:16:22,822 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 122  acc = 92.1799
+2023-09-20 17:16:23,291 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 17:17:19,763 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 123 EpochTime = 56.471 (s) Losses = ['0.2176', '92.7117'] lr = 0.000320
+2023-09-20 17:17:29,823 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 123  acc = 92.1799
+2023-09-20 17:17:30,298 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 17:18:26,595 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 124 EpochTime = 56.296 (s) Losses = ['0.2181', '92.3249'] lr = 0.000318
+2023-09-20 17:18:36,629 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 124  acc = 92.5446
+2023-09-20 17:18:37,103 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 17:19:33,440 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 125 EpochTime = 56.335 (s) Losses = ['0.2104', '92.8033'] lr = 0.000315
+2023-09-20 17:19:43,509 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 125  acc = 92.0989
+2023-09-20 17:19:43,988 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 17:20:40,291 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 126 EpochTime = 56.302 (s) Losses = ['0.2188', '92.7626'] lr = 0.000313
+2023-09-20 17:20:50,337 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 126  acc = 92.3015
+2023-09-20 17:20:50,795 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 17:21:47,208 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 127 EpochTime = 56.411 (s) Losses = ['0.2205', '92.5692'] lr = 0.000310
+2023-09-20 17:21:57,273 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 127  acc = 92.2204
+2023-09-20 17:21:57,731 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 17:22:54,266 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 128 EpochTime = 56.534 (s) Losses = ['0.2022', '93.2919'] lr = 0.000307
+2023-09-20 17:23:04,412 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 128  acc = 91.9773
+2023-09-20 17:23:04,911 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 17:24:01,333 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 129 EpochTime = 56.420 (s) Losses = ['0.2221', '92.5387'] lr = 0.000305
+2023-09-20 17:24:11,414 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 129  acc = 92.2609
+2023-09-20 17:24:11,899 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 17:25:08,279 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 130 EpochTime = 56.378 (s) Losses = ['0.1987', '93.2919'] lr = 0.000302
+2023-09-20 17:25:18,344 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 130  acc = 92.0583
+2023-09-20 17:25:18,808 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 17:26:15,522 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 131 EpochTime = 56.713 (s) Losses = ['0.2049', '93.2105'] lr = 0.000300
+2023-09-20 17:26:25,563 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 131  acc = 92.4230
+2023-09-20 17:26:26,027 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 17:27:22,527 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 132 EpochTime = 56.499 (s) Losses = ['0.1979', '93.2309'] lr = 0.000297
+2023-09-20 17:27:32,672 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 132  acc = 92.3825
+2023-09-20 17:27:33,132 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 17:28:29,780 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 133 EpochTime = 56.646 (s) Losses = ['0.2141', '92.8135'] lr = 0.000295
+2023-09-20 17:28:39,820 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 133  acc = 92.2204
+2023-09-20 17:28:40,269 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 17:29:36,722 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 134 EpochTime = 56.451 (s) Losses = ['0.1987', '93.2003'] lr = 0.000292
+2023-09-20 17:29:46,763 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 134  acc = 92.6661
+2023-09-20 17:29:47,239 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 17:30:43,679 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 135 EpochTime = 56.438 (s) Losses = ['0.2046', '93.1494'] lr = 0.000290
+2023-09-20 17:30:53,750 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 135  acc = 91.9368
+2023-09-20 17:30:54,216 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 17:31:50,745 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 136 EpochTime = 56.528 (s) Losses = ['0.2095', '92.9357'] lr = 0.000287
+2023-09-20 17:32:00,808 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 136  acc = 92.7066
+2023-09-20 17:32:01,308 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 17:32:58,012 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 137 EpochTime = 56.702 (s) Losses = ['0.2104', '92.6201'] lr = 0.000284
+2023-09-20 17:33:08,128 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 137  acc = 92.4230
+2023-09-20 17:33:08,620 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 17:34:04,956 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 138 EpochTime = 56.334 (s) Losses = ['0.2034', '92.9662'] lr = 0.000282
+2023-09-20 17:34:15,050 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 138  acc = 92.2609
+2023-09-20 17:34:15,538 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 17:35:11,853 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 139 EpochTime = 56.314 (s) Losses = ['0.2049', '93.2614'] lr = 0.000279
+2023-09-20 17:35:21,978 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 139  acc = 91.9773
+2023-09-20 17:35:22,444 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 17:36:18,791 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 140 EpochTime = 56.345 (s) Losses = ['0.1917', '93.3632'] lr = 0.000277
+2023-09-20 17:36:28,908 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 140  acc = 91.6126
+2023-09-20 17:36:29,367 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 17:37:25,672 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 141 EpochTime = 56.303 (s) Losses = ['0.1969', '93.3428'] lr = 0.000274
+2023-09-20 17:37:35,746 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 141  acc = 92.3015
+2023-09-20 17:37:36,229 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 17:38:32,630 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 142 EpochTime = 56.399 (s) Losses = ['0.2018', '92.9662'] lr = 0.000271
+2023-09-20 17:38:42,697 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 142  acc = 91.7342
+2023-09-20 17:38:43,163 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 17:39:39,548 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 143 EpochTime = 56.383 (s) Losses = ['0.2021', '93.4039'] lr = 0.000269
+2023-09-20 17:39:49,613 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 143  acc = 92.6661
+2023-09-20 17:39:50,092 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 17:40:46,683 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 144 EpochTime = 56.590 (s) Losses = ['0.1977', '93.1800'] lr = 0.000266
+2023-09-20 17:40:56,758 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 144  acc = 91.8963
+2023-09-20 17:40:57,219 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 17:41:53,561 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 145 EpochTime = 56.341 (s) Losses = ['0.2031', '93.0069'] lr = 0.000264
+2023-09-20 17:42:03,617 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 145  acc = 92.7472
+2023-09-20 17:42:04,211 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 17:43:00,680 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 146 EpochTime = 56.468 (s) Losses = ['0.1932', '93.3428'] lr = 0.000261
+2023-09-20 17:43:10,741 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 146  acc = 92.4230
+2023-09-20 17:43:11,256 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 17:44:07,681 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 147 EpochTime = 56.424 (s) Losses = ['0.1940', '93.4141'] lr = 0.000258
+2023-09-20 17:44:17,736 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 147  acc = 92.0989
+2023-09-20 17:44:18,195 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 17:45:14,547 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 148 EpochTime = 56.351 (s) Losses = ['0.1930', '93.3937'] lr = 0.000256
+2023-09-20 17:45:24,613 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 148  acc = 92.2204
+2023-09-20 17:45:25,107 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 17:46:21,514 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 149 EpochTime = 56.405 (s) Losses = ['0.1893', '93.4446'] lr = 0.000253
+2023-09-20 17:46:31,603 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 149  acc = 92.5041
+2023-09-20 17:46:32,049 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 17:47:28,500 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 150 EpochTime = 56.448 (s) Losses = ['0.1931', '93.4243'] lr = 0.000251
+2023-09-20 17:47:38,606 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 150  acc = 92.1394
+2023-09-20 17:47:39,067 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 17:48:35,592 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 151 EpochTime = 56.523 (s) Losses = ['0.1940', '93.0985'] lr = 0.000248
+2023-09-20 17:48:45,670 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 151  acc = 92.4635
+2023-09-20 17:48:46,164 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 17:49:42,569 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 152 EpochTime = 56.404 (s) Losses = ['0.1864', '93.8416'] lr = 0.000245
+2023-09-20 17:49:52,626 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 152  acc = 92.0989
+2023-09-20 17:49:53,079 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 17:50:49,446 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 153 EpochTime = 56.366 (s) Losses = ['0.1869', '93.7093'] lr = 0.000243
+2023-09-20 17:50:59,567 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 153  acc = 92.3825
+2023-09-20 17:51:00,035 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 17:51:56,385 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 154 EpochTime = 56.349 (s) Losses = ['0.1903', '93.2818'] lr = 0.000240
+2023-09-20 17:52:06,509 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 154  acc = 92.0989
+2023-09-20 17:52:06,935 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 17:53:03,294 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 155 EpochTime = 56.358 (s) Losses = ['0.1991', '93.2818'] lr = 0.000237
+2023-09-20 17:53:13,355 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 155  acc = 92.2609
+2023-09-20 17:53:13,811 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 17:54:10,243 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 156 EpochTime = 56.430 (s) Losses = ['0.1851', '93.7296'] lr = 0.000235
+2023-09-20 17:54:20,334 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 156  acc = 91.9368
+2023-09-20 17:54:20,795 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 17:55:17,067 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 157 EpochTime = 56.271 (s) Losses = ['0.1909', '93.4853'] lr = 0.000232
+2023-09-20 17:55:27,146 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 157  acc = 92.9903
+2023-09-20 17:55:27,663 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 17:56:23,943 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 158 EpochTime = 56.279 (s) Losses = ['0.1944', '93.2410'] lr = 0.000230
+2023-09-20 17:56:33,992 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 158  acc = 92.3825
+2023-09-20 17:56:34,451 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 17:57:30,685 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 159 EpochTime = 56.233 (s) Losses = ['0.1924', '93.4955'] lr = 0.000227
+2023-09-20 17:57:40,731 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 159  acc = 91.9368
+2023-09-20 17:57:41,195 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 17:58:37,619 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 160 EpochTime = 56.422 (s) Losses = ['0.1766', '93.6380'] lr = 0.000224
+2023-09-20 17:58:47,675 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 160  acc = 91.6937
+2023-09-20 17:58:48,097 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 17:59:44,398 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 161 EpochTime = 56.299 (s) Losses = ['0.1812', '93.5362'] lr = 0.000222
+2023-09-20 17:59:54,474 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 161  acc = 92.4230
+2023-09-20 17:59:54,979 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 18:00:51,320 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 162 EpochTime = 56.339 (s) Losses = ['0.1850', '93.6075'] lr = 0.000219
+2023-09-20 18:01:01,408 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 162  acc = 92.5446
+2023-09-20 18:01:01,829 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 18:01:58,182 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 163 EpochTime = 56.352 (s) Losses = ['0.1788', '93.8925'] lr = 0.000217
+2023-09-20 18:02:08,225 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 163  acc = 92.3825
+2023-09-20 18:02:08,647 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 18:03:05,188 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 164 EpochTime = 56.537 (s) Losses = ['0.1696', '94.0961'] lr = 0.000214
+2023-09-20 18:03:15,236 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 164  acc = 92.6256
+2023-09-20 18:03:15,691 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 18:04:11,944 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 165 EpochTime = 56.251 (s) Losses = ['0.1837', '93.6177'] lr = 0.000211
+2023-09-20 18:04:22,010 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 165  acc = 92.1394
+2023-09-20 18:04:22,518 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 18:05:18,798 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 166 EpochTime = 56.278 (s) Losses = ['0.1911', '93.5159'] lr = 0.000209
+2023-09-20 18:05:28,890 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 166  acc = 92.2609
+2023-09-20 18:05:29,347 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 18:06:25,642 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 167 EpochTime = 56.294 (s) Losses = ['0.1837', '93.8111'] lr = 0.000206
+2023-09-20 18:06:35,685 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 167  acc = 91.7747
+2023-09-20 18:06:36,196 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 18:07:32,456 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 168 EpochTime = 56.258 (s) Losses = ['0.1798', '94.0147'] lr = 0.000204
+2023-09-20 18:07:42,617 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 168  acc = 92.7877
+2023-09-20 18:07:43,079 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 18:08:39,494 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 169 EpochTime = 56.414 (s) Losses = ['0.1847', '93.6584'] lr = 0.000201
+2023-09-20 18:08:49,582 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 169  acc = 91.9368
+2023-09-20 18:08:50,055 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 18:09:46,326 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 170 EpochTime = 56.270 (s) Losses = ['0.1715', '94.2997'] lr = 0.000199
+2023-09-20 18:09:56,392 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 170  acc = 92.4230
+2023-09-20 18:09:56,863 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 18:10:53,151 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 171 EpochTime = 56.287 (s) Losses = ['0.1786', '93.9841'] lr = 0.000196
+2023-09-20 18:11:03,200 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 171  acc = 92.5851
+2023-09-20 18:11:03,667 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 18:11:59,958 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 172 EpochTime = 56.290 (s) Losses = ['0.1845', '94.0554'] lr = 0.000194
+2023-09-20 18:12:10,012 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 172  acc = 92.2609
+2023-09-20 18:12:10,476 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 18:13:07,058 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 173 EpochTime = 56.581 (s) Losses = ['0.1669', '94.1673'] lr = 0.000191
+2023-09-20 18:13:17,122 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 173  acc = 92.3420
+2023-09-20 18:13:17,595 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 18:14:13,841 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 174 EpochTime = 56.244 (s) Losses = ['0.1783', '93.7805'] lr = 0.000188
+2023-09-20 18:14:23,938 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 174  acc = 92.0178
+2023-09-20 18:14:24,367 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 18:15:20,797 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 175 EpochTime = 56.428 (s) Losses = ['0.1848', '93.4548'] lr = 0.000186
+2023-09-20 18:15:30,963 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 175  acc = 91.9368
+2023-09-20 18:15:31,423 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 18:16:28,079 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 176 EpochTime = 56.654 (s) Losses = ['0.1766', '93.9943'] lr = 0.000183
+2023-09-20 18:16:38,115 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 176  acc = 92.3825
+2023-09-20 18:16:38,592 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 18:17:35,182 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 177 EpochTime = 56.589 (s) Losses = ['0.1747', '93.9332'] lr = 0.000181
+2023-09-20 18:17:45,237 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 177  acc = 92.2204
+2023-09-20 18:17:45,664 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 18:18:42,001 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 178 EpochTime = 56.335 (s) Losses = ['0.1752', '93.9129'] lr = 0.000178
+2023-09-20 18:18:52,063 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 178  acc = 92.1394
+2023-09-20 18:18:52,520 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 18:19:49,208 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 179 EpochTime = 56.686 (s) Losses = ['0.1823', '93.8416'] lr = 0.000176
+2023-09-20 18:19:59,341 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 179  acc = 92.0989
+2023-09-20 18:20:00,066 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 18:20:56,343 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 180 EpochTime = 56.275 (s) Losses = ['0.1768', '93.9841'] lr = 0.000173
+2023-09-20 18:21:06,433 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 180  acc = 92.4230
+2023-09-20 18:21:06,906 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 18:22:03,371 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 181 EpochTime = 56.463 (s) Losses = ['0.1769', '93.8620'] lr = 0.000171
+2023-09-20 18:22:13,427 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 181  acc = 91.6532
+2023-09-20 18:22:13,808 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 18:23:12,196 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 182 EpochTime = 58.387 (s) Losses = ['0.1669', '94.2386'] lr = 0.000168
+2023-09-20 18:23:25,403 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 182  acc = 92.6661
+2023-09-20 18:23:25,796 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 18:24:46,790 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 183 EpochTime = 80.992 (s) Losses = ['0.1644', '94.1266'] lr = 0.000166
+2023-09-20 18:24:59,687 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 183  acc = 91.8963
+2023-09-20 18:25:00,114 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 18:26:17,611 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 184 EpochTime = 77.496 (s) Losses = ['0.1583', '94.5134'] lr = 0.000164
+2023-09-20 18:26:27,682 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 184  acc = 92.0989
+2023-09-20 18:26:28,138 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 18:27:24,861 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 185 EpochTime = 56.721 (s) Losses = ['0.1623', '94.2997'] lr = 0.000161
+2023-09-20 18:27:34,931 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 185  acc = 92.3420
+2023-09-20 18:27:35,403 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 18:28:32,279 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 186 EpochTime = 56.875 (s) Losses = ['0.1620', '94.2386'] lr = 0.000159
+2023-09-20 18:28:42,333 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 186  acc = 92.2609
+2023-09-20 18:28:42,791 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 18:29:39,300 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 187 EpochTime = 56.507 (s) Losses = ['0.1701', '94.3099'] lr = 0.000156
+2023-09-20 18:29:49,364 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 187  acc = 91.8558
+2023-09-20 18:29:50,055 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 18:30:46,420 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 188 EpochTime = 56.364 (s) Losses = ['0.1648', '94.4320'] lr = 0.000154
+2023-09-20 18:30:56,435 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 188  acc = 91.8152
+2023-09-20 18:30:56,899 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 18:31:53,378 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 189 EpochTime = 56.477 (s) Losses = ['0.1747', '94.0452'] lr = 0.000151
+2023-09-20 18:32:03,426 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 189  acc = 92.0178
+2023-09-20 18:32:03,879 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 18:33:00,296 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 190 EpochTime = 56.415 (s) Losses = ['0.1626', '94.3200'] lr = 0.000149
+2023-09-20 18:33:10,355 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 190  acc = 91.8558
+2023-09-20 18:33:10,811 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 18:34:07,170 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 191 EpochTime = 56.357 (s) Losses = ['0.1653', '94.4320'] lr = 0.000147
+2023-09-20 18:34:17,262 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 191  acc = 92.1394
+2023-09-20 18:34:18,005 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 18:35:14,575 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 192 EpochTime = 56.568 (s) Losses = ['0.1642', '94.1164'] lr = 0.000144
+2023-09-20 18:35:24,676 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 192  acc = 91.7747
+2023-09-20 18:35:25,184 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 18:36:21,476 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 193 EpochTime = 56.290 (s) Losses = ['0.1710', '93.9943'] lr = 0.000142
+2023-09-20 18:36:31,537 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 193  acc = 91.8963
+2023-09-20 18:36:31,986 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 18:37:28,399 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 194 EpochTime = 56.411 (s) Losses = ['0.1693', '94.4829'] lr = 0.000140
+2023-09-20 18:37:38,466 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 194  acc = 92.3420
+2023-09-20 18:37:38,936 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 18:38:35,457 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 195 EpochTime = 56.519 (s) Losses = ['0.1650', '94.3506'] lr = 0.000137
+2023-09-20 18:38:45,574 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 195  acc = 92.2609
+2023-09-20 18:38:46,010 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 18:39:43,002 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 196 EpochTime = 56.990 (s) Losses = ['0.1616', '94.1572'] lr = 0.000135
+2023-09-20 18:39:53,075 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 196  acc = 92.0178
+2023-09-20 18:39:53,519 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 18:40:50,299 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 197 EpochTime = 56.779 (s) Losses = ['0.1597', '94.3302'] lr = 0.000133
+2023-09-20 18:41:00,458 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 197  acc = 91.9773
+2023-09-20 18:41:00,897 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 18:41:57,648 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 198 EpochTime = 56.750 (s) Losses = ['0.1602', '94.3099'] lr = 0.000130
+2023-09-20 18:42:07,730 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 198  acc = 91.9773
+2023-09-20 18:42:08,201 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 18:43:04,957 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 199 EpochTime = 56.754 (s) Losses = ['0.1661', '94.2691'] lr = 0.000128
+2023-09-20 18:43:15,034 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 199  acc = 92.0583
+2023-09-20 18:43:15,476 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 18:44:12,344 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 200 EpochTime = 56.866 (s) Losses = ['0.1629', '94.5338'] lr = 0.000126
+2023-09-20 18:44:22,467 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 200  acc = 92.1394
+2023-09-20 18:44:22,948 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 18:45:19,863 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 201 EpochTime = 56.913 (s) Losses = ['0.1580', '94.3913'] lr = 0.000123
+2023-09-20 18:45:30,013 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 201  acc = 92.5446
+2023-09-20 18:45:30,516 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 18:46:27,241 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 202 EpochTime = 56.724 (s) Losses = ['0.1518', '94.7272'] lr = 0.000121
+2023-09-20 18:46:37,350 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 202  acc = 92.5041
+2023-09-20 18:46:37,819 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 18:47:34,602 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 203 EpochTime = 56.781 (s) Losses = ['0.1572', '94.6050'] lr = 0.000119
+2023-09-20 18:47:45,000 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 203  acc = 91.9368
+2023-09-20 18:47:45,501 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 18:49:12,860 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 204 EpochTime = 87.357 (s) Losses = ['0.1503', '94.7068'] lr = 0.000117
+2023-09-20 18:49:25,793 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 204  acc = 92.2204
+2023-09-20 18:49:26,293 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 18:50:48,364 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 205 EpochTime = 82.070 (s) Losses = ['0.1599', '94.4727'] lr = 0.000115
+2023-09-20 18:50:59,011 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 205  acc = 92.0178
+2023-09-20 18:50:59,455 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 18:51:56,214 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 206 EpochTime = 56.757 (s) Losses = ['0.1622', '94.3506'] lr = 0.000112
+2023-09-20 18:52:06,306 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 206  acc = 92.2609
+2023-09-20 18:52:06,771 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 18:53:03,505 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 207 EpochTime = 56.732 (s) Losses = ['0.1583', '94.5134'] lr = 0.000110
+2023-09-20 18:53:13,580 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 207  acc = 92.5446
+2023-09-20 18:53:14,055 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 18:54:10,720 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 208 EpochTime = 56.663 (s) Losses = ['0.1663', '94.2386'] lr = 0.000108
+2023-09-20 18:54:20,812 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 208  acc = 92.3015
+2023-09-20 18:54:21,303 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 18:55:18,103 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 209 EpochTime = 56.798 (s) Losses = ['0.1613', '94.5134'] lr = 0.000106
+2023-09-20 18:55:28,312 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 209  acc = 91.9773
+2023-09-20 18:55:28,805 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 18:56:25,711 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 210 EpochTime = 56.905 (s) Losses = ['0.1450', '95.2158'] lr = 0.000104
+2023-09-20 18:56:35,820 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 210  acc = 92.2204
+2023-09-20 18:56:36,263 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 18:57:33,020 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 211 EpochTime = 56.755 (s) Losses = ['0.1527', '94.7781'] lr = 0.000102
+2023-09-20 18:57:43,112 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 211  acc = 92.3825
+2023-09-20 18:57:43,528 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 18:58:39,899 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 212 EpochTime = 56.370 (s) Losses = ['0.1613', '94.3913'] lr = 0.000100
+2023-09-20 18:58:50,017 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 212  acc = 92.0583
+2023-09-20 18:58:50,550 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 18:59:47,537 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 213 EpochTime = 56.984 (s) Losses = ['0.1518', '94.6865'] lr = 0.000098
+2023-09-20 18:59:57,600 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 213  acc = 92.0989
+2023-09-20 18:59:58,067 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 19:00:54,762 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 214 EpochTime = 56.694 (s) Losses = ['0.1471', '94.9715'] lr = 0.000096
+2023-09-20 19:01:04,863 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 214  acc = 92.1799
+2023-09-20 19:01:05,316 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 19:02:01,778 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 215 EpochTime = 56.461 (s) Losses = ['0.1490', '94.9308'] lr = 0.000093
+2023-09-20 19:02:11,904 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 215  acc = 92.3015
+2023-09-20 19:02:12,364 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 19:03:09,027 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 216 EpochTime = 56.662 (s) Losses = ['0.1543', '94.9308'] lr = 0.000091
+2023-09-20 19:03:19,090 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 216  acc = 92.1394
+2023-09-20 19:03:19,604 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 19:04:16,366 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 217 EpochTime = 56.761 (s) Losses = ['0.1554', '94.8901'] lr = 0.000089
+2023-09-20 19:04:26,444 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 217  acc = 92.1394
+2023-09-20 19:04:26,956 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 19:05:23,799 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 218 EpochTime = 56.841 (s) Losses = ['0.1480', '94.9715'] lr = 0.000087
+2023-09-20 19:05:33,918 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 218  acc = 92.5446
+2023-09-20 19:05:34,436 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 19:06:31,307 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 219 EpochTime = 56.869 (s) Losses = ['0.1414', '95.1140'] lr = 0.000086
+2023-09-20 19:06:41,462 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 219  acc = 91.9773
+2023-09-20 19:06:41,960 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 19:07:38,668 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 220 EpochTime = 56.705 (s) Losses = ['0.1611', '94.5847'] lr = 0.000084
+2023-09-20 19:07:48,746 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 220  acc = 92.5446
+2023-09-20 19:07:49,171 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 19:08:45,733 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 221 EpochTime = 56.561 (s) Losses = ['0.1492', '95.2158'] lr = 0.000082
+2023-09-20 19:08:55,803 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 221  acc = 92.6256
+2023-09-20 19:08:56,313 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 19:09:53,329 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 222 EpochTime = 57.015 (s) Losses = ['0.1549', '94.8086'] lr = 0.000080
+2023-09-20 19:10:03,458 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 222  acc = 92.4635
+2023-09-20 19:10:03,896 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 19:11:00,620 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 223 EpochTime = 56.722 (s) Losses = ['0.1513', '94.6050'] lr = 0.000078
+2023-09-20 19:11:10,744 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 223  acc = 92.4230
+2023-09-20 19:11:11,199 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 19:12:08,154 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 224 EpochTime = 56.953 (s) Losses = ['0.1447', '95.0122'] lr = 0.000076
+2023-09-20 19:12:18,262 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 224  acc = 91.8963
+2023-09-20 19:12:18,716 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 19:13:15,887 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 225 EpochTime = 57.169 (s) Losses = ['0.1500', '94.7679'] lr = 0.000074
+2023-09-20 19:13:25,991 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 225  acc = 92.2204
+2023-09-20 19:13:26,418 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 19:14:23,104 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 226 EpochTime = 56.685 (s) Losses = ['0.1452', '95.2158'] lr = 0.000072
+2023-09-20 19:14:33,197 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 226  acc = 92.1394
+2023-09-20 19:14:33,660 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 19:15:30,585 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 227 EpochTime = 56.924 (s) Losses = ['0.1504', '94.7374'] lr = 0.000070
+2023-09-20 19:15:40,691 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 227  acc = 92.1394
+2023-09-20 19:15:41,128 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 19:16:37,856 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 228 EpochTime = 56.727 (s) Losses = ['0.1452', '95.0529'] lr = 0.000069
+2023-09-20 19:16:48,070 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 228  acc = 92.1394
+2023-09-20 19:16:48,544 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 19:17:45,827 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 229 EpochTime = 57.282 (s) Losses = ['0.1389', '95.0020'] lr = 0.000067
+2023-09-20 19:17:55,926 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 229  acc = 92.0583
+2023-09-20 19:17:56,746 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 19:18:53,826 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 230 EpochTime = 57.078 (s) Losses = ['0.1466', '94.9308'] lr = 0.000065
+2023-09-20 19:19:03,948 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 230  acc = 92.2609
+2023-09-20 19:19:04,412 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 19:20:01,279 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 231 EpochTime = 56.866 (s) Losses = ['0.1443', '95.2769'] lr = 0.000063
+2023-09-20 19:20:11,391 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 231  acc = 92.2609
+2023-09-20 19:20:11,834 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 19:21:08,887 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 232 EpochTime = 57.051 (s) Losses = ['0.1468', '95.0428'] lr = 0.000062
+2023-09-20 19:21:19,024 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 232  acc = 92.1394
+2023-09-20 19:21:19,515 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 19:22:16,203 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 233 EpochTime = 56.687 (s) Losses = ['0.1410', '95.1547'] lr = 0.000060
+2023-09-20 19:22:26,316 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 233  acc = 92.3015
+2023-09-20 19:22:26,801 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 19:23:23,669 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 234 EpochTime = 56.867 (s) Losses = ['0.1463', '94.8799'] lr = 0.000058
+2023-09-20 19:23:33,869 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 234  acc = 92.0178
+2023-09-20 19:23:34,299 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 19:24:31,140 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 235 EpochTime = 56.839 (s) Losses = ['0.1467', '95.0326'] lr = 0.000057
+2023-09-20 19:24:41,277 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 235  acc = 92.1394
+2023-09-20 19:24:41,711 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 19:25:38,422 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 236 EpochTime = 56.709 (s) Losses = ['0.1389', '95.1344'] lr = 0.000055
+2023-09-20 19:25:48,531 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 236  acc = 92.0989
+2023-09-20 19:25:49,007 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 19:26:45,929 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 237 EpochTime = 56.920 (s) Losses = ['0.1461', '94.8290'] lr = 0.000053
+2023-09-20 19:26:56,044 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 237  acc = 92.0178
+2023-09-20 19:26:56,508 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 19:27:53,515 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 238 EpochTime = 57.006 (s) Losses = ['0.1395', '95.0122'] lr = 0.000052
+2023-09-20 19:28:03,731 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 238  acc = 92.1799
+2023-09-20 19:28:04,207 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 19:29:00,912 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 239 EpochTime = 56.702 (s) Losses = ['0.1453', '94.8901'] lr = 0.000050
+2023-09-20 19:29:11,020 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 239  acc = 91.9773
+2023-09-20 19:29:11,498 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 19:30:08,262 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 240 EpochTime = 56.763 (s) Losses = ['0.1335', '95.2056'] lr = 0.000049
+2023-09-20 19:30:18,426 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 240  acc = 92.1799
+2023-09-20 19:30:18,960 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 19:31:15,620 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 241 EpochTime = 56.659 (s) Losses = ['0.1366', '95.1445'] lr = 0.000047
+2023-09-20 19:31:25,726 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 241  acc = 92.3825
+2023-09-20 19:31:26,262 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 19:32:23,111 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 242 EpochTime = 56.847 (s) Losses = ['0.1429', '95.0936'] lr = 0.000046
+2023-09-20 19:32:33,261 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 242  acc = 92.0989
+2023-09-20 19:32:33,751 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 19:33:30,430 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 243 EpochTime = 56.677 (s) Losses = ['0.1403', '95.0631'] lr = 0.000044
+2023-09-20 19:33:40,523 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 243  acc = 92.3015
+2023-09-20 19:33:41,036 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 19:34:38,215 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 244 EpochTime = 57.177 (s) Losses = ['0.1332', '95.5415'] lr = 0.000043
+2023-09-20 19:34:48,363 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 244  acc = 92.5851
+2023-09-20 19:34:48,913 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 19:35:45,847 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 245 EpochTime = 56.932 (s) Losses = ['0.1357', '95.2463'] lr = 0.000041
+2023-09-20 19:35:55,960 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 245  acc = 92.1799
+2023-09-20 19:35:56,483 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 19:36:53,322 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 246 EpochTime = 56.838 (s) Losses = ['0.1443', '94.9919'] lr = 0.000040
+2023-09-20 19:37:03,455 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 246  acc = 92.4230
+2023-09-20 19:37:03,947 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 19:38:01,334 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 247 EpochTime = 57.385 (s) Losses = ['0.1330', '95.2565'] lr = 0.000038
+2023-09-20 19:38:11,438 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 247  acc = 92.2204
+2023-09-20 19:38:11,900 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 19:39:08,706 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 248 EpochTime = 56.804 (s) Losses = ['0.1348', '95.2463'] lr = 0.000037
+2023-09-20 19:39:18,789 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 248  acc = 92.4635
+2023-09-20 19:39:19,272 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 19:40:16,066 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 249 EpochTime = 56.793 (s) Losses = ['0.1419', '94.9817'] lr = 0.000036
+2023-09-20 19:40:26,148 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 249  acc = 92.4230
+2023-09-20 19:40:26,629 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 19:41:23,380 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 250 EpochTime = 56.749 (s) Losses = ['0.1361', '95.2667'] lr = 0.000034
+2023-09-20 19:41:33,492 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 250  acc = 92.2204
+2023-09-20 19:41:34,027 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 19:42:30,762 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 251 EpochTime = 56.734 (s) Losses = ['0.1315', '95.4703'] lr = 0.000033
+2023-09-20 19:42:40,834 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 251  acc = 92.2609
+2023-09-20 19:42:41,288 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 19:43:38,152 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 252 EpochTime = 56.863 (s) Losses = ['0.1475', '95.0020'] lr = 0.000032
+2023-09-20 19:43:48,232 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 252  acc = 92.0989
+2023-09-20 19:43:48,689 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 19:44:45,511 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 253 EpochTime = 56.821 (s) Losses = ['0.1366', '94.9104'] lr = 0.000031
+2023-09-20 19:44:55,631 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 253  acc = 92.2609
+2023-09-20 19:44:56,186 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 19:45:53,006 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 254 EpochTime = 56.818 (s) Losses = ['0.1423', '94.8188'] lr = 0.000029
+2023-09-20 19:46:03,108 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 254  acc = 92.1799
+2023-09-20 19:46:03,634 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 19:47:00,328 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 255 EpochTime = 56.693 (s) Losses = ['0.1354', '95.2667'] lr = 0.000028
+2023-09-20 19:47:10,409 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 255  acc = 92.2609
+2023-09-20 19:47:10,909 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 19:48:07,741 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 256 EpochTime = 56.830 (s) Losses = ['0.1382', '95.1853'] lr = 0.000027
+2023-09-20 19:48:17,982 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 256  acc = 92.5446
+2023-09-20 19:48:18,514 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 19:49:15,503 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 257 EpochTime = 56.988 (s) Losses = ['0.1289', '95.4703'] lr = 0.000026
+2023-09-20 19:49:25,630 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 257  acc = 92.4230
+2023-09-20 19:49:26,150 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 19:50:22,937 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 258 EpochTime = 56.785 (s) Losses = ['0.1383', '95.1445'] lr = 0.000025
+2023-09-20 19:50:33,065 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 258  acc = 92.2204
+2023-09-20 19:50:33,622 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 19:51:30,779 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 259 EpochTime = 57.155 (s) Losses = ['0.1337', '95.6535'] lr = 0.000024
+2023-09-20 19:51:40,866 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 259  acc = 92.2609
+2023-09-20 19:51:41,346 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 19:52:38,087 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 260 EpochTime = 56.739 (s) Losses = ['0.1392', '94.9715'] lr = 0.000023
+2023-09-20 19:52:48,189 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 260  acc = 92.3420
+2023-09-20 19:52:48,649 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 19:53:45,505 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 261 EpochTime = 56.854 (s) Losses = ['0.1401', '95.2463'] lr = 0.000022
+2023-09-20 19:53:55,644 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 261  acc = 92.4230
+2023-09-20 19:53:56,103 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 19:54:53,096 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 262 EpochTime = 56.991 (s) Losses = ['0.1367', '95.1445'] lr = 0.000020
+2023-09-20 19:55:03,311 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 262  acc = 92.2204
+2023-09-20 19:55:03,769 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 19:56:00,699 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 263 EpochTime = 56.928 (s) Losses = ['0.1426', '94.9104'] lr = 0.000019
+2023-09-20 19:56:10,802 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 263  acc = 92.5041
+2023-09-20 19:56:11,284 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 19:57:08,223 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 264 EpochTime = 56.938 (s) Losses = ['0.1373', '95.2362'] lr = 0.000019
+2023-09-20 19:57:18,329 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 264  acc = 92.4635
+2023-09-20 19:57:18,803 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 19:58:15,720 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 265 EpochTime = 56.916 (s) Losses = ['0.1359', '95.3278'] lr = 0.000018
+2023-09-20 19:58:25,816 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 265  acc = 92.5041
+2023-09-20 19:58:26,320 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 19:59:23,269 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 266 EpochTime = 56.947 (s) Losses = ['0.1385', '95.2056'] lr = 0.000017
+2023-09-20 19:59:33,401 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 266  acc = 92.0583
+2023-09-20 19:59:33,856 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 20:00:30,695 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 267 EpochTime = 56.837 (s) Losses = ['0.1272', '95.5822'] lr = 0.000016
+2023-09-20 20:00:40,797 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 267  acc = 92.1394
+2023-09-20 20:00:41,302 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 20:01:38,141 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 268 EpochTime = 56.838 (s) Losses = ['0.1384', '95.2565'] lr = 0.000015
+2023-09-20 20:01:48,227 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 268  acc = 92.2609
+2023-09-20 20:01:48,711 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 20:02:45,546 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 269 EpochTime = 56.833 (s) Losses = ['0.1337', '95.5517'] lr = 0.000014
+2023-09-20 20:02:55,663 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 269  acc = 92.0583
+2023-09-20 20:02:56,127 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 20:03:52,858 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 270 EpochTime = 56.730 (s) Losses = ['0.1351', '95.4703'] lr = 0.000013
+2023-09-20 20:04:02,984 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 270  acc = 92.2204
+2023-09-20 20:04:03,492 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 20:04:59,899 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 271 EpochTime = 56.405 (s) Losses = ['0.1411', '94.9511'] lr = 0.000012
+2023-09-20 20:05:09,981 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 271  acc = 92.3015
+2023-09-20 20:05:10,459 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 20:06:06,866 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 272 EpochTime = 56.405 (s) Losses = ['0.1279', '95.4499'] lr = 0.000012
+2023-09-20 20:06:16,960 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 272  acc = 92.7066
+2023-09-20 20:06:17,448 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 20:07:13,871 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 273 EpochTime = 56.422 (s) Losses = ['0.1404', '95.1445'] lr = 0.000011
+2023-09-20 20:07:24,002 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 273  acc = 92.3420
+2023-09-20 20:07:24,447 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 20:08:20,966 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 274 EpochTime = 56.518 (s) Losses = ['0.1347', '95.1751'] lr = 0.000010
+2023-09-20 20:08:31,081 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 274  acc = 92.1394
+2023-09-20 20:08:31,590 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 20:09:28,024 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 275 EpochTime = 56.433 (s) Losses = ['0.1412', '95.0224'] lr = 0.000010
+2023-09-20 20:09:38,112 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 275  acc = 92.2609
+2023-09-20 20:09:38,625 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 20:10:35,375 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 276 EpochTime = 56.748 (s) Losses = ['0.1244', '95.4194'] lr = 0.000009
+2023-09-20 20:10:45,471 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 276  acc = 92.2204
+2023-09-20 20:10:45,952 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 20:11:42,611 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 277 EpochTime = 56.658 (s) Losses = ['0.1431', '95.0122'] lr = 0.000008
+2023-09-20 20:11:52,719 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 277  acc = 92.5041
+2023-09-20 20:11:53,163 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 20:12:49,846 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 278 EpochTime = 56.681 (s) Losses = ['0.1296', '95.3074'] lr = 0.000008
+2023-09-20 20:12:59,965 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 278  acc = 92.5041
+2023-09-20 20:13:00,423 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 20:13:56,940 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 279 EpochTime = 56.515 (s) Losses = ['0.1298', '95.4906'] lr = 0.000007
+2023-09-20 20:14:07,039 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 279  acc = 92.4635
+2023-09-20 20:14:07,520 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 20:15:03,906 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 280 EpochTime = 56.385 (s) Losses = ['0.1426', '94.9206'] lr = 0.000006
+2023-09-20 20:15:14,015 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 280  acc = 92.0583
+2023-09-20 20:15:14,504 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 20:16:10,958 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 281 EpochTime = 56.453 (s) Losses = ['0.1307', '95.7146'] lr = 0.000006
+2023-09-20 20:16:21,074 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 281  acc = 92.4635
+2023-09-20 20:16:21,544 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 20:17:18,157 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 282 EpochTime = 56.611 (s) Losses = ['0.1361', '95.3787'] lr = 0.000005
+2023-09-20 20:17:28,244 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 282  acc = 92.5041
+2023-09-20 20:17:28,777 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 20:18:25,015 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 283 EpochTime = 56.236 (s) Losses = ['0.1365', '95.1547'] lr = 0.000005
+2023-09-20 20:18:35,107 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 283  acc = 92.2609
+2023-09-20 20:18:35,592 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 20:19:32,362 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 284 EpochTime = 56.769 (s) Losses = ['0.1267', '95.5517'] lr = 0.000004
+2023-09-20 20:19:42,496 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 284  acc = 92.3825
+2023-09-20 20:19:42,982 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 20:20:39,400 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 285 EpochTime = 56.417 (s) Losses = ['0.1289', '95.6230'] lr = 0.000004
+2023-09-20 20:20:49,509 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 285  acc = 92.2609
+2023-09-20 20:20:50,015 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 20:21:46,634 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 286 EpochTime = 56.617 (s) Losses = ['0.1382', '95.2972'] lr = 0.000004
+2023-09-20 20:21:56,703 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 286  acc = 92.3825
+2023-09-20 20:21:57,207 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 20:22:53,559 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 287 EpochTime = 56.350 (s) Losses = ['0.1331', '95.6026'] lr = 0.000003
+2023-09-20 20:23:03,648 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 287  acc = 92.2609
+2023-09-20 20:23:04,196 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 20:24:00,719 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 288 EpochTime = 56.522 (s) Losses = ['0.1333', '95.3583'] lr = 0.000003
+2023-09-20 20:24:10,805 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 288  acc = 92.2204
+2023-09-20 20:24:11,290 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 20:25:08,110 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 289 EpochTime = 56.819 (s) Losses = ['0.1304', '95.5822'] lr = 0.000003
+2023-09-20 20:25:18,235 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 289  acc = 92.1799
+2023-09-20 20:25:18,708 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 20:26:15,654 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 290 EpochTime = 56.944 (s) Losses = ['0.1289', '95.6840'] lr = 0.000002
+2023-09-20 20:26:25,819 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 290  acc = 92.1394
+2023-09-20 20:26:26,326 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 20:27:23,194 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 291 EpochTime = 56.866 (s) Losses = ['0.1306', '95.6637'] lr = 0.000002
+2023-09-20 20:27:33,298 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 291  acc = 92.0583
+2023-09-20 20:27:33,726 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 20:27:34,172 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-epoch-291.pth
+2023-09-20 20:28:31,125 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 292 EpochTime = 56.951 (s) Losses = ['0.1325', '95.3074'] lr = 0.000002
+2023-09-20 20:28:41,216 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 292  acc = 92.3420
+2023-09-20 20:28:41,689 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 20:28:42,133 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-epoch-292.pth
+2023-09-20 20:29:39,125 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 293 EpochTime = 56.990 (s) Losses = ['0.1322', '95.4296'] lr = 0.000002
+2023-09-20 20:29:49,212 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 293  acc = 92.5851
+2023-09-20 20:29:49,697 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 20:29:50,158 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-epoch-293.pth
+2023-09-20 20:30:46,926 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 294 EpochTime = 56.767 (s) Losses = ['0.1297', '95.7349'] lr = 0.000001
+2023-09-20 20:30:57,036 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 294  acc = 92.5446
+2023-09-20 20:30:57,483 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 20:30:57,951 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-epoch-294.pth
+2023-09-20 20:31:54,575 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 295 EpochTime = 56.622 (s) Losses = ['0.1283', '95.5008'] lr = 0.000001
+2023-09-20 20:32:04,713 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 295  acc = 92.4230
+2023-09-20 20:32:05,264 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 20:32:05,737 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-epoch-295.pth
+2023-09-20 20:33:02,599 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 296 EpochTime = 56.860 (s) Losses = ['0.1348', '95.2769'] lr = 0.000001
+2023-09-20 20:33:12,697 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 296  acc = 92.3420
+2023-09-20 20:33:13,218 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 20:33:13,684 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-epoch-296.pth
+2023-09-20 20:34:10,069 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 297 EpochTime = 56.383 (s) Losses = ['0.1303', '95.3379'] lr = 0.000001
+2023-09-20 20:34:20,167 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 297  acc = 92.1394
+2023-09-20 20:34:20,654 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 20:34:21,128 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-epoch-297.pth
+2023-09-20 20:35:18,051 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 298 EpochTime = 56.922 (s) Losses = ['0.1386', '95.1445'] lr = 0.000001
+2023-09-20 20:35:28,163 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 298  acc = 92.2204
+2023-09-20 20:35:28,709 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 20:35:29,191 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-epoch-298.pth
+2023-09-20 20:36:25,903 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 299 EpochTime = 56.710 (s) Losses = ['0.1327', '95.4092'] lr = 0.000001
+2023-09-20 20:36:36,078 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 299  acc = 92.3420
+2023-09-20 20:36:36,539 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 20:36:37,029 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-epoch-299.pth
+2023-09-20 20:37:33,850 - finetune_modelnet_non_linear_classification - INFO - [Training] EPOCH: 300 EpochTime = 56.819 (s) Losses = ['0.1420', '94.8493'] lr = 0.000001
+2023-09-20 20:37:44,214 - finetune_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 300  acc = 92.0583
+2023-09-20 20:37:44,698 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 20:37:45,183 - finetune_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-epoch-300.pth
