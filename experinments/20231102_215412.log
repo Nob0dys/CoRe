@@ -1,0 +1,603 @@
+2023-11-02 21:54:12,586 - fewshot_modelnet_linear_classification - INFO - Copy the Config file from cfgs/fewshot_modelnet_linear_classification.yaml to ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/config.yaml
+2023-11-02 21:54:12,587 - fewshot_modelnet_linear_classification - INFO - args.config : cfgs/fewshot_modelnet_linear_classification.yaml
+2023-11-02 21:54:12,587 - fewshot_modelnet_linear_classification - INFO - args.launcher : none
+2023-11-02 21:54:12,587 - fewshot_modelnet_linear_classification - INFO - args.local_rank : 0
+2023-11-02 21:54:12,587 - fewshot_modelnet_linear_classification - INFO - args.num_workers : 8
+2023-11-02 21:54:12,587 - fewshot_modelnet_linear_classification - INFO - args.seed : 0
+2023-11-02 21:54:12,587 - fewshot_modelnet_linear_classification - INFO - args.deterministic : False
+2023-11-02 21:54:12,588 - fewshot_modelnet_linear_classification - INFO - args.sync_bn : True
+2023-11-02 21:54:12,588 - fewshot_modelnet_linear_classification - INFO - args.large_group : 5
+2023-11-02 21:54:12,588 - fewshot_modelnet_linear_classification - INFO - args.small_group : 10
+2023-11-02 21:54:12,588 - fewshot_modelnet_linear_classification - INFO - args.large_patch : 6
+2023-11-02 21:54:12,588 - fewshot_modelnet_linear_classification - INFO - args.small_patch : 3
+2023-11-02 21:54:12,588 - fewshot_modelnet_linear_classification - INFO - args.queue_length : 8192
+2023-11-02 21:54:12,588 - fewshot_modelnet_linear_classification - INFO - args.epoch_queue_starts : 10
+2023-11-02 21:54:12,588 - fewshot_modelnet_linear_classification - INFO - args.nmb_crops : 64
+2023-11-02 21:54:12,588 - fewshot_modelnet_linear_classification - INFO - args.sample_num : 16
+2023-11-02 21:54:12,588 - fewshot_modelnet_linear_classification - INFO - args.fea_dim : 384
+2023-11-02 21:54:12,588 - fewshot_modelnet_linear_classification - INFO - args.hidden_mlp : 256
+2023-11-02 21:54:12,589 - fewshot_modelnet_linear_classification - INFO - args.output_dim : 128
+2023-11-02 21:54:12,589 - fewshot_modelnet_linear_classification - INFO - args.nmb_prototypes : 200
+2023-11-02 21:54:12,589 - fewshot_modelnet_linear_classification - INFO - args.temperature : 0.1
+2023-11-02 21:54:12,589 - fewshot_modelnet_linear_classification - INFO - args.epsilon : 0.05
+2023-11-02 21:54:12,589 - fewshot_modelnet_linear_classification - INFO - args.sinkhorn_iterations : 3
+2023-11-02 21:54:12,589 - fewshot_modelnet_linear_classification - INFO - args.world_size : 1
+2023-11-02 21:54:12,589 - fewshot_modelnet_linear_classification - INFO - args.exp_name : LR_0.001
+2023-11-02 21:54:12,589 - fewshot_modelnet_linear_classification - INFO - args.loss : cd1
+2023-11-02 21:54:12,589 - fewshot_modelnet_linear_classification - INFO - args.start_ckpts : None
+2023-11-02 21:54:12,589 - fewshot_modelnet_linear_classification - INFO - args.ckpts : ./experiments/pretrain_MaskSurf/cfgs/add_as_normal/ckpt-last.pth
+2023-11-02 21:54:12,590 - fewshot_modelnet_linear_classification - INFO - args.val_freq : 1
+2023-11-02 21:54:12,590 - fewshot_modelnet_linear_classification - INFO - args.vote : False
+2023-11-02 21:54:12,590 - fewshot_modelnet_linear_classification - INFO - args.resume : False
+2023-11-02 21:54:12,590 - fewshot_modelnet_linear_classification - INFO - args.test : False
+2023-11-02 21:54:12,590 - fewshot_modelnet_linear_classification - INFO - args.finetune_model : True
+2023-11-02 21:54:12,590 - fewshot_modelnet_linear_classification - INFO - args.scratch_model : False
+2023-11-02 21:54:12,590 - fewshot_modelnet_linear_classification - INFO - args.mode : None
+2023-11-02 21:54:12,590 - fewshot_modelnet_linear_classification - INFO - args.way : 5
+2023-11-02 21:54:12,590 - fewshot_modelnet_linear_classification - INFO - args.shot : 20
+2023-11-02 21:54:12,590 - fewshot_modelnet_linear_classification - INFO - args.fold : 0
+2023-11-02 21:54:12,591 - fewshot_modelnet_linear_classification - INFO - args.experiment_path : ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001
+2023-11-02 21:54:12,591 - fewshot_modelnet_linear_classification - INFO - args.tfboard_path : ./experiments/fewshot_modelnet_linear_classification/cfgs/TFBoard/LR_0.001
+2023-11-02 21:54:12,591 - fewshot_modelnet_linear_classification - INFO - args.log_name : fewshot_modelnet_linear_classification
+2023-11-02 21:54:12,591 - fewshot_modelnet_linear_classification - INFO - args.use_gpu : True
+2023-11-02 21:54:12,591 - fewshot_modelnet_linear_classification - INFO - args.distributed : False
+2023-11-02 21:54:12,591 - fewshot_modelnet_linear_classification - INFO - config.optimizer = edict()
+2023-11-02 21:54:12,591 - fewshot_modelnet_linear_classification - INFO - config.optimizer.type : AdamW
+2023-11-02 21:54:12,591 - fewshot_modelnet_linear_classification - INFO - config.optimizer.part : only_new
+2023-11-02 21:54:12,591 - fewshot_modelnet_linear_classification - INFO - config.optimizer.kwargs = edict()
+2023-11-02 21:54:12,591 - fewshot_modelnet_linear_classification - INFO - config.optimizer.kwargs.lr : 0.001
+2023-11-02 21:54:12,592 - fewshot_modelnet_linear_classification - INFO - config.optimizer.kwargs.weight_decay : 0.05
+2023-11-02 21:54:12,592 - fewshot_modelnet_linear_classification - INFO - config.scheduler = edict()
+2023-11-02 21:54:12,592 - fewshot_modelnet_linear_classification - INFO - config.scheduler.type : CosLR
+2023-11-02 21:54:12,592 - fewshot_modelnet_linear_classification - INFO - config.scheduler.kwargs = edict()
+2023-11-02 21:54:12,592 - fewshot_modelnet_linear_classification - INFO - config.scheduler.kwargs.epochs : 150
+2023-11-02 21:54:12,592 - fewshot_modelnet_linear_classification - INFO - config.scheduler.kwargs.initial_epochs : 10
+2023-11-02 21:54:12,592 - fewshot_modelnet_linear_classification - INFO - config.dataset = edict()
+2023-11-02 21:54:12,592 - fewshot_modelnet_linear_classification - INFO - config.dataset.train = edict()
+2023-11-02 21:54:12,592 - fewshot_modelnet_linear_classification - INFO - config.dataset.train._base_ = edict()
+2023-11-02 21:54:12,592 - fewshot_modelnet_linear_classification - INFO - config.dataset.train._base_.NAME : ModelNetFewShot
+2023-11-02 21:54:12,593 - fewshot_modelnet_linear_classification - INFO - config.dataset.train._base_.DATA_PATH : data/ModelNetFewshot
+2023-11-02 21:54:12,593 - fewshot_modelnet_linear_classification - INFO - config.dataset.train._base_.N_POINTS : 8192
+2023-11-02 21:54:12,593 - fewshot_modelnet_linear_classification - INFO - config.dataset.train._base_.NUM_CATEGORY : 40
+2023-11-02 21:54:12,593 - fewshot_modelnet_linear_classification - INFO - config.dataset.train._base_.USE_NORMALS : False
+2023-11-02 21:54:12,593 - fewshot_modelnet_linear_classification - INFO - config.dataset.train.others = edict()
+2023-11-02 21:54:12,593 - fewshot_modelnet_linear_classification - INFO - config.dataset.train.others.subset : train
+2023-11-02 21:54:12,593 - fewshot_modelnet_linear_classification - INFO - config.dataset.train.others.bs : 32
+2023-11-02 21:54:12,593 - fewshot_modelnet_linear_classification - INFO - config.dataset.val = edict()
+2023-11-02 21:54:12,593 - fewshot_modelnet_linear_classification - INFO - config.dataset.val._base_ = edict()
+2023-11-02 21:54:12,593 - fewshot_modelnet_linear_classification - INFO - config.dataset.val._base_.NAME : ModelNetFewShot
+2023-11-02 21:54:12,593 - fewshot_modelnet_linear_classification - INFO - config.dataset.val._base_.DATA_PATH : data/ModelNetFewshot
+2023-11-02 21:54:12,594 - fewshot_modelnet_linear_classification - INFO - config.dataset.val._base_.N_POINTS : 8192
+2023-11-02 21:54:12,594 - fewshot_modelnet_linear_classification - INFO - config.dataset.val._base_.NUM_CATEGORY : 40
+2023-11-02 21:54:12,594 - fewshot_modelnet_linear_classification - INFO - config.dataset.val._base_.USE_NORMALS : False
+2023-11-02 21:54:12,594 - fewshot_modelnet_linear_classification - INFO - config.dataset.val.others = edict()
+2023-11-02 21:54:12,594 - fewshot_modelnet_linear_classification - INFO - config.dataset.val.others.subset : test
+2023-11-02 21:54:12,594 - fewshot_modelnet_linear_classification - INFO - config.dataset.val.others.bs : 64
+2023-11-02 21:54:12,594 - fewshot_modelnet_linear_classification - INFO - config.dataset.test = edict()
+2023-11-02 21:54:12,594 - fewshot_modelnet_linear_classification - INFO - config.dataset.test._base_ = edict()
+2023-11-02 21:54:12,594 - fewshot_modelnet_linear_classification - INFO - config.dataset.test._base_.NAME : ModelNet
+2023-11-02 21:54:12,594 - fewshot_modelnet_linear_classification - INFO - config.dataset.test._base_.DATA_PATH : data/ModelNet/modelnet40_normal_resampled
+2023-11-02 21:54:12,595 - fewshot_modelnet_linear_classification - INFO - config.dataset.test._base_.N_POINTS : 8192
+2023-11-02 21:54:12,595 - fewshot_modelnet_linear_classification - INFO - config.dataset.test._base_.NUM_CATEGORY : 40
+2023-11-02 21:54:12,595 - fewshot_modelnet_linear_classification - INFO - config.dataset.test._base_.USE_NORMALS : False
+2023-11-02 21:54:12,595 - fewshot_modelnet_linear_classification - INFO - config.dataset.test.others = edict()
+2023-11-02 21:54:12,595 - fewshot_modelnet_linear_classification - INFO - config.dataset.test.others.subset : test
+2023-11-02 21:54:12,595 - fewshot_modelnet_linear_classification - INFO - config.dataset.test.others.bs : 32
+2023-11-02 21:54:12,595 - fewshot_modelnet_linear_classification - INFO - config.model = edict()
+2023-11-02 21:54:12,595 - fewshot_modelnet_linear_classification - INFO - config.model.NAME : PointTransformerLinearClassification
+2023-11-02 21:54:12,595 - fewshot_modelnet_linear_classification - INFO - config.model.trans_dim : 384
+2023-11-02 21:54:12,595 - fewshot_modelnet_linear_classification - INFO - config.model.depth : 12
+2023-11-02 21:54:12,596 - fewshot_modelnet_linear_classification - INFO - config.model.drop_path_rate : 0.1
+2023-11-02 21:54:12,596 - fewshot_modelnet_linear_classification - INFO - config.model.cls_dim : 40
+2023-11-02 21:54:12,596 - fewshot_modelnet_linear_classification - INFO - config.model.num_heads : 6
+2023-11-02 21:54:12,596 - fewshot_modelnet_linear_classification - INFO - config.model.group_size : 32
+2023-11-02 21:54:12,596 - fewshot_modelnet_linear_classification - INFO - config.model.num_group : 64
+2023-11-02 21:54:12,596 - fewshot_modelnet_linear_classification - INFO - config.model.encoder_dims : 384
+2023-11-02 21:54:12,596 - fewshot_modelnet_linear_classification - INFO - config.npoints : 1024
+2023-11-02 21:54:12,596 - fewshot_modelnet_linear_classification - INFO - config.total_bs : 32
+2023-11-02 21:54:12,596 - fewshot_modelnet_linear_classification - INFO - config.step_per_update : 1
+2023-11-02 21:54:12,596 - fewshot_modelnet_linear_classification - INFO - config.max_epoch : 150
+2023-11-02 21:54:12,597 - fewshot_modelnet_linear_classification - INFO - config.grad_norm_clip : 10
+2023-11-02 21:54:12,597 - fewshot_modelnet_linear_classification - INFO - Distributed training: False
+2023-11-02 21:54:12,597 - fewshot_modelnet_linear_classification - INFO - Set random seed to 0, deterministic: False
+2023-11-02 21:54:14,798 - fewshot_modelnet_linear_classification - INFO - Using Data parallel ...
+2023-11-02 21:54:20,478 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 0 EpochTime = 5.674 (s) Losses = ['3.6389', '0.0000'] lr = 0.000001
+2023-11-02 21:54:21,906 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:54:23,209 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 1 EpochTime = 1.302 (s) Losses = ['3.6117', '1.0417'] lr = 0.000101
+2023-11-02 21:54:24,960 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 1  acc = 3.0000
+2023-11-02 21:54:26,141 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-best.pth
+2023-11-02 21:54:26,141 - fewshot_modelnet_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-02 21:54:26,657 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:54:28,644 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 2 EpochTime = 1.985 (s) Losses = ['3.5255', '4.1667'] lr = 0.000201
+2023-11-02 21:54:29,698 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 2  acc = 18.0000
+2023-11-02 21:54:31,368 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-best.pth
+2023-11-02 21:54:31,368 - fewshot_modelnet_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-02 21:54:32,665 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:54:34,592 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 3 EpochTime = 1.925 (s) Losses = ['3.2279', '18.7500'] lr = 0.000301
+2023-11-02 21:54:35,622 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 3  acc = 21.0000
+2023-11-02 21:54:37,700 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-best.pth
+2023-11-02 21:54:37,700 - fewshot_modelnet_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-02 21:54:39,382 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:54:40,762 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 4 EpochTime = 1.378 (s) Losses = ['2.7205', '25.0000'] lr = 0.000401
+2023-11-02 21:54:41,781 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 4  acc = 22.0000
+2023-11-02 21:54:43,079 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-best.pth
+2023-11-02 21:54:43,080 - fewshot_modelnet_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-02 21:54:44,223 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:54:45,809 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 5 EpochTime = 1.584 (s) Losses = ['2.2370', '25.0000'] lr = 0.000501
+2023-11-02 21:54:46,936 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 5  acc = 25.0000
+2023-11-02 21:54:48,917 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-best.pth
+2023-11-02 21:54:48,917 - fewshot_modelnet_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-02 21:54:51,143 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:54:52,505 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 6 EpochTime = 1.359 (s) Losses = ['1.8093', '30.2083'] lr = 0.000600
+2023-11-02 21:54:53,501 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 6  acc = 39.0000
+2023-11-02 21:54:55,200 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-best.pth
+2023-11-02 21:54:55,200 - fewshot_modelnet_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-02 21:54:55,672 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:54:57,301 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 7 EpochTime = 1.627 (s) Losses = ['1.6074', '44.7917'] lr = 0.000700
+2023-11-02 21:54:58,317 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 7  acc = 51.0000
+2023-11-02 21:54:59,727 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-best.pth
+2023-11-02 21:54:59,727 - fewshot_modelnet_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-02 21:55:01,264 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:55:02,515 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 8 EpochTime = 1.250 (s) Losses = ['1.4878', '43.7500'] lr = 0.000800
+2023-11-02 21:55:03,503 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 8  acc = 49.0000
+2023-11-02 21:55:05,947 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:55:07,863 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 9 EpochTime = 1.913 (s) Losses = ['1.3909', '46.8750'] lr = 0.000900
+2023-11-02 21:55:08,978 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 9  acc = 58.0000
+2023-11-02 21:55:09,606 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-best.pth
+2023-11-02 21:55:09,606 - fewshot_modelnet_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-02 21:55:10,903 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:55:12,154 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 10 EpochTime = 1.249 (s) Losses = ['1.3303', '59.3750'] lr = 0.000989
+2023-11-02 21:55:13,371 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 10  acc = 66.0000
+2023-11-02 21:55:15,232 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-best.pth
+2023-11-02 21:55:15,232 - fewshot_modelnet_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-02 21:55:16,833 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:55:18,303 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 11 EpochTime = 1.469 (s) Losses = ['1.2427', '64.5833'] lr = 0.000987
+2023-11-02 21:55:19,353 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 11  acc = 75.0000
+2023-11-02 21:55:20,374 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-best.pth
+2023-11-02 21:55:20,375 - fewshot_modelnet_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-02 21:55:21,522 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:55:22,974 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 12 EpochTime = 1.450 (s) Losses = ['1.1683', '70.8333'] lr = 0.000984
+2023-11-02 21:55:24,002 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 12  acc = 67.0000
+2023-11-02 21:55:26,948 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:55:29,133 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 13 EpochTime = 2.183 (s) Losses = ['1.1079', '70.8333'] lr = 0.000982
+2023-11-02 21:55:30,624 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 13  acc = 67.0000
+2023-11-02 21:55:31,530 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:55:32,790 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 14 EpochTime = 1.258 (s) Losses = ['1.0499', '77.0833'] lr = 0.000979
+2023-11-02 21:55:33,807 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 14  acc = 74.0000
+2023-11-02 21:55:36,103 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:55:38,140 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 15 EpochTime = 2.035 (s) Losses = ['0.9265', '83.3333'] lr = 0.000976
+2023-11-02 21:55:39,226 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 15  acc = 81.0000
+2023-11-02 21:55:40,873 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-best.pth
+2023-11-02 21:55:40,873 - fewshot_modelnet_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-02 21:55:41,809 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:55:43,214 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 16 EpochTime = 1.403 (s) Losses = ['0.9193', '81.2500'] lr = 0.000972
+2023-11-02 21:55:44,371 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 16  acc = 84.0000
+2023-11-02 21:55:45,566 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-best.pth
+2023-11-02 21:55:45,566 - fewshot_modelnet_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-02 21:55:47,683 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:55:49,144 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 17 EpochTime = 1.459 (s) Losses = ['0.8733', '88.5417'] lr = 0.000969
+2023-11-02 21:55:50,447 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 17  acc = 80.0000
+2023-11-02 21:55:51,610 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:55:53,026 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 18 EpochTime = 1.413 (s) Losses = ['0.8739', '80.2083'] lr = 0.000965
+2023-11-02 21:55:54,511 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 18  acc = 79.0000
+2023-11-02 21:55:55,063 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:55:56,400 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 19 EpochTime = 1.335 (s) Losses = ['0.7910', '82.2917'] lr = 0.000961
+2023-11-02 21:55:57,407 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 19  acc = 78.0000
+2023-11-02 21:55:59,400 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:56:01,155 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 20 EpochTime = 1.752 (s) Losses = ['0.7407', '86.4583'] lr = 0.000957
+2023-11-02 21:56:02,612 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 20  acc = 80.0000
+2023-11-02 21:56:03,478 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:56:04,735 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 21 EpochTime = 1.256 (s) Losses = ['0.6963', '86.4583'] lr = 0.000952
+2023-11-02 21:56:05,929 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 21  acc = 85.0000
+2023-11-02 21:56:07,801 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-best.pth
+2023-11-02 21:56:07,802 - fewshot_modelnet_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-02 21:56:09,499 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:56:10,843 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 22 EpochTime = 1.341 (s) Losses = ['0.7001', '89.5833'] lr = 0.000948
+2023-11-02 21:56:12,128 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 22  acc = 86.0000
+2023-11-02 21:56:12,985 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-best.pth
+2023-11-02 21:56:12,985 - fewshot_modelnet_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-02 21:56:15,029 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:56:16,315 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 23 EpochTime = 1.284 (s) Losses = ['0.6964', '89.5833'] lr = 0.000943
+2023-11-02 21:56:17,379 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 23  acc = 86.0000
+2023-11-02 21:56:18,463 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:56:20,650 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 24 EpochTime = 2.185 (s) Losses = ['0.6434', '89.5833'] lr = 0.000938
+2023-11-02 21:56:22,003 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 24  acc = 84.0000
+2023-11-02 21:56:22,839 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:56:24,178 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 25 EpochTime = 1.336 (s) Losses = ['0.6165', '88.5417'] lr = 0.000933
+2023-11-02 21:56:25,198 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 25  acc = 84.0000
+2023-11-02 21:56:27,097 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:56:28,521 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 26 EpochTime = 1.420 (s) Losses = ['0.5540', '90.6250'] lr = 0.000928
+2023-11-02 21:56:29,583 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 26  acc = 85.0000
+2023-11-02 21:56:30,623 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:56:32,193 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 27 EpochTime = 1.568 (s) Losses = ['0.5278', '92.7083'] lr = 0.000922
+2023-11-02 21:56:33,235 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 27  acc = 86.0000
+2023-11-02 21:56:35,198 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:56:36,759 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 28 EpochTime = 1.560 (s) Losses = ['0.5241', '93.7500'] lr = 0.000917
+2023-11-02 21:56:37,873 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 28  acc = 86.0000
+2023-11-02 21:56:39,779 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:56:41,450 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 29 EpochTime = 1.667 (s) Losses = ['0.5417', '88.5417'] lr = 0.000911
+2023-11-02 21:56:42,826 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 29  acc = 85.0000
+2023-11-02 21:56:44,399 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:56:46,304 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 30 EpochTime = 1.903 (s) Losses = ['0.5501', '90.6250'] lr = 0.000905
+2023-11-02 21:56:47,730 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 30  acc = 86.0000
+2023-11-02 21:56:49,565 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:56:50,896 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 31 EpochTime = 1.330 (s) Losses = ['0.4647', '92.7083'] lr = 0.000898
+2023-11-02 21:56:52,158 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 31  acc = 87.0000
+2023-11-02 21:56:52,684 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-best.pth
+2023-11-02 21:56:52,684 - fewshot_modelnet_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-02 21:56:53,747 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:56:55,058 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 32 EpochTime = 1.309 (s) Losses = ['0.5180', '91.6667'] lr = 0.000892
+2023-11-02 21:56:56,120 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 32  acc = 88.0000
+2023-11-02 21:56:57,335 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-best.pth
+2023-11-02 21:56:57,336 - fewshot_modelnet_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-02 21:56:58,560 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:57:00,201 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 33 EpochTime = 1.638 (s) Losses = ['0.4402', '91.6667'] lr = 0.000885
+2023-11-02 21:57:01,289 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 33  acc = 87.0000
+2023-11-02 21:57:01,996 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:57:04,140 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 34 EpochTime = 2.140 (s) Losses = ['0.4495', '93.7500'] lr = 0.000879
+2023-11-02 21:57:05,172 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 34  acc = 87.0000
+2023-11-02 21:57:07,451 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:57:08,687 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 35 EpochTime = 1.234 (s) Losses = ['0.4014', '94.7917'] lr = 0.000872
+2023-11-02 21:57:09,737 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 35  acc = 86.0000
+2023-11-02 21:57:11,384 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:57:12,693 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 36 EpochTime = 1.306 (s) Losses = ['0.3763', '94.7917'] lr = 0.000865
+2023-11-02 21:57:13,775 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 36  acc = 86.0000
+2023-11-02 21:57:15,331 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:57:17,217 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 37 EpochTime = 1.884 (s) Losses = ['0.4250', '93.7500'] lr = 0.000857
+2023-11-02 21:57:18,436 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 37  acc = 87.0000
+2023-11-02 21:57:19,857 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:57:21,239 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 38 EpochTime = 1.380 (s) Losses = ['0.4291', '89.5833'] lr = 0.000850
+2023-11-02 21:57:22,511 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 38  acc = 88.0000
+2023-11-02 21:57:23,848 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:57:25,317 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 39 EpochTime = 1.467 (s) Losses = ['0.4472', '92.7083'] lr = 0.000842
+2023-11-02 21:57:26,648 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 39  acc = 90.0000
+2023-11-02 21:57:27,360 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-best.pth
+2023-11-02 21:57:27,360 - fewshot_modelnet_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-02 21:57:28,927 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:57:30,187 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 40 EpochTime = 1.258 (s) Losses = ['0.3740', '92.7083'] lr = 0.000835
+2023-11-02 21:57:31,533 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 40  acc = 90.0000
+2023-11-02 21:57:32,031 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:57:34,044 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 41 EpochTime = 2.011 (s) Losses = ['0.4143', '91.6667'] lr = 0.000827
+2023-11-02 21:57:35,091 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 41  acc = 89.0000
+2023-11-02 21:57:36,468 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:57:38,237 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 42 EpochTime = 1.767 (s) Losses = ['0.3324', '94.7917'] lr = 0.000819
+2023-11-02 21:57:39,290 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 42  acc = 88.0000
+2023-11-02 21:57:40,555 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:57:42,625 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 43 EpochTime = 2.069 (s) Losses = ['0.3568', '94.7917'] lr = 0.000811
+2023-11-02 21:57:43,744 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 43  acc = 88.0000
+2023-11-02 21:57:44,689 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:57:46,478 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 44 EpochTime = 1.788 (s) Losses = ['0.3171', '94.7917'] lr = 0.000802
+2023-11-02 21:57:47,505 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 44  acc = 88.0000
+2023-11-02 21:57:48,932 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:57:50,354 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 45 EpochTime = 1.418 (s) Losses = ['0.3539', '95.8333'] lr = 0.000794
+2023-11-02 21:57:51,606 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 45  acc = 88.0000
+2023-11-02 21:57:52,635 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:57:53,896 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 46 EpochTime = 1.260 (s) Losses = ['0.3394', '92.7083'] lr = 0.000786
+2023-11-02 21:57:54,976 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 46  acc = 88.0000
+2023-11-02 21:57:56,101 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:57:58,322 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 47 EpochTime = 2.219 (s) Losses = ['0.2939', '95.8333'] lr = 0.000777
+2023-11-02 21:57:59,372 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 47  acc = 88.0000
+2023-11-02 21:58:00,255 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:58:01,613 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 48 EpochTime = 1.356 (s) Losses = ['0.3050', '95.8333'] lr = 0.000768
+2023-11-02 21:58:02,724 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 48  acc = 90.0000
+2023-11-02 21:58:04,458 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:58:06,591 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 49 EpochTime = 2.131 (s) Losses = ['0.2708', '95.8333'] lr = 0.000759
+2023-11-02 21:58:07,685 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 49  acc = 90.0000
+2023-11-02 21:58:09,969 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:58:11,707 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 50 EpochTime = 1.736 (s) Losses = ['0.2964', '96.8750'] lr = 0.000750
+2023-11-02 21:58:12,750 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 50  acc = 90.0000
+2023-11-02 21:58:14,449 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:58:16,271 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 51 EpochTime = 1.820 (s) Losses = ['0.2638', '96.8750'] lr = 0.000741
+2023-11-02 21:58:17,644 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 51  acc = 90.0000
+2023-11-02 21:58:18,204 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:58:19,848 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 52 EpochTime = 1.642 (s) Losses = ['0.2824', '93.7500'] lr = 0.000732
+2023-11-02 21:58:20,860 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 52  acc = 90.0000
+2023-11-02 21:58:22,763 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:58:24,376 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 53 EpochTime = 1.612 (s) Losses = ['0.2675', '96.8750'] lr = 0.000723
+2023-11-02 21:58:25,906 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 53  acc = 90.0000
+2023-11-02 21:58:26,908 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:58:28,586 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 54 EpochTime = 1.675 (s) Losses = ['0.2616', '96.8750'] lr = 0.000713
+2023-11-02 21:58:30,051 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 54  acc = 89.0000
+2023-11-02 21:58:31,155 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:58:32,447 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 55 EpochTime = 1.290 (s) Losses = ['0.2780', '94.7917'] lr = 0.000704
+2023-11-02 21:58:33,526 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 55  acc = 90.0000
+2023-11-02 21:58:35,658 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:58:36,984 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 56 EpochTime = 1.324 (s) Losses = ['0.2570', '95.8333'] lr = 0.000694
+2023-11-02 21:58:38,389 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 56  acc = 88.0000
+2023-11-02 21:58:39,406 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:58:40,697 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 57 EpochTime = 1.290 (s) Losses = ['0.2770', '93.7500'] lr = 0.000684
+2023-11-02 21:58:41,749 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 57  acc = 88.0000
+2023-11-02 21:58:42,912 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:58:45,268 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 58 EpochTime = 2.353 (s) Losses = ['0.2589', '95.8333'] lr = 0.000675
+2023-11-02 21:58:46,736 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 58  acc = 88.0000
+2023-11-02 21:58:47,370 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:58:49,351 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 59 EpochTime = 1.979 (s) Losses = ['0.2601', '93.7500'] lr = 0.000665
+2023-11-02 21:58:50,371 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 59  acc = 88.0000
+2023-11-02 21:58:51,586 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:58:53,260 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 60 EpochTime = 1.673 (s) Losses = ['0.2465', '96.8750'] lr = 0.000655
+2023-11-02 21:58:54,282 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 60  acc = 88.0000
+2023-11-02 21:58:54,830 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:58:56,128 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 61 EpochTime = 1.296 (s) Losses = ['0.2727', '94.7917'] lr = 0.000645
+2023-11-02 21:58:57,257 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 61  acc = 88.0000
+2023-11-02 21:58:58,373 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:59:00,283 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 62 EpochTime = 1.908 (s) Losses = ['0.2321', '96.8750'] lr = 0.000635
+2023-11-02 21:59:01,619 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 62  acc = 89.0000
+2023-11-02 21:59:03,185 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:59:04,694 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 63 EpochTime = 1.508 (s) Losses = ['0.2005', '98.9583'] lr = 0.000625
+2023-11-02 21:59:05,934 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 63  acc = 90.0000
+2023-11-02 21:59:08,058 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:59:09,361 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 64 EpochTime = 1.301 (s) Losses = ['0.2332', '96.8750'] lr = 0.000615
+2023-11-02 21:59:10,733 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 64  acc = 90.0000
+2023-11-02 21:59:11,252 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:59:13,280 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 65 EpochTime = 2.025 (s) Losses = ['0.2453', '97.9167'] lr = 0.000604
+2023-11-02 21:59:14,318 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 65  acc = 91.0000
+2023-11-02 21:59:15,912 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-best.pth
+2023-11-02 21:59:15,913 - fewshot_modelnet_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-02 21:59:17,898 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:59:19,199 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 66 EpochTime = 1.300 (s) Losses = ['0.2103', '94.7917'] lr = 0.000594
+2023-11-02 21:59:20,490 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 66  acc = 92.0000
+2023-11-02 21:59:21,098 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-best.pth
+2023-11-02 21:59:21,098 - fewshot_modelnet_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-02 21:59:21,694 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:59:23,050 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 67 EpochTime = 1.355 (s) Losses = ['0.2075', '94.7917'] lr = 0.000584
+2023-11-02 21:59:24,207 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 67  acc = 92.0000
+2023-11-02 21:59:25,269 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:59:26,694 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 68 EpochTime = 1.424 (s) Losses = ['0.2323', '93.7500'] lr = 0.000573
+2023-11-02 21:59:28,019 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 68  acc = 92.0000
+2023-11-02 21:59:28,962 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:59:30,506 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 69 EpochTime = 1.541 (s) Losses = ['0.2735', '93.7500'] lr = 0.000563
+2023-11-02 21:59:31,728 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 69  acc = 92.0000
+2023-11-02 21:59:33,123 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:59:34,544 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 70 EpochTime = 1.419 (s) Losses = ['0.2196', '94.7917'] lr = 0.000553
+2023-11-02 21:59:35,847 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 70  acc = 92.0000
+2023-11-02 21:59:37,335 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:59:38,643 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 71 EpochTime = 1.306 (s) Losses = ['0.2193', '95.8333'] lr = 0.000542
+2023-11-02 21:59:39,714 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 71  acc = 91.0000
+2023-11-02 21:59:40,940 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:59:42,500 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 72 EpochTime = 1.558 (s) Losses = ['0.2016', '95.8333'] lr = 0.000532
+2023-11-02 21:59:43,924 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 72  acc = 90.0000
+2023-11-02 21:59:44,802 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:59:46,644 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 73 EpochTime = 1.839 (s) Losses = ['0.2209', '95.8333'] lr = 0.000521
+2023-11-02 21:59:47,823 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 73  acc = 90.0000
+2023-11-02 21:59:48,966 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:59:50,513 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 74 EpochTime = 1.545 (s) Losses = ['0.2041', '96.8750'] lr = 0.000511
+2023-11-02 21:59:51,566 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 74  acc = 90.0000
+2023-11-02 21:59:53,192 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:59:55,090 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 75 EpochTime = 1.896 (s) Losses = ['0.2153', '95.8333'] lr = 0.000501
+2023-11-02 21:59:56,215 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 75  acc = 91.0000
+2023-11-02 21:59:57,363 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 21:59:59,438 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 76 EpochTime = 2.074 (s) Losses = ['0.1760', '96.8750'] lr = 0.000490
+2023-11-02 22:00:00,666 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 76  acc = 90.0000
+2023-11-02 22:00:02,140 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:00:03,741 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 77 EpochTime = 1.600 (s) Losses = ['0.1908', '97.9167'] lr = 0.000480
+2023-11-02 22:00:04,792 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 77  acc = 90.0000
+2023-11-02 22:00:06,490 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:00:07,777 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 78 EpochTime = 1.285 (s) Losses = ['0.2254', '96.8750'] lr = 0.000469
+2023-11-02 22:00:08,796 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 78  acc = 90.0000
+2023-11-02 22:00:10,363 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:00:12,261 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 79 EpochTime = 1.896 (s) Losses = ['0.2125', '97.9167'] lr = 0.000459
+2023-11-02 22:00:13,278 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 79  acc = 90.0000
+2023-11-02 22:00:14,140 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:00:15,927 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 80 EpochTime = 1.785 (s) Losses = ['0.1950', '96.8750'] lr = 0.000448
+2023-11-02 22:00:16,954 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 80  acc = 90.0000
+2023-11-02 22:00:18,543 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:00:20,643 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 81 EpochTime = 2.098 (s) Losses = ['0.1890', '95.8333'] lr = 0.000438
+2023-11-02 22:00:21,713 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 81  acc = 91.0000
+2023-11-02 22:00:23,373 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:00:24,928 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 82 EpochTime = 1.552 (s) Losses = ['0.1774', '95.8333'] lr = 0.000428
+2023-11-02 22:00:25,978 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 82  acc = 91.0000
+2023-11-02 22:00:27,353 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:00:29,035 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 83 EpochTime = 1.679 (s) Losses = ['0.1753', '95.8333'] lr = 0.000417
+2023-11-02 22:00:30,104 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 83  acc = 89.0000
+2023-11-02 22:00:31,126 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:00:33,299 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 84 EpochTime = 2.172 (s) Losses = ['0.1809', '96.8750'] lr = 0.000407
+2023-11-02 22:00:34,653 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 84  acc = 89.0000
+2023-11-02 22:00:35,515 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:00:37,525 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 85 EpochTime = 2.008 (s) Losses = ['0.1428', '97.9167'] lr = 0.000397
+2023-11-02 22:00:38,549 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 85  acc = 89.0000
+2023-11-02 22:00:39,519 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:00:41,598 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 86 EpochTime = 2.076 (s) Losses = ['0.2077', '95.8333'] lr = 0.000386
+2023-11-02 22:00:42,731 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 86  acc = 88.0000
+2023-11-02 22:00:43,595 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:00:45,940 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 87 EpochTime = 2.343 (s) Losses = ['0.1980', '95.8333'] lr = 0.000376
+2023-11-02 22:00:46,989 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 87  acc = 87.0000
+2023-11-02 22:00:47,602 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:00:49,563 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 88 EpochTime = 1.958 (s) Losses = ['0.1639', '98.9583'] lr = 0.000366
+2023-11-02 22:00:50,615 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 88  acc = 89.0000
+2023-11-02 22:00:51,680 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:00:54,142 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 89 EpochTime = 2.460 (s) Losses = ['0.1802', '97.9167'] lr = 0.000356
+2023-11-02 22:00:55,190 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 89  acc = 89.0000
+2023-11-02 22:00:56,289 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:00:57,924 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 90 EpochTime = 1.633 (s) Losses = ['0.2035', '95.8333'] lr = 0.000346
+2023-11-02 22:00:59,068 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 90  acc = 89.0000
+2023-11-02 22:01:01,108 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:01:02,382 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 91 EpochTime = 1.272 (s) Losses = ['0.1848', '95.8333'] lr = 0.000336
+2023-11-02 22:01:03,425 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 91  acc = 89.0000
+2023-11-02 22:01:04,430 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:01:06,232 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 92 EpochTime = 1.800 (s) Losses = ['0.1821', '96.8750'] lr = 0.000326
+2023-11-02 22:01:07,294 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 92  acc = 90.0000
+2023-11-02 22:01:09,416 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:01:11,329 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 93 EpochTime = 1.911 (s) Losses = ['0.1861', '95.8333'] lr = 0.000317
+2023-11-02 22:01:12,901 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 93  acc = 89.0000
+2023-11-02 22:01:14,066 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:01:15,369 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 94 EpochTime = 1.300 (s) Losses = ['0.1623', '97.9167'] lr = 0.000307
+2023-11-02 22:01:16,430 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 94  acc = 89.0000
+2023-11-02 22:01:16,917 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:01:18,339 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 95 EpochTime = 1.421 (s) Losses = ['0.1759', '96.8750'] lr = 0.000297
+2023-11-02 22:01:19,379 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 95  acc = 88.0000
+2023-11-02 22:01:20,593 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:01:22,123 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 96 EpochTime = 1.528 (s) Losses = ['0.1506', '96.8750'] lr = 0.000288
+2023-11-02 22:01:23,341 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 96  acc = 88.0000
+2023-11-02 22:01:24,192 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:01:26,370 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 97 EpochTime = 2.176 (s) Losses = ['0.1908', '97.9167'] lr = 0.000278
+2023-11-02 22:01:27,831 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 97  acc = 88.0000
+2023-11-02 22:01:28,309 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:01:30,376 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 98 EpochTime = 2.065 (s) Losses = ['0.1541', '97.9167'] lr = 0.000269
+2023-11-02 22:01:31,662 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 98  acc = 89.0000
+2023-11-02 22:01:32,900 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:01:34,725 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 99 EpochTime = 1.823 (s) Losses = ['0.1867', '95.8333'] lr = 0.000260
+2023-11-02 22:01:35,857 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 99  acc = 90.0000
+2023-11-02 22:01:37,986 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:01:39,274 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 100 EpochTime = 1.287 (s) Losses = ['0.1820', '97.9167'] lr = 0.000251
+2023-11-02 22:01:40,376 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 100  acc = 90.0000
+2023-11-02 22:01:41,442 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:01:43,226 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 101 EpochTime = 1.781 (s) Losses = ['0.1999', '95.8333'] lr = 0.000242
+2023-11-02 22:01:44,416 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 101  acc = 90.0000
+2023-11-02 22:01:45,672 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:01:47,242 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 102 EpochTime = 1.566 (s) Losses = ['0.1656', '98.9583'] lr = 0.000233
+2023-11-02 22:01:48,602 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 102  acc = 90.0000
+2023-11-02 22:01:49,562 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:01:51,579 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 103 EpochTime = 2.015 (s) Losses = ['0.1835', '96.8750'] lr = 0.000224
+2023-11-02 22:01:52,585 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 103  acc = 90.0000
+2023-11-02 22:01:53,760 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:01:55,716 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 104 EpochTime = 1.955 (s) Losses = ['0.1554', '96.8750'] lr = 0.000215
+2023-11-02 22:01:56,775 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 104  acc = 90.0000
+2023-11-02 22:01:57,553 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:01:59,959 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 105 EpochTime = 2.404 (s) Losses = ['0.1859', '95.8333'] lr = 0.000207
+2023-11-02 22:02:01,042 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 105  acc = 90.0000
+2023-11-02 22:02:02,356 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:02:04,198 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 106 EpochTime = 1.840 (s) Losses = ['0.1896', '94.7917'] lr = 0.000199
+2023-11-02 22:02:05,223 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 106  acc = 90.0000
+2023-11-02 22:02:06,682 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:02:08,179 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 107 EpochTime = 1.496 (s) Losses = ['0.1345', '98.9583'] lr = 0.000190
+2023-11-02 22:02:09,196 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 107  acc = 90.0000
+2023-11-02 22:02:10,627 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:02:12,514 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 108 EpochTime = 1.885 (s) Losses = ['0.1886', '96.8750'] lr = 0.000182
+2023-11-02 22:02:13,649 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 108  acc = 92.0000
+2023-11-02 22:02:14,862 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:02:16,858 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 109 EpochTime = 1.993 (s) Losses = ['0.1664', '96.8750'] lr = 0.000174
+2023-11-02 22:02:17,918 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 109  acc = 92.0000
+2023-11-02 22:02:19,281 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:02:20,801 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 110 EpochTime = 1.517 (s) Losses = ['0.1727', '97.9167'] lr = 0.000166
+2023-11-02 22:02:22,190 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 110  acc = 92.0000
+2023-11-02 22:02:23,185 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:02:24,977 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 111 EpochTime = 1.790 (s) Losses = ['0.1673', '95.8333'] lr = 0.000159
+2023-11-02 22:02:26,435 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 111  acc = 92.0000
+2023-11-02 22:02:27,448 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:02:29,201 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 112 EpochTime = 1.752 (s) Losses = ['0.1636', '95.8333'] lr = 0.000151
+2023-11-02 22:02:30,610 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 112  acc = 92.0000
+2023-11-02 22:02:31,148 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:02:33,055 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 113 EpochTime = 1.905 (s) Losses = ['0.1580', '97.9167'] lr = 0.000144
+2023-11-02 22:02:34,305 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 113  acc = 92.0000
+2023-11-02 22:02:35,311 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:02:36,691 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 114 EpochTime = 1.377 (s) Losses = ['0.1484', '97.9167'] lr = 0.000136
+2023-11-02 22:02:38,170 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 114  acc = 92.0000
+2023-11-02 22:02:39,765 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:02:41,145 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 115 EpochTime = 1.377 (s) Losses = ['0.1721', '93.7500'] lr = 0.000129
+2023-11-02 22:02:42,692 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 115  acc = 92.0000
+2023-11-02 22:02:43,350 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:02:45,374 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 116 EpochTime = 2.022 (s) Losses = ['0.1821', '96.8750'] lr = 0.000122
+2023-11-02 22:02:46,693 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 116  acc = 92.0000
+2023-11-02 22:02:48,086 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:02:49,575 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 117 EpochTime = 1.487 (s) Losses = ['0.1642', '98.9583'] lr = 0.000116
+2023-11-02 22:02:50,944 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 117  acc = 92.0000
+2023-11-02 22:02:51,795 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:02:53,409 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 118 EpochTime = 1.612 (s) Losses = ['0.1421', '98.9583'] lr = 0.000109
+2023-11-02 22:02:54,662 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 118  acc = 91.0000
+2023-11-02 22:02:55,623 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:02:57,628 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 119 EpochTime = 2.003 (s) Losses = ['0.1469', '100.0000'] lr = 0.000103
+2023-11-02 22:02:58,715 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 119  acc = 91.0000
+2023-11-02 22:02:59,801 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:03:01,967 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 120 EpochTime = 2.164 (s) Losses = ['0.1894', '96.8750'] lr = 0.000096
+2023-11-02 22:03:03,073 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 120  acc = 91.0000
+2023-11-02 22:03:03,925 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:03:05,998 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 121 EpochTime = 2.071 (s) Losses = ['0.1348', '97.9167'] lr = 0.000090
+2023-11-02 22:03:07,035 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 121  acc = 91.0000
+2023-11-02 22:03:08,460 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:03:10,201 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 122 EpochTime = 1.738 (s) Losses = ['0.1704', '95.8333'] lr = 0.000084
+2023-11-02 22:03:11,269 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 122  acc = 91.0000
+2023-11-02 22:03:12,265 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:03:13,685 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 123 EpochTime = 1.418 (s) Losses = ['0.1388', '97.9167'] lr = 0.000079
+2023-11-02 22:03:14,991 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 123  acc = 91.0000
+2023-11-02 22:03:16,646 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:03:18,346 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 124 EpochTime = 1.698 (s) Losses = ['0.1459', '96.8750'] lr = 0.000073
+2023-11-02 22:03:20,003 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 124  acc = 91.0000
+2023-11-02 22:03:20,992 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:03:22,286 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 125 EpochTime = 1.293 (s) Losses = ['0.1750', '95.8333'] lr = 0.000068
+2023-11-02 22:03:23,374 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 125  acc = 91.0000
+2023-11-02 22:03:24,337 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:03:26,072 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 126 EpochTime = 1.733 (s) Losses = ['0.1828', '95.8333'] lr = 0.000063
+2023-11-02 22:03:27,338 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 126  acc = 91.0000
+2023-11-02 22:03:28,361 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:03:30,062 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 127 EpochTime = 1.699 (s) Losses = ['0.1637', '96.8750'] lr = 0.000058
+2023-11-02 22:03:31,916 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 127  acc = 91.0000
+2023-11-02 22:03:32,512 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:03:34,513 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 128 EpochTime = 2.000 (s) Losses = ['0.1614', '96.8750'] lr = 0.000053
+2023-11-02 22:03:35,546 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 128  acc = 91.0000
+2023-11-02 22:03:36,755 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:03:38,710 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 129 EpochTime = 1.953 (s) Losses = ['0.1403', '97.9167'] lr = 0.000049
+2023-11-02 22:03:39,776 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 129  acc = 91.0000
+2023-11-02 22:03:41,476 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:03:43,319 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 130 EpochTime = 1.842 (s) Losses = ['0.1645', '96.8750'] lr = 0.000044
+2023-11-02 22:03:44,401 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 130  acc = 91.0000
+2023-11-02 22:03:45,298 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:03:47,288 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 131 EpochTime = 1.988 (s) Losses = ['0.1370', '97.9167'] lr = 0.000040
+2023-11-02 22:03:48,378 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 131  acc = 91.0000
+2023-11-02 22:03:49,624 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:03:51,690 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 132 EpochTime = 2.064 (s) Losses = ['0.1432', '96.8750'] lr = 0.000036
+2023-11-02 22:03:52,767 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 132  acc = 91.0000
+2023-11-02 22:03:53,917 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:03:55,353 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 133 EpochTime = 1.434 (s) Losses = ['0.1723', '96.8750'] lr = 0.000032
+2023-11-02 22:03:56,395 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 133  acc = 91.0000
+2023-11-02 22:03:57,036 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:03:58,309 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 134 EpochTime = 1.271 (s) Losses = ['0.1592', '96.8750'] lr = 0.000029
+2023-11-02 22:03:59,393 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 134  acc = 91.0000
+2023-11-02 22:04:00,461 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:04:02,385 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 135 EpochTime = 1.922 (s) Losses = ['0.1555', '97.9167'] lr = 0.000025
+2023-11-02 22:04:03,881 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 135  acc = 91.0000
+2023-11-02 22:04:04,831 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:04:06,144 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 136 EpochTime = 1.312 (s) Losses = ['0.1397', '97.9167'] lr = 0.000022
+2023-11-02 22:04:08,108 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 136  acc = 91.0000
+2023-11-02 22:04:10,818 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:04:12,173 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 137 EpochTime = 1.350 (s) Losses = ['0.1373', '97.9167'] lr = 0.000019
+2023-11-02 22:04:13,263 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 137  acc = 91.0000
+2023-11-02 22:04:14,037 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:04:15,730 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 138 EpochTime = 1.692 (s) Losses = ['0.1661', '96.8750'] lr = 0.000017
+2023-11-02 22:04:16,951 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 138  acc = 91.0000
+2023-11-02 22:04:17,836 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:04:19,160 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 139 EpochTime = 1.321 (s) Losses = ['0.1888', '94.7917'] lr = 0.000014
+2023-11-02 22:04:20,390 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 139  acc = 91.0000
+2023-11-02 22:04:21,461 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:04:22,824 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 140 EpochTime = 1.361 (s) Losses = ['0.1722', '95.8333'] lr = 0.000012
+2023-11-02 22:04:24,283 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 140  acc = 91.0000
+2023-11-02 22:04:24,813 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:04:26,730 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 141 EpochTime = 1.916 (s) Losses = ['0.1367', '97.9167'] lr = 0.000010
+2023-11-02 22:04:27,859 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 141  acc = 91.0000
+2023-11-02 22:04:28,736 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:04:30,610 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-epoch-141.pth
+2023-11-02 22:04:31,958 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 142 EpochTime = 1.346 (s) Losses = ['0.1709', '94.7917'] lr = 0.000008
+2023-11-02 22:04:33,195 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 142  acc = 91.0000
+2023-11-02 22:04:34,054 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:04:35,574 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-epoch-142.pth
+2023-11-02 22:04:37,081 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 143 EpochTime = 1.505 (s) Losses = ['0.1447', '97.9167'] lr = 0.000006
+2023-11-02 22:04:38,231 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 143  acc = 91.0000
+2023-11-02 22:04:40,493 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:04:42,023 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-epoch-143.pth
+2023-11-02 22:04:43,480 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 144 EpochTime = 1.456 (s) Losses = ['0.1531', '96.8750'] lr = 0.000005
+2023-11-02 22:04:44,742 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 144  acc = 91.0000
+2023-11-02 22:04:46,534 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:04:48,027 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-epoch-144.pth
+2023-11-02 22:04:50,201 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 145 EpochTime = 2.172 (s) Losses = ['0.1798', '95.8333'] lr = 0.000004
+2023-11-02 22:04:51,549 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 145  acc = 91.0000
+2023-11-02 22:04:52,691 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:04:54,438 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-epoch-145.pth
+2023-11-02 22:04:55,729 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 146 EpochTime = 1.289 (s) Losses = ['0.1497', '97.9167'] lr = 0.000003
+2023-11-02 22:04:56,781 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 146  acc = 91.0000
+2023-11-02 22:04:57,378 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:04:58,258 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-epoch-146.pth
+2023-11-02 22:04:59,613 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 147 EpochTime = 1.353 (s) Losses = ['0.1373', '98.9583'] lr = 0.000002
+2023-11-02 22:05:00,961 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 147  acc = 91.0000
+2023-11-02 22:05:02,006 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:05:02,866 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-epoch-147.pth
+2023-11-02 22:05:04,528 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 148 EpochTime = 1.661 (s) Losses = ['0.1345', '96.8750'] lr = 0.000001
+2023-11-02 22:05:05,595 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 148  acc = 91.0000
+2023-11-02 22:05:08,229 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:05:09,868 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-epoch-148.pth
+2023-11-02 22:05:12,370 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 149 EpochTime = 2.500 (s) Losses = ['0.1742', '96.8750'] lr = 0.000001
+2023-11-02 22:05:13,418 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 149  acc = 91.0000
+2023-11-02 22:05:14,582 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:05:15,474 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-epoch-149.pth
+2023-11-02 22:05:17,180 - fewshot_modelnet_linear_classification - INFO - [Training] EPOCH: 150 EpochTime = 1.704 (s) Losses = ['0.2067', '94.7917'] lr = 0.000001
+2023-11-02 22:05:18,250 - fewshot_modelnet_linear_classification - INFO - [Validation] EPOCH: 150  acc = 91.0000
+2023-11-02 22:05:19,325 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-last.pth
+2023-11-02 22:05:20,958 - fewshot_modelnet_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_linear_classification/cfgs/LR_0.001/ckpt-epoch-150.pth
