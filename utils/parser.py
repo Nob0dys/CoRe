@@ -4,7 +4,6 @@ from pathlib import Path
 from collections import defaultdict
 import sys
 sys.path.append("..")
-from methods import METHODS
 
 def get_args():
     parser = argparse.ArgumentParser()
