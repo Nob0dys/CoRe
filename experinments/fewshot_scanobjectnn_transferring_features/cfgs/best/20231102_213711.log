@@ -1,0 +1,600 @@
+2023-11-02 21:37:11,299 - fewshot_scanobjectnn_transferring_features - INFO - Copy the Config file from cfgs/fewshot_scanobjectnn_transferring_features.yaml to ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/config.yaml
+2023-11-02 21:37:11,299 - fewshot_scanobjectnn_transferring_features - INFO - args.config : cfgs/fewshot_scanobjectnn_transferring_features.yaml
+2023-11-02 21:37:11,299 - fewshot_scanobjectnn_transferring_features - INFO - args.launcher : none
+2023-11-02 21:37:11,299 - fewshot_scanobjectnn_transferring_features - INFO - args.local_rank : 0
+2023-11-02 21:37:11,299 - fewshot_scanobjectnn_transferring_features - INFO - args.num_workers : 8
+2023-11-02 21:37:11,299 - fewshot_scanobjectnn_transferring_features - INFO - args.seed : 0
+2023-11-02 21:37:11,299 - fewshot_scanobjectnn_transferring_features - INFO - args.deterministic : False
+2023-11-02 21:37:11,300 - fewshot_scanobjectnn_transferring_features - INFO - args.sync_bn : True
+2023-11-02 21:37:11,300 - fewshot_scanobjectnn_transferring_features - INFO - args.large_group : 5
+2023-11-02 21:37:11,300 - fewshot_scanobjectnn_transferring_features - INFO - args.small_group : 10
+2023-11-02 21:37:11,300 - fewshot_scanobjectnn_transferring_features - INFO - args.large_patch : 6
+2023-11-02 21:37:11,300 - fewshot_scanobjectnn_transferring_features - INFO - args.small_patch : 3
+2023-11-02 21:37:11,300 - fewshot_scanobjectnn_transferring_features - INFO - args.queue_length : 8192
+2023-11-02 21:37:11,300 - fewshot_scanobjectnn_transferring_features - INFO - args.epoch_queue_starts : 10
+2023-11-02 21:37:11,300 - fewshot_scanobjectnn_transferring_features - INFO - args.nmb_crops : 64
+2023-11-02 21:37:11,300 - fewshot_scanobjectnn_transferring_features - INFO - args.sample_num : 16
+2023-11-02 21:37:11,300 - fewshot_scanobjectnn_transferring_features - INFO - args.fea_dim : 384
+2023-11-02 21:37:11,300 - fewshot_scanobjectnn_transferring_features - INFO - args.hidden_mlp : 256
+2023-11-02 21:37:11,301 - fewshot_scanobjectnn_transferring_features - INFO - args.output_dim : 128
+2023-11-02 21:37:11,301 - fewshot_scanobjectnn_transferring_features - INFO - args.nmb_prototypes : 200
+2023-11-02 21:37:11,301 - fewshot_scanobjectnn_transferring_features - INFO - args.temperature : 0.1
+2023-11-02 21:37:11,301 - fewshot_scanobjectnn_transferring_features - INFO - args.epsilon : 0.05
+2023-11-02 21:37:11,301 - fewshot_scanobjectnn_transferring_features - INFO - args.sinkhorn_iterations : 3
+2023-11-02 21:37:11,301 - fewshot_scanobjectnn_transferring_features - INFO - args.world_size : 1
+2023-11-02 21:37:11,301 - fewshot_scanobjectnn_transferring_features - INFO - args.exp_name : lr0.00065
+2023-11-02 21:37:11,301 - fewshot_scanobjectnn_transferring_features - INFO - args.loss : cd1
+2023-11-02 21:37:11,301 - fewshot_scanobjectnn_transferring_features - INFO - args.start_ckpts : None
+2023-11-02 21:37:11,302 - fewshot_scanobjectnn_transferring_features - INFO - args.ckpts : ./experiments/pretrain_MaskSurf/cfgs/add_as_normal/ckpt-last.pth
+2023-11-02 21:37:11,302 - fewshot_scanobjectnn_transferring_features - INFO - args.val_freq : 1
+2023-11-02 21:37:11,302 - fewshot_scanobjectnn_transferring_features - INFO - args.vote : False
+2023-11-02 21:37:11,302 - fewshot_scanobjectnn_transferring_features - INFO - args.resume : False
+2023-11-02 21:37:11,302 - fewshot_scanobjectnn_transferring_features - INFO - args.test : False
+2023-11-02 21:37:11,302 - fewshot_scanobjectnn_transferring_features - INFO - args.finetune_model : True
+2023-11-02 21:37:11,302 - fewshot_scanobjectnn_transferring_features - INFO - args.scratch_model : False
+2023-11-02 21:37:11,302 - fewshot_scanobjectnn_transferring_features - INFO - args.mode : None
+2023-11-02 21:37:11,302 - fewshot_scanobjectnn_transferring_features - INFO - args.way : 5
+2023-11-02 21:37:11,302 - fewshot_scanobjectnn_transferring_features - INFO - args.shot : 10
+2023-11-02 21:37:11,302 - fewshot_scanobjectnn_transferring_features - INFO - args.fold : 3
+2023-11-02 21:37:11,302 - fewshot_scanobjectnn_transferring_features - INFO - args.experiment_path : ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065
+2023-11-02 21:37:11,303 - fewshot_scanobjectnn_transferring_features - INFO - args.tfboard_path : ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/TFBoard/lr0.00065
+2023-11-02 21:37:11,303 - fewshot_scanobjectnn_transferring_features - INFO - args.log_name : fewshot_scanobjectnn_transferring_features
+2023-11-02 21:37:11,303 - fewshot_scanobjectnn_transferring_features - INFO - args.use_gpu : True
+2023-11-02 21:37:11,303 - fewshot_scanobjectnn_transferring_features - INFO - args.distributed : False
+2023-11-02 21:37:11,303 - fewshot_scanobjectnn_transferring_features - INFO - config.optimizer = edict()
+2023-11-02 21:37:11,303 - fewshot_scanobjectnn_transferring_features - INFO - config.optimizer.type : AdamW
+2023-11-02 21:37:11,303 - fewshot_scanobjectnn_transferring_features - INFO - config.optimizer.part : all
+2023-11-02 21:37:11,303 - fewshot_scanobjectnn_transferring_features - INFO - config.optimizer.kwargs = edict()
+2023-11-02 21:37:11,303 - fewshot_scanobjectnn_transferring_features - INFO - config.optimizer.kwargs.lr : 0.00065
+2023-11-02 21:37:11,303 - fewshot_scanobjectnn_transferring_features - INFO - config.optimizer.kwargs.weight_decay : 0.05
+2023-11-02 21:37:11,304 - fewshot_scanobjectnn_transferring_features - INFO - config.scheduler = edict()
+2023-11-02 21:37:11,304 - fewshot_scanobjectnn_transferring_features - INFO - config.scheduler.type : CosLR
+2023-11-02 21:37:11,304 - fewshot_scanobjectnn_transferring_features - INFO - config.scheduler.kwargs = edict()
+2023-11-02 21:37:11,304 - fewshot_scanobjectnn_transferring_features - INFO - config.scheduler.kwargs.epochs : 150
+2023-11-02 21:37:11,304 - fewshot_scanobjectnn_transferring_features - INFO - config.scheduler.kwargs.initial_epochs : 10
+2023-11-02 21:37:11,304 - fewshot_scanobjectnn_transferring_features - INFO - config.dataset = edict()
+2023-11-02 21:37:11,304 - fewshot_scanobjectnn_transferring_features - INFO - config.dataset.train = edict()
+2023-11-02 21:37:11,304 - fewshot_scanobjectnn_transferring_features - INFO - config.dataset.train._base_ = edict()
+2023-11-02 21:37:11,304 - fewshot_scanobjectnn_transferring_features - INFO - config.dataset.train._base_.NAME : ModelNetFewShot
+2023-11-02 21:37:11,304 - fewshot_scanobjectnn_transferring_features - INFO - config.dataset.train._base_.DATA_PATH : data/ScanObjectNN_hardest_fewshot
+2023-11-02 21:37:11,304 - fewshot_scanobjectnn_transferring_features - INFO - config.dataset.train._base_.N_POINTS : 2048
+2023-11-02 21:37:11,305 - fewshot_scanobjectnn_transferring_features - INFO - config.dataset.train._base_.NUM_CATEGORY : 15
+2023-11-02 21:37:11,305 - fewshot_scanobjectnn_transferring_features - INFO - config.dataset.train._base_.USE_NORMALS : False
+2023-11-02 21:37:11,306 - fewshot_scanobjectnn_transferring_features - INFO - config.dataset.train.others = edict()
+2023-11-02 21:37:11,306 - fewshot_scanobjectnn_transferring_features - INFO - config.dataset.train.others.subset : train
+2023-11-02 21:37:11,306 - fewshot_scanobjectnn_transferring_features - INFO - config.dataset.train.others.bs : 32
+2023-11-02 21:37:11,306 - fewshot_scanobjectnn_transferring_features - INFO - config.dataset.val = edict()
+2023-11-02 21:37:11,306 - fewshot_scanobjectnn_transferring_features - INFO - config.dataset.val._base_ = edict()
+2023-11-02 21:37:11,306 - fewshot_scanobjectnn_transferring_features - INFO - config.dataset.val._base_.NAME : ModelNetFewShot
+2023-11-02 21:37:11,307 - fewshot_scanobjectnn_transferring_features - INFO - config.dataset.val._base_.DATA_PATH : data/ScanObjectNN_hardest_fewshot
+2023-11-02 21:37:11,307 - fewshot_scanobjectnn_transferring_features - INFO - config.dataset.val._base_.N_POINTS : 2048
+2023-11-02 21:37:11,307 - fewshot_scanobjectnn_transferring_features - INFO - config.dataset.val._base_.NUM_CATEGORY : 15
+2023-11-02 21:37:11,307 - fewshot_scanobjectnn_transferring_features - INFO - config.dataset.val._base_.USE_NORMALS : False
+2023-11-02 21:37:11,307 - fewshot_scanobjectnn_transferring_features - INFO - config.dataset.val.others = edict()
+2023-11-02 21:37:11,307 - fewshot_scanobjectnn_transferring_features - INFO - config.dataset.val.others.subset : test
+2023-11-02 21:37:11,307 - fewshot_scanobjectnn_transferring_features - INFO - config.dataset.val.others.bs : 64
+2023-11-02 21:37:11,308 - fewshot_scanobjectnn_transferring_features - INFO - config.dataset.test = edict()
+2023-11-02 21:37:11,308 - fewshot_scanobjectnn_transferring_features - INFO - config.dataset.test._base_ = edict()
+2023-11-02 21:37:11,308 - fewshot_scanobjectnn_transferring_features - INFO - config.dataset.test._base_.NAME : ScanObjectNN_hardest
+2023-11-02 21:37:11,308 - fewshot_scanobjectnn_transferring_features - INFO - config.dataset.test._base_.ROOT : data/ScanObjectNN/main_split
+2023-11-02 21:37:11,308 - fewshot_scanobjectnn_transferring_features - INFO - config.dataset.test.others = edict()
+2023-11-02 21:37:11,308 - fewshot_scanobjectnn_transferring_features - INFO - config.dataset.test.others.subset : test
+2023-11-02 21:37:11,308 - fewshot_scanobjectnn_transferring_features - INFO - config.dataset.test.others.bs : 32
+2023-11-02 21:37:11,308 - fewshot_scanobjectnn_transferring_features - INFO - config.model = edict()
+2023-11-02 21:37:11,309 - fewshot_scanobjectnn_transferring_features - INFO - config.model.NAME : PointTransformer
+2023-11-02 21:37:11,309 - fewshot_scanobjectnn_transferring_features - INFO - config.model.trans_dim : 384
+2023-11-02 21:37:11,309 - fewshot_scanobjectnn_transferring_features - INFO - config.model.depth : 12
+2023-11-02 21:37:11,309 - fewshot_scanobjectnn_transferring_features - INFO - config.model.drop_path_rate : 0.1
+2023-11-02 21:37:11,309 - fewshot_scanobjectnn_transferring_features - INFO - config.model.cls_dim : 40
+2023-11-02 21:37:11,309 - fewshot_scanobjectnn_transferring_features - INFO - config.model.num_heads : 6
+2023-11-02 21:37:11,310 - fewshot_scanobjectnn_transferring_features - INFO - config.model.group_size : 32
+2023-11-02 21:37:11,310 - fewshot_scanobjectnn_transferring_features - INFO - config.model.num_group : 64
+2023-11-02 21:37:11,310 - fewshot_scanobjectnn_transferring_features - INFO - config.model.encoder_dims : 384
+2023-11-02 21:37:11,310 - fewshot_scanobjectnn_transferring_features - INFO - config.npoints : 1024
+2023-11-02 21:37:11,310 - fewshot_scanobjectnn_transferring_features - INFO - config.total_bs : 32
+2023-11-02 21:37:11,310 - fewshot_scanobjectnn_transferring_features - INFO - config.step_per_update : 1
+2023-11-02 21:37:11,310 - fewshot_scanobjectnn_transferring_features - INFO - config.max_epoch : 150
+2023-11-02 21:37:11,310 - fewshot_scanobjectnn_transferring_features - INFO - config.grad_norm_clip : 10
+2023-11-02 21:37:11,310 - fewshot_scanobjectnn_transferring_features - INFO - Distributed training: False
+2023-11-02 21:37:11,310 - fewshot_scanobjectnn_transferring_features - INFO - Set random seed to 0, deterministic: False
+2023-11-02 21:37:13,583 - fewshot_scanobjectnn_transferring_features - INFO - Using Data parallel ...
+2023-11-02 21:37:18,829 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 0 EpochTime = 5.236 (s) Losses = ['4.0211', '6.2500'] lr = 0.000001
+2023-11-02 21:37:23,269 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:37:24,541 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 1 EpochTime = 1.270 (s) Losses = ['3.8418', '0.0000'] lr = 0.000066
+2023-11-02 21:37:26,327 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 1  acc = 0.0000
+2023-11-02 21:37:29,854 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:37:30,772 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 2 EpochTime = 0.917 (s) Losses = ['3.7036', '6.2500'] lr = 0.000131
+2023-11-02 21:37:31,781 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 2  acc = 0.0000
+2023-11-02 21:37:37,115 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:37:38,061 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 3 EpochTime = 0.944 (s) Losses = ['3.6763', '0.0000'] lr = 0.000196
+2023-11-02 21:37:39,059 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 3  acc = 0.0000
+2023-11-02 21:37:43,936 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:37:44,929 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 4 EpochTime = 0.991 (s) Losses = ['3.6744', '0.0000'] lr = 0.000261
+2023-11-02 21:37:46,231 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 4  acc = 1.0000
+2023-11-02 21:37:51,035 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-best.pth
+2023-11-02 21:37:51,036 - fewshot_scanobjectnn_transferring_features - INFO - --------------------------------------------------------------------------------------------
+2023-11-02 21:37:53,759 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:37:54,755 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 5 EpochTime = 0.992 (s) Losses = ['3.6036', '9.3750'] lr = 0.000325
+2023-11-02 21:37:55,711 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 5  acc = 6.0000
+2023-11-02 21:38:00,525 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-best.pth
+2023-11-02 21:38:00,526 - fewshot_scanobjectnn_transferring_features - INFO - --------------------------------------------------------------------------------------------
+2023-11-02 21:38:03,573 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:38:04,641 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 6 EpochTime = 1.066 (s) Losses = ['3.5297', '15.6250'] lr = 0.000390
+2023-11-02 21:38:05,700 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 6  acc = 10.0000
+2023-11-02 21:38:10,697 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-best.pth
+2023-11-02 21:38:10,697 - fewshot_scanobjectnn_transferring_features - INFO - --------------------------------------------------------------------------------------------
+2023-11-02 21:38:14,335 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:38:15,324 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 7 EpochTime = 0.987 (s) Losses = ['3.3094', '25.0000'] lr = 0.000455
+2023-11-02 21:38:16,389 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 7  acc = 16.0000
+2023-11-02 21:38:18,212 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-best.pth
+2023-11-02 21:38:18,691 - fewshot_scanobjectnn_transferring_features - INFO - --------------------------------------------------------------------------------------------
+2023-11-02 21:38:21,212 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:38:22,520 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 8 EpochTime = 1.306 (s) Losses = ['2.9911', '25.0000'] lr = 0.000520
+2023-11-02 21:38:23,936 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 8  acc = 20.0000
+2023-11-02 21:38:27,337 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-best.pth
+2023-11-02 21:38:27,338 - fewshot_scanobjectnn_transferring_features - INFO - --------------------------------------------------------------------------------------------
+2023-11-02 21:38:30,942 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:38:31,913 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 9 EpochTime = 0.968 (s) Losses = ['3.0080', '28.1250'] lr = 0.000585
+2023-11-02 21:38:32,945 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 9  acc = 32.0000
+2023-11-02 21:38:37,041 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-best.pth
+2023-11-02 21:38:37,041 - fewshot_scanobjectnn_transferring_features - INFO - --------------------------------------------------------------------------------------------
+2023-11-02 21:38:42,531 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:38:43,475 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 10 EpochTime = 0.942 (s) Losses = ['2.8503', '37.5000'] lr = 0.000643
+2023-11-02 21:38:44,545 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 10  acc = 38.0000
+2023-11-02 21:38:47,296 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-best.pth
+2023-11-02 21:38:47,297 - fewshot_scanobjectnn_transferring_features - INFO - --------------------------------------------------------------------------------------------
+2023-11-02 21:38:51,254 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:38:52,393 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 11 EpochTime = 1.136 (s) Losses = ['2.8077', '37.5000'] lr = 0.000641
+2023-11-02 21:38:53,409 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 11  acc = 44.0000
+2023-11-02 21:38:56,759 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-best.pth
+2023-11-02 21:38:56,759 - fewshot_scanobjectnn_transferring_features - INFO - --------------------------------------------------------------------------------------------
+2023-11-02 21:39:01,365 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:39:02,323 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 12 EpochTime = 0.955 (s) Losses = ['2.6204', '50.0000'] lr = 0.000640
+2023-11-02 21:39:03,466 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 12  acc = 45.0000
+2023-11-02 21:39:07,321 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-best.pth
+2023-11-02 21:39:07,321 - fewshot_scanobjectnn_transferring_features - INFO - --------------------------------------------------------------------------------------------
+2023-11-02 21:39:11,351 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:39:12,264 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 13 EpochTime = 0.910 (s) Losses = ['2.3829', '56.2500'] lr = 0.000638
+2023-11-02 21:39:13,302 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 13  acc = 51.0000
+2023-11-02 21:39:14,908 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-best.pth
+2023-11-02 21:39:14,908 - fewshot_scanobjectnn_transferring_features - INFO - --------------------------------------------------------------------------------------------
+2023-11-02 21:39:18,688 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:39:19,630 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 14 EpochTime = 0.940 (s) Losses = ['2.1920', '65.6250'] lr = 0.000636
+2023-11-02 21:39:20,617 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 14  acc = 49.0000
+2023-11-02 21:39:25,321 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:39:26,292 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 15 EpochTime = 0.970 (s) Losses = ['2.2923', '68.7500'] lr = 0.000634
+2023-11-02 21:39:27,287 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 15  acc = 48.0000
+2023-11-02 21:39:30,035 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:39:31,016 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 16 EpochTime = 0.979 (s) Losses = ['1.9617', '71.8750'] lr = 0.000632
+2023-11-02 21:39:32,297 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 16  acc = 47.0000
+2023-11-02 21:39:35,875 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:39:36,938 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 17 EpochTime = 1.060 (s) Losses = ['1.7927', '78.1250'] lr = 0.000630
+2023-11-02 21:39:38,235 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 17  acc = 45.0000
+2023-11-02 21:39:42,182 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:39:43,195 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 18 EpochTime = 1.012 (s) Losses = ['1.6398', '87.5000'] lr = 0.000627
+2023-11-02 21:39:44,201 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 18  acc = 44.0000
+2023-11-02 21:39:47,303 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:39:48,255 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 19 EpochTime = 0.949 (s) Losses = ['1.6147', '84.3750'] lr = 0.000625
+2023-11-02 21:39:49,240 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 19  acc = 48.0000
+2023-11-02 21:39:53,283 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:39:54,500 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 20 EpochTime = 1.215 (s) Losses = ['1.6022', '81.2500'] lr = 0.000622
+2023-11-02 21:39:55,518 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 20  acc = 51.0000
+2023-11-02 21:39:59,059 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:40:00,370 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 21 EpochTime = 1.308 (s) Losses = ['1.1374', '96.8750'] lr = 0.000619
+2023-11-02 21:40:01,355 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 21  acc = 53.0000
+2023-11-02 21:40:05,754 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-best.pth
+2023-11-02 21:40:05,755 - fewshot_scanobjectnn_transferring_features - INFO - --------------------------------------------------------------------------------------------
+2023-11-02 21:40:09,991 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:40:11,047 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 22 EpochTime = 1.054 (s) Losses = ['1.2867', '81.2500'] lr = 0.000616
+2023-11-02 21:40:12,198 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 22  acc = 54.0000
+2023-11-02 21:40:15,844 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-best.pth
+2023-11-02 21:40:15,845 - fewshot_scanobjectnn_transferring_features - INFO - --------------------------------------------------------------------------------------------
+2023-11-02 21:40:18,835 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:40:19,813 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 23 EpochTime = 0.976 (s) Losses = ['1.0371', '90.6250'] lr = 0.000613
+2023-11-02 21:40:20,831 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 23  acc = 57.0000
+2023-11-02 21:40:24,363 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-best.pth
+2023-11-02 21:40:24,364 - fewshot_scanobjectnn_transferring_features - INFO - --------------------------------------------------------------------------------------------
+2023-11-02 21:40:27,873 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:40:28,933 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 24 EpochTime = 1.057 (s) Losses = ['1.0947', '87.5000'] lr = 0.000610
+2023-11-02 21:40:30,365 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 24  acc = 58.0000
+2023-11-02 21:40:34,019 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-best.pth
+2023-11-02 21:40:34,020 - fewshot_scanobjectnn_transferring_features - INFO - --------------------------------------------------------------------------------------------
+2023-11-02 21:40:38,820 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:40:39,783 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 25 EpochTime = 0.961 (s) Losses = ['0.9710', '87.5000'] lr = 0.000607
+2023-11-02 21:40:40,805 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 25  acc = 61.0000
+2023-11-02 21:40:43,950 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-best.pth
+2023-11-02 21:40:43,951 - fewshot_scanobjectnn_transferring_features - INFO - --------------------------------------------------------------------------------------------
+2023-11-02 21:40:48,230 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:40:49,279 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 26 EpochTime = 1.045 (s) Losses = ['0.9332', '100.0000'] lr = 0.000603
+2023-11-02 21:40:50,304 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 26  acc = 60.0000
+2023-11-02 21:40:54,393 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:40:55,382 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 27 EpochTime = 0.987 (s) Losses = ['0.9269', '84.3750'] lr = 0.000599
+2023-11-02 21:40:56,587 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 27  acc = 64.0000
+2023-11-02 21:41:00,676 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-best.pth
+2023-11-02 21:41:00,676 - fewshot_scanobjectnn_transferring_features - INFO - --------------------------------------------------------------------------------------------
+2023-11-02 21:41:05,831 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:41:06,837 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 28 EpochTime = 1.004 (s) Losses = ['0.7973', '96.8750'] lr = 0.000596
+2023-11-02 21:41:08,258 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 28  acc = 64.0000
+2023-11-02 21:41:12,455 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:41:13,475 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 29 EpochTime = 1.017 (s) Losses = ['0.9288', '81.2500'] lr = 0.000592
+2023-11-02 21:41:14,533 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 29  acc = 64.0000
+2023-11-02 21:41:19,512 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:41:20,596 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 30 EpochTime = 1.081 (s) Losses = ['0.6911', '93.7500'] lr = 0.000588
+2023-11-02 21:41:21,866 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 30  acc = 64.0000
+2023-11-02 21:41:26,613 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:41:27,799 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 31 EpochTime = 1.099 (s) Losses = ['0.6840', '96.8750'] lr = 0.000584
+2023-11-02 21:41:28,920 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 31  acc = 64.0000
+2023-11-02 21:41:32,942 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:41:33,913 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 32 EpochTime = 0.968 (s) Losses = ['0.6135', '93.7500'] lr = 0.000580
+2023-11-02 21:41:35,172 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 32  acc = 63.0000
+2023-11-02 21:41:40,353 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:41:41,332 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 33 EpochTime = 0.976 (s) Losses = ['0.5538', '93.7500'] lr = 0.000576
+2023-11-02 21:41:42,307 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 33  acc = 63.0000
+2023-11-02 21:41:45,878 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:41:46,993 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 34 EpochTime = 1.112 (s) Losses = ['0.4186', '100.0000'] lr = 0.000571
+2023-11-02 21:41:48,104 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 34  acc = 63.0000
+2023-11-02 21:41:50,040 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:41:50,949 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 35 EpochTime = 0.908 (s) Losses = ['0.4862', '96.8750'] lr = 0.000567
+2023-11-02 21:41:51,904 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 35  acc = 64.0000
+2023-11-02 21:41:54,744 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:41:55,721 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 36 EpochTime = 0.975 (s) Losses = ['0.3681', '100.0000'] lr = 0.000562
+2023-11-02 21:41:56,727 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 36  acc = 64.0000
+2023-11-02 21:41:59,811 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:42:00,938 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 37 EpochTime = 1.125 (s) Losses = ['0.3990', '100.0000'] lr = 0.000557
+2023-11-02 21:42:01,950 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 37  acc = 63.0000
+2023-11-02 21:42:07,246 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:42:08,222 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 38 EpochTime = 0.975 (s) Losses = ['0.3815', '100.0000'] lr = 0.000553
+2023-11-02 21:42:09,537 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 38  acc = 67.0000
+2023-11-02 21:42:11,447 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-best.pth
+2023-11-02 21:42:11,447 - fewshot_scanobjectnn_transferring_features - INFO - --------------------------------------------------------------------------------------------
+2023-11-02 21:42:16,340 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:42:17,435 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 39 EpochTime = 1.092 (s) Losses = ['0.4009', '100.0000'] lr = 0.000548
+2023-11-02 21:42:18,384 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 39  acc = 70.0000
+2023-11-02 21:42:21,512 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-best.pth
+2023-11-02 21:42:21,512 - fewshot_scanobjectnn_transferring_features - INFO - --------------------------------------------------------------------------------------------
+2023-11-02 21:42:24,923 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:42:25,940 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 40 EpochTime = 1.015 (s) Losses = ['0.3645', '100.0000'] lr = 0.000543
+2023-11-02 21:42:26,998 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 40  acc = 70.0000
+2023-11-02 21:42:30,464 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:42:31,424 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 41 EpochTime = 0.958 (s) Losses = ['0.2502', '100.0000'] lr = 0.000538
+2023-11-02 21:42:32,802 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 41  acc = 70.0000
+2023-11-02 21:42:37,484 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:42:38,418 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 42 EpochTime = 0.932 (s) Losses = ['0.2660', '100.0000'] lr = 0.000532
+2023-11-02 21:42:39,748 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 42  acc = 69.0000
+2023-11-02 21:42:44,765 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:42:46,233 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 43 EpochTime = 1.464 (s) Losses = ['0.2428', '100.0000'] lr = 0.000527
+2023-11-02 21:42:47,289 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 43  acc = 68.0000
+2023-11-02 21:42:49,882 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:42:50,820 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 44 EpochTime = 0.936 (s) Losses = ['0.2540', '100.0000'] lr = 0.000522
+2023-11-02 21:42:52,037 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 44  acc = 68.0000
+2023-11-02 21:42:54,060 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:42:55,116 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 45 EpochTime = 1.055 (s) Losses = ['0.2209', '100.0000'] lr = 0.000516
+2023-11-02 21:42:56,340 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 45  acc = 67.0000
+2023-11-02 21:43:00,547 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:43:01,672 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 46 EpochTime = 1.121 (s) Losses = ['0.3099', '100.0000'] lr = 0.000511
+2023-11-02 21:43:02,726 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 46  acc = 67.0000
+2023-11-02 21:43:07,234 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:43:08,153 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 47 EpochTime = 0.918 (s) Losses = ['0.2338', '100.0000'] lr = 0.000505
+2023-11-02 21:43:09,138 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 47  acc = 66.0000
+2023-11-02 21:43:14,228 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:43:15,257 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 48 EpochTime = 1.028 (s) Losses = ['0.2002', '100.0000'] lr = 0.000499
+2023-11-02 21:43:16,257 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 48  acc = 65.0000
+2023-11-02 21:43:17,894 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:43:18,922 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 49 EpochTime = 1.026 (s) Losses = ['0.2049', '100.0000'] lr = 0.000494
+2023-11-02 21:43:19,908 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 49  acc = 64.0000
+2023-11-02 21:43:23,041 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:43:24,017 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 50 EpochTime = 0.974 (s) Losses = ['0.1830', '100.0000'] lr = 0.000488
+2023-11-02 21:43:25,172 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 50  acc = 63.0000
+2023-11-02 21:43:27,689 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:43:28,686 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 51 EpochTime = 0.996 (s) Losses = ['0.1627', '100.0000'] lr = 0.000482
+2023-11-02 21:43:29,691 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 51  acc = 62.0000
+2023-11-02 21:43:33,819 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:43:35,103 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 52 EpochTime = 1.281 (s) Losses = ['0.1362', '100.0000'] lr = 0.000476
+2023-11-02 21:43:36,098 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 52  acc = 62.0000
+2023-11-02 21:43:39,750 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:43:40,731 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 53 EpochTime = 0.978 (s) Losses = ['0.1757', '100.0000'] lr = 0.000470
+2023-11-02 21:43:41,701 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 53  acc = 63.0000
+2023-11-02 21:43:46,557 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:43:47,464 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 54 EpochTime = 0.904 (s) Losses = ['0.1750', '100.0000'] lr = 0.000464
+2023-11-02 21:43:48,452 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 54  acc = 64.0000
+2023-11-02 21:43:51,867 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:43:52,843 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 55 EpochTime = 0.973 (s) Losses = ['0.1165', '100.0000'] lr = 0.000457
+2023-11-02 21:43:53,826 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 55  acc = 64.0000
+2023-11-02 21:43:58,320 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:43:59,276 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 56 EpochTime = 0.953 (s) Losses = ['0.1977', '100.0000'] lr = 0.000451
+2023-11-02 21:44:00,542 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 56  acc = 65.0000
+2023-11-02 21:44:03,439 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:44:04,359 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 57 EpochTime = 0.919 (s) Losses = ['0.1784', '100.0000'] lr = 0.000445
+2023-11-02 21:44:05,461 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 57  acc = 65.0000
+2023-11-02 21:44:10,518 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:44:11,399 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 58 EpochTime = 0.879 (s) Losses = ['0.1259', '100.0000'] lr = 0.000439
+2023-11-02 21:44:12,369 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 58  acc = 65.0000
+2023-11-02 21:44:15,952 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:44:16,829 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 59 EpochTime = 0.875 (s) Losses = ['0.1536', '100.0000'] lr = 0.000432
+2023-11-02 21:44:17,796 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 59  acc = 66.0000
+2023-11-02 21:44:21,833 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:44:22,830 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 60 EpochTime = 0.994 (s) Losses = ['0.1387', '100.0000'] lr = 0.000426
+2023-11-02 21:44:23,801 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 60  acc = 66.0000
+2023-11-02 21:44:25,428 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:44:26,632 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 61 EpochTime = 1.202 (s) Losses = ['0.1503', '100.0000'] lr = 0.000419
+2023-11-02 21:44:27,624 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 61  acc = 67.0000
+2023-11-02 21:44:29,183 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:44:30,206 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 62 EpochTime = 1.022 (s) Losses = ['0.1198', '100.0000'] lr = 0.000413
+2023-11-02 21:44:31,175 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 62  acc = 65.0000
+2023-11-02 21:44:34,202 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:44:35,125 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 63 EpochTime = 0.921 (s) Losses = ['0.1471', '100.0000'] lr = 0.000406
+2023-11-02 21:44:36,072 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 63  acc = 67.0000
+2023-11-02 21:44:39,494 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:44:40,498 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 64 EpochTime = 1.002 (s) Losses = ['0.1087', '100.0000'] lr = 0.000400
+2023-11-02 21:44:41,457 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 64  acc = 68.0000
+2023-11-02 21:44:45,124 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:44:46,100 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 65 EpochTime = 0.973 (s) Losses = ['0.1378', '100.0000'] lr = 0.000393
+2023-11-02 21:44:47,083 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 65  acc = 68.0000
+2023-11-02 21:44:51,961 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:44:52,897 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 66 EpochTime = 0.933 (s) Losses = ['0.1488', '100.0000'] lr = 0.000386
+2023-11-02 21:44:53,945 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 66  acc = 67.0000
+2023-11-02 21:44:56,692 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:44:57,642 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 67 EpochTime = 0.947 (s) Losses = ['0.1076', '100.0000'] lr = 0.000380
+2023-11-02 21:44:59,002 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 67  acc = 66.0000
+2023-11-02 21:45:03,248 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:45:04,577 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 68 EpochTime = 1.326 (s) Losses = ['0.1218', '100.0000'] lr = 0.000373
+2023-11-02 21:45:05,679 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 68  acc = 66.0000
+2023-11-02 21:45:08,710 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:45:09,587 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 69 EpochTime = 0.875 (s) Losses = ['0.1241', '100.0000'] lr = 0.000366
+2023-11-02 21:45:10,543 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 69  acc = 67.0000
+2023-11-02 21:45:12,717 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:45:13,772 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 70 EpochTime = 1.052 (s) Losses = ['0.1006', '100.0000'] lr = 0.000359
+2023-11-02 21:45:15,010 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 70  acc = 66.0000
+2023-11-02 21:45:18,168 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:45:19,077 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 71 EpochTime = 0.907 (s) Losses = ['0.1111', '100.0000'] lr = 0.000353
+2023-11-02 21:45:20,051 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 71  acc = 67.0000
+2023-11-02 21:45:24,900 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:45:25,861 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 72 EpochTime = 0.959 (s) Losses = ['0.0899', '100.0000'] lr = 0.000346
+2023-11-02 21:45:26,857 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 72  acc = 68.0000
+2023-11-02 21:45:30,277 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:45:31,168 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 73 EpochTime = 0.889 (s) Losses = ['0.0988', '100.0000'] lr = 0.000339
+2023-11-02 21:45:32,288 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 73  acc = 68.0000
+2023-11-02 21:45:36,086 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:45:37,152 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 74 EpochTime = 1.064 (s) Losses = ['0.0881', '100.0000'] lr = 0.000332
+2023-11-02 21:45:38,157 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 74  acc = 69.0000
+2023-11-02 21:45:40,927 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:45:41,896 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 75 EpochTime = 0.967 (s) Losses = ['0.0787', '100.0000'] lr = 0.000325
+2023-11-02 21:45:43,316 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 75  acc = 67.0000
+2023-11-02 21:45:48,600 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:45:49,512 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 76 EpochTime = 0.907 (s) Losses = ['0.0993', '100.0000'] lr = 0.000319
+2023-11-02 21:45:50,459 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 76  acc = 67.0000
+2023-11-02 21:45:55,569 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:45:56,688 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 77 EpochTime = 1.117 (s) Losses = ['0.0997', '100.0000'] lr = 0.000312
+2023-11-02 21:45:57,877 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 77  acc = 68.0000
+2023-11-02 21:46:01,939 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:46:02,849 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 78 EpochTime = 0.907 (s) Losses = ['0.0695', '100.0000'] lr = 0.000305
+2023-11-02 21:46:03,796 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 78  acc = 67.0000
+2023-11-02 21:46:07,394 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:46:08,347 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 79 EpochTime = 0.949 (s) Losses = ['0.0751', '100.0000'] lr = 0.000298
+2023-11-02 21:46:09,342 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 79  acc = 67.0000
+2023-11-02 21:46:13,054 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:46:14,052 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 80 EpochTime = 0.997 (s) Losses = ['0.0959', '100.0000'] lr = 0.000292
+2023-11-02 21:46:15,002 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 80  acc = 66.0000
+2023-11-02 21:46:18,667 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:46:19,622 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 81 EpochTime = 0.953 (s) Losses = ['0.0821', '100.0000'] lr = 0.000285
+2023-11-02 21:46:20,673 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 81  acc = 66.0000
+2023-11-02 21:46:26,984 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:46:27,963 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 82 EpochTime = 0.977 (s) Losses = ['0.0716', '100.0000'] lr = 0.000278
+2023-11-02 21:46:29,299 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 82  acc = 67.0000
+2023-11-02 21:46:33,208 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:46:34,267 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 83 EpochTime = 1.057 (s) Losses = ['0.0866', '100.0000'] lr = 0.000271
+2023-11-02 21:46:35,234 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 83  acc = 66.0000
+2023-11-02 21:46:40,320 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:46:41,281 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 84 EpochTime = 0.958 (s) Losses = ['0.0816', '100.0000'] lr = 0.000265
+2023-11-02 21:46:42,617 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 84  acc = 66.0000
+2023-11-02 21:46:46,614 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:46:47,490 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 85 EpochTime = 0.874 (s) Losses = ['0.0925', '100.0000'] lr = 0.000258
+2023-11-02 21:46:48,496 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 85  acc = 67.0000
+2023-11-02 21:46:50,379 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:46:51,298 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 86 EpochTime = 0.918 (s) Losses = ['0.0713', '100.0000'] lr = 0.000251
+2023-11-02 21:46:52,243 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 86  acc = 66.0000
+2023-11-02 21:46:58,754 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:46:59,723 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 87 EpochTime = 0.967 (s) Losses = ['0.0755', '100.0000'] lr = 0.000245
+2023-11-02 21:47:00,776 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 87  acc = 67.0000
+2023-11-02 21:47:05,146 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:47:05,996 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 88 EpochTime = 0.848 (s) Losses = ['0.0909', '100.0000'] lr = 0.000238
+2023-11-02 21:47:07,048 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 88  acc = 69.0000
+2023-11-02 21:47:09,230 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:47:10,104 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 89 EpochTime = 0.872 (s) Losses = ['0.0844', '100.0000'] lr = 0.000232
+2023-11-02 21:47:11,274 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 89  acc = 69.0000
+2023-11-02 21:47:15,349 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:47:16,436 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 90 EpochTime = 1.085 (s) Losses = ['0.0835', '100.0000'] lr = 0.000225
+2023-11-02 21:47:17,836 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 90  acc = 68.0000
+2023-11-02 21:47:22,199 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:47:23,196 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 91 EpochTime = 0.995 (s) Losses = ['0.1114', '100.0000'] lr = 0.000219
+2023-11-02 21:47:24,151 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 91  acc = 69.0000
+2023-11-02 21:47:28,920 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:47:29,898 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 92 EpochTime = 0.977 (s) Losses = ['0.0894', '100.0000'] lr = 0.000212
+2023-11-02 21:47:31,237 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 92  acc = 67.0000
+2023-11-02 21:47:34,870 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:47:35,857 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 93 EpochTime = 0.985 (s) Losses = ['0.0551', '100.0000'] lr = 0.000206
+2023-11-02 21:47:36,973 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 93  acc = 67.0000
+2023-11-02 21:47:39,567 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:47:40,499 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 94 EpochTime = 0.927 (s) Losses = ['0.0767', '100.0000'] lr = 0.000200
+2023-11-02 21:47:41,711 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 94  acc = 68.0000
+2023-11-02 21:47:44,525 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:47:45,488 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 95 EpochTime = 0.960 (s) Losses = ['0.1084', '100.0000'] lr = 0.000194
+2023-11-02 21:47:46,806 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 95  acc = 68.0000
+2023-11-02 21:47:49,540 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:47:50,683 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 96 EpochTime = 1.142 (s) Losses = ['0.0605', '100.0000'] lr = 0.000187
+2023-11-02 21:47:51,679 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 96  acc = 68.0000
+2023-11-02 21:47:56,726 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:47:57,707 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 97 EpochTime = 0.977 (s) Losses = ['0.0608', '100.0000'] lr = 0.000181
+2023-11-02 21:47:58,715 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 97  acc = 69.0000
+2023-11-02 21:48:02,156 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:48:03,060 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 98 EpochTime = 0.903 (s) Losses = ['0.0711', '100.0000'] lr = 0.000175
+2023-11-02 21:48:04,209 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 98  acc = 70.0000
+2023-11-02 21:48:08,265 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:48:09,433 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 99 EpochTime = 1.164 (s) Losses = ['0.0906', '100.0000'] lr = 0.000169
+2023-11-02 21:48:10,542 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 99  acc = 72.0000
+2023-11-02 21:48:14,670 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-best.pth
+2023-11-02 21:48:14,671 - fewshot_scanobjectnn_transferring_features - INFO - --------------------------------------------------------------------------------------------
+2023-11-02 21:48:19,105 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:48:20,141 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 100 EpochTime = 1.033 (s) Losses = ['0.0933', '100.0000'] lr = 0.000163
+2023-11-02 21:48:21,124 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 100  acc = 71.0000
+2023-11-02 21:48:25,636 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:48:26,628 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 101 EpochTime = 0.989 (s) Losses = ['0.0624', '100.0000'] lr = 0.000157
+2023-11-02 21:48:27,829 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 101  acc = 71.0000
+2023-11-02 21:48:31,588 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:48:32,634 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 102 EpochTime = 1.045 (s) Losses = ['0.0669', '100.0000'] lr = 0.000152
+2023-11-02 21:48:34,007 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 102  acc = 69.0000
+2023-11-02 21:48:37,168 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:48:38,388 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 103 EpochTime = 1.219 (s) Losses = ['0.0934', '100.0000'] lr = 0.000146
+2023-11-02 21:48:39,348 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 103  acc = 71.0000
+2023-11-02 21:48:43,358 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:48:44,542 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 104 EpochTime = 1.182 (s) Losses = ['0.0773', '100.0000'] lr = 0.000140
+2023-11-02 21:48:45,475 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 104  acc = 69.0000
+2023-11-02 21:48:49,259 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:48:50,212 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 105 EpochTime = 0.951 (s) Losses = ['0.0676', '100.0000'] lr = 0.000135
+2023-11-02 21:48:51,185 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 105  acc = 68.0000
+2023-11-02 21:48:56,715 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:48:57,683 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 106 EpochTime = 0.965 (s) Losses = ['0.0974', '100.0000'] lr = 0.000129
+2023-11-02 21:48:58,666 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 106  acc = 69.0000
+2023-11-02 21:49:01,927 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:49:02,874 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 107 EpochTime = 0.945 (s) Losses = ['0.0625', '100.0000'] lr = 0.000124
+2023-11-02 21:49:03,831 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 107  acc = 69.0000
+2023-11-02 21:49:07,864 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:49:08,794 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 108 EpochTime = 0.927 (s) Losses = ['0.0598', '100.0000'] lr = 0.000119
+2023-11-02 21:49:09,730 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 108  acc = 69.0000
+2023-11-02 21:49:13,050 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:49:13,972 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 109 EpochTime = 0.921 (s) Losses = ['0.0583', '100.0000'] lr = 0.000113
+2023-11-02 21:49:14,945 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 109  acc = 69.0000
+2023-11-02 21:49:19,428 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:49:20,296 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 110 EpochTime = 0.865 (s) Losses = ['0.0531', '100.0000'] lr = 0.000108
+2023-11-02 21:49:21,303 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 110  acc = 69.0000
+2023-11-02 21:49:24,264 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:49:25,256 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 111 EpochTime = 0.989 (s) Losses = ['0.0917', '100.0000'] lr = 0.000103
+2023-11-02 21:49:26,465 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 111  acc = 69.0000
+2023-11-02 21:49:30,902 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:49:31,815 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 112 EpochTime = 0.909 (s) Losses = ['0.0654', '100.0000'] lr = 0.000098
+2023-11-02 21:49:32,802 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 112  acc = 70.0000
+2023-11-02 21:49:36,890 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:49:37,891 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 113 EpochTime = 0.999 (s) Losses = ['0.0628', '100.0000'] lr = 0.000094
+2023-11-02 21:49:38,851 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 113  acc = 71.0000
+2023-11-02 21:49:44,031 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:49:45,155 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 114 EpochTime = 1.122 (s) Losses = ['0.0694', '100.0000'] lr = 0.000089
+2023-11-02 21:49:46,112 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 114  acc = 71.0000
+2023-11-02 21:49:49,787 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:49:50,708 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 115 EpochTime = 0.919 (s) Losses = ['0.0484', '100.0000'] lr = 0.000084
+2023-11-02 21:49:51,742 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 115  acc = 70.0000
+2023-11-02 21:49:54,184 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:49:55,084 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 116 EpochTime = 0.898 (s) Losses = ['0.0781', '100.0000'] lr = 0.000080
+2023-11-02 21:49:56,032 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 116  acc = 70.0000
+2023-11-02 21:50:00,395 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:50:01,269 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 117 EpochTime = 0.872 (s) Losses = ['0.0684', '100.0000'] lr = 0.000075
+2023-11-02 21:50:02,193 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 117  acc = 71.0000
+2023-11-02 21:50:05,266 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:50:06,261 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 118 EpochTime = 0.993 (s) Losses = ['0.0367', '100.0000'] lr = 0.000071
+2023-11-02 21:50:07,170 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 118  acc = 71.0000
+2023-11-02 21:50:10,586 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:50:11,628 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 119 EpochTime = 1.040 (s) Losses = ['0.0727', '100.0000'] lr = 0.000067
+2023-11-02 21:50:12,606 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 119  acc = 71.0000
+2023-11-02 21:50:16,417 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:50:17,475 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 120 EpochTime = 1.055 (s) Losses = ['0.0575', '100.0000'] lr = 0.000063
+2023-11-02 21:50:18,425 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 120  acc = 70.0000
+2023-11-02 21:50:22,462 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:50:23,434 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 121 EpochTime = 0.970 (s) Losses = ['0.0702', '100.0000'] lr = 0.000059
+2023-11-02 21:50:24,361 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 121  acc = 70.0000
+2023-11-02 21:50:29,062 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:50:29,927 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 122 EpochTime = 0.864 (s) Losses = ['0.0743', '100.0000'] lr = 0.000055
+2023-11-02 21:50:30,893 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 122  acc = 70.0000
+2023-11-02 21:50:36,401 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:50:37,335 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 123 EpochTime = 0.931 (s) Losses = ['0.0607', '100.0000'] lr = 0.000052
+2023-11-02 21:50:38,404 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 123  acc = 70.0000
+2023-11-02 21:50:41,930 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:50:42,946 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 124 EpochTime = 1.014 (s) Losses = ['0.0404', '100.0000'] lr = 0.000048
+2023-11-02 21:50:43,957 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 124  acc = 71.0000
+2023-11-02 21:50:47,167 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:50:48,134 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 125 EpochTime = 0.965 (s) Losses = ['0.0622', '100.0000'] lr = 0.000044
+2023-11-02 21:50:49,121 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 125  acc = 71.0000
+2023-11-02 21:50:52,220 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:50:53,152 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 126 EpochTime = 0.931 (s) Losses = ['0.0707', '100.0000'] lr = 0.000041
+2023-11-02 21:50:54,400 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 126  acc = 70.0000
+2023-11-02 21:50:58,107 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:50:59,037 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 127 EpochTime = 0.927 (s) Losses = ['0.0716', '100.0000'] lr = 0.000038
+2023-11-02 21:50:59,972 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 127  acc = 71.0000
+2023-11-02 21:51:04,373 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:51:05,480 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 128 EpochTime = 1.105 (s) Losses = ['0.0503', '100.0000'] lr = 0.000035
+2023-11-02 21:51:06,845 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 128  acc = 71.0000
+2023-11-02 21:51:10,753 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:51:11,657 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 129 EpochTime = 0.901 (s) Losses = ['0.0705', '100.0000'] lr = 0.000032
+2023-11-02 21:51:12,608 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 129  acc = 71.0000
+2023-11-02 21:51:15,747 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:51:17,038 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 130 EpochTime = 1.289 (s) Losses = ['0.0477', '100.0000'] lr = 0.000029
+2023-11-02 21:51:18,050 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 130  acc = 70.0000
+2023-11-02 21:51:20,508 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:51:21,500 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 131 EpochTime = 0.989 (s) Losses = ['0.0471', '100.0000'] lr = 0.000026
+2023-11-02 21:51:22,443 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 131  acc = 71.0000
+2023-11-02 21:51:25,490 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:51:26,386 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 132 EpochTime = 0.892 (s) Losses = ['0.0577', '100.0000'] lr = 0.000024
+2023-11-02 21:51:27,642 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 132  acc = 71.0000
+2023-11-02 21:51:29,931 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:51:30,878 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 133 EpochTime = 0.942 (s) Losses = ['0.0772', '100.0000'] lr = 0.000021
+2023-11-02 21:51:31,909 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 133  acc = 71.0000
+2023-11-02 21:51:37,147 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:51:38,361 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 134 EpochTime = 1.213 (s) Losses = ['0.0760', '100.0000'] lr = 0.000019
+2023-11-02 21:51:39,553 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 134  acc = 71.0000
+2023-11-02 21:51:42,655 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:51:43,554 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 135 EpochTime = 0.897 (s) Losses = ['0.0746', '100.0000'] lr = 0.000017
+2023-11-02 21:51:44,645 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 135  acc = 71.0000
+2023-11-02 21:51:48,679 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:51:49,562 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 136 EpochTime = 0.882 (s) Losses = ['0.0454', '100.0000'] lr = 0.000015
+2023-11-02 21:51:50,854 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 136  acc = 71.0000
+2023-11-02 21:51:54,219 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:51:55,430 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 137 EpochTime = 1.209 (s) Losses = ['0.0524', '100.0000'] lr = 0.000013
+2023-11-02 21:51:56,404 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 137  acc = 70.0000
+2023-11-02 21:52:00,042 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:52:01,009 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 138 EpochTime = 0.965 (s) Losses = ['0.0618', '100.0000'] lr = 0.000011
+2023-11-02 21:52:02,016 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 138  acc = 71.0000
+2023-11-02 21:52:06,334 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:52:07,278 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 139 EpochTime = 0.942 (s) Losses = ['0.0519', '100.0000'] lr = 0.000010
+2023-11-02 21:52:08,669 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 139  acc = 71.0000
+2023-11-02 21:52:11,347 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:52:12,610 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 140 EpochTime = 1.261 (s) Losses = ['0.0879', '100.0000'] lr = 0.000008
+2023-11-02 21:52:13,552 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 140  acc = 71.0000
+2023-11-02 21:52:15,604 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:52:16,846 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 141 EpochTime = 1.240 (s) Losses = ['0.0590', '100.0000'] lr = 0.000007
+2023-11-02 21:52:17,856 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 141  acc = 69.0000
+2023-11-02 21:52:20,820 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:52:25,034 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-epoch-141.pth
+2023-11-02 21:52:26,023 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 142 EpochTime = 0.987 (s) Losses = ['0.0805', '100.0000'] lr = 0.000006
+2023-11-02 21:52:27,095 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 142  acc = 68.0000
+2023-11-02 21:52:29,392 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:52:34,162 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-epoch-142.pth
+2023-11-02 21:52:35,118 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 143 EpochTime = 0.953 (s) Losses = ['0.0843', '100.0000'] lr = 0.000004
+2023-11-02 21:52:36,178 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 143  acc = 68.0000
+2023-11-02 21:52:39,722 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:52:42,353 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-epoch-143.pth
+2023-11-02 21:52:43,367 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 144 EpochTime = 1.011 (s) Losses = ['0.0658', '100.0000'] lr = 0.000004
+2023-11-02 21:52:44,325 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 144  acc = 68.0000
+2023-11-02 21:52:47,195 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:52:50,671 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-epoch-144.pth
+2023-11-02 21:52:51,727 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 145 EpochTime = 1.052 (s) Losses = ['0.0672', '100.0000'] lr = 0.000003
+2023-11-02 21:52:53,170 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 145  acc = 68.0000
+2023-11-02 21:52:57,050 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:53:01,412 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-epoch-145.pth
+2023-11-02 21:53:02,316 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 146 EpochTime = 0.901 (s) Losses = ['0.0764', '100.0000'] lr = 0.000002
+2023-11-02 21:53:03,410 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 146  acc = 69.0000
+2023-11-02 21:53:07,844 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:53:12,259 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-epoch-146.pth
+2023-11-02 21:53:13,550 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 147 EpochTime = 1.288 (s) Losses = ['0.0704', '100.0000'] lr = 0.000002
+2023-11-02 21:53:14,506 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 147  acc = 68.0000
+2023-11-02 21:53:19,412 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:53:24,240 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-epoch-147.pth
+2023-11-02 21:53:25,282 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 148 EpochTime = 1.039 (s) Losses = ['0.0870', '100.0000'] lr = 0.000001
+2023-11-02 21:53:26,238 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 148  acc = 68.0000
+2023-11-02 21:53:30,793 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:53:35,715 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-epoch-148.pth
+2023-11-02 21:53:36,787 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 149 EpochTime = 1.068 (s) Losses = ['0.0652', '100.0000'] lr = 0.000001
+2023-11-02 21:53:38,213 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 149  acc = 68.0000
+2023-11-02 21:53:42,151 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:53:45,969 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-epoch-149.pth
+2023-11-02 21:53:47,155 - fewshot_scanobjectnn_transferring_features - INFO - [Training] EPOCH: 150 EpochTime = 1.184 (s) Losses = ['0.0485', '100.0000'] lr = 0.000001
+2023-11-02 21:53:48,468 - fewshot_scanobjectnn_transferring_features - INFO - [Validation] EPOCH: 150  acc = 70.0000
+2023-11-02 21:53:52,104 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-last.pth
+2023-11-02 21:53:56,659 - fewshot_scanobjectnn_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_scanobjectnn_transferring_features/cfgs/lr0.00065/ckpt-epoch-150.pth
