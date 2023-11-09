@@ -35,7 +35,7 @@ my_experiment/
 
 Run
 
-$ python parse_test_res.py output/my_experiment/ --multi-exp
+$ python parse_test_res.py output/my_experiment/ --multi_exp
 """
 import re
 import numpy as np
@@ -45,8 +45,21 @@ import math
 import argparse
 from collections import OrderedDict, defaultdict
 
-from dassl.utils import check_isfile, listdir_nohidden
-import ipdb
+# from dassl.utils import check_isfile, listdir_nohidden
+# import ipdb
+
+def listdir_nohidden(path, sort=False):
+    """List non-hidden items in a directory.
+
+    Args:
+         path (str): directory path.
+         sort (bool): sort the items.
+    """
+    items = [f for f in os.listdir(path) if not f.startswith(".")]
+    if sort:
+        items.sort()
+    return items
+
 
 def compute_ci95(res):
     return 1.96 * np.std(res) / np.sqrt(len(res))
@@ -131,7 +144,7 @@ def parse_function_fewshot(*metrics, directory='', args=None, end_signal=None):
                 output = OrderedDict()
                 for line in lines:
                     if 'args.way :' in line:
-                        way = line.split('args.way :')[1]
+                        way = line.split('args.way :')[1]  # 以'args.way :'为分界线进行划分，[1]即为后面的元素
                     if 'args.shot :' in line:
                         shot = line.split('args.shot :')[1]
                     if way != 'None' and shot != 'None':
@@ -246,13 +259,13 @@ if __name__ == '__main__':
         help=r'compute 95\% confidence interval'
     )
     parser.add_argument(
-        '--test-log', action='store_true', help='parse test-only logs'
+        '--test_log', action='store_true', help='parse test-only logs'
     )
     parser.add_argument(
-        '--multi-exp', action='store_true', help='parse multiple experiments'
+        '--multi_exp', action='store_true', help='parse multiple experiments'
     )
     parser.add_argument(
-        '--few-shot', action='store_true', help='parse multiple experiments'
+        '--few_shot', action='store_true', help='parse multiple experiments'
     )
     args = parser.parse_args()
 
