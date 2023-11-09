@@ -109,7 +109,7 @@ CUDA_VISIBLE_DEVICES=<GPUs> python main_test.py  --root path/to/data --visual  -
 
 ## 5. Experiment Record
 
-Please refer to the [experiments](./experiments) to check each experiment's training and validating logs.
+Please refer to the [experiments](experiments) to check each experiment's training and validating logs.
 
 
 ## 6. Visualization
