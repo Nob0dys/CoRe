@@ -127,7 +127,7 @@ def run_net(args, config, train_writer=None, val_writer=None):
     queue = None
     queue_path = os.path.join(args.experiment_path, 'queue' + str(args.local_rank) + '.pth')
 
-   )
+   
 
     if os.path.isfile(queue_path):
         queue = torch.load(queue_path)['queue']
