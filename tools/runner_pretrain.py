@@ -20,7 +20,6 @@ import ipdb
 import sys
 import itertools
 from utils.parser import extract_weight_method_parameters_from_args
-from methods.weight_methods import WeightMethods
 from timm.scheduler import CosineLRScheduler
 # sys.path.append(".")
 sys.path.append("..")
