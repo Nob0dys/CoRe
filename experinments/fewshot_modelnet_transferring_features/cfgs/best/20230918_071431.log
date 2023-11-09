@@ -1,0 +1,592 @@
+2023-09-18 07:14:31,400 - fewshot_modelnet_transferring_features - INFO - Copy the Config file from cfgs/fewshot_modelnet_transferring_features.yaml to ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/config.yaml
+2023-09-18 07:14:31,401 - fewshot_modelnet_transferring_features - INFO - args.config : cfgs/fewshot_modelnet_transferring_features.yaml
+2023-09-18 07:14:31,401 - fewshot_modelnet_transferring_features - INFO - args.launcher : none
+2023-09-18 07:14:31,401 - fewshot_modelnet_transferring_features - INFO - args.local_rank : 0
+2023-09-18 07:14:31,401 - fewshot_modelnet_transferring_features - INFO - args.num_workers : 8
+2023-09-18 07:14:31,401 - fewshot_modelnet_transferring_features - INFO - args.seed : 0
+2023-09-18 07:14:31,401 - fewshot_modelnet_transferring_features - INFO - args.deterministic : False
+2023-09-18 07:14:31,401 - fewshot_modelnet_transferring_features - INFO - args.sync_bn : True
+2023-09-18 07:14:31,402 - fewshot_modelnet_transferring_features - INFO - args.update_weights_every : 1
+2023-09-18 07:14:31,402 - fewshot_modelnet_transferring_features - INFO - args.main_task : 0
+2023-09-18 07:14:31,402 - fewshot_modelnet_transferring_features - INFO - args.nashmtl_optim_niter : 20
+2023-09-18 07:14:31,402 - fewshot_modelnet_transferring_features - INFO - args.c : 0.4
+2023-09-18 07:14:31,402 - fewshot_modelnet_transferring_features - INFO - args.dwa_temp : 2.0
+2023-09-18 07:14:31,402 - fewshot_modelnet_transferring_features - INFO - args.method_params_lr : 0.025
+2023-09-18 07:14:31,402 - fewshot_modelnet_transferring_features - INFO - args.method : nashmtl
+2023-09-18 07:14:31,402 - fewshot_modelnet_transferring_features - INFO - args.gpu : 5
+2023-09-18 07:14:31,402 - fewshot_modelnet_transferring_features - INFO - args.large_group : 5
+2023-09-18 07:14:31,403 - fewshot_modelnet_transferring_features - INFO - args.small_group : 10
+2023-09-18 07:14:31,403 - fewshot_modelnet_transferring_features - INFO - args.large_patch : 6
+2023-09-18 07:14:31,403 - fewshot_modelnet_transferring_features - INFO - args.small_patch : 3
+2023-09-18 07:14:31,403 - fewshot_modelnet_transferring_features - INFO - args.queue_length : 8192
+2023-09-18 07:14:31,403 - fewshot_modelnet_transferring_features - INFO - args.epoch_queue_starts : 10
+2023-09-18 07:14:31,403 - fewshot_modelnet_transferring_features - INFO - args.nmb_crops : [5, 10]
+2023-09-18 07:14:31,403 - fewshot_modelnet_transferring_features - INFO - args.fea_dim : 384
+2023-09-18 07:14:31,403 - fewshot_modelnet_transferring_features - INFO - args.hidden_mlp : 256
+2023-09-18 07:14:31,403 - fewshot_modelnet_transferring_features - INFO - args.output_dim : 128
+2023-09-18 07:14:31,403 - fewshot_modelnet_transferring_features - INFO - args.nmb_prototypes : 200
+2023-09-18 07:14:31,404 - fewshot_modelnet_transferring_features - INFO - args.temperature : 0.1
+2023-09-18 07:14:31,404 - fewshot_modelnet_transferring_features - INFO - args.epsilon : 0.05
+2023-09-18 07:14:31,404 - fewshot_modelnet_transferring_features - INFO - args.sinkhorn_iterations : 3
+2023-09-18 07:14:31,404 - fewshot_modelnet_transferring_features - INFO - args.world_size : 1
+2023-09-18 07:14:31,404 - fewshot_modelnet_transferring_features - INFO - args.exp_name : add_as_normal
+2023-09-18 07:14:31,404 - fewshot_modelnet_transferring_features - INFO - args.loss : cd1
+2023-09-18 07:14:31,404 - fewshot_modelnet_transferring_features - INFO - args.start_ckpts : None
+2023-09-18 07:14:31,404 - fewshot_modelnet_transferring_features - INFO - args.ckpts : ./experiments/pretrain_MaskSurf/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:14:31,404 - fewshot_modelnet_transferring_features - INFO - args.val_freq : 1
+2023-09-18 07:14:31,404 - fewshot_modelnet_transferring_features - INFO - args.vote : False
+2023-09-18 07:14:31,404 - fewshot_modelnet_transferring_features - INFO - args.resume : False
+2023-09-18 07:14:31,405 - fewshot_modelnet_transferring_features - INFO - args.test : False
+2023-09-18 07:14:31,405 - fewshot_modelnet_transferring_features - INFO - args.finetune_model : True
+2023-09-18 07:14:31,405 - fewshot_modelnet_transferring_features - INFO - args.scratch_model : False
+2023-09-18 07:14:31,405 - fewshot_modelnet_transferring_features - INFO - args.mode : None
+2023-09-18 07:14:31,405 - fewshot_modelnet_transferring_features - INFO - args.way : 10
+2023-09-18 07:14:31,405 - fewshot_modelnet_transferring_features - INFO - args.shot : 20
+2023-09-18 07:14:31,405 - fewshot_modelnet_transferring_features - INFO - args.fold : 3
+2023-09-18 07:14:31,405 - fewshot_modelnet_transferring_features - INFO - args.experiment_path : ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal
+2023-09-18 07:14:31,405 - fewshot_modelnet_transferring_features - INFO - args.tfboard_path : ./experiments/fewshot_modelnet_transferring_features/cfgs/TFBoard/add_as_normal
+2023-09-18 07:14:31,405 - fewshot_modelnet_transferring_features - INFO - args.log_name : fewshot_modelnet_transferring_features
+2023-09-18 07:14:31,406 - fewshot_modelnet_transferring_features - INFO - args.use_gpu : True
+2023-09-18 07:14:31,406 - fewshot_modelnet_transferring_features - INFO - args.distributed : False
+2023-09-18 07:14:31,406 - fewshot_modelnet_transferring_features - INFO - config.optimizer = edict()
+2023-09-18 07:14:31,406 - fewshot_modelnet_transferring_features - INFO - config.optimizer.type : AdamW
+2023-09-18 07:14:31,406 - fewshot_modelnet_transferring_features - INFO - config.optimizer.part : all
+2023-09-18 07:14:31,406 - fewshot_modelnet_transferring_features - INFO - config.optimizer.kwargs = edict()
+2023-09-18 07:14:31,406 - fewshot_modelnet_transferring_features - INFO - config.optimizer.kwargs.lr : 0.0005
+2023-09-18 07:14:31,406 - fewshot_modelnet_transferring_features - INFO - config.optimizer.kwargs.weight_decay : 0.05
+2023-09-18 07:14:31,406 - fewshot_modelnet_transferring_features - INFO - config.scheduler = edict()
+2023-09-18 07:14:31,407 - fewshot_modelnet_transferring_features - INFO - config.scheduler.type : CosLR
+2023-09-18 07:14:31,407 - fewshot_modelnet_transferring_features - INFO - config.scheduler.kwargs = edict()
+2023-09-18 07:14:31,407 - fewshot_modelnet_transferring_features - INFO - config.scheduler.kwargs.epochs : 150
+2023-09-18 07:14:31,407 - fewshot_modelnet_transferring_features - INFO - config.scheduler.kwargs.initial_epochs : 10
+2023-09-18 07:14:31,407 - fewshot_modelnet_transferring_features - INFO - config.dataset = edict()
+2023-09-18 07:14:31,407 - fewshot_modelnet_transferring_features - INFO - config.dataset.train = edict()
+2023-09-18 07:14:31,407 - fewshot_modelnet_transferring_features - INFO - config.dataset.train._base_ = edict()
+2023-09-18 07:14:31,407 - fewshot_modelnet_transferring_features - INFO - config.dataset.train._base_.NAME : ModelNetFewShot
+2023-09-18 07:14:31,407 - fewshot_modelnet_transferring_features - INFO - config.dataset.train._base_.DATA_PATH : data/ModelNetFewshot
+2023-09-18 07:14:31,407 - fewshot_modelnet_transferring_features - INFO - config.dataset.train._base_.N_POINTS : 8192
+2023-09-18 07:14:31,408 - fewshot_modelnet_transferring_features - INFO - config.dataset.train._base_.NUM_CATEGORY : 40
+2023-09-18 07:14:31,408 - fewshot_modelnet_transferring_features - INFO - config.dataset.train._base_.USE_NORMALS : False
+2023-09-18 07:14:31,408 - fewshot_modelnet_transferring_features - INFO - config.dataset.train.others = edict()
+2023-09-18 07:14:31,408 - fewshot_modelnet_transferring_features - INFO - config.dataset.train.others.subset : train
+2023-09-18 07:14:31,408 - fewshot_modelnet_transferring_features - INFO - config.dataset.train.others.bs : 32
+2023-09-18 07:14:31,408 - fewshot_modelnet_transferring_features - INFO - config.dataset.val = edict()
+2023-09-18 07:14:31,408 - fewshot_modelnet_transferring_features - INFO - config.dataset.val._base_ = edict()
+2023-09-18 07:14:31,408 - fewshot_modelnet_transferring_features - INFO - config.dataset.val._base_.NAME : ModelNetFewShot
+2023-09-18 07:14:31,408 - fewshot_modelnet_transferring_features - INFO - config.dataset.val._base_.DATA_PATH : data/ModelNetFewshot
+2023-09-18 07:14:31,408 - fewshot_modelnet_transferring_features - INFO - config.dataset.val._base_.N_POINTS : 8192
+2023-09-18 07:14:31,409 - fewshot_modelnet_transferring_features - INFO - config.dataset.val._base_.NUM_CATEGORY : 40
+2023-09-18 07:14:31,409 - fewshot_modelnet_transferring_features - INFO - config.dataset.val._base_.USE_NORMALS : False
+2023-09-18 07:14:31,409 - fewshot_modelnet_transferring_features - INFO - config.dataset.val.others = edict()
+2023-09-18 07:14:31,409 - fewshot_modelnet_transferring_features - INFO - config.dataset.val.others.subset : test
+2023-09-18 07:14:31,409 - fewshot_modelnet_transferring_features - INFO - config.dataset.val.others.bs : 64
+2023-09-18 07:14:31,409 - fewshot_modelnet_transferring_features - INFO - config.dataset.test = edict()
+2023-09-18 07:14:31,409 - fewshot_modelnet_transferring_features - INFO - config.dataset.test._base_ = edict()
+2023-09-18 07:14:31,409 - fewshot_modelnet_transferring_features - INFO - config.dataset.test._base_.NAME : ModelNet
+2023-09-18 07:14:31,409 - fewshot_modelnet_transferring_features - INFO - config.dataset.test._base_.DATA_PATH : data/ModelNet/modelnet40_normal_resampled
+2023-09-18 07:14:31,409 - fewshot_modelnet_transferring_features - INFO - config.dataset.test._base_.N_POINTS : 8192
+2023-09-18 07:14:31,410 - fewshot_modelnet_transferring_features - INFO - config.dataset.test._base_.NUM_CATEGORY : 40
+2023-09-18 07:14:31,410 - fewshot_modelnet_transferring_features - INFO - config.dataset.test._base_.USE_NORMALS : False
+2023-09-18 07:14:31,410 - fewshot_modelnet_transferring_features - INFO - config.dataset.test.others = edict()
+2023-09-18 07:14:31,410 - fewshot_modelnet_transferring_features - INFO - config.dataset.test.others.subset : test
+2023-09-18 07:14:31,410 - fewshot_modelnet_transferring_features - INFO - config.dataset.test.others.bs : 32
+2023-09-18 07:14:31,410 - fewshot_modelnet_transferring_features - INFO - config.model = edict()
+2023-09-18 07:14:31,410 - fewshot_modelnet_transferring_features - INFO - config.model.NAME : PointTransformer
+2023-09-18 07:14:31,410 - fewshot_modelnet_transferring_features - INFO - config.model.trans_dim : 384
+2023-09-18 07:14:31,410 - fewshot_modelnet_transferring_features - INFO - config.model.depth : 12
+2023-09-18 07:14:31,410 - fewshot_modelnet_transferring_features - INFO - config.model.drop_path_rate : 0.1
+2023-09-18 07:14:31,410 - fewshot_modelnet_transferring_features - INFO - config.model.cls_dim : 15
+2023-09-18 07:14:31,411 - fewshot_modelnet_transferring_features - INFO - config.model.num_heads : 6
+2023-09-18 07:14:31,411 - fewshot_modelnet_transferring_features - INFO - config.model.group_size : 32
+2023-09-18 07:14:31,411 - fewshot_modelnet_transferring_features - INFO - config.model.num_group : 64
+2023-09-18 07:14:31,411 - fewshot_modelnet_transferring_features - INFO - config.model.encoder_dims : 384
+2023-09-18 07:14:31,411 - fewshot_modelnet_transferring_features - INFO - config.npoints : 1024
+2023-09-18 07:14:31,411 - fewshot_modelnet_transferring_features - INFO - config.total_bs : 32
+2023-09-18 07:14:31,411 - fewshot_modelnet_transferring_features - INFO - config.step_per_update : 1
+2023-09-18 07:14:31,411 - fewshot_modelnet_transferring_features - INFO - config.max_epoch : 150
+2023-09-18 07:14:31,411 - fewshot_modelnet_transferring_features - INFO - config.grad_norm_clip : 10
+2023-09-18 07:14:31,411 - fewshot_modelnet_transferring_features - INFO - Distributed training: False
+2023-09-18 07:14:31,411 - fewshot_modelnet_transferring_features - INFO - Set random seed to 0, deterministic: False
+2023-09-18 07:14:34,414 - fewshot_modelnet_transferring_features - INFO - Using Data parallel ...
+2023-09-18 07:14:40,042 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 0 EpochTime = 5.623 (s) Losses = ['2.7761', '9.8958'] lr = 0.000001
+2023-09-18 07:14:41,975 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:14:43,799 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 1 EpochTime = 1.822 (s) Losses = ['2.7608', '9.3750'] lr = 0.000051
+2023-09-18 07:14:45,805 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 1  acc = 11.0000
+2023-09-18 07:14:47,459 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-best.pth
+2023-09-18 07:14:47,460 - fewshot_modelnet_transferring_features - INFO - --------------------------------------------------------------------------------------------
+2023-09-18 07:14:50,198 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:14:52,059 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 2 EpochTime = 1.860 (s) Losses = ['2.6673', '9.3750'] lr = 0.000101
+2023-09-18 07:14:53,546 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 2  acc = 15.0000
+2023-09-18 07:14:56,370 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-best.pth
+2023-09-18 07:14:56,371 - fewshot_modelnet_transferring_features - INFO - --------------------------------------------------------------------------------------------
+2023-09-18 07:14:58,054 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:14:59,891 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 3 EpochTime = 1.835 (s) Losses = ['2.5734', '18.7500'] lr = 0.000151
+2023-09-18 07:15:01,329 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 3  acc = 33.5000
+2023-09-18 07:15:03,226 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-best.pth
+2023-09-18 07:15:03,226 - fewshot_modelnet_transferring_features - INFO - --------------------------------------------------------------------------------------------
+2023-09-18 07:15:05,220 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:15:07,085 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 4 EpochTime = 1.863 (s) Losses = ['2.3824', '21.8750'] lr = 0.000201
+2023-09-18 07:15:08,540 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 4  acc = 68.5000
+2023-09-18 07:15:10,150 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-best.pth
+2023-09-18 07:15:10,150 - fewshot_modelnet_transferring_features - INFO - --------------------------------------------------------------------------------------------
+2023-09-18 07:15:13,491 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:15:15,370 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 5 EpochTime = 1.877 (s) Losses = ['2.1945', '32.2917'] lr = 0.000251
+2023-09-18 07:15:16,895 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 5  acc = 85.0000
+2023-09-18 07:15:20,007 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-best.pth
+2023-09-18 07:15:20,007 - fewshot_modelnet_transferring_features - INFO - --------------------------------------------------------------------------------------------
+2023-09-18 07:15:21,428 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:15:23,241 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 6 EpochTime = 1.812 (s) Losses = ['1.9053', '51.5625'] lr = 0.000300
+2023-09-18 07:15:24,713 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 6  acc = 91.0000
+2023-09-18 07:15:27,248 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-best.pth
+2023-09-18 07:15:27,248 - fewshot_modelnet_transferring_features - INFO - --------------------------------------------------------------------------------------------
+2023-09-18 07:15:30,192 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:15:32,065 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 7 EpochTime = 1.870 (s) Losses = ['1.6744', '63.5417'] lr = 0.000350
+2023-09-18 07:15:33,500 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 7  acc = 94.5000
+2023-09-18 07:15:35,359 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-best.pth
+2023-09-18 07:15:35,360 - fewshot_modelnet_transferring_features - INFO - --------------------------------------------------------------------------------------------
+2023-09-18 07:15:36,960 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:15:38,831 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 8 EpochTime = 1.869 (s) Losses = ['1.3604', '77.6042'] lr = 0.000400
+2023-09-18 07:15:40,310 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 8  acc = 94.5000
+2023-09-18 07:15:41,905 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:15:43,719 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 9 EpochTime = 1.813 (s) Losses = ['1.2097', '82.8125'] lr = 0.000450
+2023-09-18 07:15:45,329 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 9  acc = 96.0000
+2023-09-18 07:15:46,907 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-best.pth
+2023-09-18 07:15:46,907 - fewshot_modelnet_transferring_features - INFO - --------------------------------------------------------------------------------------------
+2023-09-18 07:15:50,263 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:15:52,146 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 10 EpochTime = 1.882 (s) Losses = ['0.9830', '90.6250'] lr = 0.000495
+2023-09-18 07:15:53,605 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 10  acc = 95.5000
+2023-09-18 07:15:55,901 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:15:57,793 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 11 EpochTime = 1.891 (s) Losses = ['0.8150', '92.7083'] lr = 0.000493
+2023-09-18 07:15:59,407 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 11  acc = 95.5000
+2023-09-18 07:16:01,060 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:16:02,916 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 12 EpochTime = 1.855 (s) Losses = ['0.6733', '96.3542'] lr = 0.000492
+2023-09-18 07:16:04,478 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 12  acc = 94.5000
+2023-09-18 07:16:06,478 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:16:08,331 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 13 EpochTime = 1.851 (s) Losses = ['0.5420', '95.3125'] lr = 0.000491
+2023-09-18 07:16:09,762 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 13  acc = 96.5000
+2023-09-18 07:16:12,285 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-best.pth
+2023-09-18 07:16:12,285 - fewshot_modelnet_transferring_features - INFO - --------------------------------------------------------------------------------------------
+2023-09-18 07:16:14,476 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:16:16,401 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 14 EpochTime = 1.858 (s) Losses = ['0.4197', '96.8750'] lr = 0.000489
+2023-09-18 07:16:17,917 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 14  acc = 96.0000
+2023-09-18 07:16:19,908 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:16:21,760 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 15 EpochTime = 1.851 (s) Losses = ['0.3837', '98.9583'] lr = 0.000488
+2023-09-18 07:16:23,228 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 15  acc = 96.5000
+2023-09-18 07:16:25,040 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:16:26,853 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 16 EpochTime = 1.812 (s) Losses = ['0.3472', '98.4375'] lr = 0.000486
+2023-09-18 07:16:28,351 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 16  acc = 96.5000
+2023-09-18 07:16:30,838 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:16:32,664 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 17 EpochTime = 1.824 (s) Losses = ['0.2729', '98.4375'] lr = 0.000484
+2023-09-18 07:16:34,135 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 17  acc = 96.0000
+2023-09-18 07:16:36,154 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:16:37,976 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 18 EpochTime = 1.820 (s) Losses = ['0.2596', '99.4792'] lr = 0.000482
+2023-09-18 07:16:39,543 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 18  acc = 95.0000
+2023-09-18 07:16:40,989 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:16:42,816 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 19 EpochTime = 1.825 (s) Losses = ['0.2268', '100.0000'] lr = 0.000481
+2023-09-18 07:16:44,309 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 19  acc = 94.5000
+2023-09-18 07:16:46,064 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:16:47,886 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 20 EpochTime = 1.821 (s) Losses = ['0.1874', '99.4792'] lr = 0.000478
+2023-09-18 07:16:49,339 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 20  acc = 95.5000
+2023-09-18 07:16:51,097 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:16:52,937 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 21 EpochTime = 1.838 (s) Losses = ['0.1861', '98.4375'] lr = 0.000476
+2023-09-18 07:16:54,494 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 21  acc = 96.5000
+2023-09-18 07:16:56,445 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:16:58,449 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 22 EpochTime = 2.001 (s) Losses = ['0.1588', '100.0000'] lr = 0.000474
+2023-09-18 07:16:59,971 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 22  acc = 96.0000
+2023-09-18 07:17:01,441 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:17:03,274 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 23 EpochTime = 1.831 (s) Losses = ['0.1393', '100.0000'] lr = 0.000472
+2023-09-18 07:17:04,724 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 23  acc = 96.0000
+2023-09-18 07:17:06,542 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:17:08,367 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 24 EpochTime = 1.823 (s) Losses = ['0.1308', '100.0000'] lr = 0.000469
+2023-09-18 07:17:09,864 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 24  acc = 95.5000
+2023-09-18 07:17:11,756 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:17:13,614 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 25 EpochTime = 1.856 (s) Losses = ['0.1271', '99.4792'] lr = 0.000467
+2023-09-18 07:17:15,110 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 25  acc = 96.0000
+2023-09-18 07:17:17,162 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:17:18,988 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 26 EpochTime = 1.824 (s) Losses = ['0.1138', '100.0000'] lr = 0.000464
+2023-09-18 07:17:20,453 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 26  acc = 95.5000
+2023-09-18 07:17:22,056 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:17:23,870 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 27 EpochTime = 1.812 (s) Losses = ['0.1093', '100.0000'] lr = 0.000461
+2023-09-18 07:17:25,389 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 27  acc = 96.5000
+2023-09-18 07:17:26,942 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:17:28,778 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 28 EpochTime = 1.834 (s) Losses = ['0.1024', '99.4792'] lr = 0.000458
+2023-09-18 07:17:30,258 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 28  acc = 97.0000
+2023-09-18 07:17:32,061 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-best.pth
+2023-09-18 07:17:32,062 - fewshot_modelnet_transferring_features - INFO - --------------------------------------------------------------------------------------------
+2023-09-18 07:17:34,854 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:17:36,686 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 29 EpochTime = 1.830 (s) Losses = ['0.1093', '100.0000'] lr = 0.000455
+2023-09-18 07:17:38,152 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 29  acc = 96.0000
+2023-09-18 07:17:39,763 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:17:41,665 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 30 EpochTime = 1.898 (s) Losses = ['0.0769', '100.0000'] lr = 0.000452
+2023-09-18 07:17:43,130 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 30  acc = 96.0000
+2023-09-18 07:17:45,970 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:17:47,812 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 31 EpochTime = 1.841 (s) Losses = ['0.0922', '100.0000'] lr = 0.000449
+2023-09-18 07:17:49,266 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 31  acc = 96.0000
+2023-09-18 07:17:51,202 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:17:53,051 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 32 EpochTime = 1.848 (s) Losses = ['0.0763', '100.0000'] lr = 0.000446
+2023-09-18 07:17:54,548 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 32  acc = 96.0000
+2023-09-18 07:17:56,049 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:17:57,986 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 33 EpochTime = 1.934 (s) Losses = ['0.0922', '100.0000'] lr = 0.000443
+2023-09-18 07:17:59,611 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 33  acc = 96.0000
+2023-09-18 07:18:02,217 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:18:04,052 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 34 EpochTime = 1.834 (s) Losses = ['0.0782', '100.0000'] lr = 0.000439
+2023-09-18 07:18:05,504 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 34  acc = 96.0000
+2023-09-18 07:18:08,977 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:18:10,816 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 35 EpochTime = 1.838 (s) Losses = ['0.0687', '100.0000'] lr = 0.000436
+2023-09-18 07:18:12,346 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 35  acc = 96.0000
+2023-09-18 07:18:15,018 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:18:16,922 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 36 EpochTime = 1.824 (s) Losses = ['0.0643', '100.0000'] lr = 0.000432
+2023-09-18 07:18:18,378 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 36  acc = 95.5000
+2023-09-18 07:18:20,898 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:18:22,737 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 37 EpochTime = 1.837 (s) Losses = ['0.0531', '100.0000'] lr = 0.000429
+2023-09-18 07:18:24,178 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 37  acc = 95.5000
+2023-09-18 07:18:26,317 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:18:28,145 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 38 EpochTime = 1.827 (s) Losses = ['0.0703', '100.0000'] lr = 0.000425
+2023-09-18 07:18:29,630 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 38  acc = 96.0000
+2023-09-18 07:18:32,177 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:18:33,999 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 39 EpochTime = 1.820 (s) Losses = ['0.0608', '100.0000'] lr = 0.000421
+2023-09-18 07:18:35,484 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 39  acc = 96.0000
+2023-09-18 07:18:37,607 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:18:39,432 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 40 EpochTime = 1.823 (s) Losses = ['0.0554', '100.0000'] lr = 0.000417
+2023-09-18 07:18:40,929 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 40  acc = 95.5000
+2023-09-18 07:18:42,623 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:18:44,539 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 41 EpochTime = 1.914 (s) Losses = ['0.0660', '100.0000'] lr = 0.000414
+2023-09-18 07:18:46,088 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 41  acc = 95.5000
+2023-09-18 07:18:47,862 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:18:49,694 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 42 EpochTime = 1.830 (s) Losses = ['0.0456', '100.0000'] lr = 0.000410
+2023-09-18 07:18:51,141 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 42  acc = 96.0000
+2023-09-18 07:18:53,038 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:18:54,907 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 43 EpochTime = 1.868 (s) Losses = ['0.0523', '100.0000'] lr = 0.000405
+2023-09-18 07:18:56,410 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 43  acc = 95.5000
+2023-09-18 07:18:57,963 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:18:59,792 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 44 EpochTime = 1.827 (s) Losses = ['0.0494', '100.0000'] lr = 0.000401
+2023-09-18 07:19:01,253 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 44  acc = 95.5000
+2023-09-18 07:19:02,786 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:19:04,650 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 45 EpochTime = 1.862 (s) Losses = ['0.0404', '100.0000'] lr = 0.000397
+2023-09-18 07:19:06,147 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 45  acc = 95.5000
+2023-09-18 07:19:08,439 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:19:10,349 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 46 EpochTime = 1.909 (s) Losses = ['0.0387', '100.0000'] lr = 0.000393
+2023-09-18 07:19:11,810 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 46  acc = 95.5000
+2023-09-18 07:19:14,010 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:19:15,828 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 47 EpochTime = 1.817 (s) Losses = ['0.0369', '100.0000'] lr = 0.000389
+2023-09-18 07:19:17,296 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 47  acc = 95.5000
+2023-09-18 07:19:20,560 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:19:22,381 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 48 EpochTime = 1.820 (s) Losses = ['0.0421', '100.0000'] lr = 0.000384
+2023-09-18 07:19:23,818 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 48  acc = 95.5000
+2023-09-18 07:19:26,098 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:19:27,948 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 49 EpochTime = 1.849 (s) Losses = ['0.0394', '100.0000'] lr = 0.000380
+2023-09-18 07:19:29,421 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 49  acc = 95.5000
+2023-09-18 07:19:31,179 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:19:33,087 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 50 EpochTime = 1.906 (s) Losses = ['0.0468', '100.0000'] lr = 0.000375
+2023-09-18 07:19:34,637 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 50  acc = 96.0000
+2023-09-18 07:19:37,211 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:19:39,088 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 51 EpochTime = 1.874 (s) Losses = ['0.0387', '100.0000'] lr = 0.000371
+2023-09-18 07:19:40,646 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 51  acc = 96.0000
+2023-09-18 07:19:43,734 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:19:45,574 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 52 EpochTime = 1.838 (s) Losses = ['0.0496', '100.0000'] lr = 0.000366
+2023-09-18 07:19:47,023 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 52  acc = 95.5000
+2023-09-18 07:19:48,853 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:19:50,786 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 53 EpochTime = 1.932 (s) Losses = ['0.0433', '100.0000'] lr = 0.000361
+2023-09-18 07:19:52,286 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 53  acc = 95.0000
+2023-09-18 07:19:54,414 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:19:56,367 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 54 EpochTime = 1.950 (s) Losses = ['0.0416', '100.0000'] lr = 0.000357
+2023-09-18 07:19:57,820 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 54  acc = 95.0000
+2023-09-18 07:20:01,358 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:20:03,323 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 55 EpochTime = 1.963 (s) Losses = ['0.0407', '100.0000'] lr = 0.000352
+2023-09-18 07:20:04,800 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 55  acc = 95.0000
+2023-09-18 07:20:07,714 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:20:09,553 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 56 EpochTime = 1.837 (s) Losses = ['0.0358', '100.0000'] lr = 0.000347
+2023-09-18 07:20:11,065 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 56  acc = 95.5000
+2023-09-18 07:20:13,679 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:20:15,509 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 57 EpochTime = 1.829 (s) Losses = ['0.0299', '100.0000'] lr = 0.000342
+2023-09-18 07:20:16,982 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 57  acc = 96.0000
+2023-09-18 07:20:19,071 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:20:20,934 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 58 EpochTime = 1.860 (s) Losses = ['0.0304', '100.0000'] lr = 0.000337
+2023-09-18 07:20:22,414 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 58  acc = 95.5000
+2023-09-18 07:20:23,997 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:20:25,883 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 59 EpochTime = 1.884 (s) Losses = ['0.0411', '100.0000'] lr = 0.000333
+2023-09-18 07:20:27,361 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 59  acc = 95.5000
+2023-09-18 07:20:28,999 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:20:30,928 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 60 EpochTime = 1.928 (s) Losses = ['0.0293', '100.0000'] lr = 0.000328
+2023-09-18 07:20:32,408 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 60  acc = 96.0000
+2023-09-18 07:20:35,498 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:20:37,365 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 61 EpochTime = 1.865 (s) Losses = ['0.0317', '100.0000'] lr = 0.000323
+2023-09-18 07:20:38,855 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 61  acc = 96.0000
+2023-09-18 07:20:40,932 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:20:42,782 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 62 EpochTime = 1.846 (s) Losses = ['0.0298', '100.0000'] lr = 0.000318
+2023-09-18 07:20:44,243 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 62  acc = 96.5000
+2023-09-18 07:20:45,645 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:20:47,535 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 63 EpochTime = 1.886 (s) Losses = ['0.0345', '100.0000'] lr = 0.000313
+2023-09-18 07:20:49,009 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 63  acc = 96.0000
+2023-09-18 07:20:51,379 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:20:53,259 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 64 EpochTime = 1.878 (s) Losses = ['0.0298', '100.0000'] lr = 0.000307
+2023-09-18 07:20:54,732 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 64  acc = 96.0000
+2023-09-18 07:20:56,436 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:20:58,315 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 65 EpochTime = 1.878 (s) Losses = ['0.0337', '100.0000'] lr = 0.000302
+2023-09-18 07:20:59,902 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 65  acc = 95.5000
+2023-09-18 07:21:01,675 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:21:03,532 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 66 EpochTime = 1.856 (s) Losses = ['0.0286', '100.0000'] lr = 0.000297
+2023-09-18 07:21:05,032 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 66  acc = 95.5000
+2023-09-18 07:21:07,514 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:21:09,390 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 67 EpochTime = 1.875 (s) Losses = ['0.0331', '100.0000'] lr = 0.000292
+2023-09-18 07:21:10,874 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 67  acc = 95.0000
+2023-09-18 07:21:13,416 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:21:15,266 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 68 EpochTime = 1.847 (s) Losses = ['0.0358', '99.4792'] lr = 0.000287
+2023-09-18 07:21:16,726 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 68  acc = 94.5000
+2023-09-18 07:21:18,693 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:21:20,569 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 69 EpochTime = 1.875 (s) Losses = ['0.0250', '100.0000'] lr = 0.000282
+2023-09-18 07:21:22,040 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 69  acc = 94.5000
+2023-09-18 07:21:24,787 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:21:26,625 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 70 EpochTime = 1.836 (s) Losses = ['0.0246', '100.0000'] lr = 0.000277
+2023-09-18 07:21:28,113 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 70  acc = 94.5000
+2023-09-18 07:21:29,719 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:21:31,613 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 71 EpochTime = 1.892 (s) Losses = ['0.0255', '100.0000'] lr = 0.000271
+2023-09-18 07:21:33,123 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 71  acc = 96.0000
+2023-09-18 07:21:34,728 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:21:36,566 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 72 EpochTime = 1.837 (s) Losses = ['0.0248', '100.0000'] lr = 0.000266
+2023-09-18 07:21:38,084 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 72  acc = 95.5000
+2023-09-18 07:21:40,487 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:21:42,334 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 73 EpochTime = 1.846 (s) Losses = ['0.0286', '100.0000'] lr = 0.000261
+2023-09-18 07:21:43,838 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 73  acc = 95.5000
+2023-09-18 07:21:47,572 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:21:49,454 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 74 EpochTime = 1.879 (s) Losses = ['0.0230', '100.0000'] lr = 0.000256
+2023-09-18 07:21:51,019 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 74  acc = 95.5000
+2023-09-18 07:21:52,804 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:21:54,703 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 75 EpochTime = 1.898 (s) Losses = ['0.0206', '100.0000'] lr = 0.000251
+2023-09-18 07:21:56,309 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 75  acc = 95.5000
+2023-09-18 07:21:58,429 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:22:00,315 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 76 EpochTime = 1.884 (s) Losses = ['0.0224', '100.0000'] lr = 0.000245
+2023-09-18 07:22:01,789 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 76  acc = 95.5000
+2023-09-18 07:22:03,529 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:22:05,381 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 77 EpochTime = 1.850 (s) Losses = ['0.0283', '100.0000'] lr = 0.000240
+2023-09-18 07:22:06,906 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 77  acc = 95.5000
+2023-09-18 07:22:08,678 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:22:10,512 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 78 EpochTime = 1.832 (s) Losses = ['0.0269', '100.0000'] lr = 0.000235
+2023-09-18 07:22:11,980 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 78  acc = 95.5000
+2023-09-18 07:22:13,998 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:22:15,836 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 79 EpochTime = 1.836 (s) Losses = ['0.0250', '100.0000'] lr = 0.000230
+2023-09-18 07:22:17,339 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 79  acc = 95.5000
+2023-09-18 07:22:20,197 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:22:22,097 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 80 EpochTime = 1.898 (s) Losses = ['0.0205', '100.0000'] lr = 0.000224
+2023-09-18 07:22:23,696 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 80  acc = 95.5000
+2023-09-18 07:22:25,447 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:22:27,291 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 81 EpochTime = 1.843 (s) Losses = ['0.0232', '100.0000'] lr = 0.000219
+2023-09-18 07:22:28,753 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 81  acc = 95.5000
+2023-09-18 07:22:30,375 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:22:32,336 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 82 EpochTime = 1.959 (s) Losses = ['0.0222', '100.0000'] lr = 0.000214
+2023-09-18 07:22:33,791 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 82  acc = 95.5000
+2023-09-18 07:22:35,787 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:22:37,634 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 83 EpochTime = 1.845 (s) Losses = ['0.0265', '100.0000'] lr = 0.000209
+2023-09-18 07:22:39,218 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 83  acc = 95.5000
+2023-09-18 07:22:41,076 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:22:42,990 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 84 EpochTime = 1.911 (s) Losses = ['0.0284', '100.0000'] lr = 0.000204
+2023-09-18 07:22:44,492 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 84  acc = 95.5000
+2023-09-18 07:22:46,201 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:22:48,068 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 85 EpochTime = 1.865 (s) Losses = ['0.0164', '100.0000'] lr = 0.000199
+2023-09-18 07:22:49,646 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 85  acc = 96.0000
+2023-09-18 07:22:51,791 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:22:53,664 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 86 EpochTime = 1.871 (s) Losses = ['0.0206', '100.0000'] lr = 0.000194
+2023-09-18 07:22:55,387 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 86  acc = 96.0000
+2023-09-18 07:22:57,430 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:22:59,303 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 87 EpochTime = 1.871 (s) Losses = ['0.0213', '100.0000'] lr = 0.000188
+2023-09-18 07:23:00,796 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 87  acc = 95.5000
+2023-09-18 07:23:02,334 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:23:04,204 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 88 EpochTime = 1.867 (s) Losses = ['0.0247', '100.0000'] lr = 0.000183
+2023-09-18 07:23:05,662 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 88  acc = 95.5000
+2023-09-18 07:23:07,318 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:23:09,178 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 89 EpochTime = 1.858 (s) Losses = ['0.0239', '100.0000'] lr = 0.000178
+2023-09-18 07:23:10,642 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 89  acc = 95.0000
+2023-09-18 07:23:12,858 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:23:14,741 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 90 EpochTime = 1.882 (s) Losses = ['0.0187', '100.0000'] lr = 0.000173
+2023-09-18 07:23:16,221 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 90  acc = 95.0000
+2023-09-18 07:23:18,487 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:23:20,370 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 91 EpochTime = 1.881 (s) Losses = ['0.0293', '100.0000'] lr = 0.000168
+2023-09-18 07:23:21,839 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 91  acc = 95.5000
+2023-09-18 07:23:23,614 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:23:25,471 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 92 EpochTime = 1.855 (s) Losses = ['0.0192', '100.0000'] lr = 0.000164
+2023-09-18 07:23:26,956 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 92  acc = 95.5000
+2023-09-18 07:23:29,312 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:23:31,226 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 93 EpochTime = 1.905 (s) Losses = ['0.0183', '100.0000'] lr = 0.000159
+2023-09-18 07:23:32,858 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 93  acc = 95.5000
+2023-09-18 07:23:34,556 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:23:36,417 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 94 EpochTime = 1.859 (s) Losses = ['0.0205', '100.0000'] lr = 0.000154
+2023-09-18 07:23:37,895 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 94  acc = 95.5000
+2023-09-18 07:23:40,285 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:23:42,197 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 95 EpochTime = 1.910 (s) Losses = ['0.0228', '100.0000'] lr = 0.000149
+2023-09-18 07:23:43,696 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 95  acc = 95.5000
+2023-09-18 07:23:45,873 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:23:47,741 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 96 EpochTime = 1.866 (s) Losses = ['0.0196', '100.0000'] lr = 0.000144
+2023-09-18 07:23:49,292 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 96  acc = 95.0000
+2023-09-18 07:23:51,608 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:23:53,488 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 97 EpochTime = 1.878 (s) Losses = ['0.0190', '100.0000'] lr = 0.000140
+2023-09-18 07:23:54,958 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 97  acc = 95.0000
+2023-09-18 07:23:56,198 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:23:58,118 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 98 EpochTime = 1.917 (s) Losses = ['0.0177', '100.0000'] lr = 0.000135
+2023-09-18 07:23:59,643 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 98  acc = 95.0000
+2023-09-18 07:24:01,335 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:24:03,201 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 99 EpochTime = 1.864 (s) Losses = ['0.0167', '100.0000'] lr = 0.000130
+2023-09-18 07:24:04,679 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 99  acc = 94.5000
+2023-09-18 07:24:06,720 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:24:08,622 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 100 EpochTime = 1.901 (s) Losses = ['0.0144', '100.0000'] lr = 0.000126
+2023-09-18 07:24:10,097 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 100  acc = 94.0000
+2023-09-18 07:24:12,396 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:24:14,259 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 101 EpochTime = 1.861 (s) Losses = ['0.0175', '100.0000'] lr = 0.000121
+2023-09-18 07:24:15,723 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 101  acc = 94.5000
+2023-09-18 07:24:17,922 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:24:19,881 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 102 EpochTime = 1.957 (s) Losses = ['0.0245', '100.0000'] lr = 0.000117
+2023-09-18 07:24:21,347 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 102  acc = 94.0000
+2023-09-18 07:24:22,985 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:24:24,832 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 103 EpochTime = 1.846 (s) Losses = ['0.0224', '100.0000'] lr = 0.000112
+2023-09-18 07:24:26,289 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 103  acc = 95.0000
+2023-09-18 07:24:28,418 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:24:30,311 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 104 EpochTime = 1.890 (s) Losses = ['0.0185', '100.0000'] lr = 0.000108
+2023-09-18 07:24:31,798 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 104  acc = 95.0000
+2023-09-18 07:24:34,058 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:24:35,919 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 105 EpochTime = 1.858 (s) Losses = ['0.0153', '100.0000'] lr = 0.000104
+2023-09-18 07:24:37,394 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 105  acc = 95.5000
+2023-09-18 07:24:39,072 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:24:40,959 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 106 EpochTime = 1.886 (s) Losses = ['0.0212', '100.0000'] lr = 0.000100
+2023-09-18 07:24:42,581 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 106  acc = 95.5000
+2023-09-18 07:24:44,287 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:24:46,205 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 107 EpochTime = 1.915 (s) Losses = ['0.0238', '100.0000'] lr = 0.000096
+2023-09-18 07:24:47,765 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 107  acc = 95.5000
+2023-09-18 07:24:49,486 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:24:51,319 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 108 EpochTime = 1.831 (s) Losses = ['0.0246', '100.0000'] lr = 0.000091
+2023-09-18 07:24:52,817 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 108  acc = 95.5000
+2023-09-18 07:24:55,283 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:24:57,174 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 109 EpochTime = 1.889 (s) Losses = ['0.0210', '100.0000'] lr = 0.000087
+2023-09-18 07:24:58,662 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 109  acc = 96.0000
+2023-09-18 07:25:00,720 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:25:02,585 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 110 EpochTime = 1.864 (s) Losses = ['0.0209', '100.0000'] lr = 0.000084
+2023-09-18 07:25:04,058 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 110  acc = 96.0000
+2023-09-18 07:25:06,715 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:25:08,586 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 111 EpochTime = 1.869 (s) Losses = ['0.0172', '100.0000'] lr = 0.000080
+2023-09-18 07:25:10,092 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 111  acc = 96.0000
+2023-09-18 07:25:11,684 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:25:13,533 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 112 EpochTime = 1.847 (s) Losses = ['0.0171', '100.0000'] lr = 0.000076
+2023-09-18 07:25:15,107 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 112  acc = 96.0000
+2023-09-18 07:25:17,462 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:25:19,307 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 113 EpochTime = 1.844 (s) Losses = ['0.0168', '100.0000'] lr = 0.000072
+2023-09-18 07:25:20,829 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 113  acc = 95.5000
+2023-09-18 07:25:22,563 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:25:24,481 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 114 EpochTime = 1.917 (s) Losses = ['0.0142', '100.0000'] lr = 0.000069
+2023-09-18 07:25:26,015 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 114  acc = 95.5000
+2023-09-18 07:25:27,960 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:25:29,965 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 115 EpochTime = 2.003 (s) Losses = ['0.0184', '100.0000'] lr = 0.000065
+2023-09-18 07:25:31,483 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 115  acc = 95.5000
+2023-09-18 07:25:33,853 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:25:35,847 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 116 EpochTime = 1.992 (s) Losses = ['0.0182', '100.0000'] lr = 0.000062
+2023-09-18 07:25:37,421 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 116  acc = 95.5000
+2023-09-18 07:25:39,597 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:25:41,430 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 117 EpochTime = 1.831 (s) Losses = ['0.0153', '100.0000'] lr = 0.000058
+2023-09-18 07:25:42,957 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 117  acc = 95.5000
+2023-09-18 07:25:44,682 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:25:46,681 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 118 EpochTime = 1.996 (s) Losses = ['0.0148', '100.0000'] lr = 0.000055
+2023-09-18 07:25:48,184 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 118  acc = 95.5000
+2023-09-18 07:25:49,936 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:25:51,804 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 119 EpochTime = 1.866 (s) Losses = ['0.0152', '100.0000'] lr = 0.000052
+2023-09-18 07:25:53,333 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 119  acc = 95.5000
+2023-09-18 07:25:54,998 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:25:56,897 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 120 EpochTime = 1.896 (s) Losses = ['0.0184', '100.0000'] lr = 0.000049
+2023-09-18 07:25:58,358 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 120  acc = 95.5000
+2023-09-18 07:26:00,130 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:26:02,024 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 121 EpochTime = 1.892 (s) Losses = ['0.0114', '100.0000'] lr = 0.000046
+2023-09-18 07:26:03,496 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 121  acc = 95.5000
+2023-09-18 07:26:05,904 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:26:07,764 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 122 EpochTime = 1.858 (s) Losses = ['0.0192', '100.0000'] lr = 0.000043
+2023-09-18 07:26:09,272 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 122  acc = 95.5000
+2023-09-18 07:26:11,334 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:26:13,165 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 123 EpochTime = 1.829 (s) Losses = ['0.0150', '100.0000'] lr = 0.000040
+2023-09-18 07:26:14,640 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 123  acc = 95.5000
+2023-09-18 07:26:16,854 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:26:18,683 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 124 EpochTime = 1.827 (s) Losses = ['0.0136', '100.0000'] lr = 0.000037
+2023-09-18 07:26:20,201 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 124  acc = 95.5000
+2023-09-18 07:26:21,895 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:26:23,774 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 125 EpochTime = 1.878 (s) Losses = ['0.0160', '100.0000'] lr = 0.000034
+2023-09-18 07:26:25,275 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 125  acc = 95.5000
+2023-09-18 07:26:27,322 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:26:29,240 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 126 EpochTime = 1.916 (s) Losses = ['0.0172', '100.0000'] lr = 0.000032
+2023-09-18 07:26:30,807 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 126  acc = 95.5000
+2023-09-18 07:26:32,437 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:26:34,357 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 127 EpochTime = 1.918 (s) Losses = ['0.0149', '100.0000'] lr = 0.000029
+2023-09-18 07:26:35,988 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 127  acc = 95.5000
+2023-09-18 07:26:38,148 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:26:40,023 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 128 EpochTime = 1.873 (s) Losses = ['0.0207', '100.0000'] lr = 0.000027
+2023-09-18 07:26:41,564 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 128  acc = 95.5000
+2023-09-18 07:26:43,111 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:26:45,006 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 129 EpochTime = 1.893 (s) Losses = ['0.0182', '100.0000'] lr = 0.000025
+2023-09-18 07:26:46,471 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 129  acc = 95.5000
+2023-09-18 07:26:48,495 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:26:50,365 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 130 EpochTime = 1.868 (s) Losses = ['0.0207', '100.0000'] lr = 0.000023
+2023-09-18 07:26:51,865 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 130  acc = 95.5000
+2023-09-18 07:26:53,973 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:26:55,824 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 131 EpochTime = 1.849 (s) Losses = ['0.0232', '100.0000'] lr = 0.000020
+2023-09-18 07:26:57,300 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 131  acc = 95.5000
+2023-09-18 07:26:59,011 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:27:00,860 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 132 EpochTime = 1.848 (s) Losses = ['0.0196', '100.0000'] lr = 0.000019
+2023-09-18 07:27:02,365 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 132  acc = 96.0000
+2023-09-18 07:27:04,683 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:27:06,543 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 133 EpochTime = 1.859 (s) Losses = ['0.0185', '100.0000'] lr = 0.000017
+2023-09-18 07:27:08,026 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 133  acc = 95.5000
+2023-09-18 07:27:09,536 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:27:11,554 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 134 EpochTime = 2.016 (s) Losses = ['0.0156', '100.0000'] lr = 0.000015
+2023-09-18 07:27:13,067 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 134  acc = 96.0000
+2023-09-18 07:27:15,072 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:27:16,940 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 135 EpochTime = 1.866 (s) Losses = ['0.0134', '100.0000'] lr = 0.000013
+2023-09-18 07:27:18,398 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 135  acc = 96.0000
+2023-09-18 07:27:20,509 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:27:22,361 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 136 EpochTime = 1.851 (s) Losses = ['0.0171', '100.0000'] lr = 0.000012
+2023-09-18 07:27:23,884 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 136  acc = 96.0000
+2023-09-18 07:27:25,480 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:27:27,423 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 137 EpochTime = 1.941 (s) Losses = ['0.0133', '100.0000'] lr = 0.000010
+2023-09-18 07:27:28,918 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 137  acc = 96.0000
+2023-09-18 07:27:31,959 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:27:33,936 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 138 EpochTime = 1.888 (s) Losses = ['0.0147', '100.0000'] lr = 0.000009
+2023-09-18 07:27:35,490 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 138  acc = 95.5000
+2023-09-18 07:27:37,165 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:27:39,132 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 139 EpochTime = 1.965 (s) Losses = ['0.0134', '100.0000'] lr = 0.000008
+2023-09-18 07:27:40,697 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 139  acc = 96.0000
+2023-09-18 07:27:43,530 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:27:45,517 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 140 EpochTime = 1.986 (s) Losses = ['0.0196', '100.0000'] lr = 0.000006
+2023-09-18 07:27:46,987 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 140  acc = 95.5000
+2023-09-18 07:27:49,200 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:27:51,055 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 141 EpochTime = 1.853 (s) Losses = ['0.0209', '100.0000'] lr = 0.000005
+2023-09-18 07:27:52,545 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 141  acc = 95.5000
+2023-09-18 07:27:54,110 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:27:55,641 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-epoch-141.pth
+2023-09-18 07:27:57,532 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 142 EpochTime = 1.889 (s) Losses = ['0.0161', '100.0000'] lr = 0.000004
+2023-09-18 07:27:58,985 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 142  acc = 95.5000
+2023-09-18 07:28:01,857 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:28:03,562 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-epoch-142.pth
+2023-09-18 07:28:05,406 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 143 EpochTime = 1.842 (s) Losses = ['0.0218', '100.0000'] lr = 0.000004
+2023-09-18 07:28:06,890 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 143  acc = 95.5000
+2023-09-18 07:28:09,541 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:28:11,250 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-epoch-143.pth
+2023-09-18 07:28:13,095 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 144 EpochTime = 1.843 (s) Losses = ['0.0162', '100.0000'] lr = 0.000003
+2023-09-18 07:28:14,572 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 144  acc = 95.5000
+2023-09-18 07:28:17,150 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:28:18,789 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-epoch-144.pth
+2023-09-18 07:28:20,636 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 145 EpochTime = 1.845 (s) Losses = ['0.0166', '100.0000'] lr = 0.000002
+2023-09-18 07:28:22,137 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 145  acc = 95.5000
+2023-09-18 07:28:24,894 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:28:26,938 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-epoch-145.pth
+2023-09-18 07:28:28,836 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 146 EpochTime = 1.895 (s) Losses = ['0.0173', '100.0000'] lr = 0.000002
+2023-09-18 07:28:30,316 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 146  acc = 96.0000
+2023-09-18 07:28:32,162 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:28:33,911 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-epoch-146.pth
+2023-09-18 07:28:35,821 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 147 EpochTime = 1.907 (s) Losses = ['0.0154', '100.0000'] lr = 0.000001
+2023-09-18 07:28:37,317 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 147  acc = 95.5000
+2023-09-18 07:28:40,227 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:28:42,019 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-epoch-147.pth
+2023-09-18 07:28:43,863 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 148 EpochTime = 1.843 (s) Losses = ['0.0166', '100.0000'] lr = 0.000001
+2023-09-18 07:28:45,375 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 148  acc = 95.5000
+2023-09-18 07:28:48,393 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:28:50,533 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-epoch-148.pth
+2023-09-18 07:28:52,559 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 149 EpochTime = 2.023 (s) Losses = ['0.0140', '100.0000'] lr = 0.000001
+2023-09-18 07:28:54,089 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 149  acc = 95.5000
+2023-09-18 07:28:55,991 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:28:58,943 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-epoch-149.pth
+2023-09-18 07:29:00,847 - fewshot_modelnet_transferring_features - INFO - [Training] EPOCH: 150 EpochTime = 1.902 (s) Losses = ['0.0142', '100.0000'] lr = 0.000001
+2023-09-18 07:29:02,334 - fewshot_modelnet_transferring_features - INFO - [Validation] EPOCH: 150  acc = 95.5000
+2023-09-18 07:29:04,316 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-last.pth
+2023-09-18 07:29:06,777 - fewshot_modelnet_transferring_features - INFO - Save checkpoint at ./experiments/fewshot_modelnet_transferring_features/cfgs/add_as_normal/ckpt-epoch-150.pth
