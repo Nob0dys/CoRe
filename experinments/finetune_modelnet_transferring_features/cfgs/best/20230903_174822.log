@@ -1,0 +1,406 @@
+2023-09-03 17:48:22,325 - finetune_modelnet_transferring_features - INFO - Copy the Config file from cfgs/finetune_modelnet_transferring_features.yaml to ./experiments/finetune_modelnet_transferring_features/cfgs/test_add_as_normal/config.yaml
+2023-09-03 17:48:22,326 - finetune_modelnet_transferring_features - INFO - args.config : cfgs/finetune_modelnet_transferring_features.yaml
+2023-09-03 17:48:22,326 - finetune_modelnet_transferring_features - INFO - args.launcher : none
+2023-09-03 17:48:22,326 - finetune_modelnet_transferring_features - INFO - args.local_rank : 0
+2023-09-03 17:48:22,326 - finetune_modelnet_transferring_features - INFO - args.num_workers : 8
+2023-09-03 17:48:22,326 - finetune_modelnet_transferring_features - INFO - args.seed : 0
+2023-09-03 17:48:22,326 - finetune_modelnet_transferring_features - INFO - args.deterministic : False
+2023-09-03 17:48:22,326 - finetune_modelnet_transferring_features - INFO - args.sync_bn : True
+2023-09-03 17:48:22,326 - finetune_modelnet_transferring_features - INFO - args.large_group : 6
+2023-09-03 17:48:22,326 - finetune_modelnet_transferring_features - INFO - args.small_group : 12
+2023-09-03 17:48:22,326 - finetune_modelnet_transferring_features - INFO - args.large_patch : 12
+2023-09-03 17:48:22,327 - finetune_modelnet_transferring_features - INFO - args.small_patch : 6
+2023-09-03 17:48:22,327 - finetune_modelnet_transferring_features - INFO - args.queue_length : 8192
+2023-09-03 17:48:22,327 - finetune_modelnet_transferring_features - INFO - args.epoch_queue_starts : 10
+2023-09-03 17:48:22,327 - finetune_modelnet_transferring_features - INFO - args.nmb_crops : [26]
+2023-09-03 17:48:22,327 - finetune_modelnet_transferring_features - INFO - args.fea_dim : 384
+2023-09-03 17:48:22,327 - finetune_modelnet_transferring_features - INFO - args.hidden_mlp : 256
+2023-09-03 17:48:22,327 - finetune_modelnet_transferring_features - INFO - args.output_dim : 128
+2023-09-03 17:48:22,327 - finetune_modelnet_transferring_features - INFO - args.nmb_prototypes : 200
+2023-09-03 17:48:22,327 - finetune_modelnet_transferring_features - INFO - args.temperature : 0.1
+2023-09-03 17:48:22,327 - finetune_modelnet_transferring_features - INFO - args.epsilon : 0.05
+2023-09-03 17:48:22,327 - finetune_modelnet_transferring_features - INFO - args.sinkhorn_iterations : 3
+2023-09-03 17:48:22,327 - finetune_modelnet_transferring_features - INFO - args.world_size : 1
+2023-09-03 17:48:22,327 - finetune_modelnet_transferring_features - INFO - args.exp_name : test_add_as_normal
+2023-09-03 17:48:22,328 - finetune_modelnet_transferring_features - INFO - args.loss : cd1
+2023-09-03 17:48:22,328 - finetune_modelnet_transferring_features - INFO - args.start_ckpts : None
+2023-09-03 17:48:22,328 - finetune_modelnet_transferring_features - INFO - args.ckpts : ./experiments/finetune_modelnet_transferring_features/cfgs/add_as_normal/ckpt-best.pth
+2023-09-03 17:48:22,328 - finetune_modelnet_transferring_features - INFO - args.val_freq : 1
+2023-09-03 17:48:22,328 - finetune_modelnet_transferring_features - INFO - args.vote : True
+2023-09-03 17:48:22,328 - finetune_modelnet_transferring_features - INFO - args.resume : False
+2023-09-03 17:48:22,328 - finetune_modelnet_transferring_features - INFO - args.test : True
+2023-09-03 17:48:22,328 - finetune_modelnet_transferring_features - INFO - args.finetune_model : False
+2023-09-03 17:48:22,328 - finetune_modelnet_transferring_features - INFO - args.scratch_model : False
+2023-09-03 17:48:22,328 - finetune_modelnet_transferring_features - INFO - args.mode : None
+2023-09-03 17:48:22,328 - finetune_modelnet_transferring_features - INFO - args.way : -1
+2023-09-03 17:48:22,328 - finetune_modelnet_transferring_features - INFO - args.shot : -1
+2023-09-03 17:48:22,328 - finetune_modelnet_transferring_features - INFO - args.fold : -1
+2023-09-03 17:48:22,329 - finetune_modelnet_transferring_features - INFO - args.experiment_path : ./experiments/finetune_modelnet_transferring_features/cfgs/test_add_as_normal
+2023-09-03 17:48:22,329 - finetune_modelnet_transferring_features - INFO - args.tfboard_path : ./experiments/finetune_modelnet_transferring_features/cfgs/TFBoard/test_add_as_normal
+2023-09-03 17:48:22,329 - finetune_modelnet_transferring_features - INFO - args.log_name : finetune_modelnet_transferring_features
+2023-09-03 17:48:22,329 - finetune_modelnet_transferring_features - INFO - args.use_gpu : True
+2023-09-03 17:48:22,329 - finetune_modelnet_transferring_features - INFO - args.distributed : False
+2023-09-03 17:48:22,329 - finetune_modelnet_transferring_features - INFO - config.optimizer = edict()
+2023-09-03 17:48:22,329 - finetune_modelnet_transferring_features - INFO - config.optimizer.type : AdamW
+2023-09-03 17:48:22,329 - finetune_modelnet_transferring_features - INFO - config.optimizer.part : all
+2023-09-03 17:48:22,329 - finetune_modelnet_transferring_features - INFO - config.optimizer.kwargs = edict()
+2023-09-03 17:48:22,329 - finetune_modelnet_transferring_features - INFO - config.optimizer.kwargs.lr : 0.0005
+2023-09-03 17:48:22,329 - finetune_modelnet_transferring_features - INFO - config.optimizer.kwargs.weight_decay : 0.05
+2023-09-03 17:48:22,329 - finetune_modelnet_transferring_features - INFO - config.scheduler = edict()
+2023-09-03 17:48:22,330 - finetune_modelnet_transferring_features - INFO - config.scheduler.type : CosLR
+2023-09-03 17:48:22,330 - finetune_modelnet_transferring_features - INFO - config.scheduler.kwargs = edict()
+2023-09-03 17:48:22,330 - finetune_modelnet_transferring_features - INFO - config.scheduler.kwargs.epochs : 300
+2023-09-03 17:48:22,330 - finetune_modelnet_transferring_features - INFO - config.scheduler.kwargs.initial_epochs : 10
+2023-09-03 17:48:22,330 - finetune_modelnet_transferring_features - INFO - config.dataset = edict()
+2023-09-03 17:48:22,330 - finetune_modelnet_transferring_features - INFO - config.dataset.train = edict()
+2023-09-03 17:48:22,330 - finetune_modelnet_transferring_features - INFO - config.dataset.train._base_ = edict()
+2023-09-03 17:48:22,330 - finetune_modelnet_transferring_features - INFO - config.dataset.train._base_.NAME : ModelNet
+2023-09-03 17:48:22,330 - finetune_modelnet_transferring_features - INFO - config.dataset.train._base_.DATA_PATH : data/ModelNet/modelnet40_normal_resampled
+2023-09-03 17:48:22,330 - finetune_modelnet_transferring_features - INFO - config.dataset.train._base_.N_POINTS : 8192
+2023-09-03 17:48:22,330 - finetune_modelnet_transferring_features - INFO - config.dataset.train._base_.NUM_CATEGORY : 40
+2023-09-03 17:48:22,330 - finetune_modelnet_transferring_features - INFO - config.dataset.train._base_.USE_NORMALS : False
+2023-09-03 17:48:22,330 - finetune_modelnet_transferring_features - INFO - config.dataset.train.others = edict()
+2023-09-03 17:48:22,331 - finetune_modelnet_transferring_features - INFO - config.dataset.train.others.subset : train
+2023-09-03 17:48:22,331 - finetune_modelnet_transferring_features - INFO - config.dataset.train.others.bs : 32
+2023-09-03 17:48:22,331 - finetune_modelnet_transferring_features - INFO - config.dataset.val = edict()
+2023-09-03 17:48:22,331 - finetune_modelnet_transferring_features - INFO - config.dataset.val._base_ = edict()
+2023-09-03 17:48:22,331 - finetune_modelnet_transferring_features - INFO - config.dataset.val._base_.NAME : ModelNet
+2023-09-03 17:48:22,331 - finetune_modelnet_transferring_features - INFO - config.dataset.val._base_.DATA_PATH : data/ModelNet/modelnet40_normal_resampled
+2023-09-03 17:48:22,331 - finetune_modelnet_transferring_features - INFO - config.dataset.val._base_.N_POINTS : 8192
+2023-09-03 17:48:22,331 - finetune_modelnet_transferring_features - INFO - config.dataset.val._base_.NUM_CATEGORY : 40
+2023-09-03 17:48:22,331 - finetune_modelnet_transferring_features - INFO - config.dataset.val._base_.USE_NORMALS : False
+2023-09-03 17:48:22,331 - finetune_modelnet_transferring_features - INFO - config.dataset.val.others = edict()
+2023-09-03 17:48:22,331 - finetune_modelnet_transferring_features - INFO - config.dataset.val.others.subset : test
+2023-09-03 17:48:22,331 - finetune_modelnet_transferring_features - INFO - config.dataset.val.others.bs : 64
+2023-09-03 17:48:22,332 - finetune_modelnet_transferring_features - INFO - config.dataset.test = edict()
+2023-09-03 17:48:22,332 - finetune_modelnet_transferring_features - INFO - config.dataset.test._base_ = edict()
+2023-09-03 17:48:22,332 - finetune_modelnet_transferring_features - INFO - config.dataset.test._base_.NAME : ModelNet
+2023-09-03 17:48:22,332 - finetune_modelnet_transferring_features - INFO - config.dataset.test._base_.DATA_PATH : data/ModelNet/modelnet40_normal_resampled
+2023-09-03 17:48:22,332 - finetune_modelnet_transferring_features - INFO - config.dataset.test._base_.N_POINTS : 8192
+2023-09-03 17:48:22,332 - finetune_modelnet_transferring_features - INFO - config.dataset.test._base_.NUM_CATEGORY : 40
+2023-09-03 17:48:22,332 - finetune_modelnet_transferring_features - INFO - config.dataset.test._base_.USE_NORMALS : False
+2023-09-03 17:48:22,332 - finetune_modelnet_transferring_features - INFO - config.dataset.test.others = edict()
+2023-09-03 17:48:22,332 - finetune_modelnet_transferring_features - INFO - config.dataset.test.others.subset : test
+2023-09-03 17:48:22,332 - finetune_modelnet_transferring_features - INFO - config.dataset.test.others.bs : 32
+2023-09-03 17:48:22,332 - finetune_modelnet_transferring_features - INFO - config.model = edict()
+2023-09-03 17:48:22,332 - finetune_modelnet_transferring_features - INFO - config.model.NAME : PointTransformer
+2023-09-03 17:48:22,332 - finetune_modelnet_transferring_features - INFO - config.model.trans_dim : 384
+2023-09-03 17:48:22,333 - finetune_modelnet_transferring_features - INFO - config.model.depth : 12
+2023-09-03 17:48:22,333 - finetune_modelnet_transferring_features - INFO - config.model.drop_path_rate : 0.1
+2023-09-03 17:48:22,333 - finetune_modelnet_transferring_features - INFO - config.model.cls_dim : 40
+2023-09-03 17:48:22,333 - finetune_modelnet_transferring_features - INFO - config.model.num_heads : 6
+2023-09-03 17:48:22,333 - finetune_modelnet_transferring_features - INFO - config.model.group_size : 32
+2023-09-03 17:48:22,333 - finetune_modelnet_transferring_features - INFO - config.model.num_group : 64
+2023-09-03 17:48:22,333 - finetune_modelnet_transferring_features - INFO - config.model.encoder_dims : 384
+2023-09-03 17:48:22,333 - finetune_modelnet_transferring_features - INFO - config.npoints : 1024
+2023-09-03 17:48:22,333 - finetune_modelnet_transferring_features - INFO - config.total_bs : 32
+2023-09-03 17:48:22,333 - finetune_modelnet_transferring_features - INFO - config.step_per_update : 1
+2023-09-03 17:48:22,333 - finetune_modelnet_transferring_features - INFO - config.max_epoch : 300
+2023-09-03 17:48:22,333 - finetune_modelnet_transferring_features - INFO - config.grad_norm_clip : 10
+2023-09-03 17:48:22,334 - finetune_modelnet_transferring_features - INFO - Distributed training: False
+2023-09-03 17:48:22,334 - finetune_modelnet_transferring_features - INFO - Set random seed to 0, deterministic: False
+2023-09-03 17:48:22,334 - finetune_modelnet_transferring_features - INFO - Tester start ... 
+2023-09-03 17:48:24,591 - finetune_modelnet_transferring_features - INFO - Loading weights from ./experiments/finetune_modelnet_transferring_features/cfgs/add_as_normal/ckpt-best.pth...
+2023-09-03 17:48:26,027 - finetune_modelnet_transferring_features - INFO - ckpts @ 220 epoch( performance = {'acc': tensor(93.1524)})
+2023-09-03 17:48:48,473 - finetune_modelnet_transferring_features - INFO - [TEST] acc = 93.1118
+2023-09-03 17:48:48,473 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE]
+2023-09-03 17:50:18,994 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 1]  acc = 93.1118, best acc = 93.1118
+2023-09-03 17:51:51,728 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 2]  acc = 93.1524, best acc = 93.1524
+2023-09-03 17:53:24,419 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 3]  acc = 93.1118, best acc = 93.1524
+2023-09-03 17:54:57,027 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 4]  acc = 92.9498, best acc = 93.1524
+2023-09-03 17:56:29,577 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 5]  acc = 93.0713, best acc = 93.1524
+2023-09-03 17:58:02,127 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 6]  acc = 93.2334, best acc = 93.2334
+2023-09-03 17:59:34,682 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 7]  acc = 93.0308, best acc = 93.2334
+2023-09-03 18:01:07,269 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 8]  acc = 93.1929, best acc = 93.2334
+2023-09-03 18:02:40,168 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 9]  acc = 93.0713, best acc = 93.2334
+2023-09-03 18:04:12,748 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 10]  acc = 93.0308, best acc = 93.2334
+2023-09-03 18:05:45,319 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 11]  acc = 93.0308, best acc = 93.2334
+2023-09-03 18:07:18,253 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 12]  acc = 93.0713, best acc = 93.2334
+2023-09-03 18:08:51,149 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 13]  acc = 93.0713, best acc = 93.2334
+2023-09-03 18:10:24,093 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 14]  acc = 93.1118, best acc = 93.2334
+2023-09-03 18:11:57,009 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 15]  acc = 92.9903, best acc = 93.2334
+2023-09-03 18:13:29,615 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 16]  acc = 93.0308, best acc = 93.2334
+2023-09-03 18:15:02,162 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 17]  acc = 92.9498, best acc = 93.2334
+2023-09-03 18:16:34,693 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 18]  acc = 93.0713, best acc = 93.2334
+2023-09-03 18:18:07,264 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 19]  acc = 93.1118, best acc = 93.2334
+2023-09-03 18:19:39,839 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 20]  acc = 93.1118, best acc = 93.2334
+2023-09-03 18:21:12,365 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 21]  acc = 93.1524, best acc = 93.2334
+2023-09-03 18:22:44,939 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 22]  acc = 92.8282, best acc = 93.2334
+2023-09-03 18:24:17,450 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 23]  acc = 93.1524, best acc = 93.2334
+2023-09-03 18:25:49,982 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 24]  acc = 93.0713, best acc = 93.2334
+2023-09-03 18:27:22,505 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 25]  acc = 93.1929, best acc = 93.2334
+2023-09-03 18:28:55,056 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 26]  acc = 93.2739, best acc = 93.2739
+2023-09-03 18:30:27,540 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 27]  acc = 93.4765, best acc = 93.4765
+2023-09-03 18:32:00,112 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 28]  acc = 92.9498, best acc = 93.4765
+2023-09-03 18:33:32,637 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 29]  acc = 93.2739, best acc = 93.4765
+2023-09-03 18:35:05,191 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 30]  acc = 92.9498, best acc = 93.4765
+2023-09-03 18:36:37,720 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 31]  acc = 92.9092, best acc = 93.4765
+2023-09-03 18:38:10,270 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 32]  acc = 93.0308, best acc = 93.4765
+2023-09-03 18:39:42,802 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 33]  acc = 92.9498, best acc = 93.4765
+2023-09-03 18:41:15,373 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 34]  acc = 93.1524, best acc = 93.4765
+2023-09-03 18:42:47,941 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 35]  acc = 93.2334, best acc = 93.4765
+2023-09-03 18:44:20,548 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 36]  acc = 93.1929, best acc = 93.4765
+2023-09-03 18:45:53,073 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 37]  acc = 93.0713, best acc = 93.4765
+2023-09-03 18:47:25,725 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 38]  acc = 92.9498, best acc = 93.4765
+2023-09-03 18:48:58,288 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 39]  acc = 92.9092, best acc = 93.4765
+2023-09-03 18:50:30,795 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 40]  acc = 93.1929, best acc = 93.4765
+2023-09-03 18:52:03,385 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 41]  acc = 93.1524, best acc = 93.4765
+2023-09-03 18:53:35,936 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 42]  acc = 92.9092, best acc = 93.4765
+2023-09-03 18:55:08,506 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 43]  acc = 92.9903, best acc = 93.4765
+2023-09-03 18:56:41,037 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 44]  acc = 93.0308, best acc = 93.4765
+2023-09-03 18:58:13,582 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 45]  acc = 93.1118, best acc = 93.4765
+2023-09-03 18:59:46,154 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 46]  acc = 92.9903, best acc = 93.4765
+2023-09-03 19:01:18,699 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 47]  acc = 93.0713, best acc = 93.4765
+2023-09-03 19:02:51,272 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 48]  acc = 92.9903, best acc = 93.4765
+2023-09-03 19:04:23,800 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 49]  acc = 93.0713, best acc = 93.4765
+2023-09-03 19:05:56,309 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 50]  acc = 92.9903, best acc = 93.4765
+2023-09-03 19:07:28,823 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 51]  acc = 92.9092, best acc = 93.4765
+2023-09-03 19:09:01,390 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 52]  acc = 93.1118, best acc = 93.4765
+2023-09-03 19:10:34,266 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 53]  acc = 92.8687, best acc = 93.4765
+2023-09-03 19:12:06,807 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 54]  acc = 93.1118, best acc = 93.4765
+2023-09-03 19:13:39,319 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 55]  acc = 92.7877, best acc = 93.4765
+2023-09-03 19:15:11,891 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 56]  acc = 92.9903, best acc = 93.4765
+2023-09-03 19:16:44,495 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 57]  acc = 93.0713, best acc = 93.4765
+2023-09-03 19:18:16,941 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 58]  acc = 92.9498, best acc = 93.4765
+2023-09-03 19:19:49,383 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 59]  acc = 93.1929, best acc = 93.4765
+2023-09-03 19:21:21,938 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 60]  acc = 93.0713, best acc = 93.4765
+2023-09-03 19:22:54,513 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 61]  acc = 92.8282, best acc = 93.4765
+2023-09-03 19:24:27,409 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 62]  acc = 93.0713, best acc = 93.4765
+2023-09-03 19:26:00,327 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 63]  acc = 93.0713, best acc = 93.4765
+2023-09-03 19:27:32,864 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 64]  acc = 93.1524, best acc = 93.4765
+2023-09-03 19:29:05,360 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 65]  acc = 93.1524, best acc = 93.4765
+2023-09-03 19:30:37,883 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 66]  acc = 93.2334, best acc = 93.4765
+2023-09-03 19:32:10,788 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 67]  acc = 93.0308, best acc = 93.4765
+2023-09-03 19:33:43,696 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 68]  acc = 93.1524, best acc = 93.4765
+2023-09-03 19:35:16,538 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 69]  acc = 93.2739, best acc = 93.4765
+2023-09-03 19:36:49,138 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 70]  acc = 92.8687, best acc = 93.4765
+2023-09-03 19:38:21,661 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 71]  acc = 93.2739, best acc = 93.4765
+2023-09-03 19:39:54,209 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 72]  acc = 93.1118, best acc = 93.4765
+2023-09-03 19:41:26,750 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 73]  acc = 92.9498, best acc = 93.4765
+2023-09-03 19:42:59,338 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 74]  acc = 92.9498, best acc = 93.4765
+2023-09-03 19:44:31,883 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 75]  acc = 93.0308, best acc = 93.4765
+2023-09-03 19:46:04,452 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 76]  acc = 93.2739, best acc = 93.4765
+2023-09-03 19:47:36,958 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 77]  acc = 93.1524, best acc = 93.4765
+2023-09-03 19:49:09,420 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 78]  acc = 92.7472, best acc = 93.4765
+2023-09-03 19:50:42,003 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 79]  acc = 93.0713, best acc = 93.4765
+2023-09-03 19:52:14,723 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 80]  acc = 92.9092, best acc = 93.4765
+2023-09-03 19:53:47,249 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 81]  acc = 93.1118, best acc = 93.4765
+2023-09-03 19:55:19,743 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 82]  acc = 93.1118, best acc = 93.4765
+2023-09-03 19:56:52,329 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 83]  acc = 93.2334, best acc = 93.4765
+2023-09-03 19:58:24,860 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 84]  acc = 92.9903, best acc = 93.4765
+2023-09-03 19:59:57,330 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 85]  acc = 93.0713, best acc = 93.4765
+2023-09-03 20:01:29,818 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 86]  acc = 92.9903, best acc = 93.4765
+2023-09-03 20:03:02,369 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 87]  acc = 93.1118, best acc = 93.4765
+2023-09-03 20:04:34,903 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 88]  acc = 92.9903, best acc = 93.4765
+2023-09-03 20:06:07,433 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 89]  acc = 93.1118, best acc = 93.4765
+2023-09-03 20:07:40,030 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 90]  acc = 93.1118, best acc = 93.4765
+2023-09-03 20:09:12,558 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 91]  acc = 93.2334, best acc = 93.4765
+2023-09-03 20:10:45,024 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 92]  acc = 92.8282, best acc = 93.4765
+2023-09-03 20:12:17,597 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 93]  acc = 93.1524, best acc = 93.4765
+2023-09-03 20:13:50,414 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 94]  acc = 93.0713, best acc = 93.4765
+2023-09-03 20:15:22,923 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 95]  acc = 93.1524, best acc = 93.4765
+2023-09-03 20:16:55,492 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 96]  acc = 92.8687, best acc = 93.4765
+2023-09-03 20:18:28,106 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 97]  acc = 93.1929, best acc = 93.4765
+2023-09-03 20:20:00,670 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 98]  acc = 93.1524, best acc = 93.4765
+2023-09-03 20:21:33,291 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 99]  acc = 92.8687, best acc = 93.4765
+2023-09-03 20:23:05,857 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 100]  acc = 93.1118, best acc = 93.4765
+2023-09-03 20:24:38,451 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 101]  acc = 92.9903, best acc = 93.4765
+2023-09-03 20:26:10,982 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 102]  acc = 92.9903, best acc = 93.4765
+2023-09-03 20:27:43,531 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 103]  acc = 92.9903, best acc = 93.4765
+2023-09-03 20:29:16,035 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 104]  acc = 92.9903, best acc = 93.4765
+2023-09-03 20:30:48,566 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 105]  acc = 93.2334, best acc = 93.4765
+2023-09-03 20:32:21,094 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 106]  acc = 93.2334, best acc = 93.4765
+2023-09-03 20:33:53,624 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 107]  acc = 93.2739, best acc = 93.4765
+2023-09-03 20:35:26,194 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 108]  acc = 93.0308, best acc = 93.4765
+2023-09-03 20:36:58,743 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 109]  acc = 93.1118, best acc = 93.4765
+2023-09-03 20:38:31,216 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 110]  acc = 93.2334, best acc = 93.4765
+2023-09-03 20:40:03,644 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 111]  acc = 92.9903, best acc = 93.4765
+2023-09-03 20:41:36,519 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 112]  acc = 92.9903, best acc = 93.4765
+2023-09-03 20:43:09,432 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 113]  acc = 93.0713, best acc = 93.4765
+2023-09-03 20:44:41,956 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 114]  acc = 93.0308, best acc = 93.4765
+2023-09-03 20:46:14,676 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 115]  acc = 93.1524, best acc = 93.4765
+2023-09-03 20:47:47,301 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 116]  acc = 93.0713, best acc = 93.4765
+2023-09-03 20:49:20,137 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 117]  acc = 92.9903, best acc = 93.4765
+2023-09-03 20:50:52,887 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 118]  acc = 93.1524, best acc = 93.4765
+2023-09-03 20:52:25,452 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 119]  acc = 92.9498, best acc = 93.4765
+2023-09-03 20:53:58,004 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 120]  acc = 93.5981, best acc = 93.5981
+2023-09-03 20:55:30,515 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 121]  acc = 93.2739, best acc = 93.5981
+2023-09-03 20:57:03,087 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 122]  acc = 93.2334, best acc = 93.5981
+2023-09-03 20:58:35,639 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 123]  acc = 92.9903, best acc = 93.5981
+2023-09-03 21:00:08,189 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 124]  acc = 92.9498, best acc = 93.5981
+2023-09-03 21:01:40,733 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 125]  acc = 92.9903, best acc = 93.5981
+2023-09-03 21:03:13,155 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 126]  acc = 93.0713, best acc = 93.5981
+2023-09-03 21:04:45,692 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 127]  acc = 93.1118, best acc = 93.5981
+2023-09-03 21:06:18,192 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 128]  acc = 93.1524, best acc = 93.5981
+2023-09-03 21:07:50,744 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 129]  acc = 92.7877, best acc = 93.5981
+2023-09-03 21:09:23,272 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 130]  acc = 93.0308, best acc = 93.5981
+2023-09-03 21:10:55,840 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 131]  acc = 92.9498, best acc = 93.5981
+2023-09-03 21:12:28,328 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 132]  acc = 93.3144, best acc = 93.5981
+2023-09-03 21:14:00,796 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 133]  acc = 93.2739, best acc = 93.5981
+2023-09-03 21:15:33,712 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 134]  acc = 93.0713, best acc = 93.5981
+2023-09-03 21:17:06,135 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 135]  acc = 93.1118, best acc = 93.5981
+2023-09-03 21:18:38,601 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 136]  acc = 93.2739, best acc = 93.5981
+2023-09-03 21:20:11,153 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 137]  acc = 92.9903, best acc = 93.5981
+2023-09-03 21:21:43,702 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 138]  acc = 93.0713, best acc = 93.5981
+2023-09-03 21:23:16,231 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 139]  acc = 93.1524, best acc = 93.5981
+2023-09-03 21:24:48,639 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 140]  acc = 93.1118, best acc = 93.5981
+2023-09-03 21:26:21,139 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 141]  acc = 93.1524, best acc = 93.5981
+2023-09-03 21:27:53,666 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 142]  acc = 93.0308, best acc = 93.5981
+2023-09-03 21:29:26,581 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 143]  acc = 93.0308, best acc = 93.5981
+2023-09-03 21:30:59,043 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 144]  acc = 92.9498, best acc = 93.5981
+2023-09-03 21:32:31,533 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 145]  acc = 93.0713, best acc = 93.5981
+2023-09-03 21:34:04,022 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 146]  acc = 93.0308, best acc = 93.5981
+2023-09-03 21:35:36,479 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 147]  acc = 92.9092, best acc = 93.5981
+2023-09-03 21:37:09,024 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 148]  acc = 93.2334, best acc = 93.5981
+2023-09-03 21:38:41,555 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 149]  acc = 93.1929, best acc = 93.5981
+2023-09-03 21:40:14,036 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 150]  acc = 92.9092, best acc = 93.5981
+2023-09-03 21:41:46,550 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 151]  acc = 93.1524, best acc = 93.5981
+2023-09-03 21:43:19,145 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 152]  acc = 92.9092, best acc = 93.5981
+2023-09-03 21:44:52,002 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 153]  acc = 92.9498, best acc = 93.5981
+2023-09-03 21:46:24,523 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 154]  acc = 92.9092, best acc = 93.5981
+2023-09-03 21:47:57,088 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 155]  acc = 92.8687, best acc = 93.5981
+2023-09-03 21:49:29,685 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 156]  acc = 92.9498, best acc = 93.5981
+2023-09-03 21:51:02,210 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 157]  acc = 93.2334, best acc = 93.5981
+2023-09-03 21:52:34,741 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 158]  acc = 93.0713, best acc = 93.5981
+2023-09-03 21:54:07,522 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 159]  acc = 93.0308, best acc = 93.5981
+2023-09-03 21:55:39,961 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 160]  acc = 92.9092, best acc = 93.5981
+2023-09-03 21:57:12,354 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 161]  acc = 93.1524, best acc = 93.5981
+2023-09-03 21:58:44,863 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 162]  acc = 92.9498, best acc = 93.5981
+2023-09-03 22:00:17,493 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 163]  acc = 93.2739, best acc = 93.5981
+2023-09-03 22:01:50,385 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 164]  acc = 93.1118, best acc = 93.5981
+2023-09-03 22:03:22,992 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 165]  acc = 92.9903, best acc = 93.5981
+2023-09-03 22:04:55,487 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 166]  acc = 92.9092, best acc = 93.5981
+2023-09-03 22:06:27,996 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 167]  acc = 93.1524, best acc = 93.5981
+2023-09-03 22:08:00,525 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 168]  acc = 93.1929, best acc = 93.5981
+2023-09-03 22:09:33,013 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 169]  acc = 92.8282, best acc = 93.5981
+2023-09-03 22:11:05,544 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 170]  acc = 93.0308, best acc = 93.5981
+2023-09-03 22:12:37,996 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 171]  acc = 92.9903, best acc = 93.5981
+2023-09-03 22:14:10,869 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 172]  acc = 92.9092, best acc = 93.5981
+2023-09-03 22:15:43,728 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 173]  acc = 93.1929, best acc = 93.5981
+2023-09-03 22:17:16,147 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 174]  acc = 93.1118, best acc = 93.5981
+2023-09-03 22:18:48,556 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 175]  acc = 93.1118, best acc = 93.5981
+2023-09-03 22:20:21,066 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 176]  acc = 93.1929, best acc = 93.5981
+2023-09-03 22:21:53,557 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 177]  acc = 92.9498, best acc = 93.5981
+2023-09-03 22:23:25,985 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 178]  acc = 92.9903, best acc = 93.5981
+2023-09-03 22:24:58,516 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 179]  acc = 93.1118, best acc = 93.5981
+2023-09-03 22:26:31,070 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 180]  acc = 92.9903, best acc = 93.5981
+2023-09-03 22:28:03,436 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 181]  acc = 93.0308, best acc = 93.5981
+2023-09-03 22:29:35,908 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 182]  acc = 93.0713, best acc = 93.5981
+2023-09-03 22:31:08,665 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 183]  acc = 92.9903, best acc = 93.5981
+2023-09-03 22:32:41,147 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 184]  acc = 93.1118, best acc = 93.5981
+2023-09-03 22:34:13,700 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 185]  acc = 92.9903, best acc = 93.5981
+2023-09-03 22:35:46,169 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 186]  acc = 92.9092, best acc = 93.5981
+2023-09-03 22:37:18,634 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 187]  acc = 93.0308, best acc = 93.5981
+2023-09-03 22:38:51,029 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 188]  acc = 93.4360, best acc = 93.5981
+2023-09-03 22:40:23,460 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 189]  acc = 92.9498, best acc = 93.5981
+2023-09-03 22:41:55,928 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 190]  acc = 93.2739, best acc = 93.5981
+2023-09-03 22:43:28,302 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 191]  acc = 92.9498, best acc = 93.5981
+2023-09-03 22:45:01,098 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 192]  acc = 92.9498, best acc = 93.5981
+2023-09-03 22:46:33,560 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 193]  acc = 92.9092, best acc = 93.5981
+2023-09-03 22:48:06,131 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 194]  acc = 93.1118, best acc = 93.5981
+2023-09-03 22:49:38,625 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 195]  acc = 93.1118, best acc = 93.5981
+2023-09-03 22:51:11,171 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 196]  acc = 92.8687, best acc = 93.5981
+2023-09-03 22:52:43,659 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 197]  acc = 92.8687, best acc = 93.5981
+2023-09-03 22:54:16,399 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 198]  acc = 93.1524, best acc = 93.5981
+2023-09-03 22:55:49,275 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 199]  acc = 93.2334, best acc = 93.5981
+2023-09-03 22:57:21,793 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 200]  acc = 93.3549, best acc = 93.5981
+2023-09-03 22:58:54,192 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 201]  acc = 93.0713, best acc = 93.5981
+2023-09-03 23:00:26,716 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 202]  acc = 93.1118, best acc = 93.5981
+2023-09-03 23:01:59,205 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 203]  acc = 93.2334, best acc = 93.5981
+2023-09-03 23:03:31,732 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 204]  acc = 93.1118, best acc = 93.5981
+2023-09-03 23:05:04,202 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 205]  acc = 93.1524, best acc = 93.5981
+2023-09-03 23:06:36,694 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 206]  acc = 92.9903, best acc = 93.5981
+2023-09-03 23:08:09,514 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 207]  acc = 93.0713, best acc = 93.5981
+2023-09-03 23:09:42,016 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 208]  acc = 92.8687, best acc = 93.5981
+2023-09-03 23:11:14,467 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 209]  acc = 93.0713, best acc = 93.5981
+2023-09-03 23:12:47,012 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 210]  acc = 92.8687, best acc = 93.5981
+2023-09-03 23:14:19,524 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 211]  acc = 93.0308, best acc = 93.5981
+2023-09-03 23:15:51,956 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 212]  acc = 93.0308, best acc = 93.5981
+2023-09-03 23:17:24,772 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 213]  acc = 93.2334, best acc = 93.5981
+2023-09-03 23:18:57,217 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 214]  acc = 93.1524, best acc = 93.5981
+2023-09-03 23:20:30,091 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 215]  acc = 93.0713, best acc = 93.5981
+2023-09-03 23:22:02,617 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 216]  acc = 93.1118, best acc = 93.5981
+2023-09-03 23:23:35,144 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 217]  acc = 92.9498, best acc = 93.5981
+2023-09-03 23:25:08,021 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 218]  acc = 93.1118, best acc = 93.5981
+2023-09-03 23:26:40,524 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 219]  acc = 93.2334, best acc = 93.5981
+2023-09-03 23:28:13,035 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 220]  acc = 92.9498, best acc = 93.5981
+2023-09-03 23:29:45,441 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 221]  acc = 93.0713, best acc = 93.5981
+2023-09-03 23:31:17,857 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 222]  acc = 93.3144, best acc = 93.5981
+2023-09-03 23:32:50,367 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 223]  acc = 93.2334, best acc = 93.5981
+2023-09-03 23:34:22,835 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 224]  acc = 93.0713, best acc = 93.5981
+2023-09-03 23:35:55,288 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 225]  acc = 92.8687, best acc = 93.5981
+2023-09-03 23:37:27,817 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 226]  acc = 92.9498, best acc = 93.5981
+2023-09-03 23:39:00,369 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 227]  acc = 93.0713, best acc = 93.5981
+2023-09-03 23:40:32,859 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 228]  acc = 92.9498, best acc = 93.5981
+2023-09-03 23:42:05,390 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 229]  acc = 92.9498, best acc = 93.5981
+2023-09-03 23:43:37,877 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 230]  acc = 92.8687, best acc = 93.5981
+2023-09-03 23:45:10,795 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 231]  acc = 93.0713, best acc = 93.5981
+2023-09-03 23:46:43,318 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 232]  acc = 93.1524, best acc = 93.5981
+2023-09-03 23:48:15,808 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 233]  acc = 93.1929, best acc = 93.5981
+2023-09-03 23:49:48,322 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 234]  acc = 93.0308, best acc = 93.5981
+2023-09-03 23:51:20,828 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 235]  acc = 93.2739, best acc = 93.5981
+2023-09-03 23:52:53,296 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 236]  acc = 93.1524, best acc = 93.5981
+2023-09-03 23:54:25,808 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 237]  acc = 93.2334, best acc = 93.5981
+2023-09-03 23:55:58,321 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 238]  acc = 92.7877, best acc = 93.5981
+2023-09-03 23:57:30,827 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 239]  acc = 93.0308, best acc = 93.5981
+2023-09-03 23:59:03,750 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 240]  acc = 93.2334, best acc = 93.5981
+2023-09-04 00:00:36,357 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 241]  acc = 93.1929, best acc = 93.5981
+2023-09-04 00:02:08,901 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 242]  acc = 93.2334, best acc = 93.5981
+2023-09-04 00:03:41,796 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 243]  acc = 92.9903, best acc = 93.5981
+2023-09-04 00:05:14,324 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 244]  acc = 92.7877, best acc = 93.5981
+2023-09-04 00:06:46,829 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 245]  acc = 92.9903, best acc = 93.5981
+2023-09-04 00:08:19,748 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 246]  acc = 92.9498, best acc = 93.5981
+2023-09-04 00:09:52,635 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 247]  acc = 92.8282, best acc = 93.5981
+2023-09-04 00:11:25,100 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 248]  acc = 92.9498, best acc = 93.5981
+2023-09-04 00:12:57,551 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 249]  acc = 93.1929, best acc = 93.5981
+2023-09-04 00:14:30,019 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 250]  acc = 93.0308, best acc = 93.5981
+2023-09-04 00:16:02,575 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 251]  acc = 93.1118, best acc = 93.5981
+2023-09-04 00:17:35,084 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 252]  acc = 92.9498, best acc = 93.5981
+2023-09-04 00:19:07,592 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 253]  acc = 93.1118, best acc = 93.5981
+2023-09-04 00:20:40,430 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 254]  acc = 93.0713, best acc = 93.5981
+2023-09-04 00:22:12,938 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 255]  acc = 93.2334, best acc = 93.5981
+2023-09-04 00:23:45,444 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 256]  acc = 93.0308, best acc = 93.5981
+2023-09-04 00:25:17,935 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 257]  acc = 93.2334, best acc = 93.5981
+2023-09-04 00:26:50,385 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 258]  acc = 92.9903, best acc = 93.5981
+2023-09-04 00:28:22,920 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 259]  acc = 93.1929, best acc = 93.5981
+2023-09-04 00:29:55,758 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 260]  acc = 93.0713, best acc = 93.5981
+2023-09-04 00:31:28,303 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 261]  acc = 92.9903, best acc = 93.5981
+2023-09-04 00:33:00,729 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 262]  acc = 93.1118, best acc = 93.5981
+2023-09-04 00:34:33,162 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 263]  acc = 93.2334, best acc = 93.5981
+2023-09-04 00:36:05,692 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 264]  acc = 92.9903, best acc = 93.5981
+2023-09-04 00:37:38,226 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 265]  acc = 93.1524, best acc = 93.5981
+2023-09-04 00:39:10,672 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 266]  acc = 93.1118, best acc = 93.5981
+2023-09-04 00:40:43,165 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 267]  acc = 92.9903, best acc = 93.5981
+2023-09-04 00:42:15,713 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 268]  acc = 92.9498, best acc = 93.5981
+2023-09-04 00:43:48,245 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 269]  acc = 92.9903, best acc = 93.5981
+2023-09-04 00:45:20,721 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 270]  acc = 93.0713, best acc = 93.5981
+2023-09-04 00:46:53,145 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 271]  acc = 93.2334, best acc = 93.5981
+2023-09-04 00:48:25,575 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 272]  acc = 92.8687, best acc = 93.5981
+2023-09-04 00:49:58,086 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 273]  acc = 93.0713, best acc = 93.5981
+2023-09-04 00:51:30,573 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 274]  acc = 93.1118, best acc = 93.5981
+2023-09-04 00:53:03,067 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 275]  acc = 92.9903, best acc = 93.5981
+2023-09-04 00:54:35,925 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 276]  acc = 93.2739, best acc = 93.5981
+2023-09-04 00:56:08,329 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 277]  acc = 93.1524, best acc = 93.5981
+2023-09-04 00:57:40,860 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 278]  acc = 93.2739, best acc = 93.5981
+2023-09-04 00:59:13,372 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 279]  acc = 93.0713, best acc = 93.5981
+2023-09-04 01:00:45,839 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 280]  acc = 93.1929, best acc = 93.5981
+2023-09-04 01:02:18,325 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 281]  acc = 93.1118, best acc = 93.5981
+2023-09-04 01:03:51,076 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 282]  acc = 93.1524, best acc = 93.5981
+2023-09-04 01:05:23,477 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 283]  acc = 93.2334, best acc = 93.5981
+2023-09-04 01:06:56,031 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 284]  acc = 93.1524, best acc = 93.5981
+2023-09-04 01:08:28,560 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 285]  acc = 93.1929, best acc = 93.5981
+2023-09-04 01:10:01,008 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 286]  acc = 93.2334, best acc = 93.5981
+2023-09-04 01:11:33,461 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 287]  acc = 92.8687, best acc = 93.5981
+2023-09-04 01:13:06,005 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 288]  acc = 92.9903, best acc = 93.5981
+2023-09-04 01:14:38,539 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 289]  acc = 92.9092, best acc = 93.5981
+2023-09-04 01:16:11,008 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 290]  acc = 93.1929, best acc = 93.5981
+2023-09-04 01:17:43,454 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 291]  acc = 93.1118, best acc = 93.5981
+2023-09-04 01:19:15,925 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 292]  acc = 92.9903, best acc = 93.5981
+2023-09-04 01:20:48,396 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 293]  acc = 93.0308, best acc = 93.5981
+2023-09-04 01:22:20,925 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 294]  acc = 93.3144, best acc = 93.5981
+2023-09-04 01:23:53,433 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 295]  acc = 92.9903, best acc = 93.5981
+2023-09-04 01:25:26,170 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 296]  acc = 93.1118, best acc = 93.5981
+2023-09-04 01:26:58,614 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 297]  acc = 93.1524, best acc = 93.5981
+2023-09-04 01:28:31,086 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 298]  acc = 93.1929, best acc = 93.5981
+2023-09-04 01:30:03,861 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE_time 299]  acc = 93.0308, best acc = 93.5981
+2023-09-04 01:30:03,862 - finetune_modelnet_transferring_features - INFO - [TEST_VOTE] acc = 93.5981
