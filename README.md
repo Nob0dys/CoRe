@@ -107,9 +107,9 @@ CUDA_VISIBLE_DEVICES=<GPUs> python main.py --optimizer_part all --ckpts <path/to
 CUDA_VISIBLE_DEVICES=<GPUs> python main_test.py  --root path/to/data --visual  --ckpts <path/to/best/fine-tuned/model>
 ```
 
-## 5. Experiment Record
+## 5. Experiments Record
 
-Please refer to the experiments to check each experiment's training and validating logs.
+Please refer to the "experiments" dictionary to check each experiment's training and validating logs.
 
 
 ## 6. Visualization
