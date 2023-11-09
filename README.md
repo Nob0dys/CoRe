@@ -107,7 +107,12 @@ CUDA_VISIBLE_DEVICES=<GPUs> python main.py --optimizer_part all --ckpts <path/to
 CUDA_VISIBLE_DEVICES=<GPUs> python main_test.py  --root path/to/data --visual  --ckpts <path/to/best/fine-tuned/model>
 ```
 
-## 5. Visualization
+## 5. Experiment Record
+
+Please refer to the [experiments](./experiments) to check each experiment's training and validating logs.
+
+
+## 6. Visualization
 
 Please refer to the [vis_CoRe.py](./vis_CoRe.py) for the visualization of surfels.
 
