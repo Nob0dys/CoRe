@@ -1,0 +1,1065 @@
+2023-09-20 11:15:53,597 - finetune_scan_objbg_non_linear_classification - INFO - Copy the Config file from cfgs/finetune_scan_objbg_non_linear_classification.yaml to ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/config.yaml
+2023-09-20 11:15:53,597 - finetune_scan_objbg_non_linear_classification - INFO - args.config : cfgs/finetune_scan_objbg_non_linear_classification.yaml
+2023-09-20 11:15:53,597 - finetune_scan_objbg_non_linear_classification - INFO - args.launcher : none
+2023-09-20 11:15:53,598 - finetune_scan_objbg_non_linear_classification - INFO - args.local_rank : 0
+2023-09-20 11:15:53,598 - finetune_scan_objbg_non_linear_classification - INFO - args.num_workers : 8
+2023-09-20 11:15:53,598 - finetune_scan_objbg_non_linear_classification - INFO - args.seed : 0
+2023-09-20 11:15:53,598 - finetune_scan_objbg_non_linear_classification - INFO - args.deterministic : False
+2023-09-20 11:15:53,598 - finetune_scan_objbg_non_linear_classification - INFO - args.sync_bn : True
+2023-09-20 11:15:53,598 - finetune_scan_objbg_non_linear_classification - INFO - args.update_weights_every : 1
+2023-09-20 11:15:53,598 - finetune_scan_objbg_non_linear_classification - INFO - args.main_task : 0
+2023-09-20 11:15:53,598 - finetune_scan_objbg_non_linear_classification - INFO - args.nashmtl_optim_niter : 20
+2023-09-20 11:15:53,598 - finetune_scan_objbg_non_linear_classification - INFO - args.c : 0.4
+2023-09-20 11:15:53,598 - finetune_scan_objbg_non_linear_classification - INFO - args.dwa_temp : 2.0
+2023-09-20 11:15:53,598 - finetune_scan_objbg_non_linear_classification - INFO - args.method_params_lr : 0.025
+2023-09-20 11:15:53,598 - finetune_scan_objbg_non_linear_classification - INFO - args.method : nashmtl
+2023-09-20 11:15:53,598 - finetune_scan_objbg_non_linear_classification - INFO - args.gpu : 5
+2023-09-20 11:15:53,598 - finetune_scan_objbg_non_linear_classification - INFO - args.large_group : 5
+2023-09-20 11:15:53,598 - finetune_scan_objbg_non_linear_classification - INFO - args.small_group : 10
+2023-09-20 11:15:53,598 - finetune_scan_objbg_non_linear_classification - INFO - args.large_patch : 6
+2023-09-20 11:15:53,598 - finetune_scan_objbg_non_linear_classification - INFO - args.small_patch : 3
+2023-09-20 11:15:53,598 - finetune_scan_objbg_non_linear_classification - INFO - args.queue_length : 8192
+2023-09-20 11:15:53,598 - finetune_scan_objbg_non_linear_classification - INFO - args.epoch_queue_starts : 10
+2023-09-20 11:15:53,598 - finetune_scan_objbg_non_linear_classification - INFO - args.nmb_crops : [5, 10]
+2023-09-20 11:15:53,598 - finetune_scan_objbg_non_linear_classification - INFO - args.fea_dim : 384
+2023-09-20 11:15:53,598 - finetune_scan_objbg_non_linear_classification - INFO - args.hidden_mlp : 256
+2023-09-20 11:15:53,598 - finetune_scan_objbg_non_linear_classification - INFO - args.output_dim : 128
+2023-09-20 11:15:53,598 - finetune_scan_objbg_non_linear_classification - INFO - args.nmb_prototypes : 200
+2023-09-20 11:15:53,598 - finetune_scan_objbg_non_linear_classification - INFO - args.temperature : 0.1
+2023-09-20 11:15:53,599 - finetune_scan_objbg_non_linear_classification - INFO - args.epsilon : 0.05
+2023-09-20 11:15:53,599 - finetune_scan_objbg_non_linear_classification - INFO - args.sinkhorn_iterations : 3
+2023-09-20 11:15:53,599 - finetune_scan_objbg_non_linear_classification - INFO - args.world_size : 1
+2023-09-20 11:15:53,599 - finetune_scan_objbg_non_linear_classification - INFO - args.exp_name : add_as_normal
+2023-09-20 11:15:53,599 - finetune_scan_objbg_non_linear_classification - INFO - args.loss : cd1
+2023-09-20 11:15:53,599 - finetune_scan_objbg_non_linear_classification - INFO - args.start_ckpts : None
+2023-09-20 11:15:53,599 - finetune_scan_objbg_non_linear_classification - INFO - args.ckpts : ./experiments/pretrain_MaskSurf/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:15:53,599 - finetune_scan_objbg_non_linear_classification - INFO - args.val_freq : 1
+2023-09-20 11:15:53,599 - finetune_scan_objbg_non_linear_classification - INFO - args.vote : False
+2023-09-20 11:15:53,599 - finetune_scan_objbg_non_linear_classification - INFO - args.resume : False
+2023-09-20 11:15:53,599 - finetune_scan_objbg_non_linear_classification - INFO - args.test : False
+2023-09-20 11:15:53,599 - finetune_scan_objbg_non_linear_classification - INFO - args.finetune_model : True
+2023-09-20 11:15:53,599 - finetune_scan_objbg_non_linear_classification - INFO - args.scratch_model : False
+2023-09-20 11:15:53,599 - finetune_scan_objbg_non_linear_classification - INFO - args.mode : None
+2023-09-20 11:15:53,599 - finetune_scan_objbg_non_linear_classification - INFO - args.way : -1
+2023-09-20 11:15:53,599 - finetune_scan_objbg_non_linear_classification - INFO - args.shot : -1
+2023-09-20 11:15:53,599 - finetune_scan_objbg_non_linear_classification - INFO - args.fold : -1
+2023-09-20 11:15:53,599 - finetune_scan_objbg_non_linear_classification - INFO - args.experiment_path : ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal
+2023-09-20 11:15:53,599 - finetune_scan_objbg_non_linear_classification - INFO - args.tfboard_path : ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/TFBoard/add_as_normal
+2023-09-20 11:15:53,599 - finetune_scan_objbg_non_linear_classification - INFO - args.log_name : finetune_scan_objbg_non_linear_classification
+2023-09-20 11:15:53,599 - finetune_scan_objbg_non_linear_classification - INFO - args.use_gpu : True
+2023-09-20 11:15:53,599 - finetune_scan_objbg_non_linear_classification - INFO - args.distributed : False
+2023-09-20 11:15:53,599 - finetune_scan_objbg_non_linear_classification - INFO - config.optimizer = edict()
+2023-09-20 11:15:53,599 - finetune_scan_objbg_non_linear_classification - INFO - config.optimizer.type : AdamW
+2023-09-20 11:15:53,600 - finetune_scan_objbg_non_linear_classification - INFO - config.optimizer.part : only_new
+2023-09-20 11:15:53,600 - finetune_scan_objbg_non_linear_classification - INFO - config.optimizer.kwargs = edict()
+2023-09-20 11:15:53,600 - finetune_scan_objbg_non_linear_classification - INFO - config.optimizer.kwargs.lr : 0.0005
+2023-09-20 11:15:53,600 - finetune_scan_objbg_non_linear_classification - INFO - config.optimizer.kwargs.weight_decay : 0.05
+2023-09-20 11:15:53,600 - finetune_scan_objbg_non_linear_classification - INFO - config.scheduler = edict()
+2023-09-20 11:15:53,600 - finetune_scan_objbg_non_linear_classification - INFO - config.scheduler.type : CosLR
+2023-09-20 11:15:53,600 - finetune_scan_objbg_non_linear_classification - INFO - config.scheduler.kwargs = edict()
+2023-09-20 11:15:53,600 - finetune_scan_objbg_non_linear_classification - INFO - config.scheduler.kwargs.epochs : 300
+2023-09-20 11:15:53,600 - finetune_scan_objbg_non_linear_classification - INFO - config.scheduler.kwargs.initial_epochs : 10
+2023-09-20 11:15:53,600 - finetune_scan_objbg_non_linear_classification - INFO - config.dataset = edict()
+2023-09-20 11:15:53,600 - finetune_scan_objbg_non_linear_classification - INFO - config.dataset.train = edict()
+2023-09-20 11:15:53,600 - finetune_scan_objbg_non_linear_classification - INFO - config.dataset.train._base_ = edict()
+2023-09-20 11:15:53,600 - finetune_scan_objbg_non_linear_classification - INFO - config.dataset.train._base_.NAME : ScanObjectNN
+2023-09-20 11:15:53,600 - finetune_scan_objbg_non_linear_classification - INFO - config.dataset.train._base_.ROOT : data/ScanObjectNN/main_split
+2023-09-20 11:15:53,600 - finetune_scan_objbg_non_linear_classification - INFO - config.dataset.train.others = edict()
+2023-09-20 11:15:53,600 - finetune_scan_objbg_non_linear_classification - INFO - config.dataset.train.others.subset : train
+2023-09-20 11:15:53,600 - finetune_scan_objbg_non_linear_classification - INFO - config.dataset.train.others.bs : 32
+2023-09-20 11:15:53,600 - finetune_scan_objbg_non_linear_classification - INFO - config.dataset.val = edict()
+2023-09-20 11:15:53,600 - finetune_scan_objbg_non_linear_classification - INFO - config.dataset.val._base_ = edict()
+2023-09-20 11:15:53,600 - finetune_scan_objbg_non_linear_classification - INFO - config.dataset.val._base_.NAME : ScanObjectNN
+2023-09-20 11:15:53,600 - finetune_scan_objbg_non_linear_classification - INFO - config.dataset.val._base_.ROOT : data/ScanObjectNN/main_split
+2023-09-20 11:15:53,600 - finetune_scan_objbg_non_linear_classification - INFO - config.dataset.val.others = edict()
+2023-09-20 11:15:53,600 - finetune_scan_objbg_non_linear_classification - INFO - config.dataset.val.others.subset : test
+2023-09-20 11:15:53,600 - finetune_scan_objbg_non_linear_classification - INFO - config.dataset.val.others.bs : 64
+2023-09-20 11:15:53,601 - finetune_scan_objbg_non_linear_classification - INFO - config.dataset.test = edict()
+2023-09-20 11:15:53,601 - finetune_scan_objbg_non_linear_classification - INFO - config.dataset.test._base_ = edict()
+2023-09-20 11:15:53,601 - finetune_scan_objbg_non_linear_classification - INFO - config.dataset.test._base_.NAME : ScanObjectNN
+2023-09-20 11:15:53,601 - finetune_scan_objbg_non_linear_classification - INFO - config.dataset.test._base_.ROOT : data/ScanObjectNN/main_split
+2023-09-20 11:15:53,601 - finetune_scan_objbg_non_linear_classification - INFO - config.dataset.test.others = edict()
+2023-09-20 11:15:53,601 - finetune_scan_objbg_non_linear_classification - INFO - config.dataset.test.others.subset : test
+2023-09-20 11:15:53,601 - finetune_scan_objbg_non_linear_classification - INFO - config.dataset.test.others.bs : 32
+2023-09-20 11:15:53,601 - finetune_scan_objbg_non_linear_classification - INFO - config.model = edict()
+2023-09-20 11:15:53,601 - finetune_scan_objbg_non_linear_classification - INFO - config.model.NAME : PointTransformer
+2023-09-20 11:15:53,601 - finetune_scan_objbg_non_linear_classification - INFO - config.model.trans_dim : 384
+2023-09-20 11:15:53,601 - finetune_scan_objbg_non_linear_classification - INFO - config.model.depth : 12
+2023-09-20 11:15:53,601 - finetune_scan_objbg_non_linear_classification - INFO - config.model.drop_path_rate : 0.1
+2023-09-20 11:15:53,601 - finetune_scan_objbg_non_linear_classification - INFO - config.model.cls_dim : 15
+2023-09-20 11:15:53,601 - finetune_scan_objbg_non_linear_classification - INFO - config.model.num_heads : 6
+2023-09-20 11:15:53,601 - finetune_scan_objbg_non_linear_classification - INFO - config.model.group_size : 32
+2023-09-20 11:15:53,601 - finetune_scan_objbg_non_linear_classification - INFO - config.model.num_group : 128
+2023-09-20 11:15:53,601 - finetune_scan_objbg_non_linear_classification - INFO - config.model.encoder_dims : 384
+2023-09-20 11:15:53,601 - finetune_scan_objbg_non_linear_classification - INFO - config.npoints : 2048
+2023-09-20 11:15:53,601 - finetune_scan_objbg_non_linear_classification - INFO - config.total_bs : 32
+2023-09-20 11:15:53,601 - finetune_scan_objbg_non_linear_classification - INFO - config.step_per_update : 1
+2023-09-20 11:15:53,601 - finetune_scan_objbg_non_linear_classification - INFO - config.max_epoch : 300
+2023-09-20 11:15:53,601 - finetune_scan_objbg_non_linear_classification - INFO - config.grad_norm_clip : 10
+2023-09-20 11:15:53,601 - finetune_scan_objbg_non_linear_classification - INFO - Distributed training: False
+2023-09-20 11:15:53,601 - finetune_scan_objbg_non_linear_classification - INFO - Set random seed to 0, deterministic: False
+2023-09-20 11:15:56,223 - finetune_scan_objbg_non_linear_classification - INFO - Using Data parallel ...
+2023-09-20 11:16:21,639 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 0 EpochTime = 25.411 (s) Losses = ['2.7960', '7.7257'] lr = 0.000001
+2023-09-20 11:16:21,785 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:16:43,835 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 1 EpochTime = 22.048 (s) Losses = ['2.7649', '8.9844'] lr = 0.000051
+2023-09-20 11:16:48,530 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 1  acc = 7.2289
+2023-09-20 11:16:48,681 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-20 11:16:48,681 - finetune_scan_objbg_non_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-20 11:16:49,193 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:17:11,290 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 2 EpochTime = 22.095 (s) Losses = ['2.6350', '11.1111'] lr = 0.000101
+2023-09-20 11:17:15,107 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 2  acc = 36.1446
+2023-09-20 11:17:15,589 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-20 11:17:15,590 - finetune_scan_objbg_non_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-20 11:17:16,026 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:17:38,103 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 3 EpochTime = 22.075 (s) Losses = ['2.3249', '24.3490'] lr = 0.000151
+2023-09-20 11:17:41,923 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 3  acc = 39.9312
+2023-09-20 11:17:42,368 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-20 11:17:42,369 - finetune_scan_objbg_non_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-20 11:17:42,815 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:18:04,891 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 4 EpochTime = 22.075 (s) Losses = ['2.0841', '34.5486'] lr = 0.000201
+2023-09-20 11:18:08,702 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 4  acc = 46.8158
+2023-09-20 11:18:09,120 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-20 11:18:09,120 - finetune_scan_objbg_non_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-20 11:18:09,535 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:18:31,627 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 5 EpochTime = 22.090 (s) Losses = ['1.8704', '41.1458'] lr = 0.000251
+2023-09-20 11:18:35,438 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 5  acc = 49.3976
+2023-09-20 11:18:35,924 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-20 11:18:35,924 - finetune_scan_objbg_non_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-20 11:18:36,388 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:18:58,520 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 6 EpochTime = 22.131 (s) Losses = ['1.7067', '45.4861'] lr = 0.000300
+2023-09-20 11:19:02,343 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 6  acc = 54.3890
+2023-09-20 11:19:02,880 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-20 11:19:02,880 - finetune_scan_objbg_non_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-20 11:19:03,642 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:19:25,771 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 7 EpochTime = 22.127 (s) Losses = ['1.5706', '50.3472'] lr = 0.000350
+2023-09-20 11:19:29,613 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 7  acc = 59.2083
+2023-09-20 11:19:30,127 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-20 11:19:30,128 - finetune_scan_objbg_non_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-20 11:19:30,551 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:19:52,639 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 8 EpochTime = 22.086 (s) Losses = ['1.4115', '56.2934'] lr = 0.000400
+2023-09-20 11:19:56,455 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 8  acc = 59.3804
+2023-09-20 11:19:56,874 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-20 11:19:56,874 - finetune_scan_objbg_non_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-20 11:19:57,465 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:20:19,552 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 9 EpochTime = 22.086 (s) Losses = ['1.3237', '57.6823'] lr = 0.000450
+2023-09-20 11:20:23,346 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 9  acc = 66.4372
+2023-09-20 11:20:23,858 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-20 11:20:23,859 - finetune_scan_objbg_non_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-20 11:20:24,325 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:20:46,404 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 10 EpochTime = 22.077 (s) Losses = ['1.2408', '60.7639'] lr = 0.000499
+2023-09-20 11:20:50,253 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 10  acc = 69.5353
+2023-09-20 11:20:50,740 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-20 11:20:50,740 - finetune_scan_objbg_non_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-20 11:20:51,266 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:21:13,354 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 11 EpochTime = 22.086 (s) Losses = ['1.1422', '63.2812'] lr = 0.000498
+2023-09-20 11:21:17,183 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 11  acc = 71.7728
+2023-09-20 11:21:17,617 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-20 11:21:17,617 - finetune_scan_objbg_non_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-20 11:21:18,124 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:21:40,249 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 12 EpochTime = 22.123 (s) Losses = ['1.0667', '66.4497'] lr = 0.000498
+2023-09-20 11:21:44,093 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 12  acc = 72.6334
+2023-09-20 11:21:44,576 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-20 11:21:44,576 - finetune_scan_objbg_non_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-20 11:21:45,049 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:22:07,137 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 13 EpochTime = 22.086 (s) Losses = ['1.0179', '67.0139'] lr = 0.000498
+2023-09-20 11:22:10,943 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 13  acc = 72.4613
+2023-09-20 11:22:11,453 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:22:33,533 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 14 EpochTime = 22.078 (s) Losses = ['0.9253', '70.2691'] lr = 0.000497
+2023-09-20 11:22:37,344 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 14  acc = 74.8709
+2023-09-20 11:22:37,835 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-20 11:22:37,835 - finetune_scan_objbg_non_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-20 11:22:38,278 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:23:00,360 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 15 EpochTime = 22.080 (s) Losses = ['0.8913', '70.8333'] lr = 0.000497
+2023-09-20 11:23:04,169 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 15  acc = 77.4527
+2023-09-20 11:23:04,638 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-20 11:23:04,639 - finetune_scan_objbg_non_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-20 11:23:05,118 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:23:27,195 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 16 EpochTime = 22.076 (s) Losses = ['0.8552', '71.8750'] lr = 0.000497
+2023-09-20 11:23:31,003 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 16  acc = 76.4200
+2023-09-20 11:23:31,559 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:23:53,643 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 17 EpochTime = 22.082 (s) Losses = ['0.8041', '74.0017'] lr = 0.000496
+2023-09-20 11:23:57,503 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 17  acc = 79.5181
+2023-09-20 11:23:58,013 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-20 11:23:58,013 - finetune_scan_objbg_non_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-20 11:23:58,451 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:24:20,560 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 18 EpochTime = 22.107 (s) Losses = ['0.8035', '73.9149'] lr = 0.000496
+2023-09-20 11:24:24,375 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 18  acc = 79.0017
+2023-09-20 11:24:24,872 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:24:47,002 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 19 EpochTime = 22.128 (s) Losses = ['0.7817', '74.2622'] lr = 0.000495
+2023-09-20 11:24:50,811 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 19  acc = 79.5181
+2023-09-20 11:24:51,336 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:25:13,417 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 20 EpochTime = 22.080 (s) Losses = ['0.7710', '74.7396'] lr = 0.000495
+2023-09-20 11:25:17,248 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 20  acc = 79.0017
+2023-09-20 11:25:17,744 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:25:39,834 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 21 EpochTime = 22.089 (s) Losses = ['0.7504', '75.4340'] lr = 0.000494
+2023-09-20 11:25:43,645 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 21  acc = 78.1411
+2023-09-20 11:25:44,139 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:26:06,227 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 22 EpochTime = 22.086 (s) Losses = ['0.7091', '77.0833'] lr = 0.000493
+2023-09-20 11:26:10,050 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 22  acc = 78.6575
+2023-09-20 11:26:10,567 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:26:32,655 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 23 EpochTime = 22.087 (s) Losses = ['0.7173', '76.1285'] lr = 0.000493
+2023-09-20 11:26:36,471 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 23  acc = 78.8296
+2023-09-20 11:26:37,012 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:26:59,108 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 24 EpochTime = 22.094 (s) Losses = ['0.6798', '76.8663'] lr = 0.000492
+2023-09-20 11:27:02,910 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 24  acc = 78.4854
+2023-09-20 11:27:03,434 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:27:25,579 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 25 EpochTime = 22.144 (s) Losses = ['0.6914', '77.4306'] lr = 0.000491
+2023-09-20 11:27:29,446 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 25  acc = 79.0017
+2023-09-20 11:27:29,956 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:27:52,048 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 26 EpochTime = 22.091 (s) Losses = ['0.6501', '79.4271'] lr = 0.000491
+2023-09-20 11:27:55,866 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 26  acc = 77.1084
+2023-09-20 11:27:56,313 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:28:18,420 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 27 EpochTime = 22.105 (s) Losses = ['0.6588', '77.9514'] lr = 0.000490
+2023-09-20 11:28:22,226 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 27  acc = 79.5181
+2023-09-20 11:28:22,725 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:28:44,816 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 28 EpochTime = 22.089 (s) Losses = ['0.6256', '79.7309'] lr = 0.000489
+2023-09-20 11:28:48,632 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 28  acc = 78.6575
+2023-09-20 11:28:49,116 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:29:11,190 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 29 EpochTime = 22.073 (s) Losses = ['0.6389', '79.2535'] lr = 0.000489
+2023-09-20 11:29:15,003 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 29  acc = 77.1084
+2023-09-20 11:29:15,475 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:29:37,559 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 30 EpochTime = 22.083 (s) Losses = ['0.6287', '78.9497'] lr = 0.000488
+2023-09-20 11:29:41,383 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 30  acc = 79.0017
+2023-09-20 11:29:41,877 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:30:03,973 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 31 EpochTime = 22.095 (s) Losses = ['0.6092', '79.6875'] lr = 0.000487
+2023-09-20 11:30:07,787 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 31  acc = 80.0344
+2023-09-20 11:30:08,243 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-20 11:30:08,243 - finetune_scan_objbg_non_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-20 11:30:08,717 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:30:30,800 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 32 EpochTime = 22.082 (s) Losses = ['0.6259', '77.5608'] lr = 0.000486
+2023-09-20 11:30:34,615 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 32  acc = 79.3460
+2023-09-20 11:30:35,116 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:30:57,192 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 33 EpochTime = 22.075 (s) Losses = ['0.6260', '80.0347'] lr = 0.000485
+2023-09-20 11:31:00,999 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 33  acc = 80.3787
+2023-09-20 11:31:01,484 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-20 11:31:01,484 - finetune_scan_objbg_non_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-20 11:31:01,959 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:31:24,040 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 34 EpochTime = 22.079 (s) Losses = ['0.5793', '80.2951'] lr = 0.000484
+2023-09-20 11:31:27,845 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 34  acc = 81.2392
+2023-09-20 11:31:28,301 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-20 11:31:28,301 - finetune_scan_objbg_non_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-20 11:31:28,734 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:31:50,813 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 35 EpochTime = 22.078 (s) Losses = ['0.5651', '81.4236'] lr = 0.000483
+2023-09-20 11:31:54,643 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 35  acc = 77.4527
+2023-09-20 11:31:55,226 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:32:17,327 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 36 EpochTime = 22.100 (s) Losses = ['0.6005', '79.2969'] lr = 0.000482
+2023-09-20 11:32:21,156 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 36  acc = 81.0671
+2023-09-20 11:32:21,616 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:32:43,698 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 37 EpochTime = 22.081 (s) Losses = ['0.5918', '79.9913'] lr = 0.000482
+2023-09-20 11:32:47,516 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 37  acc = 80.3787
+2023-09-20 11:32:47,936 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:33:10,006 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 38 EpochTime = 22.069 (s) Losses = ['0.5649', '80.7726'] lr = 0.000481
+2023-09-20 11:33:13,817 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 38  acc = 80.5508
+2023-09-20 11:33:14,325 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:33:36,399 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 39 EpochTime = 22.072 (s) Losses = ['0.5536', '81.9444'] lr = 0.000479
+2023-09-20 11:33:40,211 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 39  acc = 79.3460
+2023-09-20 11:33:40,692 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:34:02,792 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 40 EpochTime = 22.098 (s) Losses = ['0.5427', '81.8576'] lr = 0.000478
+2023-09-20 11:34:06,624 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 40  acc = 77.9690
+2023-09-20 11:34:07,076 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:34:29,163 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 41 EpochTime = 22.085 (s) Losses = ['0.5671', '80.9896'] lr = 0.000477
+2023-09-20 11:34:33,001 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 41  acc = 81.5835
+2023-09-20 11:34:33,419 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-20 11:34:33,419 - finetune_scan_objbg_non_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-20 11:34:34,014 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:34:56,110 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 42 EpochTime = 22.094 (s) Losses = ['0.5533', '81.7708'] lr = 0.000476
+2023-09-20 11:34:59,918 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 42  acc = 80.2065
+2023-09-20 11:35:00,483 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:35:22,645 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 43 EpochTime = 22.160 (s) Losses = ['0.5624', '81.8142'] lr = 0.000475
+2023-09-20 11:35:26,478 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 43  acc = 79.8623
+2023-09-20 11:35:26,874 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:35:48,975 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 44 EpochTime = 22.098 (s) Losses = ['0.5330', '82.1615'] lr = 0.000474
+2023-09-20 11:35:52,787 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 44  acc = 82.6162
+2023-09-20 11:35:53,260 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-20 11:35:53,260 - finetune_scan_objbg_non_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-20 11:35:53,733 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:36:15,827 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 45 EpochTime = 22.092 (s) Losses = ['0.5458', '81.5972'] lr = 0.000473
+2023-09-20 11:36:19,667 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 45  acc = 81.5835
+2023-09-20 11:36:20,137 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:36:42,220 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 46 EpochTime = 22.081 (s) Losses = ['0.5249', '82.1615'] lr = 0.000472
+2023-09-20 11:36:46,034 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 46  acc = 79.8623
+2023-09-20 11:36:46,487 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:37:08,593 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 47 EpochTime = 22.104 (s) Losses = ['0.5352', '82.3351'] lr = 0.000470
+2023-09-20 11:37:12,414 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 47  acc = 81.2392
+2023-09-20 11:37:12,843 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:37:34,921 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 48 EpochTime = 22.076 (s) Losses = ['0.5212', '82.4219'] lr = 0.000469
+2023-09-20 11:37:38,736 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 48  acc = 80.0344
+2023-09-20 11:37:39,291 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:38:01,369 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 49 EpochTime = 22.077 (s) Losses = ['0.5317', '82.0747'] lr = 0.000468
+2023-09-20 11:38:05,178 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 49  acc = 80.2065
+2023-09-20 11:38:05,666 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:38:27,744 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 50 EpochTime = 22.077 (s) Losses = ['0.5016', '83.1163'] lr = 0.000467
+2023-09-20 11:38:31,577 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 50  acc = 81.2392
+2023-09-20 11:38:32,024 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:38:54,136 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 51 EpochTime = 22.111 (s) Losses = ['0.4848', '84.0712'] lr = 0.000465
+2023-09-20 11:38:57,957 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 51  acc = 80.5508
+2023-09-20 11:38:58,474 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:39:20,554 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 52 EpochTime = 22.078 (s) Losses = ['0.4817', '83.1597'] lr = 0.000464
+2023-09-20 11:39:24,397 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 52  acc = 80.5508
+2023-09-20 11:39:24,855 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:39:46,963 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 53 EpochTime = 22.106 (s) Losses = ['0.4695', '83.4201'] lr = 0.000463
+2023-09-20 11:39:50,783 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 53  acc = 79.1738
+2023-09-20 11:39:51,314 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:40:13,394 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 54 EpochTime = 22.078 (s) Losses = ['0.4706', '83.4635'] lr = 0.000461
+2023-09-20 11:40:17,211 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 54  acc = 81.5835
+2023-09-20 11:40:17,744 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:40:39,833 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 55 EpochTime = 22.087 (s) Losses = ['0.4791', '83.7240'] lr = 0.000460
+2023-09-20 11:40:43,671 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 55  acc = 81.0671
+2023-09-20 11:40:44,110 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:41:06,196 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 56 EpochTime = 22.085 (s) Losses = ['0.5098', '82.8993'] lr = 0.000458
+2023-09-20 11:41:10,003 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 56  acc = 81.2392
+2023-09-20 11:41:10,428 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:41:32,605 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 57 EpochTime = 22.175 (s) Losses = ['0.4896', '84.6354'] lr = 0.000457
+2023-09-20 11:41:36,412 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 57  acc = 82.9604
+2023-09-20 11:41:36,952 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-20 11:41:36,953 - finetune_scan_objbg_non_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-20 11:41:37,401 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:41:59,501 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 58 EpochTime = 22.098 (s) Losses = ['0.4426', '84.5920'] lr = 0.000455
+2023-09-20 11:42:03,327 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 58  acc = 83.4768
+2023-09-20 11:42:03,793 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-20 11:42:03,793 - finetune_scan_objbg_non_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-20 11:42:04,229 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:42:26,308 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 59 EpochTime = 22.077 (s) Losses = ['0.4963', '82.7691'] lr = 0.000454
+2023-09-20 11:42:30,135 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 59  acc = 80.8950
+2023-09-20 11:42:30,612 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:42:52,705 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 60 EpochTime = 22.091 (s) Losses = ['0.4485', '85.1562'] lr = 0.000452
+2023-09-20 11:42:56,518 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 60  acc = 82.4441
+2023-09-20 11:42:57,000 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:43:19,112 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 61 EpochTime = 22.111 (s) Losses = ['0.5233', '82.2483'] lr = 0.000451
+2023-09-20 11:43:22,938 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 61  acc = 78.6575
+2023-09-20 11:43:23,399 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:43:45,496 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 62 EpochTime = 22.095 (s) Losses = ['0.4496', '84.7656'] lr = 0.000449
+2023-09-20 11:43:49,310 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 62  acc = 82.6162
+2023-09-20 11:43:49,759 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:44:11,863 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 63 EpochTime = 22.103 (s) Losses = ['0.4462', '85.3299'] lr = 0.000448
+2023-09-20 11:44:15,682 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 63  acc = 83.6489
+2023-09-20 11:44:16,173 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-20 11:44:16,173 - finetune_scan_objbg_non_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-20 11:44:16,633 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:44:38,749 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 64 EpochTime = 22.114 (s) Losses = ['0.4593', '84.1580'] lr = 0.000446
+2023-09-20 11:44:42,566 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 64  acc = 81.5835
+2023-09-20 11:44:43,019 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:45:05,099 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 65 EpochTime = 22.079 (s) Losses = ['0.4590', '83.8542'] lr = 0.000444
+2023-09-20 11:45:08,913 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 65  acc = 82.9604
+2023-09-20 11:45:09,439 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:45:31,527 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 66 EpochTime = 22.086 (s) Losses = ['0.4471', '84.7656'] lr = 0.000443
+2023-09-20 11:45:35,346 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 66  acc = 82.0998
+2023-09-20 11:45:35,829 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:45:57,907 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 67 EpochTime = 22.076 (s) Losses = ['0.4495', '83.6372'] lr = 0.000441
+2023-09-20 11:46:01,729 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 67  acc = 79.0017
+2023-09-20 11:46:02,218 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:46:24,391 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 68 EpochTime = 22.171 (s) Losses = ['0.4302', '85.8507'] lr = 0.000439
+2023-09-20 11:46:28,303 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 68  acc = 81.5835
+2023-09-20 11:46:28,744 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:46:50,823 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 69 EpochTime = 22.077 (s) Losses = ['0.4402', '84.7222'] lr = 0.000438
+2023-09-20 11:46:54,675 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 69  acc = 81.9277
+2023-09-20 11:46:55,091 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:47:17,178 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 70 EpochTime = 22.086 (s) Losses = ['0.4413', '84.6788'] lr = 0.000436
+2023-09-20 11:47:20,991 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 70  acc = 80.7229
+2023-09-20 11:47:21,484 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:47:43,568 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 71 EpochTime = 22.083 (s) Losses = ['0.4462', '84.9826'] lr = 0.000434
+2023-09-20 11:47:47,387 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 71  acc = 81.5835
+2023-09-20 11:47:47,872 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:48:09,967 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 72 EpochTime = 22.093 (s) Losses = ['0.4267', '85.3733'] lr = 0.000432
+2023-09-20 11:48:13,782 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 72  acc = 81.2392
+2023-09-20 11:48:14,248 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:48:36,370 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 73 EpochTime = 22.120 (s) Losses = ['0.4530', '83.7674'] lr = 0.000431
+2023-09-20 11:48:40,206 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 73  acc = 82.9604
+2023-09-20 11:48:40,663 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:49:02,744 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 74 EpochTime = 22.079 (s) Losses = ['0.4264', '85.8507'] lr = 0.000429
+2023-09-20 11:49:06,548 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 74  acc = 81.4114
+2023-09-20 11:49:07,044 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:49:29,170 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 75 EpochTime = 22.125 (s) Losses = ['0.4185', '86.0243'] lr = 0.000427
+2023-09-20 11:49:33,029 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 75  acc = 81.9277
+2023-09-20 11:49:33,557 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:49:55,686 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 76 EpochTime = 22.128 (s) Losses = ['0.4230', '85.2431'] lr = 0.000425
+2023-09-20 11:49:59,492 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 76  acc = 82.6162
+2023-09-20 11:49:59,960 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:50:22,042 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 77 EpochTime = 22.081 (s) Losses = ['0.3962', '86.1979'] lr = 0.000423
+2023-09-20 11:50:25,902 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 77  acc = 82.4441
+2023-09-20 11:50:26,377 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:50:48,489 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 78 EpochTime = 22.111 (s) Losses = ['0.4247', '85.3299'] lr = 0.000421
+2023-09-20 11:50:52,303 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 78  acc = 81.0671
+2023-09-20 11:50:52,800 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:51:14,882 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 79 EpochTime = 22.081 (s) Losses = ['0.4439', '85.1997'] lr = 0.000419
+2023-09-20 11:51:18,703 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 79  acc = 80.7229
+2023-09-20 11:51:19,128 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:51:41,213 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 80 EpochTime = 22.083 (s) Losses = ['0.4228', '86.0243'] lr = 0.000417
+2023-09-20 11:51:45,037 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 80  acc = 81.2392
+2023-09-20 11:51:45,492 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:52:07,566 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 81 EpochTime = 22.073 (s) Losses = ['0.4102', '86.4149'] lr = 0.000415
+2023-09-20 11:52:11,369 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 81  acc = 80.3787
+2023-09-20 11:52:11,851 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:52:33,940 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 82 EpochTime = 22.087 (s) Losses = ['0.4117', '85.6771'] lr = 0.000414
+2023-09-20 11:52:37,768 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 82  acc = 82.7883
+2023-09-20 11:52:38,239 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:53:00,311 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 83 EpochTime = 22.071 (s) Losses = ['0.4024', '86.2413'] lr = 0.000412
+2023-09-20 11:53:04,111 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 83  acc = 79.3460
+2023-09-20 11:53:04,532 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:53:26,619 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 84 EpochTime = 22.085 (s) Losses = ['0.3839', '86.3281'] lr = 0.000410
+2023-09-20 11:53:30,422 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 84  acc = 79.1738
+2023-09-20 11:53:30,887 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:53:52,972 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 85 EpochTime = 22.083 (s) Losses = ['0.3827', '86.9792'] lr = 0.000408
+2023-09-20 11:53:56,806 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 85  acc = 82.6162
+2023-09-20 11:53:57,272 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:54:19,366 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 86 EpochTime = 22.092 (s) Losses = ['0.4075', '86.7188'] lr = 0.000405
+2023-09-20 11:54:23,181 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 86  acc = 81.9277
+2023-09-20 11:54:23,648 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:54:45,715 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 87 EpochTime = 22.065 (s) Losses = ['0.4163', '86.0243'] lr = 0.000403
+2023-09-20 11:54:49,525 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 87  acc = 82.0998
+2023-09-20 11:54:49,999 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:55:12,082 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 88 EpochTime = 22.082 (s) Losses = ['0.3884', '86.5885'] lr = 0.000401
+2023-09-20 11:55:15,910 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 88  acc = 81.0671
+2023-09-20 11:55:16,364 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:55:38,460 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 89 EpochTime = 22.095 (s) Losses = ['0.3659', '88.1076'] lr = 0.000399
+2023-09-20 11:55:42,284 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 89  acc = 82.9604
+2023-09-20 11:55:42,755 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:56:04,845 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 90 EpochTime = 22.088 (s) Losses = ['0.3715', '86.9358'] lr = 0.000397
+2023-09-20 11:56:08,652 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 90  acc = 80.2065
+2023-09-20 11:56:09,150 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:56:31,238 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 91 EpochTime = 22.086 (s) Losses = ['0.3638', '88.4983'] lr = 0.000395
+2023-09-20 11:56:35,035 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 91  acc = 80.5508
+2023-09-20 11:56:35,487 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:56:57,574 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 92 EpochTime = 22.085 (s) Losses = ['0.4089', '86.3281'] lr = 0.000393
+2023-09-20 11:57:01,442 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 92  acc = 83.6489
+2023-09-20 11:57:01,931 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:57:24,024 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 93 EpochTime = 22.091 (s) Losses = ['0.3701', '87.4132'] lr = 0.000391
+2023-09-20 11:57:27,835 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 93  acc = 82.4441
+2023-09-20 11:57:28,314 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:57:50,393 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 94 EpochTime = 22.077 (s) Losses = ['0.3980', '86.5885'] lr = 0.000389
+2023-09-20 11:57:54,199 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 94  acc = 82.0998
+2023-09-20 11:57:54,653 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:58:16,729 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 95 EpochTime = 22.074 (s) Losses = ['0.3623', '88.0208'] lr = 0.000386
+2023-09-20 11:58:20,608 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 95  acc = 81.2392
+2023-09-20 11:58:21,094 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:58:43,178 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 96 EpochTime = 22.082 (s) Losses = ['0.3979', '86.7622'] lr = 0.000384
+2023-09-20 11:58:46,999 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 96  acc = 81.7556
+2023-09-20 11:58:47,453 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:59:09,568 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 97 EpochTime = 22.112 (s) Losses = ['0.3677', '87.5868'] lr = 0.000382
+2023-09-20 11:59:13,426 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 97  acc = 81.9277
+2023-09-20 11:59:13,903 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 11:59:36,001 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 98 EpochTime = 22.096 (s) Losses = ['0.3576', '87.5000'] lr = 0.000380
+2023-09-20 11:59:39,816 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 98  acc = 79.5181
+2023-09-20 11:59:40,267 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:00:02,375 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 99 EpochTime = 22.106 (s) Losses = ['0.3792', '87.1094'] lr = 0.000378
+2023-09-20 12:00:06,195 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 99  acc = 81.9277
+2023-09-20 12:00:06,648 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:00:28,725 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 100 EpochTime = 22.076 (s) Losses = ['0.3532', '88.4115'] lr = 0.000375
+2023-09-20 12:00:32,582 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 100  acc = 82.0998
+2023-09-20 12:00:33,039 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:00:55,121 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 101 EpochTime = 22.080 (s) Losses = ['0.3664', '87.5000'] lr = 0.000373
+2023-09-20 12:00:58,932 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 101  acc = 81.9277
+2023-09-20 12:00:59,460 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:01:21,550 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 102 EpochTime = 22.089 (s) Losses = ['0.3633', '88.4549'] lr = 0.000371
+2023-09-20 12:01:25,381 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 102  acc = 81.5835
+2023-09-20 12:01:25,821 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:01:47,942 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 103 EpochTime = 22.119 (s) Losses = ['0.3585', '87.4132'] lr = 0.000368
+2023-09-20 12:01:51,771 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 103  acc = 82.9604
+2023-09-20 12:01:52,231 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:02:14,364 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 104 EpochTime = 22.131 (s) Losses = ['0.3437', '87.6302'] lr = 0.000366
+2023-09-20 12:02:18,164 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 104  acc = 81.5835
+2023-09-20 12:02:18,632 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:02:40,748 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 105 EpochTime = 22.113 (s) Losses = ['0.3270', '89.2795'] lr = 0.000364
+2023-09-20 12:02:44,566 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 105  acc = 81.2392
+2023-09-20 12:02:45,016 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:03:07,129 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 106 EpochTime = 22.111 (s) Losses = ['0.3684', '86.6319'] lr = 0.000361
+2023-09-20 12:03:10,956 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 106  acc = 82.4441
+2023-09-20 12:03:11,477 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:03:33,595 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 107 EpochTime = 22.117 (s) Losses = ['0.3301', '88.9323'] lr = 0.000359
+2023-09-20 12:03:37,436 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 107  acc = 82.0998
+2023-09-20 12:03:37,903 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:04:00,003 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 108 EpochTime = 22.099 (s) Losses = ['0.3544', '87.8906'] lr = 0.000357
+2023-09-20 12:04:03,855 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 108  acc = 83.1325
+2023-09-20 12:04:04,365 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:04:26,457 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 109 EpochTime = 22.089 (s) Losses = ['0.3436', '87.3264'] lr = 0.000354
+2023-09-20 12:04:30,281 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 109  acc = 81.7556
+2023-09-20 12:04:30,745 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:04:52,828 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 110 EpochTime = 22.081 (s) Losses = ['0.3148', '88.9757'] lr = 0.000352
+2023-09-20 12:04:56,642 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 110  acc = 83.3046
+2023-09-20 12:04:57,184 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:05:19,280 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 111 EpochTime = 22.094 (s) Losses = ['0.3487', '88.2812'] lr = 0.000350
+2023-09-20 12:05:23,103 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 111  acc = 80.8950
+2023-09-20 12:05:23,592 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:05:45,691 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 112 EpochTime = 22.098 (s) Losses = ['0.3330', '87.9774'] lr = 0.000347
+2023-09-20 12:05:49,538 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 112  acc = 84.1652
+2023-09-20 12:05:50,004 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-20 12:05:50,004 - finetune_scan_objbg_non_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-20 12:05:50,477 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:06:12,576 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 113 EpochTime = 22.097 (s) Losses = ['0.3457', '88.7153'] lr = 0.000345
+2023-09-20 12:06:16,425 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 113  acc = 79.8623
+2023-09-20 12:06:16,880 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:06:38,967 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 114 EpochTime = 22.086 (s) Losses = ['0.3087', '89.6701'] lr = 0.000342
+2023-09-20 12:06:42,786 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 114  acc = 83.6489
+2023-09-20 12:06:43,256 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:07:05,347 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 115 EpochTime = 22.090 (s) Losses = ['0.3347', '88.1076'] lr = 0.000340
+2023-09-20 12:07:09,223 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 115  acc = 81.4114
+2023-09-20 12:07:09,702 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:07:31,813 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 116 EpochTime = 22.110 (s) Losses = ['0.3196', '89.2361'] lr = 0.000337
+2023-09-20 12:07:35,628 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 116  acc = 83.9931
+2023-09-20 12:07:36,077 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:07:58,171 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 117 EpochTime = 22.092 (s) Losses = ['0.3253', '89.5833'] lr = 0.000335
+2023-09-20 12:08:01,987 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 117  acc = 82.6162
+2023-09-20 12:08:02,476 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:08:24,562 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 118 EpochTime = 22.084 (s) Losses = ['0.3401', '88.6719'] lr = 0.000333
+2023-09-20 12:08:28,381 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 118  acc = 82.0998
+2023-09-20 12:08:28,879 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:08:51,001 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 119 EpochTime = 22.120 (s) Losses = ['0.3148', '88.4983'] lr = 0.000330
+2023-09-20 12:08:54,800 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 119  acc = 81.0671
+2023-09-20 12:08:55,255 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:09:17,350 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 120 EpochTime = 22.093 (s) Losses = ['0.3325', '88.9323'] lr = 0.000328
+2023-09-20 12:09:21,159 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 120  acc = 82.4441
+2023-09-20 12:09:21,652 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:09:43,819 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 121 EpochTime = 22.165 (s) Losses = ['0.3124', '88.6719'] lr = 0.000325
+2023-09-20 12:09:47,650 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 121  acc = 82.2719
+2023-09-20 12:09:48,156 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:10:10,264 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 122 EpochTime = 22.106 (s) Losses = ['0.3157', '88.4983'] lr = 0.000323
+2023-09-20 12:10:14,156 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 122  acc = 83.1325
+2023-09-20 12:10:14,633 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:10:36,726 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 123 EpochTime = 22.091 (s) Losses = ['0.3166', '88.4983'] lr = 0.000320
+2023-09-20 12:10:40,517 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 123  acc = 82.9604
+2023-09-20 12:10:40,996 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:11:03,093 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 124 EpochTime = 22.096 (s) Losses = ['0.3227', '89.4531'] lr = 0.000318
+2023-09-20 12:11:06,913 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 124  acc = 82.7883
+2023-09-20 12:11:07,414 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:11:29,507 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 125 EpochTime = 22.091 (s) Losses = ['0.3255', '88.6285'] lr = 0.000315
+2023-09-20 12:11:33,327 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 125  acc = 81.0671
+2023-09-20 12:11:33,779 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:11:55,866 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 126 EpochTime = 22.085 (s) Losses = ['0.2943', '89.8872'] lr = 0.000313
+2023-09-20 12:11:59,674 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 126  acc = 82.6162
+2023-09-20 12:12:00,209 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:12:22,293 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 127 EpochTime = 22.083 (s) Losses = ['0.3440', '88.3681'] lr = 0.000310
+2023-09-20 12:12:26,096 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 127  acc = 83.9931
+2023-09-20 12:12:26,616 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:12:48,704 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 128 EpochTime = 22.086 (s) Losses = ['0.3087', '89.3229'] lr = 0.000307
+2023-09-20 12:12:52,515 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 128  acc = 81.9277
+2023-09-20 12:12:52,996 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:13:15,095 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 129 EpochTime = 22.098 (s) Losses = ['0.3186', '89.2795'] lr = 0.000305
+2023-09-20 12:13:18,904 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 129  acc = 82.4441
+2023-09-20 12:13:19,359 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:13:41,440 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 130 EpochTime = 22.079 (s) Losses = ['0.3320', '88.8021'] lr = 0.000302
+2023-09-20 12:13:45,256 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 130  acc = 82.4441
+2023-09-20 12:13:45,667 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:14:07,766 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 131 EpochTime = 22.097 (s) Losses = ['0.2913', '89.6701'] lr = 0.000300
+2023-09-20 12:14:11,586 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 131  acc = 82.9604
+2023-09-20 12:14:12,016 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:14:34,108 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 132 EpochTime = 22.091 (s) Losses = ['0.2938', '90.1042'] lr = 0.000297
+2023-09-20 12:14:37,937 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 132  acc = 84.1652
+2023-09-20 12:14:38,407 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:15:00,499 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 133 EpochTime = 22.090 (s) Losses = ['0.2989', '89.7569'] lr = 0.000295
+2023-09-20 12:15:04,296 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 133  acc = 82.7883
+2023-09-20 12:15:04,781 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:15:26,874 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 134 EpochTime = 22.092 (s) Losses = ['0.3377', '88.1944'] lr = 0.000292
+2023-09-20 12:15:30,693 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 134  acc = 83.3046
+2023-09-20 12:15:31,145 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:15:53,225 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 135 EpochTime = 22.078 (s) Losses = ['0.2946', '90.4514'] lr = 0.000290
+2023-09-20 12:15:57,056 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 135  acc = 82.9604
+2023-09-20 12:15:57,552 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:16:19,659 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 136 EpochTime = 22.106 (s) Losses = ['0.3182', '89.3663'] lr = 0.000287
+2023-09-20 12:16:23,482 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 136  acc = 83.6489
+2023-09-20 12:16:23,986 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:16:46,071 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 137 EpochTime = 22.083 (s) Losses = ['0.3123', '88.8455'] lr = 0.000284
+2023-09-20 12:16:49,883 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 137  acc = 83.1325
+2023-09-20 12:16:50,379 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:17:12,460 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 138 EpochTime = 22.080 (s) Losses = ['0.2558', '91.7535'] lr = 0.000282
+2023-09-20 12:17:16,289 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 138  acc = 82.6162
+2023-09-20 12:17:16,735 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:17:38,812 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 139 EpochTime = 22.075 (s) Losses = ['0.2955', '90.3646'] lr = 0.000279
+2023-09-20 12:17:42,631 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 139  acc = 83.3046
+2023-09-20 12:17:43,032 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:18:05,122 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 140 EpochTime = 22.088 (s) Losses = ['0.2823', '89.9306'] lr = 0.000277
+2023-09-20 12:18:08,960 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 140  acc = 82.7883
+2023-09-20 12:18:09,443 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:18:31,539 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 141 EpochTime = 22.095 (s) Losses = ['0.2752', '90.4514'] lr = 0.000274
+2023-09-20 12:18:35,408 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 141  acc = 82.6162
+2023-09-20 12:18:35,878 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:18:57,966 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 142 EpochTime = 22.086 (s) Losses = ['0.2835', '90.4514'] lr = 0.000271
+2023-09-20 12:19:01,836 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 142  acc = 83.6489
+2023-09-20 12:19:02,308 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:19:24,421 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 143 EpochTime = 22.112 (s) Losses = ['0.3056', '89.6701'] lr = 0.000269
+2023-09-20 12:19:28,265 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 143  acc = 83.9931
+2023-09-20 12:19:28,744 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:19:50,830 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 144 EpochTime = 22.084 (s) Losses = ['0.3060', '89.2361'] lr = 0.000266
+2023-09-20 12:19:54,739 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 144  acc = 81.9277
+2023-09-20 12:19:55,236 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:20:17,322 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 145 EpochTime = 22.084 (s) Losses = ['0.2763', '90.4514'] lr = 0.000264
+2023-09-20 12:20:21,165 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 145  acc = 83.6489
+2023-09-20 12:20:21,641 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:20:43,713 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 146 EpochTime = 22.071 (s) Losses = ['0.2822', '89.5833'] lr = 0.000261
+2023-09-20 12:20:47,533 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 146  acc = 84.1652
+2023-09-20 12:20:47,987 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:21:10,080 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 147 EpochTime = 22.090 (s) Losses = ['0.2769', '90.7986'] lr = 0.000258
+2023-09-20 12:21:13,901 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 147  acc = 83.8210
+2023-09-20 12:21:15,435 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:21:37,577 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 148 EpochTime = 22.139 (s) Losses = ['0.2686', '89.8003'] lr = 0.000256
+2023-09-20 12:21:41,398 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 148  acc = 82.2719
+2023-09-20 12:21:41,868 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:22:03,954 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 149 EpochTime = 22.084 (s) Losses = ['0.2786', '90.8420'] lr = 0.000253
+2023-09-20 12:22:07,795 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 149  acc = 81.9277
+2023-09-20 12:22:08,297 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:22:30,381 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 150 EpochTime = 22.083 (s) Losses = ['0.2665', '89.9306'] lr = 0.000251
+2023-09-20 12:22:34,202 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 150  acc = 83.1325
+2023-09-20 12:22:34,676 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:22:56,795 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 151 EpochTime = 22.117 (s) Losses = ['0.3072', '89.8872'] lr = 0.000248
+2023-09-20 12:23:00,607 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 151  acc = 82.9604
+2023-09-20 12:23:01,127 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:23:23,190 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 152 EpochTime = 22.062 (s) Losses = ['0.2560', '90.8420'] lr = 0.000245
+2023-09-20 12:23:27,043 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 152  acc = 83.3046
+2023-09-20 12:23:27,536 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:23:49,616 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 153 EpochTime = 22.079 (s) Losses = ['0.3007', '89.4097'] lr = 0.000243
+2023-09-20 12:23:53,432 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 153  acc = 83.6489
+2023-09-20 12:23:53,903 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:24:15,988 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 154 EpochTime = 22.083 (s) Losses = ['0.2289', '91.9705'] lr = 0.000240
+2023-09-20 12:24:19,798 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 154  acc = 83.4768
+2023-09-20 12:24:20,279 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:24:42,361 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 155 EpochTime = 22.080 (s) Losses = ['0.2511', '91.1892'] lr = 0.000237
+2023-09-20 12:24:46,191 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 155  acc = 83.6489
+2023-09-20 12:24:46,681 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:25:08,778 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 156 EpochTime = 22.095 (s) Losses = ['0.2866', '90.3212'] lr = 0.000235
+2023-09-20 12:25:12,635 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 156  acc = 83.3046
+2023-09-20 12:25:13,087 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:25:35,189 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 157 EpochTime = 22.100 (s) Losses = ['0.2473', '91.3194'] lr = 0.000232
+2023-09-20 12:25:39,003 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 157  acc = 82.9604
+2023-09-20 12:25:39,476 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:26:01,554 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 158 EpochTime = 22.076 (s) Losses = ['0.2742', '90.2344'] lr = 0.000230
+2023-09-20 12:26:05,389 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 158  acc = 83.6489
+2023-09-20 12:26:05,875 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:26:27,967 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 159 EpochTime = 22.091 (s) Losses = ['0.2585', '91.3194'] lr = 0.000227
+2023-09-20 12:26:31,780 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 159  acc = 83.1325
+2023-09-20 12:26:32,256 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:26:54,337 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 160 EpochTime = 22.080 (s) Losses = ['0.2473', '91.1892'] lr = 0.000224
+2023-09-20 12:26:58,166 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 160  acc = 82.4441
+2023-09-20 12:26:58,593 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:27:20,716 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 161 EpochTime = 22.121 (s) Losses = ['0.2552', '91.0590'] lr = 0.000222
+2023-09-20 12:27:24,561 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 161  acc = 82.4441
+2023-09-20 12:27:25,056 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:27:47,143 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 162 EpochTime = 22.086 (s) Losses = ['0.2719', '90.4948'] lr = 0.000219
+2023-09-20 12:27:50,983 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 162  acc = 83.3046
+2023-09-20 12:27:51,444 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:28:13,537 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 163 EpochTime = 22.092 (s) Losses = ['0.2527', '90.8854'] lr = 0.000217
+2023-09-20 12:28:17,374 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 163  acc = 84.5095
+2023-09-20 12:28:17,819 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-20 12:28:17,820 - finetune_scan_objbg_non_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-20 12:28:18,277 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:28:40,392 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 164 EpochTime = 22.114 (s) Losses = ['0.2669', '90.5816'] lr = 0.000214
+2023-09-20 12:28:44,207 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 164  acc = 84.5095
+2023-09-20 12:28:44,687 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:29:06,780 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 165 EpochTime = 22.091 (s) Losses = ['0.2770', '90.5382'] lr = 0.000211
+2023-09-20 12:29:10,615 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 165  acc = 82.7883
+2023-09-20 12:29:11,126 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:29:33,239 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 166 EpochTime = 22.111 (s) Losses = ['0.2569', '91.0590'] lr = 0.000209
+2023-09-20 12:29:37,055 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 166  acc = 85.3700
+2023-09-20 12:29:37,482 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-20 12:29:37,482 - finetune_scan_objbg_non_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-20 12:29:37,926 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:30:00,026 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 167 EpochTime = 22.098 (s) Losses = ['0.2473', '91.3628'] lr = 0.000206
+2023-09-20 12:30:03,854 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 167  acc = 83.6489
+2023-09-20 12:30:04,343 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:30:26,436 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 168 EpochTime = 22.091 (s) Losses = ['0.2480', '91.7535'] lr = 0.000204
+2023-09-20 12:30:30,254 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 168  acc = 81.7556
+2023-09-20 12:30:30,767 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:30:52,866 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 169 EpochTime = 22.098 (s) Losses = ['0.2388', '92.1007'] lr = 0.000201
+2023-09-20 12:30:56,674 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 169  acc = 84.1652
+2023-09-20 12:30:57,093 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:31:19,177 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 170 EpochTime = 22.082 (s) Losses = ['0.2452', '91.9705'] lr = 0.000199
+2023-09-20 12:31:22,992 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 170  acc = 84.1652
+2023-09-20 12:31:23,447 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:31:45,528 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 171 EpochTime = 22.080 (s) Losses = ['0.2475', '91.8403'] lr = 0.000196
+2023-09-20 12:31:49,333 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 171  acc = 83.3046
+2023-09-20 12:31:49,783 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:32:11,864 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 172 EpochTime = 22.079 (s) Losses = ['0.2383', '92.0573'] lr = 0.000194
+2023-09-20 12:32:15,677 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 172  acc = 83.3046
+2023-09-20 12:32:16,151 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:32:38,239 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 173 EpochTime = 22.086 (s) Losses = ['0.2595', '91.5365'] lr = 0.000191
+2023-09-20 12:32:42,049 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 173  acc = 84.8537
+2023-09-20 12:32:42,456 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:33:04,543 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 174 EpochTime = 22.085 (s) Losses = ['0.2420', '91.6667'] lr = 0.000188
+2023-09-20 12:33:08,355 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 174  acc = 83.1325
+2023-09-20 12:33:08,856 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:33:30,936 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 175 EpochTime = 22.078 (s) Losses = ['0.2699', '91.2760'] lr = 0.000186
+2023-09-20 12:33:34,763 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 175  acc = 84.1652
+2023-09-20 12:33:35,230 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:33:57,314 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 176 EpochTime = 22.083 (s) Losses = ['0.2258', '92.1007'] lr = 0.000183
+2023-09-20 12:34:01,140 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 176  acc = 82.7883
+2023-09-20 12:34:01,584 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:34:23,724 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 177 EpochTime = 22.138 (s) Losses = ['0.2440', '92.4045'] lr = 0.000181
+2023-09-20 12:34:27,536 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 177  acc = 83.3046
+2023-09-20 12:34:27,976 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:34:50,053 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 178 EpochTime = 22.075 (s) Losses = ['0.2487', '91.5365'] lr = 0.000178
+2023-09-20 12:34:53,902 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 178  acc = 83.8210
+2023-09-20 12:34:54,351 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:35:16,442 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 179 EpochTime = 22.090 (s) Losses = ['0.2342', '91.1892'] lr = 0.000176
+2023-09-20 12:35:20,311 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 179  acc = 83.8210
+2023-09-20 12:35:20,778 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:35:42,856 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 180 EpochTime = 22.076 (s) Losses = ['0.2302', '92.4479'] lr = 0.000173
+2023-09-20 12:35:46,684 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 180  acc = 85.0258
+2023-09-20 12:35:47,204 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:36:09,304 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 181 EpochTime = 22.099 (s) Losses = ['0.2335', '92.0139'] lr = 0.000171
+2023-09-20 12:36:13,128 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 181  acc = 83.4768
+2023-09-20 12:36:13,604 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:36:35,697 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 182 EpochTime = 22.091 (s) Losses = ['0.2475', '91.6667'] lr = 0.000168
+2023-09-20 12:36:39,509 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 182  acc = 83.6489
+2023-09-20 12:36:39,941 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:37:02,034 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 183 EpochTime = 22.091 (s) Losses = ['0.2119', '92.9253'] lr = 0.000166
+2023-09-20 12:37:05,856 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 183  acc = 83.1325
+2023-09-20 12:37:06,379 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:37:28,463 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 184 EpochTime = 22.082 (s) Losses = ['0.2325', '92.5781'] lr = 0.000164
+2023-09-20 12:37:32,417 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 184  acc = 83.4768
+2023-09-20 12:37:33,044 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:37:55,139 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 185 EpochTime = 22.094 (s) Losses = ['0.2369', '91.7101'] lr = 0.000161
+2023-09-20 12:37:58,946 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 185  acc = 83.3046
+2023-09-20 12:37:59,717 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:38:21,806 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 186 EpochTime = 22.087 (s) Losses = ['0.2186', '93.2292'] lr = 0.000159
+2023-09-20 12:38:25,633 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 186  acc = 82.7883
+2023-09-20 12:38:26,511 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:38:48,597 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 187 EpochTime = 22.085 (s) Losses = ['0.2131', '93.0556'] lr = 0.000156
+2023-09-20 12:38:52,422 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 187  acc = 84.3373
+2023-09-20 12:38:52,909 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:39:15,015 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 188 EpochTime = 22.104 (s) Losses = ['0.2277', '92.9688'] lr = 0.000154
+2023-09-20 12:39:18,849 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 188  acc = 83.1325
+2023-09-20 12:39:19,324 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:39:41,426 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 189 EpochTime = 22.101 (s) Losses = ['0.2297', '92.5347'] lr = 0.000151
+2023-09-20 12:39:45,251 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 189  acc = 82.7883
+2023-09-20 12:39:45,795 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:40:07,890 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 190 EpochTime = 22.093 (s) Losses = ['0.2309', '92.2309'] lr = 0.000149
+2023-09-20 12:40:11,721 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 190  acc = 82.9604
+2023-09-20 12:40:12,155 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:40:34,248 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 191 EpochTime = 22.092 (s) Losses = ['0.2255', '92.1007'] lr = 0.000147
+2023-09-20 12:40:38,069 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 191  acc = 83.6489
+2023-09-20 12:40:38,528 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:41:00,639 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 192 EpochTime = 22.109 (s) Losses = ['0.2185', '92.8385'] lr = 0.000144
+2023-09-20 12:41:04,477 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 192  acc = 83.3046
+2023-09-20 12:41:04,960 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:41:27,069 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 193 EpochTime = 22.107 (s) Losses = ['0.2277', '92.2309'] lr = 0.000142
+2023-09-20 12:41:30,891 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 193  acc = 83.3046
+2023-09-20 12:41:31,281 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:41:53,382 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 194 EpochTime = 22.099 (s) Losses = ['0.2231', '93.1424'] lr = 0.000140
+2023-09-20 12:41:57,210 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 194  acc = 83.8210
+2023-09-20 12:41:57,663 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:42:19,750 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 195 EpochTime = 22.085 (s) Losses = ['0.2181', '92.5781'] lr = 0.000137
+2023-09-20 12:42:23,576 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 195  acc = 83.9931
+2023-09-20 12:42:24,057 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:42:46,148 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 196 EpochTime = 22.090 (s) Losses = ['0.2284', '92.4045'] lr = 0.000135
+2023-09-20 12:42:49,966 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 196  acc = 84.1652
+2023-09-20 12:42:50,438 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:43:12,537 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 197 EpochTime = 22.096 (s) Losses = ['0.2236', '92.8819'] lr = 0.000133
+2023-09-20 12:43:16,358 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 197  acc = 83.4768
+2023-09-20 12:43:16,907 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:43:38,988 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 198 EpochTime = 22.080 (s) Losses = ['0.2148', '92.1441'] lr = 0.000130
+2023-09-20 12:43:42,799 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 198  acc = 85.0258
+2023-09-20 12:43:43,255 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:44:05,361 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 199 EpochTime = 22.105 (s) Losses = ['0.2080', '93.1858'] lr = 0.000128
+2023-09-20 12:44:09,191 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 199  acc = 84.3373
+2023-09-20 12:44:09,655 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:44:31,754 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 200 EpochTime = 22.097 (s) Losses = ['0.2009', '93.0990'] lr = 0.000126
+2023-09-20 12:44:35,565 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 200  acc = 84.5095
+2023-09-20 12:44:36,047 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:44:58,126 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 201 EpochTime = 22.077 (s) Losses = ['0.2001', '92.9253'] lr = 0.000123
+2023-09-20 12:45:01,940 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 201  acc = 85.3700
+2023-09-20 12:45:02,352 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:45:24,437 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 202 EpochTime = 22.084 (s) Losses = ['0.2175', '92.4045'] lr = 0.000121
+2023-09-20 12:45:28,274 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 202  acc = 84.1652
+2023-09-20 12:45:28,723 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:45:50,815 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 203 EpochTime = 22.089 (s) Losses = ['0.2069', '92.7517'] lr = 0.000119
+2023-09-20 12:45:54,656 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 203  acc = 84.3373
+2023-09-20 12:45:55,067 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:46:17,159 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 204 EpochTime = 22.091 (s) Losses = ['0.1817', '94.1406'] lr = 0.000117
+2023-09-20 12:46:20,975 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 204  acc = 83.6489
+2023-09-20 12:46:21,416 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:46:43,512 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 205 EpochTime = 22.094 (s) Losses = ['0.2035', '92.7951'] lr = 0.000115
+2023-09-20 12:46:47,338 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 205  acc = 85.0258
+2023-09-20 12:46:47,790 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:47:09,892 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 206 EpochTime = 22.100 (s) Losses = ['0.1979', '92.9688'] lr = 0.000112
+2023-09-20 12:47:13,773 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 206  acc = 84.5095
+2023-09-20 12:47:14,235 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:47:36,353 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 207 EpochTime = 22.116 (s) Losses = ['0.2070', '92.7517'] lr = 0.000110
+2023-09-20 12:47:40,176 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 207  acc = 84.6816
+2023-09-20 12:47:40,660 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:48:02,774 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 208 EpochTime = 22.112 (s) Losses = ['0.2102', '93.4896'] lr = 0.000108
+2023-09-20 12:48:06,610 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 208  acc = 84.3373
+2023-09-20 12:48:07,075 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:48:29,197 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 209 EpochTime = 22.098 (s) Losses = ['0.2093', '93.1424'] lr = 0.000106
+2023-09-20 12:48:33,052 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 209  acc = 83.9931
+2023-09-20 12:48:33,528 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:48:55,608 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 210 EpochTime = 22.078 (s) Losses = ['0.1693', '94.6615'] lr = 0.000104
+2023-09-20 12:48:59,450 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 210  acc = 84.1652
+2023-09-20 12:48:59,919 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:49:22,001 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 211 EpochTime = 22.081 (s) Losses = ['0.2157', '92.5781'] lr = 0.000102
+2023-09-20 12:49:25,846 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 211  acc = 84.5095
+2023-09-20 12:49:26,391 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:49:48,483 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 212 EpochTime = 22.090 (s) Losses = ['0.2154', '93.0122'] lr = 0.000100
+2023-09-20 12:49:52,304 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 212  acc = 83.9931
+2023-09-20 12:49:52,998 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:50:15,066 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 213 EpochTime = 22.066 (s) Losses = ['0.2014', '92.6649'] lr = 0.000098
+2023-09-20 12:50:18,875 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 213  acc = 84.6816
+2023-09-20 12:50:19,344 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:50:41,479 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 214 EpochTime = 22.134 (s) Losses = ['0.2059', '92.7083'] lr = 0.000096
+2023-09-20 12:50:45,311 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 214  acc = 83.8210
+2023-09-20 12:50:45,756 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:51:07,853 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 215 EpochTime = 22.096 (s) Losses = ['0.1994', '93.0990'] lr = 0.000093
+2023-09-20 12:51:11,680 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 215  acc = 85.3700
+2023-09-20 12:51:12,150 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:51:34,244 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 216 EpochTime = 22.092 (s) Losses = ['0.2056', '92.8819'] lr = 0.000091
+2023-09-20 12:51:38,083 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 216  acc = 84.3373
+2023-09-20 12:51:38,619 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:52:00,714 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 217 EpochTime = 22.093 (s) Losses = ['0.1880', '93.7066'] lr = 0.000089
+2023-09-20 12:52:04,525 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 217  acc = 84.6816
+2023-09-20 12:52:05,003 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:52:27,105 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 218 EpochTime = 22.099 (s) Losses = ['0.1885', '93.7934'] lr = 0.000087
+2023-09-20 12:52:30,921 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 218  acc = 83.9931
+2023-09-20 12:52:31,376 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:52:53,455 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 219 EpochTime = 22.078 (s) Losses = ['0.1952', '93.0556'] lr = 0.000086
+2023-09-20 12:52:57,282 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 219  acc = 84.5095
+2023-09-20 12:52:57,759 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:53:19,856 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 220 EpochTime = 22.095 (s) Losses = ['0.1917', '93.3160'] lr = 0.000084
+2023-09-20 12:53:23,666 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 220  acc = 84.8537
+2023-09-20 12:53:24,123 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:53:46,201 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 221 EpochTime = 22.076 (s) Losses = ['0.1813', '93.8368'] lr = 0.000082
+2023-09-20 12:53:50,012 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 221  acc = 84.3373
+2023-09-20 12:53:50,512 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:54:12,632 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 222 EpochTime = 22.118 (s) Losses = ['0.2031', '93.0122'] lr = 0.000080
+2023-09-20 12:54:16,441 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 222  acc = 84.1652
+2023-09-20 12:54:16,862 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:54:38,946 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 223 EpochTime = 22.082 (s) Losses = ['0.1966', '93.5330'] lr = 0.000078
+2023-09-20 12:54:42,775 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 223  acc = 84.6816
+2023-09-20 12:54:43,227 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:55:05,316 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 224 EpochTime = 22.087 (s) Losses = ['0.1811', '93.7934'] lr = 0.000076
+2023-09-20 12:55:09,147 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 224  acc = 84.6816
+2023-09-20 12:55:09,682 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:55:31,768 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 225 EpochTime = 22.085 (s) Losses = ['0.1714', '94.1840'] lr = 0.000074
+2023-09-20 12:55:35,603 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 225  acc = 84.5095
+2023-09-20 12:55:36,018 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:55:58,120 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 226 EpochTime = 22.101 (s) Losses = ['0.2006', '93.4896'] lr = 0.000072
+2023-09-20 12:56:01,935 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 226  acc = 84.6816
+2023-09-20 12:56:02,367 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:56:24,453 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 227 EpochTime = 22.084 (s) Losses = ['0.1901', '93.4028'] lr = 0.000070
+2023-09-20 12:56:28,267 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 227  acc = 84.1652
+2023-09-20 12:56:28,752 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:56:50,846 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 228 EpochTime = 22.093 (s) Losses = ['0.1891', '93.5764'] lr = 0.000069
+2023-09-20 12:56:54,665 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 228  acc = 84.3373
+2023-09-20 12:56:55,140 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:57:17,258 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 229 EpochTime = 22.116 (s) Losses = ['0.1718', '93.7500'] lr = 0.000067
+2023-09-20 12:57:21,069 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 229  acc = 85.1979
+2023-09-20 12:57:21,488 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:57:43,573 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 230 EpochTime = 22.083 (s) Losses = ['0.1790', '93.7066'] lr = 0.000065
+2023-09-20 12:57:47,385 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 230  acc = 82.9604
+2023-09-20 12:57:47,851 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:58:09,944 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 231 EpochTime = 22.091 (s) Losses = ['0.1647', '94.7049'] lr = 0.000063
+2023-09-20 12:58:13,767 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 231  acc = 83.8210
+2023-09-20 12:58:14,233 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:58:36,332 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 232 EpochTime = 22.098 (s) Losses = ['0.1847', '93.7934'] lr = 0.000062
+2023-09-20 12:58:40,155 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 232  acc = 83.9931
+2023-09-20 12:58:40,660 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:59:02,765 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 233 EpochTime = 22.103 (s) Losses = ['0.2098', '93.0556'] lr = 0.000060
+2023-09-20 12:59:06,620 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 233  acc = 84.6816
+2023-09-20 12:59:07,075 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:59:29,173 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 234 EpochTime = 22.097 (s) Losses = ['0.1742', '94.0538'] lr = 0.000058
+2023-09-20 12:59:33,002 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 234  acc = 84.3373
+2023-09-20 12:59:33,456 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 12:59:55,550 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 235 EpochTime = 22.092 (s) Losses = ['0.1761', '93.7934'] lr = 0.000057
+2023-09-20 12:59:59,414 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 235  acc = 84.8537
+2023-09-20 12:59:59,914 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:00:22,038 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 236 EpochTime = 22.122 (s) Losses = ['0.1709', '94.3142'] lr = 0.000055
+2023-09-20 13:00:25,858 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 236  acc = 84.3373
+2023-09-20 13:00:26,316 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:00:48,412 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 237 EpochTime = 22.094 (s) Losses = ['0.1765', '93.9236'] lr = 0.000053
+2023-09-20 13:00:52,243 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 237  acc = 83.3046
+2023-09-20 13:00:52,799 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:01:14,905 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 238 EpochTime = 22.104 (s) Losses = ['0.1690', '94.2274'] lr = 0.000052
+2023-09-20 13:01:18,720 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 238  acc = 84.1652
+2023-09-20 13:01:19,205 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:01:41,331 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 239 EpochTime = 22.124 (s) Losses = ['0.1806', '93.8368'] lr = 0.000050
+2023-09-20 13:01:45,154 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 239  acc = 84.3373
+2023-09-20 13:01:45,681 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:02:07,763 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 240 EpochTime = 22.080 (s) Losses = ['0.1580', '94.8785'] lr = 0.000049
+2023-09-20 13:02:11,610 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 240  acc = 84.3373
+2023-09-20 13:02:12,058 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:02:34,155 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 241 EpochTime = 22.096 (s) Losses = ['0.1830', '94.0538'] lr = 0.000047
+2023-09-20 13:02:37,976 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 241  acc = 84.3373
+2023-09-20 13:02:38,432 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:03:00,527 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 242 EpochTime = 22.093 (s) Losses = ['0.1727', '93.7500'] lr = 0.000046
+2023-09-20 13:03:04,344 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 242  acc = 83.4768
+2023-09-20 13:03:04,823 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:03:26,929 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 243 EpochTime = 22.104 (s) Losses = ['0.1932', '93.8802'] lr = 0.000044
+2023-09-20 13:03:30,772 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 243  acc = 84.5095
+2023-09-20 13:03:31,301 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:03:53,394 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 244 EpochTime = 22.092 (s) Losses = ['0.1773', '93.7066'] lr = 0.000043
+2023-09-20 13:03:57,219 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 244  acc = 84.3373
+2023-09-20 13:03:57,675 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:04:19,781 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 245 EpochTime = 22.104 (s) Losses = ['0.1931', '93.3594'] lr = 0.000041
+2023-09-20 13:04:23,586 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 245  acc = 83.8210
+2023-09-20 13:04:24,090 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:04:46,154 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 246 EpochTime = 22.062 (s) Losses = ['0.2062', '93.4028'] lr = 0.000040
+2023-09-20 13:04:49,968 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 246  acc = 84.1652
+2023-09-20 13:04:50,464 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:05:12,544 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 247 EpochTime = 22.079 (s) Losses = ['0.1772', '94.0538'] lr = 0.000038
+2023-09-20 13:05:16,381 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 247  acc = 84.3373
+2023-09-20 13:05:16,842 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:05:38,923 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 248 EpochTime = 22.080 (s) Losses = ['0.1798', '94.3142'] lr = 0.000037
+2023-09-20 13:05:42,747 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 248  acc = 84.5095
+2023-09-20 13:05:43,206 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:06:05,287 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 249 EpochTime = 22.079 (s) Losses = ['0.1868', '94.1406'] lr = 0.000036
+2023-09-20 13:06:09,101 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 249  acc = 83.8210
+2023-09-20 13:06:09,568 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:06:31,666 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 250 EpochTime = 22.097 (s) Losses = ['0.1885', '93.1858'] lr = 0.000034
+2023-09-20 13:06:35,499 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 250  acc = 83.6489
+2023-09-20 13:06:35,952 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:06:58,064 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 251 EpochTime = 22.110 (s) Losses = ['0.1694', '93.7500'] lr = 0.000033
+2023-09-20 13:07:01,909 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 251  acc = 84.1652
+2023-09-20 13:07:02,335 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:07:24,492 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 252 EpochTime = 22.155 (s) Losses = ['0.2050', '93.0990'] lr = 0.000032
+2023-09-20 13:07:28,321 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 252  acc = 84.5095
+2023-09-20 13:07:28,820 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:07:50,898 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 253 EpochTime = 22.076 (s) Losses = ['0.1888', '93.8368'] lr = 0.000031
+2023-09-20 13:07:54,788 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 253  acc = 83.8210
+2023-09-20 13:07:55,263 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:08:17,350 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 254 EpochTime = 22.085 (s) Losses = ['0.1766', '94.3142'] lr = 0.000029
+2023-09-20 13:08:21,201 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 254  acc = 84.1652
+2023-09-20 13:08:21,663 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:08:43,759 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 255 EpochTime = 22.094 (s) Losses = ['0.1695', '93.8802'] lr = 0.000028
+2023-09-20 13:08:47,576 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 255  acc = 83.8210
+2023-09-20 13:08:47,986 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:09:10,090 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 256 EpochTime = 22.103 (s) Losses = ['0.1475', '95.0955'] lr = 0.000027
+2023-09-20 13:09:13,914 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 256  acc = 83.9931
+2023-09-20 13:09:14,403 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:09:36,486 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 257 EpochTime = 22.081 (s) Losses = ['0.1658', '94.5747'] lr = 0.000026
+2023-09-20 13:09:40,314 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 257  acc = 83.6489
+2023-09-20 13:09:40,787 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:10:02,899 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 258 EpochTime = 22.110 (s) Losses = ['0.1738', '93.9670'] lr = 0.000025
+2023-09-20 13:10:06,717 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 258  acc = 84.6816
+2023-09-20 13:10:07,173 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:10:29,271 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 259 EpochTime = 22.096 (s) Losses = ['0.1800', '94.1406'] lr = 0.000024
+2023-09-20 13:10:33,099 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 259  acc = 84.6816
+2023-09-20 13:10:33,555 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:10:55,644 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 260 EpochTime = 22.087 (s) Losses = ['0.1814', '93.8802'] lr = 0.000023
+2023-09-20 13:10:59,466 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 260  acc = 83.9931
+2023-09-20 13:10:59,928 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:11:22,032 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 261 EpochTime = 22.103 (s) Losses = ['0.1821', '93.8802'] lr = 0.000022
+2023-09-20 13:11:25,847 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 261  acc = 83.3046
+2023-09-20 13:11:26,320 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:11:48,404 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 262 EpochTime = 22.083 (s) Losses = ['0.1788', '93.7934'] lr = 0.000020
+2023-09-20 13:11:52,249 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 262  acc = 84.5095
+2023-09-20 13:11:52,696 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:12:14,776 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 263 EpochTime = 22.078 (s) Losses = ['0.1411', '95.4427'] lr = 0.000019
+2023-09-20 13:12:18,587 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 263  acc = 83.9931
+2023-09-20 13:12:19,104 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:12:41,190 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 264 EpochTime = 22.084 (s) Losses = ['0.1725', '93.5330'] lr = 0.000019
+2023-09-20 13:12:45,010 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 264  acc = 84.3373
+2023-09-20 13:12:45,475 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:13:07,563 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 265 EpochTime = 22.087 (s) Losses = ['0.1783', '93.7066'] lr = 0.000018
+2023-09-20 13:13:11,382 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 265  acc = 84.1652
+2023-09-20 13:13:11,843 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:13:33,978 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 266 EpochTime = 22.133 (s) Losses = ['0.1916', '93.6198'] lr = 0.000017
+2023-09-20 13:13:37,815 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 266  acc = 84.5095
+2023-09-20 13:13:38,305 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:14:00,383 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 267 EpochTime = 22.076 (s) Losses = ['0.1667', '94.1840'] lr = 0.000016
+2023-09-20 13:14:04,198 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 267  acc = 84.3373
+2023-09-20 13:14:04,680 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:14:26,770 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 268 EpochTime = 22.089 (s) Losses = ['0.1842', '93.9670'] lr = 0.000015
+2023-09-20 13:14:30,593 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 268  acc = 84.8537
+2023-09-20 13:14:32,070 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:14:54,204 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 269 EpochTime = 22.132 (s) Losses = ['0.1609', '94.6615'] lr = 0.000014
+2023-09-20 13:14:58,022 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 269  acc = 83.8210
+2023-09-20 13:14:58,483 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:15:20,563 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 270 EpochTime = 22.079 (s) Losses = ['0.1740', '93.7500'] lr = 0.000013
+2023-09-20 13:15:24,379 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 270  acc = 84.3373
+2023-09-20 13:15:24,815 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:15:46,892 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 271 EpochTime = 22.075 (s) Losses = ['0.1629', '94.4010'] lr = 0.000012
+2023-09-20 13:15:50,738 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 271  acc = 84.5095
+2023-09-20 13:15:51,219 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:16:13,329 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 272 EpochTime = 22.109 (s) Losses = ['0.1520', '94.7483'] lr = 0.000012
+2023-09-20 13:16:17,159 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 272  acc = 84.3373
+2023-09-20 13:16:17,684 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:16:39,773 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 273 EpochTime = 22.087 (s) Losses = ['0.1895', '93.9670'] lr = 0.000011
+2023-09-20 13:16:43,592 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 273  acc = 84.3373
+2023-09-20 13:16:44,039 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:17:06,124 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 274 EpochTime = 22.083 (s) Losses = ['0.1730', '94.2708'] lr = 0.000010
+2023-09-20 13:17:10,017 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 274  acc = 83.8210
+2023-09-20 13:17:10,471 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:17:32,538 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 275 EpochTime = 22.065 (s) Losses = ['0.1707', '94.0104'] lr = 0.000010
+2023-09-20 13:17:36,351 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 275  acc = 84.3373
+2023-09-20 13:17:36,803 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:17:58,986 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 276 EpochTime = 22.182 (s) Losses = ['0.1595', '94.3142'] lr = 0.000009
+2023-09-20 13:18:02,811 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 276  acc = 83.9931
+2023-09-20 13:18:03,247 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:18:25,344 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 277 EpochTime = 22.096 (s) Losses = ['0.1710', '94.3576'] lr = 0.000008
+2023-09-20 13:18:29,167 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 277  acc = 83.6489
+2023-09-20 13:18:29,619 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:18:51,732 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 278 EpochTime = 22.111 (s) Losses = ['0.1574', '94.3142'] lr = 0.000008
+2023-09-20 13:18:55,564 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 278  acc = 84.6816
+2023-09-20 13:18:56,071 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:19:18,147 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 279 EpochTime = 22.075 (s) Losses = ['0.1647', '94.4010'] lr = 0.000007
+2023-09-20 13:19:21,960 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 279  acc = 83.9931
+2023-09-20 13:19:22,436 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:19:44,518 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 280 EpochTime = 22.080 (s) Losses = ['0.1569', '94.4010'] lr = 0.000006
+2023-09-20 13:19:48,337 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 280  acc = 84.8537
+2023-09-20 13:19:48,768 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:20:10,852 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 281 EpochTime = 22.082 (s) Losses = ['0.1612', '94.1406'] lr = 0.000006
+2023-09-20 13:20:14,664 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 281  acc = 83.8210
+2023-09-20 13:20:15,128 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:20:37,220 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 282 EpochTime = 22.091 (s) Losses = ['0.1797', '93.5764'] lr = 0.000005
+2023-09-20 13:20:41,073 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 282  acc = 84.8537
+2023-09-20 13:20:41,527 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:21:03,612 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 283 EpochTime = 22.084 (s) Losses = ['0.1536', '94.3142'] lr = 0.000005
+2023-09-20 13:21:07,453 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 283  acc = 84.1652
+2023-09-20 13:21:07,927 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:21:30,007 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 284 EpochTime = 22.078 (s) Losses = ['0.1808', '93.5764'] lr = 0.000004
+2023-09-20 13:21:33,830 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 284  acc = 83.9931
+2023-09-20 13:21:34,263 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:21:56,362 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 285 EpochTime = 22.097 (s) Losses = ['0.1766', '93.7934'] lr = 0.000004
+2023-09-20 13:22:00,203 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 285  acc = 84.3373
+2023-09-20 13:22:00,675 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:22:22,776 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 286 EpochTime = 22.100 (s) Losses = ['0.1584', '94.8785'] lr = 0.000004
+2023-09-20 13:22:26,587 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 286  acc = 83.9931
+2023-09-20 13:22:27,063 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:22:49,138 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 287 EpochTime = 22.073 (s) Losses = ['0.1698', '94.8351'] lr = 0.000003
+2023-09-20 13:22:52,959 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 287  acc = 84.5095
+2023-09-20 13:22:53,435 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:23:15,513 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 288 EpochTime = 22.076 (s) Losses = ['0.1753', '94.0972'] lr = 0.000003
+2023-09-20 13:23:19,340 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 288  acc = 84.5095
+2023-09-20 13:23:19,838 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:23:41,924 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 289 EpochTime = 22.084 (s) Losses = ['0.1802', '93.6632'] lr = 0.000003
+2023-09-20 13:23:45,746 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 289  acc = 83.8210
+2023-09-20 13:23:46,274 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:24:08,376 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 290 EpochTime = 22.101 (s) Losses = ['0.1704', '94.1406'] lr = 0.000002
+2023-09-20 13:24:12,203 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 290  acc = 83.3046
+2023-09-20 13:24:12,737 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:24:34,829 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 291 EpochTime = 22.090 (s) Losses = ['0.1687', '94.0538'] lr = 0.000002
+2023-09-20 13:24:38,649 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 291  acc = 84.5095
+2023-09-20 13:24:39,066 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:24:39,185 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-epoch-291.pth
+2023-09-20 13:25:01,265 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 292 EpochTime = 22.079 (s) Losses = ['0.1682', '94.2274'] lr = 0.000002
+2023-09-20 13:25:05,073 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 292  acc = 83.6489
+2023-09-20 13:25:05,486 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:25:05,624 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-epoch-292.pth
+2023-09-20 13:25:27,713 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 293 EpochTime = 22.088 (s) Losses = ['0.1536', '95.0087'] lr = 0.000002
+2023-09-20 13:25:31,524 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 293  acc = 84.1652
+2023-09-20 13:25:31,944 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:25:32,068 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-epoch-293.pth
+2023-09-20 13:25:54,148 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 294 EpochTime = 22.078 (s) Losses = ['0.1809', '93.7500'] lr = 0.000001
+2023-09-20 13:25:57,962 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 294  acc = 84.5095
+2023-09-20 13:25:58,472 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:25:58,610 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-epoch-294.pth
+2023-09-20 13:26:20,697 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 295 EpochTime = 22.085 (s) Losses = ['0.1650', '94.9653'] lr = 0.000001
+2023-09-20 13:26:24,524 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 295  acc = 84.5095
+2023-09-20 13:26:25,051 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:26:25,169 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-epoch-295.pth
+2023-09-20 13:26:47,247 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 296 EpochTime = 22.077 (s) Losses = ['0.1788', '93.5764'] lr = 0.000001
+2023-09-20 13:26:51,091 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 296  acc = 83.9931
+2023-09-20 13:26:51,592 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:26:51,708 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-epoch-296.pth
+2023-09-20 13:27:13,777 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 297 EpochTime = 22.068 (s) Losses = ['0.1574', '94.0104'] lr = 0.000001
+2023-09-20 13:27:17,595 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 297  acc = 84.5095
+2023-09-20 13:27:18,051 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:27:18,172 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-epoch-297.pth
+2023-09-20 13:27:40,269 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 298 EpochTime = 22.096 (s) Losses = ['0.1655', '93.6198'] lr = 0.000001
+2023-09-20 13:27:44,074 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 298  acc = 83.8210
+2023-09-20 13:27:44,567 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:27:44,684 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-epoch-298.pth
+2023-09-20 13:28:06,756 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 299 EpochTime = 22.071 (s) Losses = ['0.1552', '94.1406'] lr = 0.000001
+2023-09-20 13:28:10,569 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 299  acc = 83.6489
+2023-09-20 13:28:11,276 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:28:11,398 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-epoch-299.pth
+2023-09-20 13:28:33,494 - finetune_scan_objbg_non_linear_classification - INFO - [Training] EPOCH: 300 EpochTime = 22.094 (s) Losses = ['0.1631', '94.7917'] lr = 0.000001
+2023-09-20 13:28:37,310 - finetune_scan_objbg_non_linear_classification - INFO - [Validation] EPOCH: 300  acc = 83.8210
+2023-09-20 13:28:38,116 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-20 13:28:38,238 - finetune_scan_objbg_non_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objbg_non_linear_classification/cfgs/add_as_normal/ckpt-epoch-300.pth
