@@ -1,0 +1,1101 @@
+2023-09-19 09:52:40,252 - finetune_scan_hardest_linear_classification - INFO - Copy the Config file from cfgs/finetune_scan_hardest_linear_classification.yaml to ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/config.yaml
+2023-09-19 09:52:40,252 - finetune_scan_hardest_linear_classification - INFO - args.config : cfgs/finetune_scan_hardest_linear_classification.yaml
+2023-09-19 09:52:40,252 - finetune_scan_hardest_linear_classification - INFO - args.launcher : none
+2023-09-19 09:52:40,252 - finetune_scan_hardest_linear_classification - INFO - args.local_rank : 0
+2023-09-19 09:52:40,252 - finetune_scan_hardest_linear_classification - INFO - args.num_workers : 8
+2023-09-19 09:52:40,252 - finetune_scan_hardest_linear_classification - INFO - args.seed : 0
+2023-09-19 09:52:40,252 - finetune_scan_hardest_linear_classification - INFO - args.deterministic : False
+2023-09-19 09:52:40,252 - finetune_scan_hardest_linear_classification - INFO - args.sync_bn : True
+2023-09-19 09:52:40,252 - finetune_scan_hardest_linear_classification - INFO - args.update_weights_every : 1
+2023-09-19 09:52:40,252 - finetune_scan_hardest_linear_classification - INFO - args.main_task : 0
+2023-09-19 09:52:40,252 - finetune_scan_hardest_linear_classification - INFO - args.nashmtl_optim_niter : 20
+2023-09-19 09:52:40,252 - finetune_scan_hardest_linear_classification - INFO - args.c : 0.4
+2023-09-19 09:52:40,252 - finetune_scan_hardest_linear_classification - INFO - args.dwa_temp : 2.0
+2023-09-19 09:52:40,252 - finetune_scan_hardest_linear_classification - INFO - args.method_params_lr : 0.025
+2023-09-19 09:52:40,252 - finetune_scan_hardest_linear_classification - INFO - args.method : nashmtl
+2023-09-19 09:52:40,252 - finetune_scan_hardest_linear_classification - INFO - args.gpu : 5
+2023-09-19 09:52:40,253 - finetune_scan_hardest_linear_classification - INFO - args.large_group : 5
+2023-09-19 09:52:40,253 - finetune_scan_hardest_linear_classification - INFO - args.small_group : 10
+2023-09-19 09:52:40,253 - finetune_scan_hardest_linear_classification - INFO - args.large_patch : 6
+2023-09-19 09:52:40,253 - finetune_scan_hardest_linear_classification - INFO - args.small_patch : 3
+2023-09-19 09:52:40,253 - finetune_scan_hardest_linear_classification - INFO - args.queue_length : 8192
+2023-09-19 09:52:40,253 - finetune_scan_hardest_linear_classification - INFO - args.epoch_queue_starts : 10
+2023-09-19 09:52:40,253 - finetune_scan_hardest_linear_classification - INFO - args.nmb_crops : [5, 10]
+2023-09-19 09:52:40,253 - finetune_scan_hardest_linear_classification - INFO - args.fea_dim : 384
+2023-09-19 09:52:40,253 - finetune_scan_hardest_linear_classification - INFO - args.hidden_mlp : 256
+2023-09-19 09:52:40,253 - finetune_scan_hardest_linear_classification - INFO - args.output_dim : 128
+2023-09-19 09:52:40,253 - finetune_scan_hardest_linear_classification - INFO - args.nmb_prototypes : 200
+2023-09-19 09:52:40,253 - finetune_scan_hardest_linear_classification - INFO - args.temperature : 0.1
+2023-09-19 09:52:40,253 - finetune_scan_hardest_linear_classification - INFO - args.epsilon : 0.05
+2023-09-19 09:52:40,253 - finetune_scan_hardest_linear_classification - INFO - args.sinkhorn_iterations : 3
+2023-09-19 09:52:40,253 - finetune_scan_hardest_linear_classification - INFO - args.world_size : 1
+2023-09-19 09:52:40,253 - finetune_scan_hardest_linear_classification - INFO - args.exp_name : add_as_normal
+2023-09-19 09:52:40,253 - finetune_scan_hardest_linear_classification - INFO - args.loss : cd1
+2023-09-19 09:52:40,253 - finetune_scan_hardest_linear_classification - INFO - args.start_ckpts : None
+2023-09-19 09:52:40,253 - finetune_scan_hardest_linear_classification - INFO - args.ckpts : ./experiments/pretrain_MaskSurf/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 09:52:40,253 - finetune_scan_hardest_linear_classification - INFO - args.val_freq : 1
+2023-09-19 09:52:40,254 - finetune_scan_hardest_linear_classification - INFO - args.vote : False
+2023-09-19 09:52:40,254 - finetune_scan_hardest_linear_classification - INFO - args.resume : False
+2023-09-19 09:52:40,254 - finetune_scan_hardest_linear_classification - INFO - args.test : False
+2023-09-19 09:52:40,254 - finetune_scan_hardest_linear_classification - INFO - args.finetune_model : True
+2023-09-19 09:52:40,254 - finetune_scan_hardest_linear_classification - INFO - args.scratch_model : False
+2023-09-19 09:52:40,254 - finetune_scan_hardest_linear_classification - INFO - args.mode : None
+2023-09-19 09:52:40,254 - finetune_scan_hardest_linear_classification - INFO - args.way : -1
+2023-09-19 09:52:40,254 - finetune_scan_hardest_linear_classification - INFO - args.shot : -1
+2023-09-19 09:52:40,254 - finetune_scan_hardest_linear_classification - INFO - args.fold : -1
+2023-09-19 09:52:40,254 - finetune_scan_hardest_linear_classification - INFO - args.experiment_path : ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal
+2023-09-19 09:52:40,254 - finetune_scan_hardest_linear_classification - INFO - args.tfboard_path : ./experiments/finetune_scan_hardest_linear_classification/cfgs/TFBoard/add_as_normal
+2023-09-19 09:52:40,254 - finetune_scan_hardest_linear_classification - INFO - args.log_name : finetune_scan_hardest_linear_classification
+2023-09-19 09:52:40,254 - finetune_scan_hardest_linear_classification - INFO - args.use_gpu : True
+2023-09-19 09:52:40,254 - finetune_scan_hardest_linear_classification - INFO - args.distributed : False
+2023-09-19 09:52:40,254 - finetune_scan_hardest_linear_classification - INFO - config.optimizer = edict()
+2023-09-19 09:52:40,254 - finetune_scan_hardest_linear_classification - INFO - config.optimizer.type : AdamW
+2023-09-19 09:52:40,254 - finetune_scan_hardest_linear_classification - INFO - config.optimizer.part : only_new
+2023-09-19 09:52:40,254 - finetune_scan_hardest_linear_classification - INFO - config.optimizer.kwargs = edict()
+2023-09-19 09:52:40,255 - finetune_scan_hardest_linear_classification - INFO - config.optimizer.kwargs.lr : 0.0005
+2023-09-19 09:52:40,255 - finetune_scan_hardest_linear_classification - INFO - config.optimizer.kwargs.weight_decay : 0.05
+2023-09-19 09:52:40,255 - finetune_scan_hardest_linear_classification - INFO - config.scheduler = edict()
+2023-09-19 09:52:40,255 - finetune_scan_hardest_linear_classification - INFO - config.scheduler.type : CosLR
+2023-09-19 09:52:40,255 - finetune_scan_hardest_linear_classification - INFO - config.scheduler.kwargs = edict()
+2023-09-19 09:52:40,255 - finetune_scan_hardest_linear_classification - INFO - config.scheduler.kwargs.epochs : 300
+2023-09-19 09:52:40,255 - finetune_scan_hardest_linear_classification - INFO - config.scheduler.kwargs.initial_epochs : 10
+2023-09-19 09:52:40,255 - finetune_scan_hardest_linear_classification - INFO - config.dataset = edict()
+2023-09-19 09:52:40,255 - finetune_scan_hardest_linear_classification - INFO - config.dataset.train = edict()
+2023-09-19 09:52:40,255 - finetune_scan_hardest_linear_classification - INFO - config.dataset.train._base_ = edict()
+2023-09-19 09:52:40,255 - finetune_scan_hardest_linear_classification - INFO - config.dataset.train._base_.NAME : ScanObjectNN_hardest
+2023-09-19 09:52:40,255 - finetune_scan_hardest_linear_classification - INFO - config.dataset.train._base_.ROOT : data/ScanObjectNN/main_split
+2023-09-19 09:52:40,255 - finetune_scan_hardest_linear_classification - INFO - config.dataset.train.others = edict()
+2023-09-19 09:52:40,255 - finetune_scan_hardest_linear_classification - INFO - config.dataset.train.others.subset : train
+2023-09-19 09:52:40,255 - finetune_scan_hardest_linear_classification - INFO - config.dataset.train.others.bs : 32
+2023-09-19 09:52:40,255 - finetune_scan_hardest_linear_classification - INFO - config.dataset.val = edict()
+2023-09-19 09:52:40,255 - finetune_scan_hardest_linear_classification - INFO - config.dataset.val._base_ = edict()
+2023-09-19 09:52:40,255 - finetune_scan_hardest_linear_classification - INFO - config.dataset.val._base_.NAME : ScanObjectNN_hardest
+2023-09-19 09:52:40,255 - finetune_scan_hardest_linear_classification - INFO - config.dataset.val._base_.ROOT : data/ScanObjectNN/main_split
+2023-09-19 09:52:40,256 - finetune_scan_hardest_linear_classification - INFO - config.dataset.val.others = edict()
+2023-09-19 09:52:40,256 - finetune_scan_hardest_linear_classification - INFO - config.dataset.val.others.subset : test
+2023-09-19 09:52:40,256 - finetune_scan_hardest_linear_classification - INFO - config.dataset.val.others.bs : 64
+2023-09-19 09:52:40,256 - finetune_scan_hardest_linear_classification - INFO - config.dataset.test = edict()
+2023-09-19 09:52:40,256 - finetune_scan_hardest_linear_classification - INFO - config.dataset.test._base_ = edict()
+2023-09-19 09:52:40,256 - finetune_scan_hardest_linear_classification - INFO - config.dataset.test._base_.NAME : ScanObjectNN_hardest
+2023-09-19 09:52:40,256 - finetune_scan_hardest_linear_classification - INFO - config.dataset.test._base_.ROOT : data/ScanObjectNN/main_split
+2023-09-19 09:52:40,256 - finetune_scan_hardest_linear_classification - INFO - config.dataset.test.others = edict()
+2023-09-19 09:52:40,256 - finetune_scan_hardest_linear_classification - INFO - config.dataset.test.others.subset : test
+2023-09-19 09:52:40,256 - finetune_scan_hardest_linear_classification - INFO - config.dataset.test.others.bs : 32
+2023-09-19 09:52:40,256 - finetune_scan_hardest_linear_classification - INFO - config.model = edict()
+2023-09-19 09:52:40,256 - finetune_scan_hardest_linear_classification - INFO - config.model.NAME : PointTransformerLinearClassification
+2023-09-19 09:52:40,256 - finetune_scan_hardest_linear_classification - INFO - config.model.trans_dim : 384
+2023-09-19 09:52:40,256 - finetune_scan_hardest_linear_classification - INFO - config.model.depth : 12
+2023-09-19 09:52:40,256 - finetune_scan_hardest_linear_classification - INFO - config.model.drop_path_rate : 0.1
+2023-09-19 09:52:40,256 - finetune_scan_hardest_linear_classification - INFO - config.model.cls_dim : 15
+2023-09-19 09:52:40,256 - finetune_scan_hardest_linear_classification - INFO - config.model.num_heads : 6
+2023-09-19 09:52:40,256 - finetune_scan_hardest_linear_classification - INFO - config.model.group_size : 32
+2023-09-19 09:52:40,256 - finetune_scan_hardest_linear_classification - INFO - config.model.num_group : 128
+2023-09-19 09:52:40,256 - finetune_scan_hardest_linear_classification - INFO - config.model.encoder_dims : 384
+2023-09-19 09:52:40,257 - finetune_scan_hardest_linear_classification - INFO - config.npoints : 2048
+2023-09-19 09:52:40,257 - finetune_scan_hardest_linear_classification - INFO - config.total_bs : 32
+2023-09-19 09:52:40,257 - finetune_scan_hardest_linear_classification - INFO - config.step_per_update : 1
+2023-09-19 09:52:40,257 - finetune_scan_hardest_linear_classification - INFO - config.max_epoch : 300
+2023-09-19 09:52:40,257 - finetune_scan_hardest_linear_classification - INFO - config.grad_norm_clip : 10
+2023-09-19 09:52:40,257 - finetune_scan_hardest_linear_classification - INFO - Distributed training: False
+2023-09-19 09:52:40,257 - finetune_scan_hardest_linear_classification - INFO - Set random seed to 0, deterministic: False
+2023-09-19 09:52:45,205 - finetune_scan_hardest_linear_classification - INFO - Using Data parallel ...
+2023-09-19 09:54:37,550 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 0 EpochTime = 112.341 (s) Losses = ['2.7291', '7.9881'] lr = 0.000001
+2023-09-19 09:54:37,674 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 09:56:27,522 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 1 EpochTime = 109.847 (s) Losses = ['2.6813', '12.7721'] lr = 0.000051
+2023-09-19 09:56:45,647 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 1  acc = 12.8383
+2023-09-19 09:56:45,777 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-19 09:56:45,777 - finetune_scan_hardest_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-19 09:56:46,272 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 09:58:35,715 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 2 EpochTime = 109.441 (s) Losses = ['2.3942', '23.0513'] lr = 0.000101
+2023-09-19 09:58:53,105 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 2  acc = 27.7585
+2023-09-19 09:58:53,570 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-19 09:58:53,570 - finetune_scan_hardest_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-19 09:58:54,014 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 10:00:43,497 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 3 EpochTime = 109.482 (s) Losses = ['2.0788', '32.9354'] lr = 0.000151
+2023-09-19 10:01:00,874 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 3  acc = 33.7613
+2023-09-19 10:01:01,372 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-19 10:01:01,372 - finetune_scan_hardest_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-19 10:01:01,848 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 10:02:51,200 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 4 EpochTime = 109.350 (s) Losses = ['1.8801', '39.2732'] lr = 0.000201
+2023-09-19 10:03:08,520 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 4  acc = 37.6822
+2023-09-19 10:03:08,952 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-19 10:03:08,952 - finetune_scan_hardest_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-19 10:03:09,393 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 10:04:58,188 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 5 EpochTime = 108.794 (s) Losses = ['1.7498', '42.7317'] lr = 0.000251
+2023-09-19 10:05:15,460 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 5  acc = 43.1298
+2023-09-19 10:05:15,967 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-19 10:05:15,967 - finetune_scan_hardest_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-19 10:05:16,439 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 10:07:04,944 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 6 EpochTime = 108.504 (s) Losses = ['1.6545', '46.0411'] lr = 0.000300
+2023-09-19 10:07:22,222 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 6  acc = 46.6690
+2023-09-19 10:07:22,707 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-19 10:07:22,707 - finetune_scan_hardest_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-19 10:07:23,125 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 10:09:11,350 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 7 EpochTime = 108.223 (s) Losses = ['1.5696', '48.9291'] lr = 0.000350
+2023-09-19 10:09:28,570 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 7  acc = 47.3976
+2023-09-19 10:09:28,992 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-19 10:09:28,992 - finetune_scan_hardest_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-19 10:09:29,458 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 10:11:17,551 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 8 EpochTime = 108.091 (s) Losses = ['1.4988', '51.5362'] lr = 0.000400
+2023-09-19 10:11:34,753 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 8  acc = 51.1450
+2023-09-19 10:11:35,422 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-19 10:11:35,422 - finetune_scan_hardest_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-19 10:11:36,126 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 10:13:23,709 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 9 EpochTime = 107.581 (s) Losses = ['1.4328', '53.5551'] lr = 0.000450
+2023-09-19 10:13:40,859 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 9  acc = 53.8515
+2023-09-19 10:13:41,368 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-19 10:13:41,369 - finetune_scan_hardest_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-19 10:13:41,798 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 10:15:29,412 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 10 EpochTime = 107.612 (s) Losses = ['1.3761', '55.7760'] lr = 0.000499
+2023-09-19 10:15:46,552 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 10  acc = 55.9334
+2023-09-19 10:15:47,003 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-19 10:15:47,003 - finetune_scan_hardest_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-19 10:15:47,450 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 10:17:34,984 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 11 EpochTime = 107.532 (s) Losses = ['1.3140', '57.9529'] lr = 0.000498
+2023-09-19 10:17:52,106 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 11  acc = 52.2554
+2023-09-19 10:17:52,583 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 10:19:40,064 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 12 EpochTime = 107.479 (s) Losses = ['1.2778', '59.0239'] lr = 0.000498
+2023-09-19 10:19:57,194 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 12  acc = 60.6523
+2023-09-19 10:19:57,747 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-19 10:19:57,747 - finetune_scan_hardest_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-19 10:19:58,167 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 10:21:45,682 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 13 EpochTime = 107.513 (s) Losses = ['1.2353', '60.7180'] lr = 0.000498
+2023-09-19 10:22:02,826 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 13  acc = 59.8196
+2023-09-19 10:22:03,325 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 10:23:50,628 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 14 EpochTime = 107.301 (s) Losses = ['1.2062', '61.1833'] lr = 0.000497
+2023-09-19 10:24:07,771 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 14  acc = 59.8543
+2023-09-19 10:24:08,271 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 10:25:55,632 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 15 EpochTime = 107.360 (s) Losses = ['1.1683', '62.6843'] lr = 0.000497
+2023-09-19 10:26:12,750 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 15  acc = 60.9646
+2023-09-19 10:26:13,212 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-19 10:26:13,212 - finetune_scan_hardest_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-19 10:26:13,639 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 10:28:01,114 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 16 EpochTime = 107.474 (s) Losses = ['1.1407', '63.2812'] lr = 0.000497
+2023-09-19 10:28:18,248 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 16  acc = 60.6523
+2023-09-19 10:28:18,739 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 10:30:06,168 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 17 EpochTime = 107.428 (s) Losses = ['1.1103', '64.5541'] lr = 0.000496
+2023-09-19 10:30:23,308 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 17  acc = 61.5892
+2023-09-19 10:30:23,782 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-19 10:30:23,782 - finetune_scan_hardest_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-19 10:30:24,181 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 10:32:11,744 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 18 EpochTime = 107.562 (s) Losses = ['1.1055', '64.5365'] lr = 0.000496
+2023-09-19 10:32:28,945 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 18  acc = 61.2422
+2023-09-19 10:32:29,448 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 10:34:16,827 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 19 EpochTime = 107.377 (s) Losses = ['1.0776', '65.7303'] lr = 0.000495
+2023-09-19 10:34:33,948 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 19  acc = 64.2956
+2023-09-19 10:34:34,449 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-19 10:34:34,449 - finetune_scan_hardest_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-19 10:34:34,903 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 10:36:22,164 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 20 EpochTime = 107.259 (s) Losses = ['1.0669', '66.0112'] lr = 0.000495
+2023-09-19 10:36:39,296 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 20  acc = 63.0118
+2023-09-19 10:36:39,762 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 10:38:27,089 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 21 EpochTime = 107.326 (s) Losses = ['1.0520', '66.7749'] lr = 0.000494
+2023-09-19 10:38:44,181 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 21  acc = 64.6426
+2023-09-19 10:38:44,684 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-19 10:38:44,684 - finetune_scan_hardest_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-19 10:38:45,107 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 10:40:32,322 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 22 EpochTime = 107.213 (s) Losses = ['1.0305', '67.1612'] lr = 0.000493
+2023-09-19 10:40:49,434 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 22  acc = 64.2262
+2023-09-19 10:40:49,950 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 10:42:37,476 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 23 EpochTime = 107.525 (s) Losses = ['1.0208', '67.6176'] lr = 0.000493
+2023-09-19 10:42:54,573 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 23  acc = 64.2262
+2023-09-19 10:42:54,999 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 10:44:42,307 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 24 EpochTime = 107.307 (s) Losses = ['1.0115', '67.7932'] lr = 0.000492
+2023-09-19 10:44:59,406 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 24  acc = 63.5323
+2023-09-19 10:44:59,924 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 10:46:47,373 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 25 EpochTime = 107.447 (s) Losses = ['0.9957', '68.0039'] lr = 0.000491
+2023-09-19 10:47:04,498 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 25  acc = 63.0465
+2023-09-19 10:47:05,023 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 10:48:52,248 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 26 EpochTime = 107.223 (s) Losses = ['0.9872', '68.1092'] lr = 0.000491
+2023-09-19 10:49:09,360 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 26  acc = 64.3650
+2023-09-19 10:49:09,830 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 10:50:57,204 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 27 EpochTime = 107.372 (s) Losses = ['0.9849', '68.5130'] lr = 0.000490
+2023-09-19 10:51:14,326 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 27  acc = 64.1915
+2023-09-19 10:51:14,864 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 10:53:02,185 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 28 EpochTime = 107.320 (s) Losses = ['0.9572', '69.3557'] lr = 0.000489
+2023-09-19 10:53:19,325 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 28  acc = 65.3019
+2023-09-19 10:53:19,828 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-19 10:53:19,828 - finetune_scan_hardest_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-19 10:53:20,221 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 10:55:07,717 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 29 EpochTime = 107.494 (s) Losses = ['0.9648', '69.0485'] lr = 0.000489
+2023-09-19 10:55:24,849 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 29  acc = 66.3775
+2023-09-19 10:55:25,350 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-19 10:55:25,351 - finetune_scan_hardest_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-19 10:55:25,770 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 10:57:13,080 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 30 EpochTime = 107.308 (s) Losses = ['0.9482', '69.7068'] lr = 0.000488
+2023-09-19 10:57:30,211 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 30  acc = 64.3303
+2023-09-19 10:57:30,679 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 10:59:17,951 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 31 EpochTime = 107.271 (s) Losses = ['0.9359', '70.0755'] lr = 0.000487
+2023-09-19 10:59:35,078 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 31  acc = 67.0021
+2023-09-19 10:59:35,527 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-19 10:59:35,527 - finetune_scan_hardest_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-19 10:59:35,946 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 11:01:23,363 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 32 EpochTime = 107.416 (s) Losses = ['0.9366', '69.8297'] lr = 0.000486
+2023-09-19 11:01:40,485 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 32  acc = 66.3081
+2023-09-19 11:01:41,010 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 11:03:28,420 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 33 EpochTime = 107.409 (s) Losses = ['0.9348', '69.5664'] lr = 0.000485
+2023-09-19 11:03:45,574 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 33  acc = 65.1631
+2023-09-19 11:03:46,070 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 11:05:33,410 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 34 EpochTime = 107.338 (s) Losses = ['0.9217', '70.5144'] lr = 0.000484
+2023-09-19 11:05:50,548 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 34  acc = 66.8980
+2023-09-19 11:05:51,057 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 11:07:38,361 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 35 EpochTime = 107.303 (s) Losses = ['0.9140', '70.6110'] lr = 0.000483
+2023-09-19 11:07:55,479 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 35  acc = 66.5510
+2023-09-19 11:07:55,855 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 11:09:43,220 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 36 EpochTime = 107.363 (s) Losses = ['0.9080', '70.5232'] lr = 0.000482
+2023-09-19 11:10:00,335 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 36  acc = 66.9674
+2023-09-19 11:10:00,834 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 11:11:48,218 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 37 EpochTime = 107.382 (s) Losses = ['0.9027', '71.2079'] lr = 0.000482
+2023-09-19 11:12:05,343 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 37  acc = 67.8348
+2023-09-19 11:12:05,837 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-19 11:12:05,837 - finetune_scan_hardest_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-19 11:12:06,319 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 11:13:53,682 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 38 EpochTime = 107.362 (s) Losses = ['0.8937', '71.3659'] lr = 0.000481
+2023-09-19 11:14:10,816 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 38  acc = 67.7654
+2023-09-19 11:14:11,317 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 11:15:58,638 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 39 EpochTime = 107.320 (s) Losses = ['0.8873', '71.6117'] lr = 0.000479
+2023-09-19 11:16:15,743 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 39  acc = 67.1756
+2023-09-19 11:16:16,222 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 11:18:03,509 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 40 EpochTime = 107.285 (s) Losses = ['0.8811', '71.6029'] lr = 0.000478
+2023-09-19 11:18:20,616 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 40  acc = 67.1756
+2023-09-19 11:18:21,137 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 11:20:08,494 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 41 EpochTime = 107.356 (s) Losses = ['0.8751', '71.8838'] lr = 0.000477
+2023-09-19 11:20:25,608 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 41  acc = 67.8695
+2023-09-19 11:20:26,023 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-19 11:20:26,023 - finetune_scan_hardest_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-19 11:20:26,469 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 11:22:13,829 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 42 EpochTime = 107.358 (s) Losses = ['0.8750', '71.9979'] lr = 0.000476
+2023-09-19 11:22:30,921 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 42  acc = 68.4941
+2023-09-19 11:22:31,436 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-19 11:22:31,437 - finetune_scan_hardest_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-19 11:22:31,850 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 11:24:19,062 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 43 EpochTime = 107.211 (s) Losses = ['0.8783', '71.6643'] lr = 0.000475
+2023-09-19 11:24:36,173 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 43  acc = 67.8695
+2023-09-19 11:24:36,676 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 11:26:23,905 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 44 EpochTime = 107.227 (s) Losses = ['0.8646', '72.2876'] lr = 0.000474
+2023-09-19 11:26:41,021 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 44  acc = 67.6613
+2023-09-19 11:26:41,559 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 11:28:28,815 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 45 EpochTime = 107.255 (s) Losses = ['0.8606', '72.0593'] lr = 0.000473
+2023-09-19 11:28:45,926 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 45  acc = 67.1756
+2023-09-19 11:28:46,494 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 11:30:34,023 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 46 EpochTime = 107.528 (s) Losses = ['0.8577', '72.2086'] lr = 0.000472
+2023-09-19 11:30:51,155 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 46  acc = 67.6266
+2023-09-19 11:30:51,699 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 11:32:39,016 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 47 EpochTime = 107.314 (s) Losses = ['0.8466', '72.4456'] lr = 0.000470
+2023-09-19 11:32:56,131 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 47  acc = 68.2165
+2023-09-19 11:32:56,688 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 11:34:44,022 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 48 EpochTime = 107.332 (s) Losses = ['0.8553', '72.7001'] lr = 0.000469
+2023-09-19 11:35:01,110 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 48  acc = 68.5635
+2023-09-19 11:35:01,594 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-19 11:35:01,594 - finetune_scan_hardest_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-19 11:35:01,997 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 11:36:49,563 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 49 EpochTime = 107.564 (s) Losses = ['0.8506', '72.5070'] lr = 0.000468
+2023-09-19 11:37:06,676 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 49  acc = 69.1534
+2023-09-19 11:37:07,143 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-19 11:37:07,143 - finetune_scan_hardest_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-19 11:37:07,675 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 11:38:54,913 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 50 EpochTime = 107.236 (s) Losses = ['0.8387', '72.9108'] lr = 0.000467
+2023-09-19 11:39:12,049 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 50  acc = 68.3206
+2023-09-19 11:39:12,566 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 11:40:59,987 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 51 EpochTime = 107.420 (s) Losses = ['0.8383', '72.7879'] lr = 0.000465
+2023-09-19 11:41:17,087 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 51  acc = 67.9736
+2023-09-19 11:41:17,560 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 11:43:04,827 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 52 EpochTime = 107.265 (s) Losses = ['0.8304', '72.8845'] lr = 0.000464
+2023-09-19 11:43:21,936 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 52  acc = 69.1187
+2023-09-19 11:43:22,397 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 11:45:09,756 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 53 EpochTime = 107.357 (s) Losses = ['0.8266', '73.1215'] lr = 0.000463
+2023-09-19 11:45:26,874 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 53  acc = 69.8820
+2023-09-19 11:45:27,384 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-19 11:45:27,384 - finetune_scan_hardest_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-19 11:45:27,821 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 11:47:15,105 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 54 EpochTime = 107.283 (s) Losses = ['0.8326', '72.9547'] lr = 0.000461
+2023-09-19 11:47:32,215 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 54  acc = 68.8411
+2023-09-19 11:47:32,659 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 11:49:19,867 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 55 EpochTime = 107.206 (s) Losses = ['0.8228', '73.6394'] lr = 0.000460
+2023-09-19 11:49:36,966 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 55  acc = 68.9799
+2023-09-19 11:49:37,427 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 11:51:24,670 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 56 EpochTime = 107.242 (s) Losses = ['0.8240', '73.4287'] lr = 0.000458
+2023-09-19 11:51:41,777 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 56  acc = 68.4941
+2023-09-19 11:51:42,235 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 11:53:29,549 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 57 EpochTime = 107.313 (s) Losses = ['0.8130', '74.0695'] lr = 0.000457
+2023-09-19 11:53:46,648 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 57  acc = 68.2512
+2023-09-19 11:53:47,111 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 11:55:34,388 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 58 EpochTime = 107.276 (s) Losses = ['0.8134', '73.7184'] lr = 0.000455
+2023-09-19 11:55:51,483 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 58  acc = 70.1943
+2023-09-19 11:55:51,975 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-19 11:55:51,975 - finetune_scan_hardest_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-19 11:55:52,378 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 11:57:39,611 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 59 EpochTime = 107.232 (s) Losses = ['0.8092', '73.8325'] lr = 0.000454
+2023-09-19 11:57:56,697 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 59  acc = 70.6107
+2023-09-19 11:57:57,147 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-19 11:57:57,147 - finetune_scan_hardest_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-19 11:57:57,532 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 11:59:44,736 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 60 EpochTime = 107.202 (s) Losses = ['0.8115', '73.9905'] lr = 0.000452
+2023-09-19 12:00:01,843 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 60  acc = 70.2984
+2023-09-19 12:00:02,357 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 12:01:49,559 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 61 EpochTime = 107.201 (s) Losses = ['0.8063', '73.9905'] lr = 0.000451
+2023-09-19 12:02:06,661 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 61  acc = 68.8064
+2023-09-19 12:02:07,148 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 12:03:54,428 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 62 EpochTime = 107.278 (s) Losses = ['0.8003', '74.5874'] lr = 0.000449
+2023-09-19 12:04:11,647 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 62  acc = 68.7023
+2023-09-19 12:04:12,095 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 12:05:59,330 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 63 EpochTime = 107.234 (s) Losses = ['0.8006', '74.1836'] lr = 0.000448
+2023-09-19 12:06:16,457 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 63  acc = 70.7495
+2023-09-19 12:06:16,918 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-19 12:06:16,919 - finetune_scan_hardest_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-19 12:06:17,316 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 12:08:04,674 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 64 EpochTime = 107.356 (s) Losses = ['0.8056', '74.1310'] lr = 0.000446
+2023-09-19 12:08:21,795 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 64  acc = 70.2637
+2023-09-19 12:08:22,187 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 12:10:09,446 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 65 EpochTime = 107.257 (s) Losses = ['0.7986', '74.1573'] lr = 0.000444
+2023-09-19 12:10:26,548 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 65  acc = 69.7432
+2023-09-19 12:10:27,015 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 12:12:14,235 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 66 EpochTime = 107.217 (s) Losses = ['0.7898', '74.5348'] lr = 0.000443
+2023-09-19 12:12:31,372 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 66  acc = 69.4309
+2023-09-19 12:12:31,769 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 12:14:19,014 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 67 EpochTime = 107.244 (s) Losses = ['0.7931', '73.9730'] lr = 0.000441
+2023-09-19 12:14:36,116 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 67  acc = 70.2290
+2023-09-19 12:14:36,550 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 12:16:23,795 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 68 EpochTime = 107.244 (s) Losses = ['0.7963', '74.1046'] lr = 0.000439
+2023-09-19 12:16:40,889 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 68  acc = 69.6738
+2023-09-19 12:16:41,398 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 12:18:28,617 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 69 EpochTime = 107.218 (s) Losses = ['0.7882', '75.1053'] lr = 0.000438
+2023-09-19 12:18:45,739 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 69  acc = 70.4719
+2023-09-19 12:18:46,179 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 12:20:33,575 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 70 EpochTime = 107.394 (s) Losses = ['0.7751', '74.8947'] lr = 0.000436
+2023-09-19 12:20:50,690 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 70  acc = 71.6169
+2023-09-19 12:20:51,216 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-19 12:20:51,216 - finetune_scan_hardest_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-19 12:20:51,683 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 12:22:39,030 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 71 EpochTime = 107.345 (s) Losses = ['0.7819', '74.8069'] lr = 0.000434
+2023-09-19 12:22:56,172 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 71  acc = 69.2228
+2023-09-19 12:22:56,655 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 12:24:43,854 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 72 EpochTime = 107.198 (s) Losses = ['0.7732', '74.9561'] lr = 0.000432
+2023-09-19 12:25:00,960 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 72  acc = 70.0902
+2023-09-19 12:25:01,411 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 12:26:48,628 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 73 EpochTime = 107.215 (s) Losses = ['0.7738', '74.9122'] lr = 0.000431
+2023-09-19 12:27:05,719 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 73  acc = 70.9577
+2023-09-19 12:27:06,210 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 12:28:53,442 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 74 EpochTime = 107.230 (s) Losses = ['0.7819', '74.6577'] lr = 0.000429
+2023-09-19 12:29:10,587 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 74  acc = 70.7495
+2023-09-19 12:29:11,128 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 12:30:58,360 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 75 EpochTime = 107.231 (s) Losses = ['0.7741', '75.1580'] lr = 0.000427
+2023-09-19 12:31:15,479 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 75  acc = 70.3331
+2023-09-19 12:31:15,993 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 12:33:03,209 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 76 EpochTime = 107.214 (s) Losses = ['0.7722', '74.7191'] lr = 0.000425
+2023-09-19 12:33:20,311 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 76  acc = 70.2984
+2023-09-19 12:33:20,790 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 12:35:08,090 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 77 EpochTime = 107.299 (s) Losses = ['0.7706', '74.8947'] lr = 0.000423
+2023-09-19 12:35:25,181 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 77  acc = 70.0555
+2023-09-19 12:35:25,639 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 12:37:12,847 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 78 EpochTime = 107.206 (s) Losses = ['0.7669', '75.4916'] lr = 0.000421
+2023-09-19 12:37:29,948 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 78  acc = 71.1659
+2023-09-19 12:37:30,411 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 12:39:17,683 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 79 EpochTime = 107.270 (s) Losses = ['0.7680', '74.9737'] lr = 0.000419
+2023-09-19 12:39:34,781 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 79  acc = 70.9924
+2023-09-19 12:39:35,271 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 12:41:22,466 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 80 EpochTime = 107.193 (s) Losses = ['0.7671', '75.2458'] lr = 0.000417
+2023-09-19 12:41:39,560 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 80  acc = 70.2984
+2023-09-19 12:41:40,019 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 12:43:27,354 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 81 EpochTime = 107.333 (s) Losses = ['0.7726', '75.0527'] lr = 0.000415
+2023-09-19 12:43:44,444 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 81  acc = 71.1312
+2023-09-19 12:43:44,974 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 12:45:32,389 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 82 EpochTime = 107.413 (s) Losses = ['0.7617', '75.5969'] lr = 0.000414
+2023-09-19 12:45:49,483 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 82  acc = 70.9230
+2023-09-19 12:45:49,947 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 12:47:37,235 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 83 EpochTime = 107.287 (s) Losses = ['0.7536', '75.5179'] lr = 0.000412
+2023-09-19 12:47:54,343 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 83  acc = 70.0902
+2023-09-19 12:47:54,799 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 12:49:42,152 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 84 EpochTime = 107.351 (s) Losses = ['0.7533', '76.1587'] lr = 0.000410
+2023-09-19 12:49:59,241 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 84  acc = 70.9924
+2023-09-19 12:49:59,683 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 12:51:46,976 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 85 EpochTime = 107.292 (s) Losses = ['0.7514', '76.0095'] lr = 0.000408
+2023-09-19 12:52:04,059 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 85  acc = 69.8126
+2023-09-19 12:52:04,535 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 12:53:51,846 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 86 EpochTime = 107.310 (s) Losses = ['0.7573', '75.5881'] lr = 0.000405
+2023-09-19 12:54:08,947 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 86  acc = 71.5475
+2023-09-19 12:54:09,507 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 12:55:56,739 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 87 EpochTime = 107.230 (s) Losses = ['0.7426', '76.0095'] lr = 0.000403
+2023-09-19 12:56:13,820 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 87  acc = 72.5191
+2023-09-19 12:56:14,291 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-19 12:56:14,291 - finetune_scan_hardest_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-19 12:56:14,701 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 12:58:01,943 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 88 EpochTime = 107.240 (s) Losses = ['0.7554', '75.6935'] lr = 0.000401
+2023-09-19 12:58:19,051 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 88  acc = 71.7557
+2023-09-19 12:58:19,565 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 13:00:06,818 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 89 EpochTime = 107.252 (s) Losses = ['0.7550', '75.7725'] lr = 0.000399
+2023-09-19 13:00:23,925 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 89  acc = 70.4719
+2023-09-19 13:00:24,407 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 13:02:11,611 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 90 EpochTime = 107.202 (s) Losses = ['0.7475', '75.9568'] lr = 0.000397
+2023-09-19 13:02:28,746 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 90  acc = 72.0680
+2023-09-19 13:02:29,220 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 13:04:16,431 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 91 EpochTime = 107.209 (s) Losses = ['0.7506', '75.5091'] lr = 0.000395
+2023-09-19 13:04:33,562 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 91  acc = 71.5475
+2023-09-19 13:04:34,035 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 13:06:21,324 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 92 EpochTime = 107.287 (s) Losses = ['0.7434', '76.0358'] lr = 0.000393
+2023-09-19 13:06:38,432 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 92  acc = 71.9292
+2023-09-19 13:06:38,879 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 13:08:26,146 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 93 EpochTime = 107.266 (s) Losses = ['0.7461', '76.0007'] lr = 0.000391
+2023-09-19 13:08:43,242 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 93  acc = 71.9292
+2023-09-19 13:08:43,687 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 13:10:30,999 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 94 EpochTime = 107.310 (s) Losses = ['0.7435', '75.5004'] lr = 0.000389
+2023-09-19 13:10:48,085 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 94  acc = 71.6516
+2023-09-19 13:10:48,555 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 13:12:35,763 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 95 EpochTime = 107.207 (s) Losses = ['0.7449', '75.8515'] lr = 0.000386
+2023-09-19 13:12:52,843 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 95  acc = 70.9577
+2023-09-19 13:12:53,333 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 13:14:40,595 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 96 EpochTime = 107.260 (s) Losses = ['0.7429', '75.7812'] lr = 0.000384
+2023-09-19 13:14:57,664 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 96  acc = 70.4372
+2023-09-19 13:14:58,115 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 13:16:45,348 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 97 EpochTime = 107.232 (s) Losses = ['0.7342', '76.4572'] lr = 0.000382
+2023-09-19 13:17:02,435 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 97  acc = 71.7904
+2023-09-19 13:17:02,926 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 13:18:50,130 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 98 EpochTime = 107.203 (s) Losses = ['0.7449', '75.7988'] lr = 0.000380
+2023-09-19 13:19:07,278 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 98  acc = 70.5066
+2023-09-19 13:19:07,723 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 13:20:54,978 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 99 EpochTime = 107.253 (s) Losses = ['0.7298', '76.4659'] lr = 0.000378
+2023-09-19 13:21:12,081 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 99  acc = 71.2700
+2023-09-19 13:21:12,511 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 13:22:59,830 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 100 EpochTime = 107.318 (s) Losses = ['0.7351', '76.1148'] lr = 0.000375
+2023-09-19 13:23:16,949 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 100  acc = 71.4781
+2023-09-19 13:23:17,373 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 13:25:04,588 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 101 EpochTime = 107.214 (s) Losses = ['0.7410', '76.1148'] lr = 0.000373
+2023-09-19 13:25:21,687 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 101  acc = 71.7904
+2023-09-19 13:25:22,194 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 13:27:09,489 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 102 EpochTime = 107.293 (s) Losses = ['0.7402', '76.1763'] lr = 0.000371
+2023-09-19 13:27:26,605 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 102  acc = 72.0333
+2023-09-19 13:27:27,157 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 13:29:14,338 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 103 EpochTime = 107.179 (s) Losses = ['0.7360', '76.3782'] lr = 0.000368
+2023-09-19 13:29:31,458 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 103  acc = 71.8251
+2023-09-19 13:29:31,964 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 13:31:19,313 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 104 EpochTime = 107.348 (s) Losses = ['0.7318', '76.2992'] lr = 0.000366
+2023-09-19 13:31:36,413 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 104  acc = 71.9292
+2023-09-19 13:31:36,851 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 13:33:24,070 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 105 EpochTime = 107.217 (s) Losses = ['0.7301', '76.6064'] lr = 0.000364
+2023-09-19 13:33:41,190 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 105  acc = 71.3046
+2023-09-19 13:33:41,683 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 13:35:29,022 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 106 EpochTime = 107.338 (s) Losses = ['0.7320', '76.4835'] lr = 0.000361
+2023-09-19 13:35:46,115 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 106  acc = 71.5822
+2023-09-19 13:35:46,568 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 13:37:33,925 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 107 EpochTime = 107.355 (s) Losses = ['0.7284', '76.5186'] lr = 0.000359
+2023-09-19 13:37:51,037 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 107  acc = 71.5128
+2023-09-19 13:37:51,512 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 13:39:38,750 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 108 EpochTime = 107.236 (s) Losses = ['0.7262', '77.2033'] lr = 0.000357
+2023-09-19 13:39:55,867 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 108  acc = 72.6232
+2023-09-19 13:39:56,362 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-19 13:39:56,362 - finetune_scan_hardest_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-19 13:39:56,791 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 13:41:44,161 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 109 EpochTime = 107.369 (s) Losses = ['0.7232', '76.7117'] lr = 0.000354
+2023-09-19 13:42:01,300 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 109  acc = 72.7967
+2023-09-19 13:42:01,751 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-19 13:42:01,751 - finetune_scan_hardest_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-19 13:42:02,173 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 13:43:49,402 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 110 EpochTime = 107.227 (s) Losses = ['0.7220', '76.7995'] lr = 0.000352
+2023-09-19 13:44:06,499 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 110  acc = 73.0049
+2023-09-19 13:44:06,939 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-19 13:44:06,939 - finetune_scan_hardest_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-19 13:44:07,371 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 13:45:54,647 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 111 EpochTime = 107.275 (s) Losses = ['0.7210', '76.6239'] lr = 0.000350
+2023-09-19 13:46:11,759 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 111  acc = 72.5538
+2023-09-19 13:46:12,200 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 13:47:59,602 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 112 EpochTime = 107.401 (s) Losses = ['0.7149', '76.5537'] lr = 0.000347
+2023-09-19 13:48:16,748 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 112  acc = 72.2415
+2023-09-19 13:48:17,253 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 13:50:04,836 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 113 EpochTime = 107.582 (s) Losses = ['0.7183', '76.9838'] lr = 0.000345
+2023-09-19 13:50:21,988 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 113  acc = 73.1089
+2023-09-19 13:50:22,400 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-19 13:50:22,400 - finetune_scan_hardest_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-19 13:50:22,804 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 13:52:10,687 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 114 EpochTime = 107.881 (s) Losses = ['0.7217', '76.6064'] lr = 0.000342
+2023-09-19 13:52:27,901 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 114  acc = 71.1659
+2023-09-19 13:52:28,351 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 13:54:16,603 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 115 EpochTime = 108.250 (s) Losses = ['0.7276', '76.1850'] lr = 0.000340
+2023-09-19 13:54:33,815 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 115  acc = 71.9986
+2023-09-19 13:54:34,232 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 13:56:22,362 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 116 EpochTime = 108.129 (s) Losses = ['0.7210', '77.1331'] lr = 0.000337
+2023-09-19 13:56:39,580 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 116  acc = 71.9986
+2023-09-19 13:56:40,063 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 13:58:28,379 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 117 EpochTime = 108.314 (s) Losses = ['0.7134', '77.0365'] lr = 0.000335
+2023-09-19 13:58:45,609 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 117  acc = 71.9986
+2023-09-19 13:58:46,057 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 14:00:34,306 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 118 EpochTime = 108.247 (s) Losses = ['0.7223', '76.7556'] lr = 0.000333
+2023-09-19 14:00:51,536 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 118  acc = 72.3109
+2023-09-19 14:00:52,011 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 14:02:40,248 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 119 EpochTime = 108.236 (s) Losses = ['0.7215', '76.8434'] lr = 0.000330
+2023-09-19 14:02:57,489 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 119  acc = 72.2068
+2023-09-19 14:02:57,897 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 14:04:46,368 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 120 EpochTime = 108.469 (s) Losses = ['0.7105', '77.2823'] lr = 0.000328
+2023-09-19 14:05:03,623 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 120  acc = 72.1027
+2023-09-19 14:05:04,091 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 14:06:52,800 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 121 EpochTime = 108.707 (s) Losses = ['0.7211', '76.6152'] lr = 0.000325
+2023-09-19 14:07:10,047 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 121  acc = 72.2068
+2023-09-19 14:07:10,499 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 14:08:59,135 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 122 EpochTime = 108.635 (s) Losses = ['0.7082', '76.8697'] lr = 0.000323
+2023-09-19 14:09:16,395 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 122  acc = 73.1436
+2023-09-19 14:09:16,843 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-19 14:09:16,843 - finetune_scan_hardest_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-19 14:09:17,294 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 14:11:05,861 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 123 EpochTime = 108.566 (s) Losses = ['0.7158', '77.1682'] lr = 0.000320
+2023-09-19 14:11:23,120 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 123  acc = 73.0049
+2023-09-19 14:11:23,583 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 14:13:12,029 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 124 EpochTime = 108.445 (s) Losses = ['0.7131', '77.0365'] lr = 0.000318
+2023-09-19 14:13:29,279 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 124  acc = 71.0618
+2023-09-19 14:13:29,743 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 14:15:18,343 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 125 EpochTime = 108.599 (s) Losses = ['0.7114', '77.0716'] lr = 0.000315
+2023-09-19 14:15:35,609 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 125  acc = 72.5538
+2023-09-19 14:15:36,076 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 14:17:24,638 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 126 EpochTime = 108.561 (s) Losses = ['0.7076', '77.1682'] lr = 0.000313
+2023-09-19 14:17:41,899 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 126  acc = 73.0742
+2023-09-19 14:17:42,343 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 14:19:31,011 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 127 EpochTime = 108.666 (s) Losses = ['0.7085', '76.9224'] lr = 0.000310
+2023-09-19 14:19:48,284 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 127  acc = 72.0333
+2023-09-19 14:19:48,782 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 14:21:37,415 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 128 EpochTime = 108.632 (s) Losses = ['0.7133', '76.9926'] lr = 0.000307
+2023-09-19 14:21:54,682 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 128  acc = 72.4497
+2023-09-19 14:21:55,128 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 14:23:43,946 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 129 EpochTime = 108.817 (s) Losses = ['0.7090', '77.0014'] lr = 0.000305
+2023-09-19 14:24:01,256 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 129  acc = 72.7620
+2023-09-19 14:24:01,714 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 14:25:50,432 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 130 EpochTime = 108.716 (s) Losses = ['0.7057', '77.3350'] lr = 0.000302
+2023-09-19 14:26:07,702 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 130  acc = 72.3803
+2023-09-19 14:26:08,151 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 14:27:56,931 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 131 EpochTime = 108.778 (s) Losses = ['0.7084', '77.3350'] lr = 0.000300
+2023-09-19 14:28:14,227 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 131  acc = 72.1721
+2023-09-19 14:28:14,671 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 14:30:03,596 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 132 EpochTime = 108.924 (s) Losses = ['0.7071', '77.3350'] lr = 0.000297
+2023-09-19 14:30:20,878 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 132  acc = 72.7273
+2023-09-19 14:30:21,336 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 14:32:10,024 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 133 EpochTime = 108.687 (s) Losses = ['0.7052', '77.2911'] lr = 0.000295
+2023-09-19 14:32:27,343 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 133  acc = 72.3109
+2023-09-19 14:32:27,807 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 14:34:16,559 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 134 EpochTime = 108.750 (s) Losses = ['0.7041', '77.0102'] lr = 0.000292
+2023-09-19 14:34:33,847 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 134  acc = 73.3171
+2023-09-19 14:34:34,329 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-19 14:34:34,329 - finetune_scan_hardest_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-19 14:34:34,759 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 14:36:23,348 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 135 EpochTime = 108.587 (s) Losses = ['0.7032', '77.4491'] lr = 0.000290
+2023-09-19 14:36:40,650 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 135  acc = 71.8945
+2023-09-19 14:36:41,111 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 14:38:29,854 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 136 EpochTime = 108.742 (s) Losses = ['0.7037', '77.0629'] lr = 0.000287
+2023-09-19 14:38:47,179 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 136  acc = 73.1089
+2023-09-19 14:38:47,660 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 14:40:36,683 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 137 EpochTime = 109.022 (s) Losses = ['0.6962', '78.0636'] lr = 0.000284
+2023-09-19 14:40:53,964 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 137  acc = 72.5885
+2023-09-19 14:40:54,419 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 14:42:43,259 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 138 EpochTime = 108.838 (s) Losses = ['0.7037', '76.9751'] lr = 0.000282
+2023-09-19 14:43:00,537 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 138  acc = 72.1027
+2023-09-19 14:43:01,098 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 14:44:49,850 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 139 EpochTime = 108.750 (s) Losses = ['0.6963', '77.6510'] lr = 0.000279
+2023-09-19 14:45:07,136 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 139  acc = 73.0742
+2023-09-19 14:45:07,631 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 14:46:56,455 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 140 EpochTime = 108.822 (s) Losses = ['0.7008', '77.3174'] lr = 0.000277
+2023-09-19 14:47:13,745 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 140  acc = 71.9986
+2023-09-19 14:47:14,194 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 14:49:02,887 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 141 EpochTime = 108.691 (s) Losses = ['0.7026', '76.9136'] lr = 0.000274
+2023-09-19 14:49:20,181 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 141  acc = 72.9008
+2023-09-19 14:49:20,639 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 14:51:09,441 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 142 EpochTime = 108.801 (s) Losses = ['0.6980', '77.3613'] lr = 0.000271
+2023-09-19 14:51:26,719 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 142  acc = 72.4844
+2023-09-19 14:51:27,211 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 14:53:15,911 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 143 EpochTime = 108.698 (s) Losses = ['0.6992', '77.4315'] lr = 0.000269
+2023-09-19 14:53:33,318 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 143  acc = 72.3456
+2023-09-19 14:53:33,760 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 14:55:22,596 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 144 EpochTime = 108.739 (s) Losses = ['0.6935', '77.7124'] lr = 0.000266
+2023-09-19 14:55:39,921 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 144  acc = 72.5885
+2023-09-19 14:55:40,371 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 14:57:29,069 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 145 EpochTime = 108.696 (s) Losses = ['0.6907', '77.9319'] lr = 0.000264
+2023-09-19 14:57:46,351 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 145  acc = 72.4497
+2023-09-19 14:57:46,799 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 14:59:35,537 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 146 EpochTime = 108.736 (s) Losses = ['0.6932', '77.6773'] lr = 0.000261
+2023-09-19 14:59:52,834 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 146  acc = 73.4559
+2023-09-19 14:59:53,299 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-19 14:59:53,299 - finetune_scan_hardest_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-19 14:59:53,743 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 15:01:42,532 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 147 EpochTime = 108.787 (s) Losses = ['0.6920', '77.9143'] lr = 0.000258
+2023-09-19 15:01:59,831 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 147  acc = 72.8661
+2023-09-19 15:02:00,283 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 15:03:49,057 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 148 EpochTime = 108.773 (s) Losses = ['0.6947', '77.4666'] lr = 0.000256
+2023-09-19 15:04:06,376 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 148  acc = 73.0396
+2023-09-19 15:04:06,847 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 15:05:55,632 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 149 EpochTime = 108.784 (s) Losses = ['0.6855', '78.0548'] lr = 0.000253
+2023-09-19 15:06:12,924 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 149  acc = 73.5600
+2023-09-19 15:06:13,327 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-19 15:06:13,327 - finetune_scan_hardest_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-19 15:06:13,721 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 15:08:02,511 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 150 EpochTime = 108.789 (s) Losses = ['0.6931', '77.6334'] lr = 0.000251
+2023-09-19 15:08:19,835 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 150  acc = 72.5885
+2023-09-19 15:08:20,291 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 15:10:09,132 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 151 EpochTime = 108.840 (s) Losses = ['0.6851', '77.8529'] lr = 0.000248
+2023-09-19 15:10:26,400 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 151  acc = 72.7273
+2023-09-19 15:10:26,902 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 15:12:15,888 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 152 EpochTime = 108.985 (s) Losses = ['0.6913', '77.5632'] lr = 0.000245
+2023-09-19 15:12:33,187 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 152  acc = 73.0049
+2023-09-19 15:12:33,690 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 15:14:22,517 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 153 EpochTime = 108.825 (s) Losses = ['0.6891', '78.0372'] lr = 0.000243
+2023-09-19 15:14:39,832 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 153  acc = 72.9008
+2023-09-19 15:14:40,283 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 15:16:29,300 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 154 EpochTime = 109.015 (s) Losses = ['0.6920', '77.8968'] lr = 0.000240
+2023-09-19 15:16:46,603 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 154  acc = 73.4212
+2023-09-19 15:16:47,071 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 15:18:35,904 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 155 EpochTime = 108.831 (s) Losses = ['0.6947', '77.5544'] lr = 0.000237
+2023-09-19 15:18:53,236 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 155  acc = 73.8376
+2023-09-19 15:18:53,736 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-19 15:18:53,736 - finetune_scan_hardest_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-19 15:18:54,203 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 15:20:43,104 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 156 EpochTime = 108.899 (s) Losses = ['0.6888', '77.7212'] lr = 0.000235
+2023-09-19 15:21:00,408 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 156  acc = 73.4212
+2023-09-19 15:21:00,899 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 15:22:49,732 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 157 EpochTime = 108.831 (s) Losses = ['0.6929', '77.7827'] lr = 0.000232
+2023-09-19 15:23:07,017 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 157  acc = 73.5947
+2023-09-19 15:23:07,485 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 15:24:56,301 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 158 EpochTime = 108.814 (s) Losses = ['0.6912', '77.8353'] lr = 0.000230
+2023-09-19 15:25:13,608 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 158  acc = 72.4497
+2023-09-19 15:25:14,075 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 15:27:02,920 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 159 EpochTime = 108.843 (s) Losses = ['0.6933', '77.7827'] lr = 0.000227
+2023-09-19 15:27:20,239 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 159  acc = 73.8723
+2023-09-19 15:27:20,684 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-19 15:27:20,684 - finetune_scan_hardest_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-19 15:27:21,145 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 15:29:10,012 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 160 EpochTime = 108.865 (s) Losses = ['0.6928', '77.8353'] lr = 0.000224
+2023-09-19 15:29:27,323 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 160  acc = 73.6641
+2023-09-19 15:29:27,823 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 15:31:16,683 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 161 EpochTime = 108.858 (s) Losses = ['0.6880', '78.0723'] lr = 0.000222
+2023-09-19 15:31:33,970 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 161  acc = 73.4212
+2023-09-19 15:31:34,447 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 15:33:23,311 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 162 EpochTime = 108.863 (s) Losses = ['0.6876', '77.7651'] lr = 0.000219
+2023-09-19 15:33:40,608 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 162  acc = 74.0111
+2023-09-19 15:33:41,008 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-19 15:33:41,008 - finetune_scan_hardest_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-19 15:33:41,395 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 15:35:30,234 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 163 EpochTime = 108.838 (s) Losses = ['0.6801', '78.1250'] lr = 0.000217
+2023-09-19 15:35:47,548 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 163  acc = 72.1721
+2023-09-19 15:35:47,962 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 15:37:36,896 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 164 EpochTime = 108.933 (s) Losses = ['0.6826', '78.3181'] lr = 0.000214
+2023-09-19 15:37:54,206 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 164  acc = 73.0396
+2023-09-19 15:37:54,698 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 15:39:43,462 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 165 EpochTime = 108.762 (s) Losses = ['0.6841', '78.3269'] lr = 0.000211
+2023-09-19 15:40:00,754 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 165  acc = 72.6232
+2023-09-19 15:40:01,204 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 15:41:49,743 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 166 EpochTime = 108.538 (s) Losses = ['0.6847', '77.9933'] lr = 0.000209
+2023-09-19 15:42:07,017 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 166  acc = 73.4212
+2023-09-19 15:42:07,500 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 15:43:56,193 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 167 EpochTime = 108.691 (s) Losses = ['0.6783', '78.2567'] lr = 0.000206
+2023-09-19 15:44:13,503 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 167  acc = 73.1436
+2023-09-19 15:44:14,023 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 15:46:02,461 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 168 EpochTime = 108.436 (s) Losses = ['0.6753', '78.5025'] lr = 0.000204
+2023-09-19 15:46:19,689 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 168  acc = 72.8314
+2023-09-19 15:46:20,135 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 15:48:07,357 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 169 EpochTime = 107.220 (s) Losses = ['0.6839', '77.7651'] lr = 0.000201
+2023-09-19 15:48:24,458 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 169  acc = 73.4906
+2023-09-19 15:48:24,924 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 15:50:12,228 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 170 EpochTime = 107.303 (s) Losses = ['0.6817', '77.7124'] lr = 0.000199
+2023-09-19 15:50:29,392 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 170  acc = 73.5600
+2023-09-19 15:50:29,839 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 15:52:18,048 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 171 EpochTime = 108.207 (s) Losses = ['0.6900', '77.3086'] lr = 0.000196
+2023-09-19 15:52:35,328 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 171  acc = 73.8029
+2023-09-19 15:52:35,768 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 15:54:24,306 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 172 EpochTime = 108.536 (s) Losses = ['0.6716', '78.4673'] lr = 0.000194
+2023-09-19 15:54:41,605 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 172  acc = 72.9355
+2023-09-19 15:54:42,051 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 15:56:30,680 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 173 EpochTime = 108.628 (s) Losses = ['0.6743', '78.2216'] lr = 0.000191
+2023-09-19 15:56:47,974 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 173  acc = 73.4559
+2023-09-19 15:56:48,487 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 15:58:37,419 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 174 EpochTime = 108.931 (s) Losses = ['0.6768', '78.2567'] lr = 0.000188
+2023-09-19 15:58:54,723 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 174  acc = 73.9070
+2023-09-19 15:58:55,221 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 16:00:43,928 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 175 EpochTime = 108.705 (s) Losses = ['0.6834', '77.5983'] lr = 0.000186
+2023-09-19 16:01:01,203 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 175  acc = 73.9417
+2023-09-19 16:01:01,647 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 16:02:50,327 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 176 EpochTime = 108.677 (s) Losses = ['0.6836', '77.7388'] lr = 0.000183
+2023-09-19 16:03:07,608 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 176  acc = 72.9702
+2023-09-19 16:03:08,065 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 16:04:56,830 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 177 EpochTime = 108.764 (s) Losses = ['0.6741', '78.5376'] lr = 0.000181
+2023-09-19 16:05:14,118 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 177  acc = 73.2824
+2023-09-19 16:05:14,591 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 16:07:03,393 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 178 EpochTime = 108.800 (s) Losses = ['0.6834', '77.6861'] lr = 0.000178
+2023-09-19 16:07:20,696 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 178  acc = 72.6232
+2023-09-19 16:07:21,177 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 16:09:10,135 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 179 EpochTime = 108.956 (s) Losses = ['0.6809', '78.2303'] lr = 0.000176
+2023-09-19 16:09:27,450 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 179  acc = 73.6988
+2023-09-19 16:09:27,984 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 16:11:16,731 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 180 EpochTime = 108.745 (s) Losses = ['0.6731', '78.3269'] lr = 0.000173
+2023-09-19 16:11:34,027 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 180  acc = 73.5253
+2023-09-19 16:11:34,504 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 16:13:23,353 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 181 EpochTime = 108.847 (s) Losses = ['0.6843', '77.9231'] lr = 0.000171
+2023-09-19 16:13:40,640 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 181  acc = 73.8029
+2023-09-19 16:13:41,139 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 16:15:29,991 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 182 EpochTime = 108.851 (s) Losses = ['0.6740', '78.6166'] lr = 0.000168
+2023-09-19 16:15:47,286 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 182  acc = 74.1846
+2023-09-19 16:15:47,767 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-19 16:15:47,768 - finetune_scan_hardest_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-19 16:15:48,207 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 16:17:37,069 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 183 EpochTime = 108.860 (s) Losses = ['0.6796', '78.0548'] lr = 0.000166
+2023-09-19 16:17:54,374 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 183  acc = 73.4559
+2023-09-19 16:17:54,778 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 16:19:43,708 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 184 EpochTime = 108.929 (s) Losses = ['0.6733', '78.2303'] lr = 0.000164
+2023-09-19 16:20:01,032 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 184  acc = 73.0742
+2023-09-19 16:20:01,535 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 16:21:50,469 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 185 EpochTime = 108.933 (s) Losses = ['0.6784', '78.7658'] lr = 0.000161
+2023-09-19 16:22:07,791 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 185  acc = 73.1089
+2023-09-19 16:22:08,243 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 16:23:57,226 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 186 EpochTime = 108.981 (s) Losses = ['0.6720', '78.5288'] lr = 0.000159
+2023-09-19 16:24:14,534 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 186  acc = 73.3518
+2023-09-19 16:24:15,003 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 16:26:03,933 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 187 EpochTime = 108.928 (s) Losses = ['0.6722', '78.1689'] lr = 0.000156
+2023-09-19 16:26:21,234 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 187  acc = 73.6641
+2023-09-19 16:26:21,692 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 16:28:10,940 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 188 EpochTime = 109.247 (s) Losses = ['0.6716', '78.5376'] lr = 0.000154
+2023-09-19 16:28:28,249 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 188  acc = 74.0111
+2023-09-19 16:28:28,712 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 16:30:17,691 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 189 EpochTime = 108.977 (s) Losses = ['0.6767', '78.5463'] lr = 0.000151
+2023-09-19 16:30:35,004 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 189  acc = 73.8376
+2023-09-19 16:30:35,479 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 16:32:24,428 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 190 EpochTime = 108.947 (s) Losses = ['0.6720', '78.4849'] lr = 0.000149
+2023-09-19 16:32:41,746 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 190  acc = 74.1846
+2023-09-19 16:32:42,238 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 16:34:30,956 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 191 EpochTime = 108.716 (s) Losses = ['0.6701', '78.4235'] lr = 0.000147
+2023-09-19 16:34:48,197 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 191  acc = 73.6641
+2023-09-19 16:34:48,701 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 16:36:37,336 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 192 EpochTime = 108.634 (s) Losses = ['0.6655', '78.8448'] lr = 0.000144
+2023-09-19 16:36:54,638 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 192  acc = 73.5253
+2023-09-19 16:36:55,138 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 16:38:43,948 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 193 EpochTime = 108.808 (s) Losses = ['0.6737', '78.1074'] lr = 0.000142
+2023-09-19 16:39:01,262 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 193  acc = 73.9417
+2023-09-19 16:39:01,722 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 16:40:50,635 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 194 EpochTime = 108.912 (s) Losses = ['0.6653', '78.8887'] lr = 0.000140
+2023-09-19 16:41:07,948 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 194  acc = 73.4906
+2023-09-19 16:41:08,431 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 16:42:57,415 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 195 EpochTime = 108.983 (s) Losses = ['0.6721', '78.4410'] lr = 0.000137
+2023-09-19 16:43:14,762 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 195  acc = 73.5947
+2023-09-19 16:43:15,273 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 16:45:04,348 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 196 EpochTime = 109.073 (s) Losses = ['0.6648', '78.8448'] lr = 0.000135
+2023-09-19 16:45:21,670 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 196  acc = 73.4559
+2023-09-19 16:45:22,131 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 16:47:11,290 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 197 EpochTime = 109.157 (s) Losses = ['0.6675', '78.5025'] lr = 0.000133
+2023-09-19 16:47:28,622 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 197  acc = 73.2130
+2023-09-19 16:47:29,123 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 16:49:18,275 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 198 EpochTime = 109.150 (s) Losses = ['0.6675', '78.6166'] lr = 0.000130
+2023-09-19 16:49:35,607 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 198  acc = 73.6641
+2023-09-19 16:49:36,135 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 16:51:25,279 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 199 EpochTime = 109.143 (s) Losses = ['0.6697', '78.5639'] lr = 0.000128
+2023-09-19 16:51:42,596 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 199  acc = 73.4906
+2023-09-19 16:51:43,112 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 16:53:32,264 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 200 EpochTime = 109.149 (s) Losses = ['0.6711', '78.2128'] lr = 0.000126
+2023-09-19 16:53:49,599 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 200  acc = 73.5600
+2023-09-19 16:53:50,117 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 16:55:39,407 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 201 EpochTime = 109.288 (s) Losses = ['0.6653', '78.4147'] lr = 0.000123
+2023-09-19 16:55:56,765 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 201  acc = 73.6988
+2023-09-19 16:55:57,296 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 16:57:46,554 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 202 EpochTime = 109.256 (s) Losses = ['0.6696', '78.2918'] lr = 0.000121
+2023-09-19 16:58:03,905 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 202  acc = 73.5600
+2023-09-19 16:58:04,362 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 16:59:53,616 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 203 EpochTime = 109.253 (s) Losses = ['0.6615', '78.4498'] lr = 0.000119
+2023-09-19 17:00:10,977 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 203  acc = 73.7335
+2023-09-19 17:00:11,425 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 17:02:00,755 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 204 EpochTime = 109.328 (s) Losses = ['0.6708', '78.6868'] lr = 0.000117
+2023-09-19 17:02:18,102 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 204  acc = 73.8723
+2023-09-19 17:02:18,566 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 17:04:07,972 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 205 EpochTime = 109.405 (s) Losses = ['0.6593', '78.4147'] lr = 0.000115
+2023-09-19 17:04:25,371 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 205  acc = 73.6641
+2023-09-19 17:04:25,835 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 17:06:15,090 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 206 EpochTime = 109.254 (s) Losses = ['0.6719', '78.2830'] lr = 0.000112
+2023-09-19 17:06:32,440 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 206  acc = 73.3518
+2023-09-19 17:06:32,881 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 17:08:22,211 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 207 EpochTime = 109.328 (s) Losses = ['0.6627', '79.0291'] lr = 0.000110
+2023-09-19 17:08:39,548 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 207  acc = 74.0458
+2023-09-19 17:08:40,018 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 17:10:29,285 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 208 EpochTime = 109.266 (s) Losses = ['0.6595', '79.0467'] lr = 0.000108
+2023-09-19 17:10:46,641 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 208  acc = 73.1436
+2023-09-19 17:10:47,101 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 17:12:36,407 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 209 EpochTime = 109.305 (s) Losses = ['0.6579', '79.3803'] lr = 0.000106
+2023-09-19 17:12:53,766 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 209  acc = 73.6988
+2023-09-19 17:12:54,215 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 17:14:43,487 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 210 EpochTime = 109.271 (s) Losses = ['0.6662', '78.8009'] lr = 0.000104
+2023-09-19 17:15:00,874 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 210  acc = 73.9417
+2023-09-19 17:15:01,296 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 17:16:50,638 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 211 EpochTime = 109.340 (s) Losses = ['0.6671', '78.3971'] lr = 0.000102
+2023-09-19 17:17:07,998 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 211  acc = 73.5947
+2023-09-19 17:17:08,423 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 17:18:57,807 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 212 EpochTime = 109.383 (s) Losses = ['0.6618', '78.9150'] lr = 0.000100
+2023-09-19 17:19:15,176 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 212  acc = 73.8029
+2023-09-19 17:19:15,651 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 17:21:05,051 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 213 EpochTime = 109.399 (s) Losses = ['0.6627', '78.8975'] lr = 0.000098
+2023-09-19 17:21:22,412 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 213  acc = 73.4212
+2023-09-19 17:21:22,874 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 17:23:12,304 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 214 EpochTime = 109.428 (s) Losses = ['0.6553', '79.0116'] lr = 0.000096
+2023-09-19 17:23:29,655 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 214  acc = 73.8029
+2023-09-19 17:23:30,135 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 17:25:19,671 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 215 EpochTime = 109.534 (s) Losses = ['0.6658', '78.7834'] lr = 0.000093
+2023-09-19 17:25:37,021 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 215  acc = 73.9764
+2023-09-19 17:25:37,482 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 17:27:26,899 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 216 EpochTime = 109.416 (s) Losses = ['0.6686', '78.3620'] lr = 0.000091
+2023-09-19 17:27:44,312 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 216  acc = 73.8723
+2023-09-19 17:27:44,782 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 17:29:34,148 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 217 EpochTime = 109.364 (s) Losses = ['0.6630', '78.9501'] lr = 0.000089
+2023-09-19 17:29:51,502 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 217  acc = 73.8376
+2023-09-19 17:29:51,955 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 17:31:41,243 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 218 EpochTime = 109.286 (s) Losses = ['0.6636', '79.0555'] lr = 0.000087
+2023-09-19 17:31:58,606 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 218  acc = 73.4212
+2023-09-19 17:31:59,086 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 17:33:48,611 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 219 EpochTime = 109.523 (s) Losses = ['0.6572', '79.2398'] lr = 0.000086
+2023-09-19 17:34:05,951 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 219  acc = 74.0805
+2023-09-19 17:34:06,382 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 17:35:55,650 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 220 EpochTime = 109.267 (s) Losses = ['0.6696', '78.2303'] lr = 0.000084
+2023-09-19 17:36:12,983 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 220  acc = 73.9764
+2023-09-19 17:36:13,447 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 17:38:02,687 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 221 EpochTime = 109.238 (s) Losses = ['0.6635', '78.8624'] lr = 0.000082
+2023-09-19 17:38:20,066 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 221  acc = 74.0458
+2023-09-19 17:38:20,550 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 17:40:09,814 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 222 EpochTime = 109.262 (s) Losses = ['0.6575', '79.2574'] lr = 0.000080
+2023-09-19 17:40:27,187 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 222  acc = 73.6988
+2023-09-19 17:40:27,654 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 17:42:16,931 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 223 EpochTime = 109.275 (s) Losses = ['0.6627', '78.9062'] lr = 0.000078
+2023-09-19 17:42:34,311 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 223  acc = 74.0458
+2023-09-19 17:42:34,781 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 17:44:24,075 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 224 EpochTime = 109.293 (s) Losses = ['0.6648', '78.8624'] lr = 0.000076
+2023-09-19 17:44:41,429 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 224  acc = 74.2540
+2023-09-19 17:44:41,952 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-19 17:44:41,952 - finetune_scan_hardest_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-19 17:44:42,803 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 17:46:32,058 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 225 EpochTime = 109.253 (s) Losses = ['0.6533', '79.2749'] lr = 0.000074
+2023-09-19 17:46:49,401 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 225  acc = 74.1846
+2023-09-19 17:46:49,883 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 17:48:39,290 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 226 EpochTime = 109.406 (s) Losses = ['0.6652', '78.6078'] lr = 0.000072
+2023-09-19 17:48:56,634 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 226  acc = 74.4969
+2023-09-19 17:48:57,119 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-19 17:48:57,119 - finetune_scan_hardest_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-19 17:48:57,528 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 17:50:46,873 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 227 EpochTime = 109.344 (s) Losses = ['0.6616', '78.8185'] lr = 0.000070
+2023-09-19 17:51:04,219 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 227  acc = 73.6641
+2023-09-19 17:51:04,697 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 17:52:54,031 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 228 EpochTime = 109.333 (s) Losses = ['0.6637', '78.8711'] lr = 0.000069
+2023-09-19 17:53:11,391 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 228  acc = 73.9070
+2023-09-19 17:53:11,882 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 17:55:01,283 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 229 EpochTime = 109.399 (s) Losses = ['0.6549', '79.1520'] lr = 0.000067
+2023-09-19 17:55:18,653 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 229  acc = 74.3234
+2023-09-19 17:55:19,103 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 17:57:08,422 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 230 EpochTime = 109.317 (s) Losses = ['0.6625', '78.7482'] lr = 0.000065
+2023-09-19 17:57:25,839 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 230  acc = 73.9417
+2023-09-19 17:57:26,333 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 17:59:15,677 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 231 EpochTime = 109.343 (s) Losses = ['0.6567', '79.0467'] lr = 0.000063
+2023-09-19 17:59:33,033 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 231  acc = 73.9070
+2023-09-19 17:59:33,462 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 18:01:22,901 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 232 EpochTime = 109.438 (s) Losses = ['0.6492', '79.3978'] lr = 0.000062
+2023-09-19 18:01:40,269 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 232  acc = 73.8376
+2023-09-19 18:01:40,715 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 18:03:30,127 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 233 EpochTime = 109.410 (s) Losses = ['0.6530', '79.2310'] lr = 0.000060
+2023-09-19 18:03:47,492 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 233  acc = 74.2887
+2023-09-19 18:03:47,983 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 18:05:37,483 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 234 EpochTime = 109.498 (s) Losses = ['0.6553', '79.1784'] lr = 0.000058
+2023-09-19 18:05:54,893 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 234  acc = 73.6641
+2023-09-19 18:05:55,355 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 18:07:44,762 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 235 EpochTime = 109.405 (s) Losses = ['0.6675', '78.5376'] lr = 0.000057
+2023-09-19 18:08:02,103 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 235  acc = 73.8029
+2023-09-19 18:08:02,862 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 18:09:52,345 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 236 EpochTime = 109.481 (s) Losses = ['0.6599', '79.0906'] lr = 0.000055
+2023-09-19 18:10:09,690 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 236  acc = 73.9070
+2023-09-19 18:10:10,228 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 18:11:59,718 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 237 EpochTime = 109.489 (s) Losses = ['0.6572', '78.9853'] lr = 0.000053
+2023-09-19 18:12:17,076 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 237  acc = 73.9417
+2023-09-19 18:12:17,535 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 18:14:06,969 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 238 EpochTime = 109.433 (s) Losses = ['0.6564', '78.8975'] lr = 0.000052
+2023-09-19 18:14:24,342 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 238  acc = 73.8723
+2023-09-19 18:14:24,775 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 18:16:14,236 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 239 EpochTime = 109.458 (s) Losses = ['0.6593', '78.6166'] lr = 0.000050
+2023-09-19 18:16:31,614 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 239  acc = 73.8723
+2023-09-19 18:16:32,112 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 18:18:21,551 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 240 EpochTime = 109.438 (s) Losses = ['0.6570', '79.1784'] lr = 0.000049
+2023-09-19 18:18:38,929 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 240  acc = 74.3581
+2023-09-19 18:18:39,449 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 18:20:29,013 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 241 EpochTime = 109.563 (s) Losses = ['0.6551', '79.5295'] lr = 0.000047
+2023-09-19 18:20:46,408 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 241  acc = 73.4212
+2023-09-19 18:20:46,884 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 18:22:36,372 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 242 EpochTime = 109.486 (s) Losses = ['0.6599', '79.0643'] lr = 0.000046
+2023-09-19 18:22:53,740 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 242  acc = 73.7682
+2023-09-19 18:22:54,183 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 18:24:43,662 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 243 EpochTime = 109.478 (s) Losses = ['0.6600', '78.8711'] lr = 0.000044
+2023-09-19 18:25:01,023 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 243  acc = 74.6357
+2023-09-19 18:25:01,486 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-19 18:25:01,486 - finetune_scan_hardest_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-19 18:25:01,916 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 18:26:51,359 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 244 EpochTime = 109.442 (s) Losses = ['0.6620', '78.9765'] lr = 0.000043
+2023-09-19 18:27:08,777 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 244  acc = 73.8723
+2023-09-19 18:27:09,227 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 18:28:58,726 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 245 EpochTime = 109.498 (s) Losses = ['0.6607', '78.8536'] lr = 0.000041
+2023-09-19 18:29:16,110 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 245  acc = 74.1499
+2023-09-19 18:29:16,559 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 18:31:05,114 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 246 EpochTime = 108.553 (s) Losses = ['0.6495', '79.3715'] lr = 0.000040
+2023-09-19 18:31:22,295 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 246  acc = 73.9764
+2023-09-19 18:31:22,762 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 18:33:10,009 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 247 EpochTime = 107.245 (s) Losses = ['0.6552', '79.4154'] lr = 0.000038
+2023-09-19 18:33:27,116 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 247  acc = 73.6988
+2023-09-19 18:33:27,567 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 18:35:14,763 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 248 EpochTime = 107.195 (s) Losses = ['0.6578', '78.8185'] lr = 0.000037
+2023-09-19 18:35:31,839 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 248  acc = 73.8029
+2023-09-19 18:35:32,291 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 18:37:19,518 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 249 EpochTime = 107.225 (s) Losses = ['0.6574', '79.1608'] lr = 0.000036
+2023-09-19 18:37:36,606 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 249  acc = 73.8723
+2023-09-19 18:37:37,029 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 18:39:24,245 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 250 EpochTime = 107.214 (s) Losses = ['0.6569', '79.1520'] lr = 0.000034
+2023-09-19 18:39:41,308 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 250  acc = 73.7682
+2023-09-19 18:39:41,743 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 18:41:29,002 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 251 EpochTime = 107.257 (s) Losses = ['0.6553', '78.7307'] lr = 0.000033
+2023-09-19 18:41:46,083 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 251  acc = 73.7682
+2023-09-19 18:41:46,531 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 18:43:33,742 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 252 EpochTime = 107.209 (s) Losses = ['0.6670', '78.6166'] lr = 0.000032
+2023-09-19 18:43:50,810 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 252  acc = 74.1152
+2023-09-19 18:43:51,306 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 18:45:38,526 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 253 EpochTime = 107.218 (s) Losses = ['0.6585', '79.0379'] lr = 0.000031
+2023-09-19 18:45:55,600 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 253  acc = 74.0458
+2023-09-19 18:45:56,073 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 18:47:43,360 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 254 EpochTime = 107.286 (s) Losses = ['0.6591', '79.4066'] lr = 0.000029
+2023-09-19 18:48:00,421 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 254  acc = 73.7682
+2023-09-19 18:48:00,895 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 18:49:48,104 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 255 EpochTime = 107.208 (s) Losses = ['0.6545', '79.1169'] lr = 0.000028
+2023-09-19 18:50:05,189 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 255  acc = 73.9764
+2023-09-19 18:50:05,720 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 18:51:52,917 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 256 EpochTime = 107.196 (s) Losses = ['0.6690', '78.5025'] lr = 0.000027
+2023-09-19 18:52:10,006 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 256  acc = 73.8723
+2023-09-19 18:52:10,522 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 18:53:57,743 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 257 EpochTime = 107.219 (s) Losses = ['0.6576', '79.0204'] lr = 0.000026
+2023-09-19 18:54:14,810 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 257  acc = 73.8376
+2023-09-19 18:54:15,263 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 18:56:02,512 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 258 EpochTime = 107.247 (s) Losses = ['0.6647', '79.0116'] lr = 0.000025
+2023-09-19 18:56:19,584 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 258  acc = 74.0458
+2023-09-19 18:56:20,031 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 18:58:07,233 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 259 EpochTime = 107.200 (s) Losses = ['0.6540', '78.9853'] lr = 0.000024
+2023-09-19 18:58:24,295 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 259  acc = 73.9070
+2023-09-19 18:58:24,751 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 19:00:11,990 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 260 EpochTime = 107.238 (s) Losses = ['0.6465', '79.7841'] lr = 0.000023
+2023-09-19 19:00:29,077 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 260  acc = 73.9764
+2023-09-19 19:00:29,539 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 19:02:16,767 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 261 EpochTime = 107.226 (s) Losses = ['0.6539', '79.3539'] lr = 0.000022
+2023-09-19 19:02:33,861 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 261  acc = 73.8723
+2023-09-19 19:02:34,360 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 19:04:21,578 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 262 EpochTime = 107.216 (s) Losses = ['0.6523', '79.3452'] lr = 0.000020
+2023-09-19 19:04:38,641 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 262  acc = 74.1152
+2023-09-19 19:04:39,128 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 19:06:26,358 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 263 EpochTime = 107.228 (s) Losses = ['0.6523', '78.7834'] lr = 0.000019
+2023-09-19 19:06:43,432 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 263  acc = 73.9070
+2023-09-19 19:06:43,922 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 19:08:31,195 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 264 EpochTime = 107.271 (s) Losses = ['0.6586', '78.7395'] lr = 0.000019
+2023-09-19 19:08:48,307 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 264  acc = 74.1499
+2023-09-19 19:08:48,747 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 19:10:35,964 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 265 EpochTime = 107.216 (s) Losses = ['0.6525', '79.4768'] lr = 0.000018
+2023-09-19 19:10:53,059 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 265  acc = 73.9764
+2023-09-19 19:10:53,498 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 19:12:40,741 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 266 EpochTime = 107.242 (s) Losses = ['0.6508', '79.6173'] lr = 0.000017
+2023-09-19 19:12:57,819 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 266  acc = 74.1499
+2023-09-19 19:12:58,295 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 19:14:45,488 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 267 EpochTime = 107.192 (s) Losses = ['0.6601', '78.7834'] lr = 0.000016
+2023-09-19 19:15:02,560 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 267  acc = 74.0111
+2023-09-19 19:15:03,047 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 19:16:50,253 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 268 EpochTime = 107.205 (s) Losses = ['0.6490', '79.3890'] lr = 0.000015
+2023-09-19 19:17:07,319 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 268  acc = 74.0805
+2023-09-19 19:17:07,771 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 19:18:54,976 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 269 EpochTime = 107.203 (s) Losses = ['0.6540', '79.1784'] lr = 0.000014
+2023-09-19 19:19:12,086 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 269  acc = 73.9764
+2023-09-19 19:19:12,573 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 19:20:59,790 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 270 EpochTime = 107.216 (s) Losses = ['0.6531', '79.4680'] lr = 0.000013
+2023-09-19 19:21:16,869 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 270  acc = 74.1152
+2023-09-19 19:21:17,333 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 19:23:04,559 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 271 EpochTime = 107.224 (s) Losses = ['0.6531', '79.4680'] lr = 0.000012
+2023-09-19 19:23:21,651 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 271  acc = 74.0458
+2023-09-19 19:23:22,153 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 19:25:09,344 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 272 EpochTime = 107.189 (s) Losses = ['0.6556', '79.0555'] lr = 0.000012
+2023-09-19 19:25:26,424 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 272  acc = 74.2193
+2023-09-19 19:25:26,907 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 19:27:14,164 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 273 EpochTime = 107.255 (s) Losses = ['0.6606', '79.3364'] lr = 0.000011
+2023-09-19 19:27:31,300 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 273  acc = 74.1846
+2023-09-19 19:27:31,726 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 19:29:18,975 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 274 EpochTime = 107.247 (s) Losses = ['0.6545', '79.5558'] lr = 0.000010
+2023-09-19 19:29:36,073 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 274  acc = 74.0111
+2023-09-19 19:29:36,511 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 19:31:23,717 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 275 EpochTime = 107.205 (s) Losses = ['0.6516', '79.3803'] lr = 0.000010
+2023-09-19 19:31:40,798 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 275  acc = 73.9070
+2023-09-19 19:31:41,263 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 19:33:28,478 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 276 EpochTime = 107.214 (s) Losses = ['0.6579', '79.0818'] lr = 0.000009
+2023-09-19 19:33:45,572 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 276  acc = 74.1152
+2023-09-19 19:33:46,075 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 19:35:33,301 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 277 EpochTime = 107.224 (s) Losses = ['0.6561', '79.1257'] lr = 0.000008
+2023-09-19 19:35:50,383 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 277  acc = 74.0458
+2023-09-19 19:35:50,880 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 19:37:38,087 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 278 EpochTime = 107.205 (s) Losses = ['0.6497', '79.3803'] lr = 0.000008
+2023-09-19 19:37:55,218 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 278  acc = 74.0458
+2023-09-19 19:37:55,678 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 19:39:42,885 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 279 EpochTime = 107.205 (s) Losses = ['0.6519', '79.3539'] lr = 0.000007
+2023-09-19 19:39:59,958 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 279  acc = 73.9764
+2023-09-19 19:40:00,468 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 19:41:47,682 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 280 EpochTime = 107.213 (s) Losses = ['0.6537', '79.1784'] lr = 0.000006
+2023-09-19 19:42:04,778 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 280  acc = 74.0458
+2023-09-19 19:42:05,328 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 19:43:52,546 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 281 EpochTime = 107.216 (s) Losses = ['0.6422', '79.5032'] lr = 0.000006
+2023-09-19 19:44:09,645 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 281  acc = 74.0458
+2023-09-19 19:44:10,103 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 19:45:57,339 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 282 EpochTime = 107.234 (s) Losses = ['0.6534', '79.0555'] lr = 0.000005
+2023-09-19 19:46:14,425 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 282  acc = 74.0805
+2023-09-19 19:46:14,891 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 19:48:02,147 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 283 EpochTime = 107.254 (s) Losses = ['0.6672', '78.3796'] lr = 0.000005
+2023-09-19 19:48:19,244 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 283  acc = 74.1499
+2023-09-19 19:48:19,763 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 19:50:06,971 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 284 EpochTime = 107.206 (s) Losses = ['0.6631', '79.4768'] lr = 0.000004
+2023-09-19 19:50:24,029 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 284  acc = 74.0458
+2023-09-19 19:50:24,554 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 19:52:11,758 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 285 EpochTime = 107.202 (s) Losses = ['0.6540', '79.5383'] lr = 0.000004
+2023-09-19 19:52:28,829 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 285  acc = 74.1499
+2023-09-19 19:52:29,311 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 19:54:16,518 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 286 EpochTime = 107.205 (s) Losses = ['0.6537', '78.9853'] lr = 0.000004
+2023-09-19 19:54:33,597 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 286  acc = 74.0805
+2023-09-19 19:54:34,155 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 19:56:21,372 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 287 EpochTime = 107.215 (s) Losses = ['0.6575', '79.2398'] lr = 0.000003
+2023-09-19 19:56:38,471 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 287  acc = 74.0458
+2023-09-19 19:56:38,943 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 19:58:26,219 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 288 EpochTime = 107.274 (s) Losses = ['0.6565', '78.7131'] lr = 0.000003
+2023-09-19 19:58:43,313 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 288  acc = 74.0458
+2023-09-19 19:58:43,763 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 20:00:31,056 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 289 EpochTime = 107.292 (s) Losses = ['0.6473', '79.4242'] lr = 0.000003
+2023-09-19 20:00:48,153 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 289  acc = 74.0111
+2023-09-19 20:00:48,599 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 20:02:35,806 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 290 EpochTime = 107.205 (s) Losses = ['0.6564', '79.5207'] lr = 0.000002
+2023-09-19 20:02:52,871 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 290  acc = 73.9417
+2023-09-19 20:02:53,371 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 20:04:40,568 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 291 EpochTime = 107.196 (s) Losses = ['0.6514', '79.0906'] lr = 0.000002
+2023-09-19 20:04:57,651 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 291  acc = 73.9764
+2023-09-19 20:04:58,144 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 20:04:58,275 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-epoch-291.pth
+2023-09-19 20:06:45,523 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 292 EpochTime = 107.247 (s) Losses = ['0.6621', '79.2925'] lr = 0.000002
+2023-09-19 20:07:02,632 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 292  acc = 74.0805
+2023-09-19 20:07:03,091 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 20:07:03,215 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-epoch-292.pth
+2023-09-19 20:08:50,519 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 293 EpochTime = 107.303 (s) Losses = ['0.6488', '79.4680'] lr = 0.000002
+2023-09-19 20:09:07,594 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 293  acc = 74.0458
+2023-09-19 20:09:08,093 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 20:09:08,218 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-epoch-293.pth
+2023-09-19 20:10:55,461 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 294 EpochTime = 107.241 (s) Losses = ['0.6453', '79.3188'] lr = 0.000001
+2023-09-19 20:11:12,590 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 294  acc = 74.1152
+2023-09-19 20:11:13,059 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 20:11:13,179 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-epoch-294.pth
+2023-09-19 20:13:00,391 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 295 EpochTime = 107.210 (s) Losses = ['0.6545', '79.1608'] lr = 0.000001
+2023-09-19 20:13:17,503 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 295  acc = 74.0805
+2023-09-19 20:13:17,919 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 20:13:18,043 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-epoch-295.pth
+2023-09-19 20:15:05,560 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 296 EpochTime = 107.516 (s) Losses = ['0.6544', '78.8097'] lr = 0.000001
+2023-09-19 20:15:22,662 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 296  acc = 74.1152
+2023-09-19 20:15:23,081 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 20:15:23,205 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-epoch-296.pth
+2023-09-19 20:17:10,443 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 297 EpochTime = 107.236 (s) Losses = ['0.6527', '79.4593'] lr = 0.000001
+2023-09-19 20:17:27,535 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 297  acc = 74.0805
+2023-09-19 20:17:28,175 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 20:17:28,293 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-epoch-297.pth
+2023-09-19 20:19:15,510 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 298 EpochTime = 107.216 (s) Losses = ['0.6559', '78.9414'] lr = 0.000001
+2023-09-19 20:19:32,579 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 298  acc = 74.0111
+2023-09-19 20:19:33,108 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 20:19:33,228 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-epoch-298.pth
+2023-09-19 20:21:20,430 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 299 EpochTime = 107.200 (s) Losses = ['0.6554', '79.2662'] lr = 0.000001
+2023-09-19 20:21:37,510 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 299  acc = 74.0111
+2023-09-19 20:21:37,991 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 20:21:38,113 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-epoch-299.pth
+2023-09-19 20:23:25,415 - finetune_scan_hardest_linear_classification - INFO - [Training] EPOCH: 300 EpochTime = 107.301 (s) Losses = ['0.6595', '79.2925'] lr = 0.000001
+2023-09-19 20:23:42,490 - finetune_scan_hardest_linear_classification - INFO - [Validation] EPOCH: 300  acc = 74.0111
+2023-09-19 20:23:42,991 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-19 20:23:43,115 - finetune_scan_hardest_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_hardest_linear_classification/cfgs/add_as_normal/ckpt-epoch-300.pth
