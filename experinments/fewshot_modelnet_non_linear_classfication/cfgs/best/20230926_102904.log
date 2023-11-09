@@ -1,0 +1,588 @@
+2023-09-26 10:29:04,269 - fewshot_modelnet_non_linear_classification - INFO - Copy the Config file from cfgs/fewshot_modelnet_non_linear_classification.yaml to ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/config.yaml
+2023-09-26 10:29:04,269 - fewshot_modelnet_non_linear_classification - INFO - args.config : cfgs/fewshot_modelnet_non_linear_classification.yaml
+2023-09-26 10:29:04,269 - fewshot_modelnet_non_linear_classification - INFO - args.launcher : none
+2023-09-26 10:29:04,269 - fewshot_modelnet_non_linear_classification - INFO - args.local_rank : 0
+2023-09-26 10:29:04,269 - fewshot_modelnet_non_linear_classification - INFO - args.num_workers : 8
+2023-09-26 10:29:04,269 - fewshot_modelnet_non_linear_classification - INFO - args.seed : 0
+2023-09-26 10:29:04,269 - fewshot_modelnet_non_linear_classification - INFO - args.deterministic : False
+2023-09-26 10:29:04,269 - fewshot_modelnet_non_linear_classification - INFO - args.sync_bn : True
+2023-09-26 10:29:04,269 - fewshot_modelnet_non_linear_classification - INFO - args.update_weights_every : 1
+2023-09-26 10:29:04,269 - fewshot_modelnet_non_linear_classification - INFO - args.main_task : 0
+2023-09-26 10:29:04,270 - fewshot_modelnet_non_linear_classification - INFO - args.nashmtl_optim_niter : 20
+2023-09-26 10:29:04,270 - fewshot_modelnet_non_linear_classification - INFO - args.c : 0.4
+2023-09-26 10:29:04,270 - fewshot_modelnet_non_linear_classification - INFO - args.dwa_temp : 2.0
+2023-09-26 10:29:04,270 - fewshot_modelnet_non_linear_classification - INFO - args.method_params_lr : 0.025
+2023-09-26 10:29:04,270 - fewshot_modelnet_non_linear_classification - INFO - args.method : nashmtl
+2023-09-26 10:29:04,270 - fewshot_modelnet_non_linear_classification - INFO - args.gpu : 5
+2023-09-26 10:29:04,270 - fewshot_modelnet_non_linear_classification - INFO - args.large_group : 5
+2023-09-26 10:29:04,270 - fewshot_modelnet_non_linear_classification - INFO - args.small_group : 10
+2023-09-26 10:29:04,270 - fewshot_modelnet_non_linear_classification - INFO - args.large_patch : 6
+2023-09-26 10:29:04,270 - fewshot_modelnet_non_linear_classification - INFO - args.small_patch : 3
+2023-09-26 10:29:04,270 - fewshot_modelnet_non_linear_classification - INFO - args.queue_length : 8192
+2023-09-26 10:29:04,270 - fewshot_modelnet_non_linear_classification - INFO - args.epoch_queue_starts : 10
+2023-09-26 10:29:04,270 - fewshot_modelnet_non_linear_classification - INFO - args.nmb_crops : [5, 10]
+2023-09-26 10:29:04,270 - fewshot_modelnet_non_linear_classification - INFO - args.fea_dim : 384
+2023-09-26 10:29:04,270 - fewshot_modelnet_non_linear_classification - INFO - args.hidden_mlp : 256
+2023-09-26 10:29:04,270 - fewshot_modelnet_non_linear_classification - INFO - args.output_dim : 128
+2023-09-26 10:29:04,270 - fewshot_modelnet_non_linear_classification - INFO - args.nmb_prototypes : 200
+2023-09-26 10:29:04,270 - fewshot_modelnet_non_linear_classification - INFO - args.temperature : 0.1
+2023-09-26 10:29:04,270 - fewshot_modelnet_non_linear_classification - INFO - args.epsilon : 0.05
+2023-09-26 10:29:04,270 - fewshot_modelnet_non_linear_classification - INFO - args.sinkhorn_iterations : 3
+2023-09-26 10:29:04,271 - fewshot_modelnet_non_linear_classification - INFO - args.world_size : 1
+2023-09-26 10:29:04,271 - fewshot_modelnet_non_linear_classification - INFO - args.exp_name : add_as_normal
+2023-09-26 10:29:04,271 - fewshot_modelnet_non_linear_classification - INFO - args.loss : cd1
+2023-09-26 10:29:04,271 - fewshot_modelnet_non_linear_classification - INFO - args.start_ckpts : None
+2023-09-26 10:29:04,271 - fewshot_modelnet_non_linear_classification - INFO - args.ckpts : ./experiments/pretrain_MaskSurf/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:29:04,271 - fewshot_modelnet_non_linear_classification - INFO - args.val_freq : 1
+2023-09-26 10:29:04,271 - fewshot_modelnet_non_linear_classification - INFO - args.vote : False
+2023-09-26 10:29:04,271 - fewshot_modelnet_non_linear_classification - INFO - args.resume : False
+2023-09-26 10:29:04,271 - fewshot_modelnet_non_linear_classification - INFO - args.test : False
+2023-09-26 10:29:04,271 - fewshot_modelnet_non_linear_classification - INFO - args.finetune_model : True
+2023-09-26 10:29:04,271 - fewshot_modelnet_non_linear_classification - INFO - args.scratch_model : False
+2023-09-26 10:29:04,271 - fewshot_modelnet_non_linear_classification - INFO - args.mode : None
+2023-09-26 10:29:04,271 - fewshot_modelnet_non_linear_classification - INFO - args.way : 5
+2023-09-26 10:29:04,271 - fewshot_modelnet_non_linear_classification - INFO - args.shot : 20
+2023-09-26 10:29:04,271 - fewshot_modelnet_non_linear_classification - INFO - args.fold : 1
+2023-09-26 10:29:04,271 - fewshot_modelnet_non_linear_classification - INFO - args.experiment_path : ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal
+2023-09-26 10:29:04,272 - fewshot_modelnet_non_linear_classification - INFO - args.tfboard_path : ./experiments/fewshot_modelnet_non_linear_classification/cfgs/TFBoard/add_as_normal
+2023-09-26 10:29:04,272 - fewshot_modelnet_non_linear_classification - INFO - args.log_name : fewshot_modelnet_non_linear_classification
+2023-09-26 10:29:04,272 - fewshot_modelnet_non_linear_classification - INFO - args.use_gpu : True
+2023-09-26 10:29:04,272 - fewshot_modelnet_non_linear_classification - INFO - args.distributed : False
+2023-09-26 10:29:04,272 - fewshot_modelnet_non_linear_classification - INFO - config.optimizer = edict()
+2023-09-26 10:29:04,272 - fewshot_modelnet_non_linear_classification - INFO - config.optimizer.type : AdamW
+2023-09-26 10:29:04,272 - fewshot_modelnet_non_linear_classification - INFO - config.optimizer.part : only_new
+2023-09-26 10:29:04,272 - fewshot_modelnet_non_linear_classification - INFO - config.optimizer.kwargs = edict()
+2023-09-26 10:29:04,272 - fewshot_modelnet_non_linear_classification - INFO - config.optimizer.kwargs.lr : 0.0007
+2023-09-26 10:29:04,272 - fewshot_modelnet_non_linear_classification - INFO - config.optimizer.kwargs.weight_decay : 0.05
+2023-09-26 10:29:04,272 - fewshot_modelnet_non_linear_classification - INFO - config.scheduler = edict()
+2023-09-26 10:29:04,272 - fewshot_modelnet_non_linear_classification - INFO - config.scheduler.type : CosLR
+2023-09-26 10:29:04,272 - fewshot_modelnet_non_linear_classification - INFO - config.scheduler.kwargs = edict()
+2023-09-26 10:29:04,272 - fewshot_modelnet_non_linear_classification - INFO - config.scheduler.kwargs.epochs : 150
+2023-09-26 10:29:04,272 - fewshot_modelnet_non_linear_classification - INFO - config.scheduler.kwargs.initial_epochs : 10
+2023-09-26 10:29:04,272 - fewshot_modelnet_non_linear_classification - INFO - config.dataset = edict()
+2023-09-26 10:29:04,273 - fewshot_modelnet_non_linear_classification - INFO - config.dataset.train = edict()
+2023-09-26 10:29:04,273 - fewshot_modelnet_non_linear_classification - INFO - config.dataset.train._base_ = edict()
+2023-09-26 10:29:04,273 - fewshot_modelnet_non_linear_classification - INFO - config.dataset.train._base_.NAME : ModelNetFewShot
+2023-09-26 10:29:04,273 - fewshot_modelnet_non_linear_classification - INFO - config.dataset.train._base_.DATA_PATH : data/ModelNetFewshot
+2023-09-26 10:29:04,273 - fewshot_modelnet_non_linear_classification - INFO - config.dataset.train._base_.N_POINTS : 8192
+2023-09-26 10:29:04,273 - fewshot_modelnet_non_linear_classification - INFO - config.dataset.train._base_.NUM_CATEGORY : 40
+2023-09-26 10:29:04,273 - fewshot_modelnet_non_linear_classification - INFO - config.dataset.train._base_.USE_NORMALS : False
+2023-09-26 10:29:04,273 - fewshot_modelnet_non_linear_classification - INFO - config.dataset.train.others = edict()
+2023-09-26 10:29:04,273 - fewshot_modelnet_non_linear_classification - INFO - config.dataset.train.others.subset : train
+2023-09-26 10:29:04,273 - fewshot_modelnet_non_linear_classification - INFO - config.dataset.train.others.bs : 32
+2023-09-26 10:29:04,273 - fewshot_modelnet_non_linear_classification - INFO - config.dataset.val = edict()
+2023-09-26 10:29:04,273 - fewshot_modelnet_non_linear_classification - INFO - config.dataset.val._base_ = edict()
+2023-09-26 10:29:04,273 - fewshot_modelnet_non_linear_classification - INFO - config.dataset.val._base_.NAME : ModelNetFewShot
+2023-09-26 10:29:04,273 - fewshot_modelnet_non_linear_classification - INFO - config.dataset.val._base_.DATA_PATH : data/ModelNetFewshot
+2023-09-26 10:29:04,273 - fewshot_modelnet_non_linear_classification - INFO - config.dataset.val._base_.N_POINTS : 8192
+2023-09-26 10:29:04,273 - fewshot_modelnet_non_linear_classification - INFO - config.dataset.val._base_.NUM_CATEGORY : 40
+2023-09-26 10:29:04,274 - fewshot_modelnet_non_linear_classification - INFO - config.dataset.val._base_.USE_NORMALS : False
+2023-09-26 10:29:04,274 - fewshot_modelnet_non_linear_classification - INFO - config.dataset.val.others = edict()
+2023-09-26 10:29:04,274 - fewshot_modelnet_non_linear_classification - INFO - config.dataset.val.others.subset : test
+2023-09-26 10:29:04,274 - fewshot_modelnet_non_linear_classification - INFO - config.dataset.val.others.bs : 64
+2023-09-26 10:29:04,274 - fewshot_modelnet_non_linear_classification - INFO - config.dataset.test = edict()
+2023-09-26 10:29:04,274 - fewshot_modelnet_non_linear_classification - INFO - config.dataset.test._base_ = edict()
+2023-09-26 10:29:04,274 - fewshot_modelnet_non_linear_classification - INFO - config.dataset.test._base_.NAME : ModelNet
+2023-09-26 10:29:04,274 - fewshot_modelnet_non_linear_classification - INFO - config.dataset.test._base_.DATA_PATH : data/ModelNet/modelnet40_normal_resampled
+2023-09-26 10:29:04,274 - fewshot_modelnet_non_linear_classification - INFO - config.dataset.test._base_.N_POINTS : 8192
+2023-09-26 10:29:04,274 - fewshot_modelnet_non_linear_classification - INFO - config.dataset.test._base_.NUM_CATEGORY : 40
+2023-09-26 10:29:04,274 - fewshot_modelnet_non_linear_classification - INFO - config.dataset.test._base_.USE_NORMALS : False
+2023-09-26 10:29:04,274 - fewshot_modelnet_non_linear_classification - INFO - config.dataset.test.others = edict()
+2023-09-26 10:29:04,274 - fewshot_modelnet_non_linear_classification - INFO - config.dataset.test.others.subset : test
+2023-09-26 10:29:04,274 - fewshot_modelnet_non_linear_classification - INFO - config.dataset.test.others.bs : 32
+2023-09-26 10:29:04,274 - fewshot_modelnet_non_linear_classification - INFO - config.model = edict()
+2023-09-26 10:29:04,274 - fewshot_modelnet_non_linear_classification - INFO - config.model.NAME : PointTransformer
+2023-09-26 10:29:04,275 - fewshot_modelnet_non_linear_classification - INFO - config.model.trans_dim : 384
+2023-09-26 10:29:04,275 - fewshot_modelnet_non_linear_classification - INFO - config.model.depth : 12
+2023-09-26 10:29:04,275 - fewshot_modelnet_non_linear_classification - INFO - config.model.drop_path_rate : 0.1
+2023-09-26 10:29:04,275 - fewshot_modelnet_non_linear_classification - INFO - config.model.cls_dim : 40
+2023-09-26 10:29:04,275 - fewshot_modelnet_non_linear_classification - INFO - config.model.num_heads : 6
+2023-09-26 10:29:04,275 - fewshot_modelnet_non_linear_classification - INFO - config.model.group_size : 32
+2023-09-26 10:29:04,275 - fewshot_modelnet_non_linear_classification - INFO - config.model.num_group : 64
+2023-09-26 10:29:04,275 - fewshot_modelnet_non_linear_classification - INFO - config.model.encoder_dims : 384
+2023-09-26 10:29:04,275 - fewshot_modelnet_non_linear_classification - INFO - config.npoints : 1024
+2023-09-26 10:29:04,275 - fewshot_modelnet_non_linear_classification - INFO - config.total_bs : 32
+2023-09-26 10:29:04,275 - fewshot_modelnet_non_linear_classification - INFO - config.step_per_update : 1
+2023-09-26 10:29:04,275 - fewshot_modelnet_non_linear_classification - INFO - config.max_epoch : 150
+2023-09-26 10:29:04,275 - fewshot_modelnet_non_linear_classification - INFO - config.grad_norm_clip : 10
+2023-09-26 10:29:04,275 - fewshot_modelnet_non_linear_classification - INFO - Distributed training: False
+2023-09-26 10:29:04,275 - fewshot_modelnet_non_linear_classification - INFO - Set random seed to 0, deterministic: False
+2023-09-26 10:29:06,797 - fewshot_modelnet_non_linear_classification - INFO - Using Data parallel ...
+2023-09-26 10:29:12,231 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 0 EpochTime = 5.429 (s) Losses = ['3.7720', '0.0000'] lr = 0.000001
+2023-09-26 10:29:12,733 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:29:14,161 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 1 EpochTime = 1.427 (s) Losses = ['3.7403', '3.1250'] lr = 0.000071
+2023-09-26 10:29:16,686 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 1  acc = 0.0000
+2023-09-26 10:29:17,176 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:29:18,521 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 2 EpochTime = 1.343 (s) Losses = ['3.6915', '4.1667'] lr = 0.000141
+2023-09-26 10:29:19,612 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 2  acc = 1.0000
+2023-09-26 10:29:20,088 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-26 10:29:20,088 - fewshot_modelnet_non_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-26 10:29:20,555 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:29:21,885 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 3 EpochTime = 1.328 (s) Losses = ['3.6494', '7.2917'] lr = 0.000211
+2023-09-26 10:29:23,199 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 3  acc = 0.0000
+2023-09-26 10:29:23,682 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:29:25,074 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 4 EpochTime = 1.390 (s) Losses = ['3.4817', '11.4583'] lr = 0.000281
+2023-09-26 10:29:26,202 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 4  acc = 6.0000
+2023-09-26 10:29:26,710 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-26 10:29:26,710 - fewshot_modelnet_non_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-26 10:29:27,182 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:29:28,558 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 5 EpochTime = 1.374 (s) Losses = ['3.2336', '14.5833'] lr = 0.000351
+2023-09-26 10:29:29,555 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 5  acc = 32.0000
+2023-09-26 10:29:30,003 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-26 10:29:30,004 - fewshot_modelnet_non_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-26 10:29:30,454 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:29:31,657 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 6 EpochTime = 1.201 (s) Losses = ['2.9369', '36.4583'] lr = 0.000420
+2023-09-26 10:29:32,646 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 6  acc = 68.0000
+2023-09-26 10:29:33,148 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-26 10:29:33,148 - fewshot_modelnet_non_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-26 10:29:33,618 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:29:34,842 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 7 EpochTime = 1.223 (s) Losses = ['2.5729', '57.2917'] lr = 0.000490
+2023-09-26 10:29:35,827 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 7  acc = 92.0000
+2023-09-26 10:29:36,356 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-26 10:29:36,356 - fewshot_modelnet_non_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-26 10:29:36,810 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:29:38,019 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 8 EpochTime = 1.207 (s) Losses = ['2.2574', '68.7500'] lr = 0.000560
+2023-09-26 10:29:38,993 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 8  acc = 94.0000
+2023-09-26 10:29:39,461 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-26 10:29:39,462 - fewshot_modelnet_non_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-26 10:29:40,019 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:29:41,430 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 9 EpochTime = 1.408 (s) Losses = ['1.6993', '86.4583'] lr = 0.000630
+2023-09-26 10:29:42,418 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 9  acc = 91.0000
+2023-09-26 10:29:42,916 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:29:44,193 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 10 EpochTime = 1.276 (s) Losses = ['1.5874', '85.4167'] lr = 0.000692
+2023-09-26 10:29:45,339 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 10  acc = 93.0000
+2023-09-26 10:29:45,901 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:29:47,479 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 11 EpochTime = 1.576 (s) Losses = ['1.2952', '89.5833'] lr = 0.000691
+2023-09-26 10:29:48,754 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 11  acc = 93.0000
+2023-09-26 10:29:49,277 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:29:50,697 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 12 EpochTime = 1.418 (s) Losses = ['0.9385', '94.7917'] lr = 0.000689
+2023-09-26 10:29:51,867 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 12  acc = 93.0000
+2023-09-26 10:29:52,360 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:29:53,844 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 13 EpochTime = 1.482 (s) Losses = ['0.7193', '96.8750'] lr = 0.000687
+2023-09-26 10:29:54,877 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 13  acc = 93.0000
+2023-09-26 10:29:55,353 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:29:56,787 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 14 EpochTime = 1.432 (s) Losses = ['0.6684', '95.8333'] lr = 0.000685
+2023-09-26 10:29:57,852 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 14  acc = 94.0000
+2023-09-26 10:29:58,344 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:29:59,819 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 15 EpochTime = 1.473 (s) Losses = ['0.5393', '97.9167'] lr = 0.000683
+2023-09-26 10:30:00,919 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 15  acc = 96.0000
+2023-09-26 10:30:01,504 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-26 10:30:01,505 - fewshot_modelnet_non_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-26 10:30:02,042 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:30:03,530 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 16 EpochTime = 1.487 (s) Losses = ['0.4152', '97.9167'] lr = 0.000681
+2023-09-26 10:30:04,672 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 16  acc = 98.0000
+2023-09-26 10:30:05,214 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-best.pth
+2023-09-26 10:30:05,214 - fewshot_modelnet_non_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-09-26 10:30:05,754 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:30:07,180 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 17 EpochTime = 1.423 (s) Losses = ['0.3505', '96.8750'] lr = 0.000678
+2023-09-26 10:30:08,241 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 17  acc = 97.0000
+2023-09-26 10:30:08,784 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:30:10,108 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 18 EpochTime = 1.322 (s) Losses = ['0.3416', '98.9583'] lr = 0.000675
+2023-09-26 10:30:11,199 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 18  acc = 98.0000
+2023-09-26 10:30:11,656 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:30:13,018 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 19 EpochTime = 1.361 (s) Losses = ['0.2697', '98.9583'] lr = 0.000673
+2023-09-26 10:30:14,171 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 19  acc = 98.0000
+2023-09-26 10:30:14,676 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:30:16,110 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 20 EpochTime = 1.432 (s) Losses = ['0.3680', '97.9167'] lr = 0.000670
+2023-09-26 10:30:17,723 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 20  acc = 98.0000
+2023-09-26 10:30:18,363 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:30:19,995 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 21 EpochTime = 1.629 (s) Losses = ['0.1934', '98.9583'] lr = 0.000667
+2023-09-26 10:30:21,088 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 21  acc = 98.0000
+2023-09-26 10:30:21,588 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:30:22,875 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 22 EpochTime = 1.285 (s) Losses = ['0.2456', '98.9583'] lr = 0.000664
+2023-09-26 10:30:23,876 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 22  acc = 98.0000
+2023-09-26 10:30:24,405 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:30:25,650 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 23 EpochTime = 1.243 (s) Losses = ['0.2225', '100.0000'] lr = 0.000660
+2023-09-26 10:30:26,666 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 23  acc = 98.0000
+2023-09-26 10:30:27,191 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:30:28,434 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 24 EpochTime = 1.241 (s) Losses = ['0.1761', '100.0000'] lr = 0.000657
+2023-09-26 10:30:29,471 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 24  acc = 98.0000
+2023-09-26 10:30:29,939 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:30:31,226 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 25 EpochTime = 1.285 (s) Losses = ['0.1598', '96.8750'] lr = 0.000653
+2023-09-26 10:30:32,239 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 25  acc = 98.0000
+2023-09-26 10:30:32,745 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:30:33,986 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 26 EpochTime = 1.240 (s) Losses = ['0.1467', '100.0000'] lr = 0.000649
+2023-09-26 10:30:35,009 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 26  acc = 98.0000
+2023-09-26 10:30:35,491 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:30:36,750 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 27 EpochTime = 1.258 (s) Losses = ['0.1394', '100.0000'] lr = 0.000646
+2023-09-26 10:30:37,806 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 27  acc = 98.0000
+2023-09-26 10:30:38,330 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:30:39,616 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 28 EpochTime = 1.284 (s) Losses = ['0.1358', '98.9583'] lr = 0.000642
+2023-09-26 10:30:40,651 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 28  acc = 98.0000
+2023-09-26 10:30:41,148 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:30:42,453 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 29 EpochTime = 1.303 (s) Losses = ['0.1129', '98.9583'] lr = 0.000637
+2023-09-26 10:30:43,849 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 29  acc = 98.0000
+2023-09-26 10:30:44,456 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:30:46,267 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 30 EpochTime = 1.809 (s) Losses = ['0.1079', '100.0000'] lr = 0.000633
+2023-09-26 10:30:47,651 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 30  acc = 98.0000
+2023-09-26 10:30:48,239 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:30:50,138 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 31 EpochTime = 1.897 (s) Losses = ['0.0951', '100.0000'] lr = 0.000629
+2023-09-26 10:30:51,875 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 31  acc = 98.0000
+2023-09-26 10:30:52,459 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:30:54,376 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 32 EpochTime = 1.914 (s) Losses = ['0.0878', '100.0000'] lr = 0.000624
+2023-09-26 10:30:56,021 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 32  acc = 98.0000
+2023-09-26 10:30:56,675 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:30:58,639 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 33 EpochTime = 1.961 (s) Losses = ['0.0804', '100.0000'] lr = 0.000620
+2023-09-26 10:31:00,043 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 33  acc = 98.0000
+2023-09-26 10:31:00,559 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:31:02,000 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 34 EpochTime = 1.439 (s) Losses = ['0.0763', '100.0000'] lr = 0.000615
+2023-09-26 10:31:03,193 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 34  acc = 98.0000
+2023-09-26 10:31:03,720 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:31:05,209 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 35 EpochTime = 1.487 (s) Losses = ['0.0667', '100.0000'] lr = 0.000610
+2023-09-26 10:31:06,459 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 35  acc = 98.0000
+2023-09-26 10:31:06,948 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:31:08,509 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 36 EpochTime = 1.560 (s) Losses = ['0.0681', '100.0000'] lr = 0.000605
+2023-09-26 10:31:09,575 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 36  acc = 98.0000
+2023-09-26 10:31:10,009 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:31:11,550 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 37 EpochTime = 1.539 (s) Losses = ['0.0835', '100.0000'] lr = 0.000600
+2023-09-26 10:31:12,590 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 37  acc = 98.0000
+2023-09-26 10:31:13,076 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:31:14,392 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 38 EpochTime = 1.315 (s) Losses = ['0.0822', '100.0000'] lr = 0.000595
+2023-09-26 10:31:15,593 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 38  acc = 98.0000
+2023-09-26 10:31:16,047 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:31:17,402 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 39 EpochTime = 1.352 (s) Losses = ['0.0747', '100.0000'] lr = 0.000590
+2023-09-26 10:31:18,461 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 39  acc = 98.0000
+2023-09-26 10:31:19,009 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:31:20,467 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 40 EpochTime = 1.456 (s) Losses = ['0.0630', '100.0000'] lr = 0.000584
+2023-09-26 10:31:21,708 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 40  acc = 98.0000
+2023-09-26 10:31:22,320 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:31:23,603 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 41 EpochTime = 1.281 (s) Losses = ['0.0509', '100.0000'] lr = 0.000579
+2023-09-26 10:31:24,697 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 41  acc = 98.0000
+2023-09-26 10:31:25,143 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:31:26,377 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 42 EpochTime = 1.232 (s) Losses = ['0.0732', '98.9583'] lr = 0.000573
+2023-09-26 10:31:27,418 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 42  acc = 98.0000
+2023-09-26 10:31:27,917 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:31:29,310 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 43 EpochTime = 1.391 (s) Losses = ['0.0648', '100.0000'] lr = 0.000568
+2023-09-26 10:31:30,568 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 43  acc = 98.0000
+2023-09-26 10:31:31,151 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:31:32,748 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 44 EpochTime = 1.593 (s) Losses = ['0.0609', '100.0000'] lr = 0.000562
+2023-09-26 10:31:33,938 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 44  acc = 98.0000
+2023-09-26 10:31:34,502 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:31:35,956 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 45 EpochTime = 1.385 (s) Losses = ['0.0538', '100.0000'] lr = 0.000556
+2023-09-26 10:31:36,995 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 45  acc = 98.0000
+2023-09-26 10:31:37,446 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:31:38,864 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 46 EpochTime = 1.417 (s) Losses = ['0.0777', '98.9583'] lr = 0.000550
+2023-09-26 10:31:40,075 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 46  acc = 98.0000
+2023-09-26 10:31:40,519 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:31:41,938 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 47 EpochTime = 1.417 (s) Losses = ['0.0631', '100.0000'] lr = 0.000544
+2023-09-26 10:31:43,271 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 47  acc = 98.0000
+2023-09-26 10:31:43,771 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:31:45,192 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 48 EpochTime = 1.420 (s) Losses = ['0.0780', '100.0000'] lr = 0.000538
+2023-09-26 10:31:46,348 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 48  acc = 98.0000
+2023-09-26 10:31:46,786 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:31:48,148 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 49 EpochTime = 1.359 (s) Losses = ['0.0851', '98.9583'] lr = 0.000532
+2023-09-26 10:31:49,366 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 49  acc = 98.0000
+2023-09-26 10:31:49,861 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:31:51,173 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 50 EpochTime = 1.311 (s) Losses = ['0.0557', '100.0000'] lr = 0.000525
+2023-09-26 10:31:52,275 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 50  acc = 98.0000
+2023-09-26 10:31:52,740 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:31:54,160 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 51 EpochTime = 1.418 (s) Losses = ['0.0481', '100.0000'] lr = 0.000519
+2023-09-26 10:31:55,296 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 51  acc = 98.0000
+2023-09-26 10:31:55,758 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:31:57,135 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 52 EpochTime = 1.376 (s) Losses = ['0.0770', '97.9167'] lr = 0.000512
+2023-09-26 10:31:58,263 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 52  acc = 98.0000
+2023-09-26 10:31:58,766 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:32:00,175 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 53 EpochTime = 1.405 (s) Losses = ['0.0373', '100.0000'] lr = 0.000506
+2023-09-26 10:32:01,357 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 53  acc = 98.0000
+2023-09-26 10:32:01,795 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:32:03,276 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 54 EpochTime = 1.479 (s) Losses = ['0.0490', '100.0000'] lr = 0.000499
+2023-09-26 10:32:04,411 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 54  acc = 98.0000
+2023-09-26 10:32:04,925 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:32:06,293 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 55 EpochTime = 1.366 (s) Losses = ['0.0355', '100.0000'] lr = 0.000493
+2023-09-26 10:32:07,456 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 55  acc = 98.0000
+2023-09-26 10:32:07,962 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:32:09,318 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 56 EpochTime = 1.354 (s) Losses = ['0.0279', '100.0000'] lr = 0.000486
+2023-09-26 10:32:10,523 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 56  acc = 98.0000
+2023-09-26 10:32:10,978 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:32:12,401 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 57 EpochTime = 1.421 (s) Losses = ['0.0484', '100.0000'] lr = 0.000479
+2023-09-26 10:32:13,510 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 57  acc = 98.0000
+2023-09-26 10:32:13,966 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:32:15,339 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 58 EpochTime = 1.370 (s) Losses = ['0.0593', '98.9583'] lr = 0.000472
+2023-09-26 10:32:16,476 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 58  acc = 98.0000
+2023-09-26 10:32:16,957 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:32:18,596 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 59 EpochTime = 1.636 (s) Losses = ['0.0394', '100.0000'] lr = 0.000465
+2023-09-26 10:32:19,710 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 59  acc = 98.0000
+2023-09-26 10:32:20,204 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:32:21,620 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 60 EpochTime = 1.414 (s) Losses = ['0.0372', '100.0000'] lr = 0.000459
+2023-09-26 10:32:22,894 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 60  acc = 98.0000
+2023-09-26 10:32:23,345 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:32:24,829 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 61 EpochTime = 1.481 (s) Losses = ['0.0495', '100.0000'] lr = 0.000452
+2023-09-26 10:32:25,970 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 61  acc = 98.0000
+2023-09-26 10:32:26,442 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:32:27,822 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 62 EpochTime = 1.378 (s) Losses = ['0.0380', '100.0000'] lr = 0.000444
+2023-09-26 10:32:28,988 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 62  acc = 98.0000
+2023-09-26 10:32:29,501 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:32:30,848 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 63 EpochTime = 1.346 (s) Losses = ['0.0709', '100.0000'] lr = 0.000437
+2023-09-26 10:32:31,967 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 63  acc = 98.0000
+2023-09-26 10:32:32,402 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:32:33,778 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 64 EpochTime = 1.374 (s) Losses = ['0.0397', '100.0000'] lr = 0.000430
+2023-09-26 10:32:34,883 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 64  acc = 98.0000
+2023-09-26 10:32:35,394 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:32:36,841 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 65 EpochTime = 1.445 (s) Losses = ['0.0642', '98.9583'] lr = 0.000423
+2023-09-26 10:32:37,990 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 65  acc = 98.0000
+2023-09-26 10:32:38,453 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:32:39,888 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 66 EpochTime = 1.433 (s) Losses = ['0.0527', '100.0000'] lr = 0.000416
+2023-09-26 10:32:41,092 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 66  acc = 98.0000
+2023-09-26 10:32:41,541 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:32:42,947 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 67 EpochTime = 1.404 (s) Losses = ['0.0352', '100.0000'] lr = 0.000409
+2023-09-26 10:32:44,083 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 67  acc = 97.0000
+2023-09-26 10:32:44,609 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:32:46,058 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 68 EpochTime = 1.447 (s) Losses = ['0.0344', '100.0000'] lr = 0.000402
+2023-09-26 10:32:47,184 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 68  acc = 97.0000
+2023-09-26 10:32:47,657 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:32:49,159 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 69 EpochTime = 1.500 (s) Losses = ['0.0392', '100.0000'] lr = 0.000394
+2023-09-26 10:32:50,336 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 69  acc = 97.0000
+2023-09-26 10:32:50,794 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:32:52,123 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 70 EpochTime = 1.328 (s) Losses = ['0.0323', '100.0000'] lr = 0.000387
+2023-09-26 10:32:53,240 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 70  acc = 98.0000
+2023-09-26 10:32:53,736 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:32:55,118 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 71 EpochTime = 1.381 (s) Losses = ['0.0379', '100.0000'] lr = 0.000380
+2023-09-26 10:32:56,268 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 71  acc = 98.0000
+2023-09-26 10:32:56,736 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:32:58,121 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 72 EpochTime = 1.383 (s) Losses = ['0.0555', '98.9583'] lr = 0.000372
+2023-09-26 10:32:59,267 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 72  acc = 98.0000
+2023-09-26 10:32:59,776 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:33:01,328 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 73 EpochTime = 1.551 (s) Losses = ['0.0326', '100.0000'] lr = 0.000365
+2023-09-26 10:33:02,474 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 73  acc = 98.0000
+2023-09-26 10:33:02,952 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:33:04,333 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 74 EpochTime = 1.379 (s) Losses = ['0.0296', '100.0000'] lr = 0.000358
+2023-09-26 10:33:05,447 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 74  acc = 97.0000
+2023-09-26 10:33:05,920 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:33:07,286 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 75 EpochTime = 1.363 (s) Losses = ['0.0385', '98.9583'] lr = 0.000351
+2023-09-26 10:33:08,429 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 75  acc = 97.0000
+2023-09-26 10:33:09,083 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:33:10,550 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 76 EpochTime = 1.464 (s) Losses = ['0.0342', '100.0000'] lr = 0.000343
+2023-09-26 10:33:11,683 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 76  acc = 97.0000
+2023-09-26 10:33:12,145 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:33:13,547 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 77 EpochTime = 1.400 (s) Losses = ['0.0183', '100.0000'] lr = 0.000336
+2023-09-26 10:33:14,706 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 77  acc = 97.0000
+2023-09-26 10:33:15,160 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:33:16,537 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 78 EpochTime = 1.374 (s) Losses = ['0.0368', '98.9583'] lr = 0.000329
+2023-09-26 10:33:17,640 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 78  acc = 97.0000
+2023-09-26 10:33:18,119 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:33:19,566 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 79 EpochTime = 1.446 (s) Losses = ['0.0483', '100.0000'] lr = 0.000321
+2023-09-26 10:33:20,724 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 79  acc = 98.0000
+2023-09-26 10:33:21,224 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:33:22,768 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 80 EpochTime = 1.543 (s) Losses = ['0.0275', '98.9583'] lr = 0.000314
+2023-09-26 10:33:23,897 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 80  acc = 98.0000
+2023-09-26 10:33:24,405 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:33:25,752 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 81 EpochTime = 1.345 (s) Losses = ['0.0437', '100.0000'] lr = 0.000307
+2023-09-26 10:33:26,868 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 81  acc = 98.0000
+2023-09-26 10:33:27,348 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:33:28,736 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 82 EpochTime = 1.386 (s) Losses = ['0.0226', '100.0000'] lr = 0.000299
+2023-09-26 10:33:29,841 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 82  acc = 98.0000
+2023-09-26 10:33:30,353 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:33:31,954 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 83 EpochTime = 1.600 (s) Losses = ['0.0413', '98.9583'] lr = 0.000292
+2023-09-26 10:33:33,326 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 83  acc = 97.0000
+2023-09-26 10:33:33,853 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:33:35,213 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 84 EpochTime = 1.359 (s) Losses = ['0.0352', '98.9583'] lr = 0.000285
+2023-09-26 10:33:36,319 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 84  acc = 97.0000
+2023-09-26 10:33:36,757 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:33:38,134 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 85 EpochTime = 1.376 (s) Losses = ['0.0243', '100.0000'] lr = 0.000278
+2023-09-26 10:33:39,250 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 85  acc = 97.0000
+2023-09-26 10:33:39,748 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:33:41,139 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 86 EpochTime = 1.390 (s) Losses = ['0.0274', '100.0000'] lr = 0.000271
+2023-09-26 10:33:42,276 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 86  acc = 98.0000
+2023-09-26 10:33:42,734 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:33:44,120 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 87 EpochTime = 1.384 (s) Losses = ['0.0216', '100.0000'] lr = 0.000264
+2023-09-26 10:33:45,231 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 87  acc = 98.0000
+2023-09-26 10:33:45,678 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:33:47,125 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 88 EpochTime = 1.446 (s) Losses = ['0.0421', '98.9583'] lr = 0.000257
+2023-09-26 10:33:48,244 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 88  acc = 98.0000
+2023-09-26 10:33:48,667 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:33:50,091 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 89 EpochTime = 1.423 (s) Losses = ['0.0332', '100.0000'] lr = 0.000249
+2023-09-26 10:33:51,197 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 89  acc = 98.0000
+2023-09-26 10:33:51,708 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:33:53,075 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 90 EpochTime = 1.365 (s) Losses = ['0.0376', '100.0000'] lr = 0.000242
+2023-09-26 10:33:54,257 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 90  acc = 98.0000
+2023-09-26 10:33:54,780 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:33:56,150 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 91 EpochTime = 1.368 (s) Losses = ['0.0275', '100.0000'] lr = 0.000236
+2023-09-26 10:33:57,264 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 91  acc = 98.0000
+2023-09-26 10:33:57,706 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:33:59,066 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 92 EpochTime = 1.359 (s) Losses = ['0.0262', '100.0000'] lr = 0.000229
+2023-09-26 10:34:00,386 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 92  acc = 98.0000
+2023-09-26 10:34:00,802 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:34:02,254 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 93 EpochTime = 1.450 (s) Losses = ['0.0262', '100.0000'] lr = 0.000222
+2023-09-26 10:34:03,395 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 93  acc = 98.0000
+2023-09-26 10:34:03,842 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:34:05,458 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 94 EpochTime = 1.614 (s) Losses = ['0.0334', '100.0000'] lr = 0.000215
+2023-09-26 10:34:06,841 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 94  acc = 98.0000
+2023-09-26 10:34:07,384 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:34:08,799 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 95 EpochTime = 1.413 (s) Losses = ['0.0254', '100.0000'] lr = 0.000208
+2023-09-26 10:34:10,007 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 95  acc = 98.0000
+2023-09-26 10:34:10,498 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:34:12,361 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 96 EpochTime = 1.861 (s) Losses = ['0.0278', '100.0000'] lr = 0.000202
+2023-09-26 10:34:13,594 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 96  acc = 98.0000
+2023-09-26 10:34:14,120 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:34:15,541 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 97 EpochTime = 1.419 (s) Losses = ['0.0215', '100.0000'] lr = 0.000195
+2023-09-26 10:34:16,743 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 97  acc = 98.0000
+2023-09-26 10:34:17,244 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:34:18,823 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 98 EpochTime = 1.577 (s) Losses = ['0.0439', '100.0000'] lr = 0.000189
+2023-09-26 10:34:20,101 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 98  acc = 98.0000
+2023-09-26 10:34:20,609 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:34:22,031 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 99 EpochTime = 1.419 (s) Losses = ['0.0239', '100.0000'] lr = 0.000182
+2023-09-26 10:34:23,259 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 99  acc = 98.0000
+2023-09-26 10:34:23,772 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:34:25,175 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 100 EpochTime = 1.402 (s) Losses = ['0.0414', '100.0000'] lr = 0.000176
+2023-09-26 10:34:26,285 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 100  acc = 98.0000
+2023-09-26 10:34:26,790 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:34:28,159 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 101 EpochTime = 1.368 (s) Losses = ['0.0324', '98.9583'] lr = 0.000169
+2023-09-26 10:34:29,333 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 101  acc = 98.0000
+2023-09-26 10:34:29,854 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:34:31,240 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 102 EpochTime = 1.385 (s) Losses = ['0.0319', '100.0000'] lr = 0.000163
+2023-09-26 10:34:32,368 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 102  acc = 98.0000
+2023-09-26 10:34:32,868 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:34:34,337 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 103 EpochTime = 1.467 (s) Losses = ['0.0470', '98.9583'] lr = 0.000157
+2023-09-26 10:34:35,482 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 103  acc = 98.0000
+2023-09-26 10:34:36,004 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:34:37,397 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 104 EpochTime = 1.392 (s) Losses = ['0.0418', '100.0000'] lr = 0.000151
+2023-09-26 10:34:38,557 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 104  acc = 98.0000
+2023-09-26 10:34:39,028 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:34:40,785 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 105 EpochTime = 1.755 (s) Losses = ['0.0322', '100.0000'] lr = 0.000145
+2023-09-26 10:34:41,971 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 105  acc = 98.0000
+2023-09-26 10:34:42,387 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:34:43,767 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 106 EpochTime = 1.379 (s) Losses = ['0.0157', '100.0000'] lr = 0.000139
+2023-09-26 10:34:44,909 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 106  acc = 98.0000
+2023-09-26 10:34:45,404 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:34:46,759 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 107 EpochTime = 1.354 (s) Losses = ['0.0247', '100.0000'] lr = 0.000133
+2023-09-26 10:34:47,858 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 107  acc = 98.0000
+2023-09-26 10:34:48,309 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:34:49,664 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 108 EpochTime = 1.353 (s) Losses = ['0.0195', '100.0000'] lr = 0.000128
+2023-09-26 10:34:50,787 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 108  acc = 98.0000
+2023-09-26 10:34:51,311 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:34:52,687 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 109 EpochTime = 1.374 (s) Losses = ['0.0210', '100.0000'] lr = 0.000122
+2023-09-26 10:34:53,781 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 109  acc = 98.0000
+2023-09-26 10:34:54,276 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:34:55,646 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 110 EpochTime = 1.367 (s) Losses = ['0.0209', '100.0000'] lr = 0.000117
+2023-09-26 10:34:56,872 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 110  acc = 98.0000
+2023-09-26 10:34:57,300 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:34:58,659 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 111 EpochTime = 1.358 (s) Losses = ['0.0192', '100.0000'] lr = 0.000111
+2023-09-26 10:34:59,795 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 111  acc = 98.0000
+2023-09-26 10:35:00,281 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:35:01,695 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 112 EpochTime = 1.412 (s) Losses = ['0.0231', '100.0000'] lr = 0.000106
+2023-09-26 10:35:02,810 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 112  acc = 98.0000
+2023-09-26 10:35:03,282 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:35:04,627 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 113 EpochTime = 1.343 (s) Losses = ['0.0429', '100.0000'] lr = 0.000101
+2023-09-26 10:35:05,754 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 113  acc = 98.0000
+2023-09-26 10:35:06,216 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:35:07,573 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 114 EpochTime = 1.356 (s) Losses = ['0.0267', '100.0000'] lr = 0.000096
+2023-09-26 10:35:08,677 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 114  acc = 98.0000
+2023-09-26 10:35:09,152 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:35:10,524 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 115 EpochTime = 1.371 (s) Losses = ['0.0237', '100.0000'] lr = 0.000091
+2023-09-26 10:35:11,628 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 115  acc = 98.0000
+2023-09-26 10:35:12,047 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:35:13,399 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 116 EpochTime = 1.350 (s) Losses = ['0.0203', '100.0000'] lr = 0.000086
+2023-09-26 10:35:14,507 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 116  acc = 97.0000
+2023-09-26 10:35:15,020 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:35:16,402 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 117 EpochTime = 1.379 (s) Losses = ['0.0277', '98.9583'] lr = 0.000081
+2023-09-26 10:35:17,495 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 117  acc = 97.0000
+2023-09-26 10:35:18,279 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:35:19,649 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 118 EpochTime = 1.369 (s) Losses = ['0.0218', '100.0000'] lr = 0.000077
+2023-09-26 10:35:20,763 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 118  acc = 97.0000
+2023-09-26 10:35:21,272 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:35:22,574 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 119 EpochTime = 1.300 (s) Losses = ['0.0226', '100.0000'] lr = 0.000072
+2023-09-26 10:35:23,752 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 119  acc = 97.0000
+2023-09-26 10:35:24,222 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:35:26,300 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 120 EpochTime = 2.076 (s) Losses = ['0.0226', '100.0000'] lr = 0.000068
+2023-09-26 10:35:28,024 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 120  acc = 97.0000
+2023-09-26 10:35:28,508 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:35:30,531 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 121 EpochTime = 2.021 (s) Losses = ['0.0202', '100.0000'] lr = 0.000064
+2023-09-26 10:35:32,213 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 121  acc = 97.0000
+2023-09-26 10:35:32,676 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:35:34,635 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 122 EpochTime = 1.957 (s) Losses = ['0.0254', '100.0000'] lr = 0.000059
+2023-09-26 10:35:36,226 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 122  acc = 97.0000
+2023-09-26 10:35:36,746 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:35:38,693 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 123 EpochTime = 1.945 (s) Losses = ['0.0354', '100.0000'] lr = 0.000055
+2023-09-26 10:35:40,286 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 123  acc = 97.0000
+2023-09-26 10:35:40,842 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:35:42,618 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 124 EpochTime = 1.774 (s) Losses = ['0.0320', '98.9583'] lr = 0.000052
+2023-09-26 10:35:44,056 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 124  acc = 97.0000
+2023-09-26 10:35:44,527 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:35:46,027 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 125 EpochTime = 1.498 (s) Losses = ['0.0223', '100.0000'] lr = 0.000048
+2023-09-26 10:35:47,282 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 125  acc = 97.0000
+2023-09-26 10:35:47,799 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:35:49,299 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 126 EpochTime = 1.499 (s) Losses = ['0.0190', '100.0000'] lr = 0.000044
+2023-09-26 10:35:50,443 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 126  acc = 97.0000
+2023-09-26 10:35:50,966 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:35:52,490 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 127 EpochTime = 1.522 (s) Losses = ['0.0270', '100.0000'] lr = 0.000041
+2023-09-26 10:35:53,662 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 127  acc = 97.0000
+2023-09-26 10:35:54,148 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:35:55,701 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 128 EpochTime = 1.551 (s) Losses = ['0.0197', '100.0000'] lr = 0.000037
+2023-09-26 10:35:56,859 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 128  acc = 98.0000
+2023-09-26 10:35:57,431 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:35:58,899 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 129 EpochTime = 1.466 (s) Losses = ['0.0206', '100.0000'] lr = 0.000034
+2023-09-26 10:36:00,040 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 129  acc = 98.0000
+2023-09-26 10:36:00,484 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:36:01,890 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 130 EpochTime = 1.404 (s) Losses = ['0.0171', '100.0000'] lr = 0.000031
+2023-09-26 10:36:03,061 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 130  acc = 98.0000
+2023-09-26 10:36:03,496 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:36:04,983 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 131 EpochTime = 1.485 (s) Losses = ['0.0145', '100.0000'] lr = 0.000028
+2023-09-26 10:36:06,230 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 131  acc = 98.0000
+2023-09-26 10:36:06,712 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:36:08,166 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 132 EpochTime = 1.452 (s) Losses = ['0.0253', '100.0000'] lr = 0.000026
+2023-09-26 10:36:09,380 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 132  acc = 98.0000
+2023-09-26 10:36:09,855 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:36:11,290 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 133 EpochTime = 1.433 (s) Losses = ['0.0278', '100.0000'] lr = 0.000023
+2023-09-26 10:36:12,639 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 133  acc = 98.0000
+2023-09-26 10:36:13,094 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:36:14,677 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 134 EpochTime = 1.582 (s) Losses = ['0.0314', '100.0000'] lr = 0.000020
+2023-09-26 10:36:16,098 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 134  acc = 97.0000
+2023-09-26 10:36:16,607 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:36:18,102 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 135 EpochTime = 1.493 (s) Losses = ['0.0168', '100.0000'] lr = 0.000018
+2023-09-26 10:36:19,290 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 135  acc = 98.0000
+2023-09-26 10:36:19,758 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:36:21,226 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 136 EpochTime = 1.463 (s) Losses = ['0.0242', '100.0000'] lr = 0.000016
+2023-09-26 10:36:22,427 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 136  acc = 97.0000
+2023-09-26 10:36:22,963 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:36:24,560 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 137 EpochTime = 1.595 (s) Losses = ['0.0277', '100.0000'] lr = 0.000014
+2023-09-26 10:36:25,890 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 137  acc = 97.0000
+2023-09-26 10:36:26,400 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:36:27,865 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 138 EpochTime = 1.463 (s) Losses = ['0.0170', '100.0000'] lr = 0.000012
+2023-09-26 10:36:29,144 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 138  acc = 97.0000
+2023-09-26 10:36:29,645 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:36:31,071 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 139 EpochTime = 1.425 (s) Losses = ['0.0184', '100.0000'] lr = 0.000010
+2023-09-26 10:36:32,305 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 139  acc = 97.0000
+2023-09-26 10:36:32,815 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:36:34,229 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 140 EpochTime = 1.413 (s) Losses = ['0.0233', '100.0000'] lr = 0.000009
+2023-09-26 10:36:35,446 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 140  acc = 97.0000
+2023-09-26 10:36:35,904 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:36:37,321 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 141 EpochTime = 1.415 (s) Losses = ['0.0282', '100.0000'] lr = 0.000007
+2023-09-26 10:36:38,487 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 141  acc = 97.0000
+2023-09-26 10:36:38,940 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:36:39,410 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-epoch-141.pth
+2023-09-26 10:36:40,844 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 142 EpochTime = 1.433 (s) Losses = ['0.0231', '100.0000'] lr = 0.000006
+2023-09-26 10:36:42,046 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 142  acc = 97.0000
+2023-09-26 10:36:42,515 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:36:42,958 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-epoch-142.pth
+2023-09-26 10:36:44,417 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 143 EpochTime = 1.457 (s) Losses = ['0.0204', '100.0000'] lr = 0.000005
+2023-09-26 10:36:45,631 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 143  acc = 97.0000
+2023-09-26 10:36:46,069 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:36:46,515 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-epoch-143.pth
+2023-09-26 10:36:48,032 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 144 EpochTime = 1.515 (s) Losses = ['0.0182', '100.0000'] lr = 0.000004
+2023-09-26 10:36:49,418 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 144  acc = 97.0000
+2023-09-26 10:36:49,893 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:36:50,400 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-epoch-144.pth
+2023-09-26 10:36:51,958 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 145 EpochTime = 1.556 (s) Losses = ['0.0249', '100.0000'] lr = 0.000003
+2023-09-26 10:36:53,232 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 145  acc = 97.0000
+2023-09-26 10:36:53,758 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:36:54,260 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-epoch-145.pth
+2023-09-26 10:36:55,686 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 146 EpochTime = 1.425 (s) Losses = ['0.0241', '100.0000'] lr = 0.000002
+2023-09-26 10:36:56,843 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 146  acc = 97.0000
+2023-09-26 10:36:57,336 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:36:57,830 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-epoch-146.pth
+2023-09-26 10:36:59,260 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 147 EpochTime = 1.428 (s) Losses = ['0.0275', '100.0000'] lr = 0.000002
+2023-09-26 10:37:00,424 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 147  acc = 97.0000
+2023-09-26 10:37:00,887 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:37:01,348 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-epoch-147.pth
+2023-09-26 10:37:02,959 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 148 EpochTime = 1.609 (s) Losses = ['0.0168', '100.0000'] lr = 0.000001
+2023-09-26 10:37:04,133 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 148  acc = 97.0000
+2023-09-26 10:37:04,632 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:37:05,095 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-epoch-148.pth
+2023-09-26 10:37:06,531 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 149 EpochTime = 1.434 (s) Losses = ['0.0288', '100.0000'] lr = 0.000001
+2023-09-26 10:37:07,681 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 149  acc = 97.0000
+2023-09-26 10:37:08,171 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:37:08,709 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-epoch-149.pth
+2023-09-26 10:37:10,158 - fewshot_modelnet_non_linear_classification - INFO - [Training] EPOCH: 150 EpochTime = 1.447 (s) Losses = ['0.0198', '100.0000'] lr = 0.000001
+2023-09-26 10:37:11,314 - fewshot_modelnet_non_linear_classification - INFO - [Validation] EPOCH: 150  acc = 97.0000
+2023-09-26 10:37:11,782 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-last.pth
+2023-09-26 10:37:12,221 - fewshot_modelnet_non_linear_classification - INFO - Save checkpoint at ./experiments/fewshot_modelnet_non_linear_classification/cfgs/add_as_normal/ckpt-epoch-150.pth
