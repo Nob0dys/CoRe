@@ -1,0 +1,1082 @@
+2023-11-01 15:53:57,914 - finetune_scan_objonly_linear_classification - INFO - Copy the Config file from cfgs/finetune_scan_objonly_linear_classification.yaml to ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/config.yaml
+2023-11-01 15:53:57,914 - finetune_scan_objonly_linear_classification - INFO - args.config : cfgs/finetune_scan_objonly_linear_classification.yaml
+2023-11-01 15:53:57,914 - finetune_scan_objonly_linear_classification - INFO - args.launcher : none
+2023-11-01 15:53:57,914 - finetune_scan_objonly_linear_classification - INFO - args.local_rank : 0
+2023-11-01 15:53:57,914 - finetune_scan_objonly_linear_classification - INFO - args.num_workers : 8
+2023-11-01 15:53:57,914 - finetune_scan_objonly_linear_classification - INFO - args.seed : 0
+2023-11-01 15:53:57,914 - finetune_scan_objonly_linear_classification - INFO - args.deterministic : False
+2023-11-01 15:53:57,914 - finetune_scan_objonly_linear_classification - INFO - args.sync_bn : True
+2023-11-01 15:53:57,914 - finetune_scan_objonly_linear_classification - INFO - args.large_group : 5
+2023-11-01 15:53:57,914 - finetune_scan_objonly_linear_classification - INFO - args.small_group : 10
+2023-11-01 15:53:57,914 - finetune_scan_objonly_linear_classification - INFO - args.large_patch : 6
+2023-11-01 15:53:57,914 - finetune_scan_objonly_linear_classification - INFO - args.small_patch : 3
+2023-11-01 15:53:57,914 - finetune_scan_objonly_linear_classification - INFO - args.queue_length : 8192
+2023-11-01 15:53:57,914 - finetune_scan_objonly_linear_classification - INFO - args.epoch_queue_starts : 10
+2023-11-01 15:53:57,914 - finetune_scan_objonly_linear_classification - INFO - args.nmb_crops : 64
+2023-11-01 15:53:57,914 - finetune_scan_objonly_linear_classification - INFO - args.sample_num : 16
+2023-11-01 15:53:57,914 - finetune_scan_objonly_linear_classification - INFO - args.fea_dim : 384
+2023-11-01 15:53:57,915 - finetune_scan_objonly_linear_classification - INFO - args.hidden_mlp : 256
+2023-11-01 15:53:57,915 - finetune_scan_objonly_linear_classification - INFO - args.output_dim : 128
+2023-11-01 15:53:57,915 - finetune_scan_objonly_linear_classification - INFO - args.nmb_prototypes : 200
+2023-11-01 15:53:57,915 - finetune_scan_objonly_linear_classification - INFO - args.temperature : 0.1
+2023-11-01 15:53:57,915 - finetune_scan_objonly_linear_classification - INFO - args.epsilon : 0.05
+2023-11-01 15:53:57,915 - finetune_scan_objonly_linear_classification - INFO - args.sinkhorn_iterations : 3
+2023-11-01 15:53:57,915 - finetune_scan_objonly_linear_classification - INFO - args.world_size : 1
+2023-11-01 15:53:57,915 - finetune_scan_objonly_linear_classification - INFO - args.exp_name : lr_0.0007
+2023-11-01 15:53:57,915 - finetune_scan_objonly_linear_classification - INFO - args.loss : cd1
+2023-11-01 15:53:57,915 - finetune_scan_objonly_linear_classification - INFO - args.start_ckpts : None
+2023-11-01 15:53:57,915 - finetune_scan_objonly_linear_classification - INFO - args.ckpts : ./experiments/pretrain_MaskSurf/cfgs/add_as_normal/ckpt-last.pth
+2023-11-01 15:53:57,915 - finetune_scan_objonly_linear_classification - INFO - args.val_freq : 1
+2023-11-01 15:53:57,915 - finetune_scan_objonly_linear_classification - INFO - args.vote : False
+2023-11-01 15:53:57,915 - finetune_scan_objonly_linear_classification - INFO - args.resume : False
+2023-11-01 15:53:57,915 - finetune_scan_objonly_linear_classification - INFO - args.test : False
+2023-11-01 15:53:57,915 - finetune_scan_objonly_linear_classification - INFO - args.finetune_model : True
+2023-11-01 15:53:57,915 - finetune_scan_objonly_linear_classification - INFO - args.scratch_model : False
+2023-11-01 15:53:57,915 - finetune_scan_objonly_linear_classification - INFO - args.mode : None
+2023-11-01 15:53:57,915 - finetune_scan_objonly_linear_classification - INFO - args.way : -1
+2023-11-01 15:53:57,915 - finetune_scan_objonly_linear_classification - INFO - args.shot : -1
+2023-11-01 15:53:57,915 - finetune_scan_objonly_linear_classification - INFO - args.fold : -1
+2023-11-01 15:53:57,915 - finetune_scan_objonly_linear_classification - INFO - args.experiment_path : ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007
+2023-11-01 15:53:57,915 - finetune_scan_objonly_linear_classification - INFO - args.tfboard_path : ./experiments/finetune_scan_objonly_linear_classification/cfgs/TFBoard/lr_0.0007
+2023-11-01 15:53:57,916 - finetune_scan_objonly_linear_classification - INFO - args.log_name : finetune_scan_objonly_linear_classification
+2023-11-01 15:53:57,916 - finetune_scan_objonly_linear_classification - INFO - args.use_gpu : True
+2023-11-01 15:53:57,916 - finetune_scan_objonly_linear_classification - INFO - args.distributed : False
+2023-11-01 15:53:57,916 - finetune_scan_objonly_linear_classification - INFO - config.optimizer = edict()
+2023-11-01 15:53:57,916 - finetune_scan_objonly_linear_classification - INFO - config.optimizer.type : AdamW
+2023-11-01 15:53:57,916 - finetune_scan_objonly_linear_classification - INFO - config.optimizer.part : only_new
+2023-11-01 15:53:57,916 - finetune_scan_objonly_linear_classification - INFO - config.optimizer.kwargs = edict()
+2023-11-01 15:53:57,916 - finetune_scan_objonly_linear_classification - INFO - config.optimizer.kwargs.lr : 0.0007
+2023-11-01 15:53:57,916 - finetune_scan_objonly_linear_classification - INFO - config.optimizer.kwargs.weight_decay : 0.05
+2023-11-01 15:53:57,916 - finetune_scan_objonly_linear_classification - INFO - config.scheduler = edict()
+2023-11-01 15:53:57,916 - finetune_scan_objonly_linear_classification - INFO - config.scheduler.type : CosLR
+2023-11-01 15:53:57,916 - finetune_scan_objonly_linear_classification - INFO - config.scheduler.kwargs = edict()
+2023-11-01 15:53:57,916 - finetune_scan_objonly_linear_classification - INFO - config.scheduler.kwargs.epochs : 300
+2023-11-01 15:53:57,916 - finetune_scan_objonly_linear_classification - INFO - config.scheduler.kwargs.initial_epochs : 10
+2023-11-01 15:53:57,916 - finetune_scan_objonly_linear_classification - INFO - config.dataset = edict()
+2023-11-01 15:53:57,916 - finetune_scan_objonly_linear_classification - INFO - config.dataset.train = edict()
+2023-11-01 15:53:57,916 - finetune_scan_objonly_linear_classification - INFO - config.dataset.train._base_ = edict()
+2023-11-01 15:53:57,916 - finetune_scan_objonly_linear_classification - INFO - config.dataset.train._base_.NAME : ScanObjectNN
+2023-11-01 15:53:57,916 - finetune_scan_objonly_linear_classification - INFO - config.dataset.train._base_.ROOT : data/ScanObjectNN/main_split_nobg
+2023-11-01 15:53:57,916 - finetune_scan_objonly_linear_classification - INFO - config.dataset.train.others = edict()
+2023-11-01 15:53:57,916 - finetune_scan_objonly_linear_classification - INFO - config.dataset.train.others.subset : train
+2023-11-01 15:53:57,916 - finetune_scan_objonly_linear_classification - INFO - config.dataset.train.others.bs : 32
+2023-11-01 15:53:57,916 - finetune_scan_objonly_linear_classification - INFO - config.dataset.val = edict()
+2023-11-01 15:53:57,917 - finetune_scan_objonly_linear_classification - INFO - config.dataset.val._base_ = edict()
+2023-11-01 15:53:57,917 - finetune_scan_objonly_linear_classification - INFO - config.dataset.val._base_.NAME : ScanObjectNN
+2023-11-01 15:53:57,917 - finetune_scan_objonly_linear_classification - INFO - config.dataset.val._base_.ROOT : data/ScanObjectNN/main_split_nobg
+2023-11-01 15:53:57,917 - finetune_scan_objonly_linear_classification - INFO - config.dataset.val.others = edict()
+2023-11-01 15:53:57,917 - finetune_scan_objonly_linear_classification - INFO - config.dataset.val.others.subset : test
+2023-11-01 15:53:57,917 - finetune_scan_objonly_linear_classification - INFO - config.dataset.val.others.bs : 64
+2023-11-01 15:53:57,917 - finetune_scan_objonly_linear_classification - INFO - config.dataset.test = edict()
+2023-11-01 15:53:57,917 - finetune_scan_objonly_linear_classification - INFO - config.dataset.test._base_ = edict()
+2023-11-01 15:53:57,917 - finetune_scan_objonly_linear_classification - INFO - config.dataset.test._base_.NAME : ScanObjectNN
+2023-11-01 15:53:57,917 - finetune_scan_objonly_linear_classification - INFO - config.dataset.test._base_.ROOT : data/ScanObjectNN/main_split_nobg
+2023-11-01 15:53:57,917 - finetune_scan_objonly_linear_classification - INFO - config.dataset.test.others = edict()
+2023-11-01 15:53:57,917 - finetune_scan_objonly_linear_classification - INFO - config.dataset.test.others.subset : test
+2023-11-01 15:53:57,917 - finetune_scan_objonly_linear_classification - INFO - config.dataset.test.others.bs : 32
+2023-11-01 15:53:57,917 - finetune_scan_objonly_linear_classification - INFO - config.model = edict()
+2023-11-01 15:53:57,917 - finetune_scan_objonly_linear_classification - INFO - config.model.NAME : PointTransformerLinearClassification
+2023-11-01 15:53:57,917 - finetune_scan_objonly_linear_classification - INFO - config.model.trans_dim : 384
+2023-11-01 15:53:57,917 - finetune_scan_objonly_linear_classification - INFO - config.model.depth : 12
+2023-11-01 15:53:57,917 - finetune_scan_objonly_linear_classification - INFO - config.model.drop_path_rate : 0.1
+2023-11-01 15:53:57,917 - finetune_scan_objonly_linear_classification - INFO - config.model.cls_dim : 15
+2023-11-01 15:53:57,917 - finetune_scan_objonly_linear_classification - INFO - config.model.num_heads : 6
+2023-11-01 15:53:57,917 - finetune_scan_objonly_linear_classification - INFO - config.model.group_size : 32
+2023-11-01 15:53:57,917 - finetune_scan_objonly_linear_classification - INFO - config.model.num_group : 128
+2023-11-01 15:53:57,918 - finetune_scan_objonly_linear_classification - INFO - config.model.encoder_dims : 384
+2023-11-01 15:53:57,918 - finetune_scan_objonly_linear_classification - INFO - config.npoints : 2048
+2023-11-01 15:53:57,918 - finetune_scan_objonly_linear_classification - INFO - config.total_bs : 32
+2023-11-01 15:53:57,918 - finetune_scan_objonly_linear_classification - INFO - config.step_per_update : 1
+2023-11-01 15:53:57,918 - finetune_scan_objonly_linear_classification - INFO - config.max_epoch : 300
+2023-11-01 15:53:57,918 - finetune_scan_objonly_linear_classification - INFO - config.grad_norm_clip : 10
+2023-11-01 15:53:57,918 - finetune_scan_objonly_linear_classification - INFO - Distributed training: False
+2023-11-01 15:53:57,918 - finetune_scan_objonly_linear_classification - INFO - Set random seed to 0, deterministic: False
+2023-11-01 15:54:01,782 - finetune_scan_objonly_linear_classification - INFO - Using Data parallel ...
+2023-11-01 15:54:54,999 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 0 EpochTime = 53.212 (s) Losses = ['2.7348', '7.9861'] lr = 0.000001
+2023-11-01 15:54:55,126 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 15:55:40,780 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 1 EpochTime = 45.653 (s) Losses = ['2.7232', '8.4635'] lr = 0.000071
+2023-11-01 15:55:49,058 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 1  acc = 6.7126
+2023-11-01 15:55:49,178 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-best.pth
+2023-11-01 15:55:49,178 - finetune_scan_objonly_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-01 15:55:49,618 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 15:56:34,890 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 2 EpochTime = 45.270 (s) Losses = ['2.5655', '16.7535'] lr = 0.000141
+2023-11-01 15:56:41,834 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 2  acc = 22.5473
+2023-11-01 15:56:42,322 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-best.pth
+2023-11-01 15:56:42,322 - finetune_scan_objonly_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-01 15:56:42,756 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 15:57:28,177 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 3 EpochTime = 45.420 (s) Losses = ['2.3785', '25.6076'] lr = 0.000211
+2023-11-01 15:57:35,130 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 3  acc = 31.3253
+2023-11-01 15:57:35,582 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-best.pth
+2023-11-01 15:57:35,583 - finetune_scan_objonly_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-01 15:57:36,000 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 15:58:21,473 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 4 EpochTime = 45.472 (s) Losses = ['2.1819', '30.9896'] lr = 0.000281
+2023-11-01 15:58:28,418 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 4  acc = 32.0138
+2023-11-01 15:58:28,917 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-best.pth
+2023-11-01 15:58:28,917 - finetune_scan_objonly_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-01 15:58:29,329 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 15:59:15,084 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 5 EpochTime = 45.754 (s) Losses = ['1.9952', '36.4149'] lr = 0.000351
+2023-11-01 15:59:22,047 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 5  acc = 43.8898
+2023-11-01 15:59:22,550 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-best.pth
+2023-11-01 15:59:22,550 - finetune_scan_objonly_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-01 15:59:22,955 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:00:09,048 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 6 EpochTime = 46.091 (s) Losses = ['1.8798', '39.2361'] lr = 0.000420
+2023-11-01 16:00:16,018 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 6  acc = 44.2341
+2023-11-01 16:00:16,434 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-best.pth
+2023-11-01 16:00:16,435 - finetune_scan_objonly_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-01 16:00:16,862 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:01:02,657 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 7 EpochTime = 45.794 (s) Losses = ['1.7281', '46.8750'] lr = 0.000490
+2023-11-01 16:01:09,553 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 7  acc = 51.9793
+2023-11-01 16:01:10,034 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-best.pth
+2023-11-01 16:01:10,035 - finetune_scan_objonly_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-01 16:01:10,449 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:01:56,642 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 8 EpochTime = 46.191 (s) Losses = ['1.6450', '48.0469'] lr = 0.000560
+2023-11-01 16:02:03,577 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 8  acc = 52.1515
+2023-11-01 16:02:04,089 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-best.pth
+2023-11-01 16:02:04,089 - finetune_scan_objonly_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-01 16:02:04,516 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:02:49,908 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 9 EpochTime = 45.391 (s) Losses = ['1.5428', '52.9948'] lr = 0.000630
+2023-11-01 16:02:56,847 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 9  acc = 53.7005
+2023-11-01 16:02:57,285 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-best.pth
+2023-11-01 16:02:57,286 - finetune_scan_objonly_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-01 16:02:57,725 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:03:43,475 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 10 EpochTime = 45.749 (s) Losses = ['1.4779', '55.2083'] lr = 0.000698
+2023-11-01 16:03:50,490 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 10  acc = 51.4630
+2023-11-01 16:03:50,982 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:04:36,453 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 11 EpochTime = 45.469 (s) Losses = ['1.3967', '56.1198'] lr = 0.000698
+2023-11-01 16:04:43,464 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 11  acc = 61.2737
+2023-11-01 16:04:43,988 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-best.pth
+2023-11-01 16:04:43,988 - finetune_scan_objonly_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-01 16:04:44,439 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:05:30,733 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 12 EpochTime = 46.293 (s) Losses = ['1.3446', '58.8108'] lr = 0.000697
+2023-11-01 16:05:37,713 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 12  acc = 58.1756
+2023-11-01 16:05:38,196 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:06:23,716 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 13 EpochTime = 45.519 (s) Losses = ['1.2834', '60.9809'] lr = 0.000697
+2023-11-01 16:06:30,674 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 13  acc = 62.6506
+2023-11-01 16:06:31,130 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-best.pth
+2023-11-01 16:06:31,131 - finetune_scan_objonly_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-01 16:06:31,598 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:07:16,602 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 14 EpochTime = 45.002 (s) Losses = ['1.2339', '62.1094'] lr = 0.000696
+2023-11-01 16:07:23,376 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 14  acc = 60.5852
+2023-11-01 16:07:23,902 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:08:09,291 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 15 EpochTime = 45.388 (s) Losses = ['1.1938', '63.8889'] lr = 0.000696
+2023-11-01 16:08:16,229 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 15  acc = 63.5112
+2023-11-01 16:08:16,731 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-best.pth
+2023-11-01 16:08:16,732 - finetune_scan_objonly_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-01 16:08:17,174 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:09:02,525 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 16 EpochTime = 45.349 (s) Losses = ['1.1598', '64.8438'] lr = 0.000695
+2023-11-01 16:09:09,474 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 16  acc = 69.5353
+2023-11-01 16:09:09,964 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-best.pth
+2023-11-01 16:09:09,965 - finetune_scan_objonly_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-01 16:09:10,411 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:09:56,491 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 17 EpochTime = 46.078 (s) Losses = ['1.1370', '64.8438'] lr = 0.000694
+2023-11-01 16:10:03,433 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 17  acc = 67.9862
+2023-11-01 16:10:03,940 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:10:49,107 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 18 EpochTime = 45.165 (s) Losses = ['1.1102', '66.7969'] lr = 0.000694
+2023-11-01 16:10:56,048 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 18  acc = 69.7074
+2023-11-01 16:10:56,535 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-best.pth
+2023-11-01 16:10:56,535 - finetune_scan_objonly_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-01 16:10:56,954 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:11:42,001 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 19 EpochTime = 45.045 (s) Losses = ['1.0841', '67.1441'] lr = 0.000693
+2023-11-01 16:11:48,964 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 19  acc = 68.6747
+2023-11-01 16:11:49,434 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:12:34,274 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 20 EpochTime = 44.838 (s) Losses = ['1.0467', '69.3142'] lr = 0.000692
+2023-11-01 16:12:41,281 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 20  acc = 71.4286
+2023-11-01 16:12:41,785 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-best.pth
+2023-11-01 16:12:41,785 - finetune_scan_objonly_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-01 16:12:42,196 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:13:27,631 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 21 EpochTime = 45.433 (s) Losses = ['1.0047', '69.7917'] lr = 0.000692
+2023-11-01 16:13:34,403 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 21  acc = 67.2978
+2023-11-01 16:13:34,872 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:14:19,137 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 22 EpochTime = 44.264 (s) Losses = ['0.9980', '69.6181'] lr = 0.000691
+2023-11-01 16:14:25,917 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 22  acc = 71.2565
+2023-11-01 16:14:26,374 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:15:12,502 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 23 EpochTime = 46.126 (s) Losses = ['0.9642', '72.0052'] lr = 0.000690
+2023-11-01 16:15:19,455 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 23  acc = 71.0843
+2023-11-01 16:15:19,874 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:16:06,018 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 24 EpochTime = 46.142 (s) Losses = ['0.9525', '71.6146'] lr = 0.000689
+2023-11-01 16:16:12,963 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 24  acc = 68.8468
+2023-11-01 16:16:13,411 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:16:59,299 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 25 EpochTime = 45.886 (s) Losses = ['0.9393', '72.3958'] lr = 0.000688
+2023-11-01 16:17:06,237 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 25  acc = 73.8382
+2023-11-01 16:17:06,678 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-best.pth
+2023-11-01 16:17:06,679 - finetune_scan_objonly_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-01 16:17:07,104 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:17:53,252 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 26 EpochTime = 46.147 (s) Losses = ['0.9044', '73.2205'] lr = 0.000687
+2023-11-01 16:18:00,201 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 26  acc = 73.3219
+2023-11-01 16:18:00,633 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:18:46,203 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 27 EpochTime = 45.568 (s) Losses = ['0.9057', '73.5677'] lr = 0.000686
+2023-11-01 16:18:53,160 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 27  acc = 73.3219
+2023-11-01 16:18:53,713 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:19:39,888 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 28 EpochTime = 46.173 (s) Losses = ['0.9011', '74.1319'] lr = 0.000685
+2023-11-01 16:19:46,831 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 28  acc = 73.3219
+2023-11-01 16:19:47,389 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:20:32,771 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 29 EpochTime = 45.380 (s) Losses = ['0.8642', '74.3490'] lr = 0.000684
+2023-11-01 16:20:39,743 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 29  acc = 74.0103
+2023-11-01 16:20:40,435 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-best.pth
+2023-11-01 16:20:40,436 - finetune_scan_objonly_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-01 16:20:41,300 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:21:27,328 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 30 EpochTime = 46.026 (s) Losses = ['0.8418', '75.8247'] lr = 0.000683
+2023-11-01 16:21:34,272 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 30  acc = 75.0430
+2023-11-01 16:21:34,731 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-best.pth
+2023-11-01 16:21:34,731 - finetune_scan_objonly_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-01 16:21:35,160 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:22:21,262 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 31 EpochTime = 46.101 (s) Losses = ['0.8498', '75.0868'] lr = 0.000682
+2023-11-01 16:22:28,214 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 31  acc = 74.8709
+2023-11-01 16:22:28,647 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:23:14,900 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 32 EpochTime = 46.252 (s) Losses = ['0.8350', '76.3021'] lr = 0.000681
+2023-11-01 16:23:21,824 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 32  acc = 75.3873
+2023-11-01 16:23:22,287 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-best.pth
+2023-11-01 16:23:22,287 - finetune_scan_objonly_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-01 16:23:22,688 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:24:08,878 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 33 EpochTime = 46.188 (s) Losses = ['0.8195', '76.2587'] lr = 0.000679
+2023-11-01 16:24:15,907 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 33  acc = 74.0103
+2023-11-01 16:24:16,346 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:25:02,247 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 34 EpochTime = 45.899 (s) Losses = ['0.7961', '76.4757'] lr = 0.000678
+2023-11-01 16:25:09,226 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 34  acc = 75.2151
+2023-11-01 16:25:09,681 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:25:55,234 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 35 EpochTime = 45.550 (s) Losses = ['0.8024', '77.4740'] lr = 0.000677
+2023-11-01 16:26:02,253 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 35  acc = 77.2805
+2023-11-01 16:26:02,703 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-best.pth
+2023-11-01 16:26:02,703 - finetune_scan_objonly_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-01 16:26:03,141 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:26:49,542 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 36 EpochTime = 46.399 (s) Losses = ['0.7757', '77.9948'] lr = 0.000675
+2023-11-01 16:26:56,573 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 36  acc = 75.2151
+2023-11-01 16:26:57,025 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:27:43,213 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 37 EpochTime = 46.186 (s) Losses = ['0.7832', '77.1701'] lr = 0.000674
+2023-11-01 16:27:50,181 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 37  acc = 74.5267
+2023-11-01 16:27:50,645 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:28:36,919 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 38 EpochTime = 46.273 (s) Losses = ['0.7741', '77.9080'] lr = 0.000673
+2023-11-01 16:28:43,879 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 38  acc = 77.1084
+2023-11-01 16:28:44,316 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:29:30,024 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 39 EpochTime = 45.706 (s) Losses = ['0.7578', '77.3438'] lr = 0.000671
+2023-11-01 16:29:36,989 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 39  acc = 76.2478
+2023-11-01 16:29:37,412 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:30:22,308 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 40 EpochTime = 44.895 (s) Losses = ['0.7461', '78.5156'] lr = 0.000670
+2023-11-01 16:30:29,245 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 40  acc = 79.0017
+2023-11-01 16:30:29,830 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-best.pth
+2023-11-01 16:30:29,830 - finetune_scan_objonly_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-01 16:30:30,274 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:31:16,421 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 41 EpochTime = 46.146 (s) Losses = ['0.7419', '78.1684'] lr = 0.000668
+2023-11-01 16:31:23,322 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 41  acc = 77.7969
+2023-11-01 16:31:23,751 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:32:08,012 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 42 EpochTime = 44.260 (s) Losses = ['0.7267', '79.2969'] lr = 0.000667
+2023-11-01 16:32:15,026 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 42  acc = 77.2805
+2023-11-01 16:32:15,465 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:33:00,194 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 43 EpochTime = 44.727 (s) Losses = ['0.7277', '79.1233'] lr = 0.000665
+2023-11-01 16:33:07,118 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 43  acc = 78.1411
+2023-11-01 16:33:07,652 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:33:53,850 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 44 EpochTime = 46.195 (s) Losses = ['0.7025', '79.5573'] lr = 0.000664
+2023-11-01 16:34:00,758 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 44  acc = 75.5594
+2023-11-01 16:34:01,235 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:34:47,532 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 45 EpochTime = 46.296 (s) Losses = ['0.7201', '79.1233'] lr = 0.000662
+2023-11-01 16:34:54,495 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 45  acc = 77.4527
+2023-11-01 16:34:54,946 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:35:41,234 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 46 EpochTime = 46.285 (s) Losses = ['0.6972', '80.1649'] lr = 0.000660
+2023-11-01 16:35:48,133 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 46  acc = 79.1738
+2023-11-01 16:35:48,561 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-best.pth
+2023-11-01 16:35:48,562 - finetune_scan_objonly_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-01 16:35:48,988 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:36:35,207 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 47 EpochTime = 46.216 (s) Losses = ['0.6770', '81.0764'] lr = 0.000659
+2023-11-01 16:36:42,111 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 47  acc = 79.3460
+2023-11-01 16:36:42,784 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-best.pth
+2023-11-01 16:36:42,784 - finetune_scan_objonly_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-01 16:36:43,347 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:37:29,452 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 48 EpochTime = 46.103 (s) Losses = ['0.6880', '80.2083'] lr = 0.000657
+2023-11-01 16:37:36,363 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 48  acc = 77.4527
+2023-11-01 16:37:36,868 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:38:22,457 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 49 EpochTime = 45.588 (s) Losses = ['0.6812', '80.6858'] lr = 0.000655
+2023-11-01 16:38:29,379 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 49  acc = 78.8296
+2023-11-01 16:38:29,884 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:39:16,105 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 50 EpochTime = 46.219 (s) Losses = ['0.6710', '80.4688'] lr = 0.000653
+2023-11-01 16:39:23,005 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 50  acc = 75.9036
+2023-11-01 16:39:23,529 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:40:09,774 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 51 EpochTime = 46.244 (s) Losses = ['0.6667', '81.0330'] lr = 0.000651
+2023-11-01 16:40:16,663 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 51  acc = 75.2151
+2023-11-01 16:40:17,139 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:41:03,399 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 52 EpochTime = 46.259 (s) Losses = ['0.6758', '80.0347'] lr = 0.000649
+2023-11-01 16:41:10,379 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 52  acc = 77.9690
+2023-11-01 16:41:10,988 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:41:57,039 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 53 EpochTime = 46.049 (s) Losses = ['0.6558', '82.2049'] lr = 0.000648
+2023-11-01 16:42:03,967 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 53  acc = 78.3133
+2023-11-01 16:42:04,407 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:42:50,713 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 54 EpochTime = 46.304 (s) Losses = ['0.6544', '80.8594'] lr = 0.000646
+2023-11-01 16:42:57,623 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 54  acc = 78.3133
+2023-11-01 16:42:58,138 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:43:44,376 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 55 EpochTime = 46.236 (s) Losses = ['0.6364', '82.2049'] lr = 0.000644
+2023-11-01 16:43:51,318 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 55  acc = 78.4854
+2023-11-01 16:43:51,906 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:44:38,029 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 56 EpochTime = 46.121 (s) Losses = ['0.6366', '81.9010'] lr = 0.000642
+2023-11-01 16:44:44,944 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 56  acc = 76.9363
+2023-11-01 16:44:45,461 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:45:31,703 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 57 EpochTime = 46.241 (s) Losses = ['0.6217', '82.3785'] lr = 0.000640
+2023-11-01 16:45:38,591 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 57  acc = 78.3133
+2023-11-01 16:45:39,150 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:46:25,386 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 58 EpochTime = 46.235 (s) Losses = ['0.6141', '82.6823'] lr = 0.000637
+2023-11-01 16:46:32,283 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 58  acc = 77.9690
+2023-11-01 16:46:32,706 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:47:18,322 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 59 EpochTime = 45.615 (s) Losses = ['0.6395', '80.9028'] lr = 0.000635
+2023-11-01 16:47:25,252 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 59  acc = 79.0017
+2023-11-01 16:47:25,722 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:48:11,979 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 60 EpochTime = 46.256 (s) Losses = ['0.6117', '82.3351'] lr = 0.000633
+2023-11-01 16:48:18,907 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 60  acc = 78.6575
+2023-11-01 16:48:19,366 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:49:05,668 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 61 EpochTime = 46.300 (s) Losses = ['0.5930', '82.7691'] lr = 0.000631
+2023-11-01 16:49:12,658 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 61  acc = 79.1738
+2023-11-01 16:49:13,234 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:49:59,320 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 62 EpochTime = 46.084 (s) Losses = ['0.6075', '82.4219'] lr = 0.000629
+2023-11-01 16:50:06,276 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 62  acc = 80.0344
+2023-11-01 16:50:06,686 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-best.pth
+2023-11-01 16:50:06,687 - finetune_scan_objonly_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-01 16:50:07,333 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:50:53,599 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 63 EpochTime = 46.264 (s) Losses = ['0.6107', '82.5521'] lr = 0.000627
+2023-11-01 16:51:00,542 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 63  acc = 79.1738
+2023-11-01 16:51:01,125 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:51:47,252 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 64 EpochTime = 46.126 (s) Losses = ['0.5987', '82.9427'] lr = 0.000624
+2023-11-01 16:51:54,240 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 64  acc = 80.0344
+2023-11-01 16:51:54,829 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:52:40,906 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 65 EpochTime = 46.075 (s) Losses = ['0.5954', '82.8559'] lr = 0.000622
+2023-11-01 16:52:47,847 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 65  acc = 79.0017
+2023-11-01 16:52:48,306 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:53:34,585 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 66 EpochTime = 46.278 (s) Losses = ['0.5899', '82.7257'] lr = 0.000620
+2023-11-01 16:53:41,550 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 66  acc = 79.5181
+2023-11-01 16:53:42,138 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:54:28,261 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 67 EpochTime = 46.121 (s) Losses = ['0.5893', '82.7691'] lr = 0.000617
+2023-11-01 16:54:35,160 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 67  acc = 78.1411
+2023-11-01 16:54:35,714 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:55:21,944 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 68 EpochTime = 46.229 (s) Losses = ['0.5876', '82.5087'] lr = 0.000615
+2023-11-01 16:55:28,907 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 68  acc = 79.6902
+2023-11-01 16:55:29,474 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:56:15,609 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 69 EpochTime = 46.134 (s) Losses = ['0.5790', '83.5503'] lr = 0.000613
+2023-11-01 16:56:22,525 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 69  acc = 80.5508
+2023-11-01 16:56:23,030 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-best.pth
+2023-11-01 16:56:23,031 - finetune_scan_objonly_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-01 16:56:23,739 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:57:09,870 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 70 EpochTime = 46.130 (s) Losses = ['0.5846', '83.2031'] lr = 0.000610
+2023-11-01 16:57:16,794 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 70  acc = 80.8950
+2023-11-01 16:57:17,319 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-best.pth
+2023-11-01 16:57:17,320 - finetune_scan_objonly_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-01 16:57:18,479 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:58:04,423 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 71 EpochTime = 45.943 (s) Losses = ['0.5584', '84.0712'] lr = 0.000608
+2023-11-01 16:58:11,390 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 71  acc = 78.4854
+2023-11-01 16:58:11,877 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:58:57,760 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 72 EpochTime = 45.882 (s) Losses = ['0.5559', '83.3767'] lr = 0.000605
+2023-11-01 16:59:04,759 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 72  acc = 80.3787
+2023-11-01 16:59:05,284 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 16:59:51,101 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 73 EpochTime = 45.815 (s) Losses = ['0.5703', '83.2465'] lr = 0.000603
+2023-11-01 16:59:58,055 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 73  acc = 80.7229
+2023-11-01 16:59:58,510 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:00:44,784 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 74 EpochTime = 46.272 (s) Losses = ['0.5528', '85.0260'] lr = 0.000600
+2023-11-01 17:00:51,762 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 74  acc = 80.2065
+2023-11-01 17:00:52,261 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:01:37,372 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 75 EpochTime = 45.109 (s) Losses = ['0.5694', '83.3767'] lr = 0.000598
+2023-11-01 17:01:44,257 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 75  acc = 80.7229
+2023-11-01 17:01:44,734 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:02:30,997 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 76 EpochTime = 46.260 (s) Losses = ['0.5493', '83.8542'] lr = 0.000595
+2023-11-01 17:02:37,928 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 76  acc = 80.2065
+2023-11-01 17:02:38,346 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:03:22,934 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 77 EpochTime = 44.586 (s) Losses = ['0.5432', '84.4618'] lr = 0.000592
+2023-11-01 17:03:29,893 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 77  acc = 79.6902
+2023-11-01 17:03:30,354 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:04:15,931 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 78 EpochTime = 45.575 (s) Losses = ['0.5513', '83.5503'] lr = 0.000590
+2023-11-01 17:04:22,866 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 78  acc = 80.5508
+2023-11-01 17:04:23,373 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:05:08,829 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 79 EpochTime = 45.454 (s) Losses = ['0.5462', '83.8108'] lr = 0.000587
+2023-11-01 17:05:15,768 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 79  acc = 80.0344
+2023-11-01 17:05:16,230 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:06:02,519 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 80 EpochTime = 46.287 (s) Losses = ['0.5405', '83.7240'] lr = 0.000584
+2023-11-01 17:06:09,436 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 80  acc = 80.5508
+2023-11-01 17:06:09,879 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:06:56,080 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 81 EpochTime = 46.200 (s) Losses = ['0.5424', '84.3316'] lr = 0.000582
+2023-11-01 17:07:03,009 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 81  acc = 81.4114
+2023-11-01 17:07:03,475 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-best.pth
+2023-11-01 17:07:03,475 - finetune_scan_objonly_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-01 17:07:03,905 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:07:50,011 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 82 EpochTime = 46.104 (s) Losses = ['0.5238', '84.9826'] lr = 0.000579
+2023-11-01 17:07:56,921 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 82  acc = 80.0344
+2023-11-01 17:07:57,405 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:08:43,673 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 83 EpochTime = 46.266 (s) Losses = ['0.5428', '84.5486'] lr = 0.000576
+2023-11-01 17:08:50,602 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 83  acc = 80.2065
+2023-11-01 17:08:51,059 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:09:37,340 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 84 EpochTime = 46.279 (s) Losses = ['0.5293', '84.0278'] lr = 0.000573
+2023-11-01 17:09:44,392 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 84  acc = 80.3787
+2023-11-01 17:09:44,880 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:10:31,025 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 85 EpochTime = 46.143 (s) Losses = ['0.5196', '85.0260'] lr = 0.000570
+2023-11-01 17:10:37,961 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 85  acc = 80.7229
+2023-11-01 17:10:38,389 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:11:24,732 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 86 EpochTime = 46.340 (s) Losses = ['0.5339', '84.7222'] lr = 0.000568
+2023-11-01 17:11:31,771 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 86  acc = 81.2392
+2023-11-01 17:11:32,264 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:12:18,433 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 87 EpochTime = 46.167 (s) Losses = ['0.5201', '84.6354'] lr = 0.000565
+2023-11-01 17:12:25,480 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 87  acc = 80.2065
+2023-11-01 17:12:25,986 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:13:11,222 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 88 EpochTime = 45.235 (s) Losses = ['0.5101', '86.3281'] lr = 0.000562
+2023-11-01 17:13:18,224 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 88  acc = 80.0344
+2023-11-01 17:13:18,674 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:14:04,475 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 89 EpochTime = 45.800 (s) Losses = ['0.5070', '85.1997'] lr = 0.000559
+2023-11-01 17:14:11,499 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 89  acc = 80.2065
+2023-11-01 17:14:11,950 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:14:57,742 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 90 EpochTime = 45.790 (s) Losses = ['0.5175', '85.5469'] lr = 0.000556
+2023-11-01 17:15:04,757 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 90  acc = 80.0344
+2023-11-01 17:15:05,236 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:15:51,061 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 91 EpochTime = 45.823 (s) Losses = ['0.5239', '84.5486'] lr = 0.000553
+2023-11-01 17:15:58,088 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 91  acc = 78.6575
+2023-11-01 17:15:58,568 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:16:44,008 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 92 EpochTime = 45.438 (s) Losses = ['0.5071', '85.7205'] lr = 0.000550
+2023-11-01 17:16:51,032 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 92  acc = 80.7229
+2023-11-01 17:16:51,577 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:17:37,655 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 93 EpochTime = 46.077 (s) Losses = ['0.5199', '84.9392'] lr = 0.000547
+2023-11-01 17:17:44,670 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 93  acc = 80.8950
+2023-11-01 17:17:45,166 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:18:30,968 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 94 EpochTime = 45.800 (s) Losses = ['0.5115', '85.3733'] lr = 0.000544
+2023-11-01 17:18:38,003 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 94  acc = 81.0671
+2023-11-01 17:18:38,484 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:19:24,280 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 95 EpochTime = 45.794 (s) Losses = ['0.5032', '85.0694'] lr = 0.000541
+2023-11-01 17:19:31,302 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 95  acc = 81.5835
+2023-11-01 17:19:31,785 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-best.pth
+2023-11-01 17:19:31,786 - finetune_scan_objonly_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-01 17:19:32,268 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:20:18,238 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 96 EpochTime = 45.968 (s) Losses = ['0.5038', '84.9392'] lr = 0.000538
+2023-11-01 17:20:25,244 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 96  acc = 81.4114
+2023-11-01 17:20:25,745 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:21:11,899 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 97 EpochTime = 46.152 (s) Losses = ['0.5035', '84.3316'] lr = 0.000535
+2023-11-01 17:21:18,912 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 97  acc = 80.5508
+2023-11-01 17:21:19,419 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:22:05,200 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 98 EpochTime = 45.779 (s) Losses = ['0.5092', '84.8524'] lr = 0.000532
+2023-11-01 17:22:12,222 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 98  acc = 81.0671
+2023-11-01 17:22:12,693 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:22:58,523 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 99 EpochTime = 45.829 (s) Losses = ['0.4957', '85.3733'] lr = 0.000528
+2023-11-01 17:23:05,550 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 99  acc = 81.5835
+2023-11-01 17:23:06,016 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:23:51,845 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 100 EpochTime = 45.827 (s) Losses = ['0.4767', '86.7622'] lr = 0.000525
+2023-11-01 17:23:58,871 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 100  acc = 81.2392
+2023-11-01 17:23:59,359 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:24:45,152 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 101 EpochTime = 45.791 (s) Losses = ['0.4891', '86.5451'] lr = 0.000522
+2023-11-01 17:24:52,170 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 101  acc = 81.7556
+2023-11-01 17:24:52,747 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-best.pth
+2023-11-01 17:24:52,747 - finetune_scan_objonly_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-01 17:24:53,868 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:25:39,943 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 102 EpochTime = 46.074 (s) Losses = ['0.4848', '86.3715'] lr = 0.000519
+2023-11-01 17:25:46,962 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 102  acc = 80.2065
+2023-11-01 17:25:47,475 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:26:33,263 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 103 EpochTime = 45.786 (s) Losses = ['0.4810', '86.3715'] lr = 0.000516
+2023-11-01 17:26:40,284 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 103  acc = 81.4114
+2023-11-01 17:26:40,746 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:27:26,585 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 104 EpochTime = 45.838 (s) Losses = ['0.4732', '87.1962'] lr = 0.000512
+2023-11-01 17:27:33,624 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 104  acc = 82.0998
+2023-11-01 17:27:34,083 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-best.pth
+2023-11-01 17:27:34,084 - finetune_scan_objonly_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-01 17:27:34,514 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:28:20,266 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 105 EpochTime = 45.750 (s) Losses = ['0.4795', '86.0677'] lr = 0.000509
+2023-11-01 17:28:27,282 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 105  acc = 81.2392
+2023-11-01 17:28:27,788 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:29:13,887 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 106 EpochTime = 46.097 (s) Losses = ['0.4740', '86.5017'] lr = 0.000506
+2023-11-01 17:29:20,908 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 106  acc = 81.2392
+2023-11-01 17:29:21,410 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:30:07,411 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 107 EpochTime = 45.999 (s) Losses = ['0.4756', '85.8073'] lr = 0.000503
+2023-11-01 17:30:14,435 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 107  acc = 80.2065
+2023-11-01 17:30:14,965 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:31:01,062 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 108 EpochTime = 46.095 (s) Losses = ['0.4785', '85.9375'] lr = 0.000499
+2023-11-01 17:31:08,098 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 108  acc = 82.4441
+2023-11-01 17:31:08,560 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-best.pth
+2023-11-01 17:31:08,561 - finetune_scan_objonly_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-01 17:31:09,034 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:31:55,031 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 109 EpochTime = 45.995 (s) Losses = ['0.4654', '87.1962'] lr = 0.000496
+2023-11-01 17:32:02,058 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 109  acc = 81.5835
+2023-11-01 17:32:02,540 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:32:48,001 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 110 EpochTime = 45.459 (s) Losses = ['0.4677', '87.0226'] lr = 0.000493
+2023-11-01 17:32:55,029 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 110  acc = 81.7556
+2023-11-01 17:32:55,588 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:33:41,699 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 111 EpochTime = 46.109 (s) Losses = ['0.4627', '87.4132'] lr = 0.000489
+2023-11-01 17:33:48,724 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 111  acc = 81.5835
+2023-11-01 17:33:49,174 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:34:35,072 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 112 EpochTime = 45.896 (s) Losses = ['0.4619', '86.8056'] lr = 0.000486
+2023-11-01 17:34:42,097 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 112  acc = 81.2392
+2023-11-01 17:34:42,588 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:35:28,370 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 113 EpochTime = 45.781 (s) Losses = ['0.4810', '85.8941'] lr = 0.000483
+2023-11-01 17:35:35,387 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 113  acc = 79.5181
+2023-11-01 17:35:35,840 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:36:21,658 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 114 EpochTime = 45.817 (s) Losses = ['0.4690', '86.5451'] lr = 0.000479
+2023-11-01 17:36:28,693 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 114  acc = 81.2392
+2023-11-01 17:36:29,155 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:37:14,938 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 115 EpochTime = 45.781 (s) Losses = ['0.4610', '86.5451'] lr = 0.000476
+2023-11-01 17:37:21,993 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 115  acc = 81.7556
+2023-11-01 17:37:22,454 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:38:08,291 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 116 EpochTime = 45.835 (s) Losses = ['0.4598', '86.7188'] lr = 0.000472
+2023-11-01 17:38:15,296 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 116  acc = 82.0998
+2023-11-01 17:38:15,846 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:39:01,850 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 117 EpochTime = 46.003 (s) Losses = ['0.4593', '86.6319'] lr = 0.000469
+2023-11-01 17:39:08,919 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 117  acc = 82.0998
+2023-11-01 17:39:09,387 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:39:55,539 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 118 EpochTime = 46.150 (s) Losses = ['0.4681', '86.5451'] lr = 0.000465
+2023-11-01 17:40:02,541 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 118  acc = 80.7229
+2023-11-01 17:40:03,036 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:40:49,442 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 119 EpochTime = 46.404 (s) Losses = ['0.4723', '86.5017'] lr = 0.000462
+2023-11-01 17:40:56,338 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 119  acc = 80.7229
+2023-11-01 17:40:56,791 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:41:43,901 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 120 EpochTime = 47.109 (s) Losses = ['0.4381', '87.1094'] lr = 0.000459
+2023-11-01 17:41:50,519 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 120  acc = 81.2392
+2023-11-01 17:41:50,983 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:42:38,335 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 121 EpochTime = 47.350 (s) Losses = ['0.4424', '87.7604'] lr = 0.000455
+2023-11-01 17:42:44,897 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 121  acc = 81.7556
+2023-11-01 17:42:45,396 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:43:32,750 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 122 EpochTime = 47.352 (s) Losses = ['0.4508', '86.5451'] lr = 0.000452
+2023-11-01 17:43:39,288 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 122  acc = 81.7556
+2023-11-01 17:43:39,742 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:44:26,879 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 123 EpochTime = 47.135 (s) Losses = ['0.4399', '86.8490'] lr = 0.000448
+2023-11-01 17:44:33,058 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 123  acc = 81.4114
+2023-11-01 17:44:33,572 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:45:20,947 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 124 EpochTime = 47.373 (s) Losses = ['0.4385', '87.5868'] lr = 0.000444
+2023-11-01 17:45:27,132 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 124  acc = 81.5835
+2023-11-01 17:45:27,566 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:46:15,180 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 125 EpochTime = 47.612 (s) Losses = ['0.4467', '86.4149'] lr = 0.000441
+2023-11-01 17:46:21,392 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 125  acc = 81.5835
+2023-11-01 17:46:21,883 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:47:09,399 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 126 EpochTime = 47.514 (s) Losses = ['0.4361', '87.3264'] lr = 0.000437
+2023-11-01 17:47:15,599 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 126  acc = 80.2065
+2023-11-01 17:47:16,074 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:48:03,309 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 127 EpochTime = 47.233 (s) Losses = ['0.4557', '87.6302'] lr = 0.000434
+2023-11-01 17:48:08,837 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 127  acc = 81.7556
+2023-11-01 17:48:09,333 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:48:56,434 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 128 EpochTime = 47.100 (s) Losses = ['0.4349', '87.1962'] lr = 0.000430
+2023-11-01 17:49:02,427 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 128  acc = 80.5508
+2023-11-01 17:49:02,874 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:49:49,712 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 129 EpochTime = 46.836 (s) Losses = ['0.4536', '86.7188'] lr = 0.000427
+2023-11-01 17:49:55,819 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 129  acc = 81.7556
+2023-11-01 17:49:56,274 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:50:43,228 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 130 EpochTime = 46.952 (s) Losses = ['0.4434', '87.8472'] lr = 0.000423
+2023-11-01 17:50:49,331 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 130  acc = 82.6162
+2023-11-01 17:50:49,782 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-best.pth
+2023-11-01 17:50:49,782 - finetune_scan_objonly_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-01 17:50:50,148 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:51:37,042 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 131 EpochTime = 46.891 (s) Losses = ['0.4375', '87.1094'] lr = 0.000420
+2023-11-01 17:51:43,238 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 131  acc = 82.0998
+2023-11-01 17:51:43,686 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:52:30,437 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 132 EpochTime = 46.750 (s) Losses = ['0.4307', '87.9774'] lr = 0.000416
+2023-11-01 17:52:36,664 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 132  acc = 82.4441
+2023-11-01 17:52:37,130 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:53:23,742 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 133 EpochTime = 46.610 (s) Losses = ['0.4327', '87.0660'] lr = 0.000412
+2023-11-01 17:53:30,036 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 133  acc = 81.4114
+2023-11-01 17:53:30,478 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:54:17,249 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 134 EpochTime = 46.769 (s) Losses = ['0.4264', '88.1510'] lr = 0.000409
+2023-11-01 17:54:23,712 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 134  acc = 82.4441
+2023-11-01 17:54:24,162 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:55:10,830 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 135 EpochTime = 46.667 (s) Losses = ['0.4269', '87.8472'] lr = 0.000405
+2023-11-01 17:55:17,295 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 135  acc = 82.6162
+2023-11-01 17:55:17,952 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:56:04,437 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 136 EpochTime = 46.484 (s) Losses = ['0.4399', '87.5868'] lr = 0.000402
+2023-11-01 17:56:10,827 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 136  acc = 82.2719
+2023-11-01 17:56:11,271 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:56:57,738 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 137 EpochTime = 46.465 (s) Losses = ['0.4237', '87.9340'] lr = 0.000398
+2023-11-01 17:57:04,551 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 137  acc = 82.4441
+2023-11-01 17:57:04,989 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:57:51,492 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 138 EpochTime = 46.502 (s) Losses = ['0.4266', '87.8038'] lr = 0.000394
+2023-11-01 17:57:58,609 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 138  acc = 83.1325
+2023-11-01 17:57:59,036 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-best.pth
+2023-11-01 17:57:59,037 - finetune_scan_objonly_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-01 17:57:59,478 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:58:46,107 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 139 EpochTime = 46.627 (s) Losses = ['0.4235', '87.3264'] lr = 0.000391
+2023-11-01 17:58:52,754 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 139  acc = 82.0998
+2023-11-01 17:58:53,179 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 17:59:39,602 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 140 EpochTime = 46.421 (s) Losses = ['0.4260', '88.2378'] lr = 0.000387
+2023-11-01 17:59:46,537 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 140  acc = 82.4441
+2023-11-01 17:59:46,972 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:00:33,589 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 141 EpochTime = 46.615 (s) Losses = ['0.4300', '88.1944'] lr = 0.000383
+2023-11-01 18:00:40,694 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 141  acc = 83.3046
+2023-11-01 18:00:41,131 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-best.pth
+2023-11-01 18:00:41,132 - finetune_scan_objonly_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-01 18:00:41,572 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:01:28,122 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 142 EpochTime = 46.549 (s) Losses = ['0.4147', '89.1493'] lr = 0.000380
+2023-11-01 18:01:34,874 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 142  acc = 82.7883
+2023-11-01 18:01:35,308 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:02:21,976 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 143 EpochTime = 46.667 (s) Losses = ['0.4368', '87.0226'] lr = 0.000376
+2023-11-01 18:02:28,794 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 143  acc = 81.9277
+2023-11-01 18:02:29,240 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:03:15,778 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 144 EpochTime = 46.536 (s) Losses = ['0.4175', '88.0642'] lr = 0.000372
+2023-11-01 18:03:22,896 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 144  acc = 81.9277
+2023-11-01 18:03:23,365 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:04:10,049 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 145 EpochTime = 46.682 (s) Losses = ['0.4335', '87.5868'] lr = 0.000369
+2023-11-01 18:04:17,244 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 145  acc = 82.4441
+2023-11-01 18:04:17,827 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:05:05,014 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 146 EpochTime = 47.186 (s) Losses = ['0.4099', '88.7587'] lr = 0.000365
+2023-11-01 18:05:12,800 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 146  acc = 82.0998
+2023-11-01 18:05:13,284 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:06:00,540 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 147 EpochTime = 47.254 (s) Losses = ['0.4167', '88.3681'] lr = 0.000361
+2023-11-01 18:06:07,999 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 147  acc = 80.3787
+2023-11-01 18:06:08,497 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:06:55,378 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 148 EpochTime = 46.879 (s) Losses = ['0.4141', '88.0208'] lr = 0.000358
+2023-11-01 18:07:02,477 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 148  acc = 82.4441
+2023-11-01 18:07:02,926 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:07:49,455 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 149 EpochTime = 46.527 (s) Losses = ['0.4245', '88.1510'] lr = 0.000354
+2023-11-01 18:07:56,370 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 149  acc = 82.4441
+2023-11-01 18:07:56,875 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:08:43,108 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 150 EpochTime = 46.231 (s) Losses = ['0.4194', '87.6736'] lr = 0.000351
+2023-11-01 18:08:49,940 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 150  acc = 82.4441
+2023-11-01 18:08:50,394 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:09:36,526 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 151 EpochTime = 46.130 (s) Losses = ['0.4122', '87.7604'] lr = 0.000347
+2023-11-01 18:09:43,209 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 151  acc = 82.4441
+2023-11-01 18:09:43,740 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:10:29,935 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 152 EpochTime = 46.194 (s) Losses = ['0.4095', '87.9774'] lr = 0.000343
+2023-11-01 18:10:36,519 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 152  acc = 81.5835
+2023-11-01 18:10:36,988 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:11:22,970 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 153 EpochTime = 45.980 (s) Losses = ['0.4222', '87.5000'] lr = 0.000340
+2023-11-01 18:11:29,407 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 153  acc = 82.4441
+2023-11-01 18:11:29,890 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:12:16,358 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 154 EpochTime = 46.466 (s) Losses = ['0.4095', '87.6302'] lr = 0.000336
+2023-11-01 18:12:22,702 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 154  acc = 82.2719
+2023-11-01 18:12:23,192 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:13:09,762 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 155 EpochTime = 46.568 (s) Losses = ['0.4071', '88.3247'] lr = 0.000332
+2023-11-01 18:13:16,440 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 155  acc = 82.0998
+2023-11-01 18:13:16,891 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:14:03,547 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 156 EpochTime = 46.655 (s) Losses = ['0.4146', '88.1076'] lr = 0.000329
+2023-11-01 18:14:10,559 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 156  acc = 82.2719
+2023-11-01 18:14:11,011 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:14:57,848 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 157 EpochTime = 46.834 (s) Losses = ['0.4131', '88.2812'] lr = 0.000325
+2023-11-01 18:15:04,876 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 157  acc = 82.9604
+2023-11-01 18:15:05,323 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:15:52,099 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 158 EpochTime = 46.774 (s) Losses = ['0.4038', '88.2812'] lr = 0.000321
+2023-11-01 18:15:59,111 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 158  acc = 82.7883
+2023-11-01 18:15:59,578 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:16:45,695 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 159 EpochTime = 46.116 (s) Losses = ['0.4170', '87.4566'] lr = 0.000318
+2023-11-01 18:16:52,732 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 159  acc = 82.9604
+2023-11-01 18:16:53,234 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:17:39,032 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 160 EpochTime = 45.796 (s) Losses = ['0.4015', '88.2812'] lr = 0.000314
+2023-11-01 18:17:46,059 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 160  acc = 82.0998
+2023-11-01 18:17:46,574 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:18:32,653 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 161 EpochTime = 46.077 (s) Losses = ['0.3934', '88.9323'] lr = 0.000310
+2023-11-01 18:18:39,679 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 161  acc = 81.9277
+2023-11-01 18:18:40,158 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:19:25,976 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 162 EpochTime = 45.816 (s) Losses = ['0.4023', '88.4115'] lr = 0.000307
+2023-11-01 18:19:33,005 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 162  acc = 83.4768
+2023-11-01 18:19:33,500 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-best.pth
+2023-11-01 18:19:33,500 - finetune_scan_objonly_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-01 18:19:33,940 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:20:19,930 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 163 EpochTime = 45.989 (s) Losses = ['0.3969', '88.5851'] lr = 0.000303
+2023-11-01 18:20:26,952 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 163  acc = 81.9277
+2023-11-01 18:20:27,444 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:21:13,280 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 164 EpochTime = 45.834 (s) Losses = ['0.3928', '88.5417'] lr = 0.000299
+2023-11-01 18:21:20,308 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 164  acc = 82.4441
+2023-11-01 18:21:20,794 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:22:06,595 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 165 EpochTime = 45.799 (s) Losses = ['0.3982', '88.4115'] lr = 0.000296
+2023-11-01 18:22:13,621 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 165  acc = 82.0998
+2023-11-01 18:22:14,066 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:22:59,911 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 166 EpochTime = 45.844 (s) Losses = ['0.4056', '88.5417'] lr = 0.000292
+2023-11-01 18:23:06,937 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 166  acc = 82.9604
+2023-11-01 18:23:07,414 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:23:53,267 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 167 EpochTime = 45.852 (s) Losses = ['0.4018', '88.8889'] lr = 0.000289
+2023-11-01 18:24:00,290 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 167  acc = 82.7883
+2023-11-01 18:24:00,776 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:24:46,244 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 168 EpochTime = 45.466 (s) Losses = ['0.4018', '88.9323'] lr = 0.000285
+2023-11-01 18:24:53,277 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 168  acc = 82.2719
+2023-11-01 18:24:53,780 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:25:39,502 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 169 EpochTime = 45.720 (s) Losses = ['0.3981', '88.9757'] lr = 0.000281
+2023-11-01 18:25:46,521 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 169  acc = 82.9604
+2023-11-01 18:25:46,976 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:26:32,811 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 170 EpochTime = 45.834 (s) Losses = ['0.3874', '89.4965'] lr = 0.000278
+2023-11-01 18:26:39,839 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 170  acc = 82.2719
+2023-11-01 18:26:40,336 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:27:26,023 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 171 EpochTime = 45.686 (s) Losses = ['0.3899', '88.4983'] lr = 0.000274
+2023-11-01 18:27:33,053 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 171  acc = 82.6162
+2023-11-01 18:27:33,493 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:28:19,209 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 172 EpochTime = 45.715 (s) Losses = ['0.4140', '88.2378'] lr = 0.000271
+2023-11-01 18:28:26,233 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 172  acc = 81.9277
+2023-11-01 18:28:26,733 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:29:12,503 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 173 EpochTime = 45.768 (s) Losses = ['0.3927', '88.8021'] lr = 0.000267
+2023-11-01 18:29:19,531 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 173  acc = 83.9931
+2023-11-01 18:29:19,995 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-best.pth
+2023-11-01 18:29:19,995 - finetune_scan_objonly_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-01 18:29:20,401 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:30:06,460 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 174 EpochTime = 46.058 (s) Losses = ['0.3963', '89.2795'] lr = 0.000264
+2023-11-01 18:30:13,487 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 174  acc = 82.7883
+2023-11-01 18:30:13,938 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:30:59,759 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 175 EpochTime = 45.819 (s) Losses = ['0.3922', '88.5417'] lr = 0.000260
+2023-11-01 18:31:06,787 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 175  acc = 83.4768
+2023-11-01 18:31:07,226 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:31:53,087 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 176 EpochTime = 45.860 (s) Losses = ['0.3968', '88.7587'] lr = 0.000257
+2023-11-01 18:32:00,104 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 176  acc = 82.4441
+2023-11-01 18:32:00,555 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:32:46,409 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 177 EpochTime = 45.853 (s) Losses = ['0.3834', '89.1927'] lr = 0.000253
+2023-11-01 18:32:53,434 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 177  acc = 83.3046
+2023-11-01 18:32:53,886 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:33:40,056 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 178 EpochTime = 46.168 (s) Losses = ['0.3873', '89.1059'] lr = 0.000249
+2023-11-01 18:33:47,072 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 178  acc = 82.6162
+2023-11-01 18:33:47,505 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:34:33,367 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 179 EpochTime = 45.860 (s) Losses = ['0.3867', '88.8021'] lr = 0.000246
+2023-11-01 18:34:40,397 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 179  acc = 82.4441
+2023-11-01 18:34:40,850 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:35:26,643 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 180 EpochTime = 45.791 (s) Losses = ['0.3810', '89.5399'] lr = 0.000242
+2023-11-01 18:35:33,663 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 180  acc = 82.2719
+2023-11-01 18:35:34,066 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:36:19,952 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 181 EpochTime = 45.884 (s) Losses = ['0.3911', '89.1493'] lr = 0.000239
+2023-11-01 18:36:26,972 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 181  acc = 83.6489
+2023-11-01 18:36:27,397 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:37:13,272 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 182 EpochTime = 45.873 (s) Losses = ['0.3987', '88.7153'] lr = 0.000236
+2023-11-01 18:37:20,303 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 182  acc = 82.7883
+2023-11-01 18:37:20,758 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:38:06,594 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 183 EpochTime = 45.834 (s) Losses = ['0.3901', '88.7153'] lr = 0.000232
+2023-11-01 18:38:13,625 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 183  acc = 82.0998
+2023-11-01 18:38:14,111 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:38:59,930 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 184 EpochTime = 45.817 (s) Losses = ['0.3805', '88.9757'] lr = 0.000229
+2023-11-01 18:39:06,947 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 184  acc = 82.9604
+2023-11-01 18:39:07,387 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:39:53,265 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 185 EpochTime = 45.876 (s) Losses = ['0.3788', '89.2795'] lr = 0.000225
+2023-11-01 18:40:00,294 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 185  acc = 83.3046
+2023-11-01 18:40:00,751 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:40:46,631 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 186 EpochTime = 45.878 (s) Losses = ['0.3874', '88.6719'] lr = 0.000222
+2023-11-01 18:40:53,644 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 186  acc = 82.9604
+2023-11-01 18:40:54,103 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:41:39,983 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 187 EpochTime = 45.878 (s) Losses = ['0.3759', '89.6701'] lr = 0.000218
+2023-11-01 18:41:47,004 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 187  acc = 82.6162
+2023-11-01 18:41:47,501 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:42:33,276 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 188 EpochTime = 45.773 (s) Losses = ['0.3775', '89.9740'] lr = 0.000215
+2023-11-01 18:42:40,301 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 188  acc = 82.4441
+2023-11-01 18:42:40,795 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:43:26,594 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 189 EpochTime = 45.798 (s) Losses = ['0.3761', '89.3663'] lr = 0.000212
+2023-11-01 18:43:33,624 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 189  acc = 83.1325
+2023-11-01 18:43:34,108 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:44:19,925 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 190 EpochTime = 45.815 (s) Losses = ['0.3874', '88.6719'] lr = 0.000208
+2023-11-01 18:44:26,952 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 190  acc = 83.4768
+2023-11-01 18:44:27,449 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:45:13,401 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 191 EpochTime = 45.950 (s) Losses = ['0.3848', '89.4097'] lr = 0.000205
+2023-11-01 18:45:20,421 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 191  acc = 82.7883
+2023-11-01 18:45:20,875 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:46:06,611 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 192 EpochTime = 45.734 (s) Losses = ['0.3748', '89.7569'] lr = 0.000202
+2023-11-01 18:46:13,628 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 192  acc = 82.4441
+2023-11-01 18:46:14,144 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:47:00,261 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 193 EpochTime = 46.115 (s) Losses = ['0.3841', '89.1927'] lr = 0.000198
+2023-11-01 18:47:07,275 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 193  acc = 82.9604
+2023-11-01 18:47:07,766 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:47:53,558 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 194 EpochTime = 45.791 (s) Losses = ['0.3774', '89.1493'] lr = 0.000195
+2023-11-01 18:48:00,581 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 194  acc = 83.1325
+2023-11-01 18:48:01,043 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:48:46,904 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 195 EpochTime = 45.858 (s) Losses = ['0.3782', '89.9306'] lr = 0.000192
+2023-11-01 18:48:53,919 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 195  acc = 83.1325
+2023-11-01 18:48:54,429 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:49:40,187 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 196 EpochTime = 45.757 (s) Losses = ['0.3817', '89.4097'] lr = 0.000189
+2023-11-01 18:49:47,205 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 196  acc = 83.1325
+2023-11-01 18:49:47,698 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:50:33,452 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 197 EpochTime = 45.752 (s) Losses = ['0.3733', '89.9306'] lr = 0.000185
+2023-11-01 18:50:40,470 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 197  acc = 82.4441
+2023-11-01 18:50:40,942 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:51:26,757 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 198 EpochTime = 45.813 (s) Losses = ['0.3781', '89.5833'] lr = 0.000182
+2023-11-01 18:51:33,783 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 198  acc = 83.3046
+2023-11-01 18:51:34,199 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:52:20,051 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 199 EpochTime = 45.850 (s) Losses = ['0.3789', '89.7135'] lr = 0.000179
+2023-11-01 18:52:27,072 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 199  acc = 82.4441
+2023-11-01 18:52:27,556 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:53:13,352 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 200 EpochTime = 45.794 (s) Losses = ['0.3781', '89.5399'] lr = 0.000176
+2023-11-01 18:53:20,380 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 200  acc = 82.6162
+2023-11-01 18:53:20,838 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:54:06,690 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 201 EpochTime = 45.850 (s) Losses = ['0.3862', '88.8889'] lr = 0.000173
+2023-11-01 18:54:13,727 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 201  acc = 81.9277
+2023-11-01 18:54:14,189 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:55:00,043 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 202 EpochTime = 45.852 (s) Losses = ['0.3709', '90.0174'] lr = 0.000169
+2023-11-01 18:55:07,067 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 202  acc = 81.7556
+2023-11-01 18:55:07,495 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:55:53,361 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 203 EpochTime = 45.864 (s) Losses = ['0.3720', '89.8003'] lr = 0.000166
+2023-11-01 18:56:00,385 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 203  acc = 82.9604
+2023-11-01 18:56:00,818 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:56:46,687 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 204 EpochTime = 45.867 (s) Losses = ['0.3711', '89.8003'] lr = 0.000163
+2023-11-01 18:56:53,707 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 204  acc = 82.7883
+2023-11-01 18:56:54,156 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:57:39,984 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 205 EpochTime = 45.826 (s) Losses = ['0.3701', '90.2344'] lr = 0.000160
+2023-11-01 18:57:47,008 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 205  acc = 82.4441
+2023-11-01 18:57:47,454 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:58:33,293 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 206 EpochTime = 45.838 (s) Losses = ['0.3808', '89.3663'] lr = 0.000157
+2023-11-01 18:58:40,310 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 206  acc = 82.0998
+2023-11-01 18:58:40,732 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 18:59:26,606 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 207 EpochTime = 45.873 (s) Losses = ['0.3721', '89.4965'] lr = 0.000154
+2023-11-01 18:59:33,620 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 207  acc = 82.6162
+2023-11-01 18:59:34,107 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:00:19,869 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 208 EpochTime = 45.760 (s) Losses = ['0.3890', '88.7153'] lr = 0.000151
+2023-11-01 19:00:26,879 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 208  acc = 83.8210
+2023-11-01 19:00:27,326 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:01:13,179 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 209 EpochTime = 45.851 (s) Losses = ['0.3573', '89.3229'] lr = 0.000148
+2023-11-01 19:01:20,196 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 209  acc = 83.6489
+2023-11-01 19:01:20,700 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:02:06,467 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 210 EpochTime = 45.765 (s) Losses = ['0.3721', '90.4514'] lr = 0.000145
+2023-11-01 19:02:13,482 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 210  acc = 83.4768
+2023-11-01 19:02:13,955 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:02:59,783 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 211 EpochTime = 45.826 (s) Losses = ['0.3651', '89.3663'] lr = 0.000142
+2023-11-01 19:03:06,793 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 211  acc = 83.1325
+2023-11-01 19:03:07,287 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:03:53,065 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 212 EpochTime = 45.776 (s) Losses = ['0.3720', '89.5833'] lr = 0.000139
+2023-11-01 19:04:00,068 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 212  acc = 82.2719
+2023-11-01 19:04:00,519 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:04:46,355 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 213 EpochTime = 45.834 (s) Losses = ['0.3694', '89.9306'] lr = 0.000136
+2023-11-01 19:04:53,375 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 213  acc = 83.1325
+2023-11-01 19:04:53,864 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:05:39,641 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 214 EpochTime = 45.776 (s) Losses = ['0.3704', '90.4514'] lr = 0.000133
+2023-11-01 19:05:46,661 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 214  acc = 82.9604
+2023-11-01 19:05:47,103 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:06:32,937 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 215 EpochTime = 45.832 (s) Losses = ['0.3707', '89.5399'] lr = 0.000131
+2023-11-01 19:06:39,963 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 215  acc = 82.6162
+2023-11-01 19:06:40,444 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:07:26,215 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 216 EpochTime = 45.769 (s) Losses = ['0.3840', '89.2361'] lr = 0.000128
+2023-11-01 19:07:33,230 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 216  acc = 83.4768
+2023-11-01 19:07:33,695 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:08:19,175 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 217 EpochTime = 45.479 (s) Losses = ['0.3616', '90.8854'] lr = 0.000125
+2023-11-01 19:08:26,205 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 217  acc = 83.3046
+2023-11-01 19:08:26,653 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:09:12,460 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 218 EpochTime = 45.805 (s) Losses = ['0.3685', '89.1493'] lr = 0.000122
+2023-11-01 19:09:19,490 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 218  acc = 83.4768
+2023-11-01 19:09:19,942 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:10:05,770 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 219 EpochTime = 45.826 (s) Losses = ['0.3865', '88.8889'] lr = 0.000119
+2023-11-01 19:10:12,794 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 219  acc = 83.3046
+2023-11-01 19:10:13,231 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:10:58,765 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 220 EpochTime = 45.532 (s) Losses = ['0.3675', '89.3229'] lr = 0.000117
+2023-11-01 19:11:05,798 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 220  acc = 82.9604
+2023-11-01 19:11:06,321 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:11:52,377 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 221 EpochTime = 46.054 (s) Losses = ['0.3657', '89.8438'] lr = 0.000114
+2023-11-01 19:11:59,441 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 221  acc = 82.9604
+2023-11-01 19:11:59,941 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:12:46,026 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 222 EpochTime = 46.084 (s) Losses = ['0.3550', '90.6250'] lr = 0.000111
+2023-11-01 19:12:53,088 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 222  acc = 82.2719
+2023-11-01 19:12:53,796 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:13:39,635 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 223 EpochTime = 45.837 (s) Losses = ['0.3726', '90.1476'] lr = 0.000109
+2023-11-01 19:13:46,688 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 223  acc = 83.9931
+2023-11-01 19:13:47,142 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:14:33,029 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 224 EpochTime = 45.885 (s) Losses = ['0.3669', '89.8438'] lr = 0.000106
+2023-11-01 19:14:40,028 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 224  acc = 83.1325
+2023-11-01 19:14:40,494 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:15:26,598 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 225 EpochTime = 46.103 (s) Losses = ['0.3698', '89.4531'] lr = 0.000103
+2023-11-01 19:15:33,721 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 225  acc = 83.4768
+2023-11-01 19:15:34,155 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:16:20,320 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 226 EpochTime = 46.163 (s) Losses = ['0.3677', '90.0174'] lr = 0.000101
+2023-11-01 19:16:27,238 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 226  acc = 83.6489
+2023-11-01 19:16:27,709 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:17:14,109 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 227 EpochTime = 46.398 (s) Losses = ['0.3693', '90.4080'] lr = 0.000098
+2023-11-01 19:17:21,265 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 227  acc = 83.4768
+2023-11-01 19:17:21,714 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:18:08,183 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 228 EpochTime = 46.467 (s) Losses = ['0.3590', '90.1042'] lr = 0.000096
+2023-11-01 19:18:15,145 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 228  acc = 82.9604
+2023-11-01 19:18:15,680 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:19:02,361 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 229 EpochTime = 46.679 (s) Losses = ['0.3634', '89.5833'] lr = 0.000093
+2023-11-01 19:19:09,445 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 229  acc = 83.6489
+2023-11-01 19:19:09,917 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:19:56,443 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 230 EpochTime = 46.524 (s) Losses = ['0.3778', '89.9306'] lr = 0.000091
+2023-11-01 19:20:03,571 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 230  acc = 83.9931
+2023-11-01 19:20:04,052 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:20:50,500 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 231 EpochTime = 46.446 (s) Losses = ['0.3609', '89.8003'] lr = 0.000088
+2023-11-01 19:20:57,580 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 231  acc = 83.4768
+2023-11-01 19:20:58,067 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:21:44,573 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 232 EpochTime = 46.504 (s) Losses = ['0.3649', '89.5833'] lr = 0.000086
+2023-11-01 19:21:51,457 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 232  acc = 83.6489
+2023-11-01 19:21:51,924 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:22:38,667 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 233 EpochTime = 46.742 (s) Losses = ['0.3581', '90.5382'] lr = 0.000084
+2023-11-01 19:22:45,225 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 233  acc = 83.9931
+2023-11-01 19:22:45,698 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:23:32,816 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 234 EpochTime = 47.116 (s) Losses = ['0.3660', '90.2344'] lr = 0.000081
+2023-11-01 19:23:38,994 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 234  acc = 83.6489
+2023-11-01 19:23:39,455 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:24:26,452 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 235 EpochTime = 46.996 (s) Losses = ['0.3616', '90.3646'] lr = 0.000079
+2023-11-01 19:24:32,304 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 235  acc = 83.3046
+2023-11-01 19:24:32,825 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:25:20,120 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 236 EpochTime = 47.293 (s) Losses = ['0.3562', '90.4080'] lr = 0.000077
+2023-11-01 19:25:25,967 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 236  acc = 84.1652
+2023-11-01 19:25:26,434 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-best.pth
+2023-11-01 19:25:26,434 - finetune_scan_objonly_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-01 19:25:26,907 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:26:14,367 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 237 EpochTime = 47.459 (s) Losses = ['0.3551', '90.4080'] lr = 0.000074
+2023-11-01 19:26:20,657 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 237  acc = 83.8210
+2023-11-01 19:26:21,184 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:27:08,714 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 238 EpochTime = 47.528 (s) Losses = ['0.3478', '91.1892'] lr = 0.000072
+2023-11-01 19:27:14,954 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 238  acc = 84.1652
+2023-11-01 19:27:15,453 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:28:02,693 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 239 EpochTime = 47.238 (s) Losses = ['0.3665', '89.6701'] lr = 0.000070
+2023-11-01 19:28:08,744 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 239  acc = 84.8537
+2023-11-01 19:28:09,254 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-best.pth
+2023-11-01 19:28:09,254 - finetune_scan_objonly_linear_classification - INFO - --------------------------------------------------------------------------------------------
+2023-11-01 19:28:09,668 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:28:56,656 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 240 EpochTime = 46.986 (s) Losses = ['0.3621', '90.4514'] lr = 0.000068
+2023-11-01 19:29:02,880 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 240  acc = 83.3046
+2023-11-01 19:29:03,345 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:29:50,230 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 241 EpochTime = 46.883 (s) Losses = ['0.3560', '90.1042'] lr = 0.000066
+2023-11-01 19:29:55,862 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 241  acc = 83.1325
+2023-11-01 19:29:56,325 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:30:43,506 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 242 EpochTime = 47.178 (s) Losses = ['0.3621', '89.6701'] lr = 0.000064
+2023-11-01 19:30:49,295 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 242  acc = 82.9604
+2023-11-01 19:30:50,187 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:31:37,159 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 243 EpochTime = 46.971 (s) Losses = ['0.3764', '89.2361'] lr = 0.000061
+2023-11-01 19:31:43,043 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 243  acc = 84.5095
+2023-11-01 19:31:43,538 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:32:30,435 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 244 EpochTime = 46.895 (s) Losses = ['0.3622', '89.7569'] lr = 0.000059
+2023-11-01 19:32:36,611 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 244  acc = 83.6489
+2023-11-01 19:32:37,114 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:33:24,151 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 245 EpochTime = 47.035 (s) Losses = ['0.3580', '90.6684'] lr = 0.000057
+2023-11-01 19:33:30,106 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 245  acc = 84.5095
+2023-11-01 19:33:30,619 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:34:17,290 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 246 EpochTime = 46.669 (s) Losses = ['0.3562', '90.6250'] lr = 0.000055
+2023-11-01 19:34:23,458 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 246  acc = 83.1325
+2023-11-01 19:34:24,192 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:35:11,059 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 247 EpochTime = 46.865 (s) Losses = ['0.3597', '90.8420'] lr = 0.000053
+2023-11-01 19:35:17,233 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 247  acc = 83.9931
+2023-11-01 19:35:17,735 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:36:04,387 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 248 EpochTime = 46.651 (s) Losses = ['0.3691', '89.3229'] lr = 0.000052
+2023-11-01 19:36:10,687 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 248  acc = 83.8210
+2023-11-01 19:36:11,196 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:36:58,082 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 249 EpochTime = 46.885 (s) Losses = ['0.3682', '90.2344'] lr = 0.000050
+2023-11-01 19:37:04,399 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 249  acc = 83.8210
+2023-11-01 19:37:04,882 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:37:51,745 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 250 EpochTime = 46.862 (s) Losses = ['0.3742', '89.3229'] lr = 0.000048
+2023-11-01 19:37:58,090 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 250  acc = 83.6489
+2023-11-01 19:37:58,656 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:38:45,424 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 251 EpochTime = 46.766 (s) Losses = ['0.3553', '90.1042'] lr = 0.000046
+2023-11-01 19:38:51,725 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 251  acc = 83.6489
+2023-11-01 19:38:52,165 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:39:38,641 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 252 EpochTime = 46.473 (s) Losses = ['0.3608', '90.1910'] lr = 0.000044
+2023-11-01 19:39:45,097 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 252  acc = 83.3046
+2023-11-01 19:39:45,702 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:40:32,398 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 253 EpochTime = 46.694 (s) Losses = ['0.3536', '90.2344'] lr = 0.000042
+2023-11-01 19:40:38,822 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 253  acc = 83.9931
+2023-11-01 19:40:39,309 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:41:25,712 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 254 EpochTime = 46.401 (s) Losses = ['0.3585', '90.1042'] lr = 0.000041
+2023-11-01 19:41:32,651 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 254  acc = 83.3046
+2023-11-01 19:41:33,533 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:42:20,203 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 255 EpochTime = 46.668 (s) Losses = ['0.3614', '90.2778'] lr = 0.000039
+2023-11-01 19:42:26,714 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 255  acc = 83.3046
+2023-11-01 19:42:27,205 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:43:13,542 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 256 EpochTime = 46.335 (s) Losses = ['0.3557', '90.4514'] lr = 0.000037
+2023-11-01 19:43:20,406 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 256  acc = 83.8210
+2023-11-01 19:43:21,047 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:44:07,681 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 257 EpochTime = 46.631 (s) Losses = ['0.3556', '90.4514'] lr = 0.000036
+2023-11-01 19:44:14,615 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 257  acc = 83.9931
+2023-11-01 19:44:15,153 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:45:01,805 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 258 EpochTime = 46.650 (s) Losses = ['0.3589', '90.2344'] lr = 0.000034
+2023-11-01 19:45:09,012 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 258  acc = 83.3046
+2023-11-01 19:45:09,643 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:45:56,319 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 259 EpochTime = 46.674 (s) Losses = ['0.3616', '90.3646'] lr = 0.000033
+2023-11-01 19:46:03,529 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 259  acc = 83.8210
+2023-11-01 19:46:04,006 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:46:50,781 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 260 EpochTime = 46.773 (s) Losses = ['0.3589', '90.5816'] lr = 0.000031
+2023-11-01 19:46:58,208 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 260  acc = 83.6489
+2023-11-01 19:46:59,108 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:47:45,783 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 261 EpochTime = 46.673 (s) Losses = ['0.3545', '89.6701'] lr = 0.000030
+2023-11-01 19:47:53,043 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 261  acc = 83.4768
+2023-11-01 19:47:53,619 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:48:40,857 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 262 EpochTime = 47.236 (s) Losses = ['0.3722', '89.1493'] lr = 0.000028
+2023-11-01 19:48:48,803 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 262  acc = 83.6489
+2023-11-01 19:48:49,521 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:49:37,121 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 263 EpochTime = 47.598 (s) Losses = ['0.3711', '89.5833'] lr = 0.000027
+2023-11-01 19:49:44,994 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 263  acc = 83.6489
+2023-11-01 19:49:45,768 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:50:33,162 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 264 EpochTime = 47.392 (s) Losses = ['0.3536', '90.5816'] lr = 0.000026
+2023-11-01 19:50:41,011 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 264  acc = 83.8210
+2023-11-01 19:50:41,736 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:51:29,131 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 265 EpochTime = 47.393 (s) Losses = ['0.3553', '90.2344'] lr = 0.000024
+2023-11-01 19:51:36,944 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 265  acc = 83.6489
+2023-11-01 19:51:37,780 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:52:25,017 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 266 EpochTime = 47.028 (s) Losses = ['0.3677', '90.0608'] lr = 0.000023
+2023-11-01 19:52:32,529 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 266  acc = 83.9931
+2023-11-01 19:52:33,689 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:53:20,383 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 267 EpochTime = 46.692 (s) Losses = ['0.3616', '90.3646'] lr = 0.000022
+2023-11-01 19:53:27,253 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 267  acc = 84.5095
+2023-11-01 19:53:27,683 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:54:14,208 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 268 EpochTime = 46.524 (s) Losses = ['0.3560', '90.4948'] lr = 0.000020
+2023-11-01 19:54:21,389 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 268  acc = 83.8210
+2023-11-01 19:54:21,976 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:55:08,708 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 269 EpochTime = 46.731 (s) Losses = ['0.3594', '90.4514'] lr = 0.000019
+2023-11-01 19:55:15,875 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 269  acc = 84.3373
+2023-11-01 19:55:16,354 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:56:03,093 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 270 EpochTime = 46.738 (s) Losses = ['0.3563', '90.4080'] lr = 0.000018
+2023-11-01 19:56:10,649 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 270  acc = 84.1652
+2023-11-01 19:56:11,198 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:56:58,350 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 271 EpochTime = 47.149 (s) Losses = ['0.3628', '89.8003'] lr = 0.000017
+2023-11-01 19:57:05,864 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 271  acc = 83.8210
+2023-11-01 19:57:06,510 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:57:53,995 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 272 EpochTime = 47.483 (s) Losses = ['0.3616', '90.1042'] lr = 0.000016
+2023-11-01 19:58:01,935 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 272  acc = 84.1652
+2023-11-01 19:58:02,840 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:58:50,132 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 273 EpochTime = 47.290 (s) Losses = ['0.3434', '91.0590'] lr = 0.000015
+2023-11-01 19:58:57,669 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 273  acc = 83.6489
+2023-11-01 19:58:58,437 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 19:59:45,387 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 274 EpochTime = 46.949 (s) Losses = ['0.3619', '89.4097'] lr = 0.000014
+2023-11-01 19:59:52,543 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 274  acc = 84.1652
+2023-11-01 19:59:53,030 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 20:00:39,410 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 275 EpochTime = 46.378 (s) Losses = ['0.3567', '90.4080'] lr = 0.000013
+2023-11-01 20:00:46,143 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 275  acc = 83.6489
+2023-11-01 20:00:46,716 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 20:01:32,790 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 276 EpochTime = 46.072 (s) Losses = ['0.3461', '90.9722'] lr = 0.000012
+2023-11-01 20:01:39,446 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 276  acc = 84.1652
+2023-11-01 20:01:39,936 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 20:02:26,171 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 277 EpochTime = 46.233 (s) Losses = ['0.3535', '90.0608'] lr = 0.000011
+2023-11-01 20:02:33,039 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 277  acc = 83.8210
+2023-11-01 20:02:33,491 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 20:03:19,551 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 278 EpochTime = 46.058 (s) Losses = ['0.3649', '89.8003'] lr = 0.000010
+2023-11-01 20:03:26,011 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 278  acc = 83.9931
+2023-11-01 20:03:26,458 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 20:04:12,864 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 279 EpochTime = 46.403 (s) Losses = ['0.3656', '89.2361'] lr = 0.000009
+2023-11-01 20:04:19,124 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 279  acc = 84.1652
+2023-11-01 20:04:19,668 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 20:05:06,198 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 280 EpochTime = 46.528 (s) Losses = ['0.3631', '89.1927'] lr = 0.000009
+2023-11-01 20:05:12,652 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 280  acc = 83.9931
+2023-11-01 20:05:13,148 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 20:05:59,533 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 281 EpochTime = 46.383 (s) Losses = ['0.3529', '90.8420'] lr = 0.000008
+2023-11-01 20:06:06,199 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 281  acc = 83.8210
+2023-11-01 20:06:06,693 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 20:06:52,694 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 282 EpochTime = 45.999 (s) Losses = ['0.3462', '90.1042'] lr = 0.000007
+2023-11-01 20:06:59,700 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 282  acc = 84.1652
+2023-11-01 20:07:00,461 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 20:07:47,381 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 283 EpochTime = 46.918 (s) Losses = ['0.3497', '90.6684'] lr = 0.000007
+2023-11-01 20:07:54,714 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 283  acc = 83.8210
+2023-11-01 20:07:55,281 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 20:08:42,077 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 284 EpochTime = 46.793 (s) Losses = ['0.3606', '89.8438'] lr = 0.000006
+2023-11-01 20:08:49,119 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 284  acc = 83.6489
+2023-11-01 20:08:49,613 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 20:09:36,172 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 285 EpochTime = 46.558 (s) Losses = ['0.3596', '90.2778'] lr = 0.000005
+2023-11-01 20:09:43,189 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 285  acc = 83.8210
+2023-11-01 20:09:43,679 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 20:10:29,811 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 286 EpochTime = 46.130 (s) Losses = ['0.3510', '91.0590'] lr = 0.000005
+2023-11-01 20:10:36,847 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 286  acc = 83.9931
+2023-11-01 20:10:37,341 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 20:11:22,157 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 287 EpochTime = 44.813 (s) Losses = ['0.3517', '90.7118'] lr = 0.000004
+2023-11-01 20:11:29,176 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 287  acc = 83.9931
+2023-11-01 20:11:29,694 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 20:12:15,460 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 288 EpochTime = 45.764 (s) Losses = ['0.3626', '89.4097'] lr = 0.000004
+2023-11-01 20:12:22,487 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 288  acc = 83.9931
+2023-11-01 20:12:22,966 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 20:13:08,220 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 289 EpochTime = 45.252 (s) Losses = ['0.3473', '90.0608'] lr = 0.000003
+2023-11-01 20:13:15,239 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 289  acc = 83.8210
+2023-11-01 20:13:15,693 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 20:14:01,529 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 290 EpochTime = 45.834 (s) Losses = ['0.3645', '89.8872'] lr = 0.000003
+2023-11-01 20:14:08,781 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 290  acc = 83.6489
+2023-11-01 20:14:09,228 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 20:14:54,862 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 291 EpochTime = 45.632 (s) Losses = ['0.3636', '90.0174'] lr = 0.000003
+2023-11-01 20:15:01,885 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 291  acc = 83.6489
+2023-11-01 20:15:02,358 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 20:15:02,481 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-epoch-291.pth
+2023-11-01 20:15:48,194 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 292 EpochTime = 45.711 (s) Losses = ['0.3688', '89.8003'] lr = 0.000002
+2023-11-01 20:15:55,223 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 292  acc = 83.8210
+2023-11-01 20:15:55,695 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 20:15:55,872 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-epoch-292.pth
+2023-11-01 20:16:40,823 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 293 EpochTime = 44.949 (s) Losses = ['0.3498', '90.3646'] lr = 0.000002
+2023-11-01 20:16:47,854 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 293  acc = 83.4768
+2023-11-01 20:16:48,738 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 20:16:48,900 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-epoch-293.pth
+2023-11-01 20:17:34,331 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 294 EpochTime = 45.430 (s) Losses = ['0.3481', '90.6250'] lr = 0.000002
+2023-11-01 20:17:41,533 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 294  acc = 83.6489
+2023-11-01 20:17:42,103 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 20:17:42,282 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-epoch-294.pth
+2023-11-01 20:18:27,567 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 295 EpochTime = 45.283 (s) Losses = ['0.3593', '89.8003'] lr = 0.000001
+2023-11-01 20:18:34,591 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 295  acc = 83.6489
+2023-11-01 20:18:35,045 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 20:18:35,188 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-epoch-295.pth
+2023-11-01 20:19:20,560 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 296 EpochTime = 45.371 (s) Losses = ['0.3478', '90.4948'] lr = 0.000001
+2023-11-01 20:19:27,570 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 296  acc = 83.6489
+2023-11-01 20:19:28,073 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 20:19:28,193 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-epoch-296.pth
+2023-11-01 20:20:13,850 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 297 EpochTime = 45.656 (s) Losses = ['0.3487', '91.2326'] lr = 0.000001
+2023-11-01 20:20:20,875 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 297  acc = 83.6489
+2023-11-01 20:20:21,510 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 20:20:21,659 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-epoch-297.pth
+2023-11-01 20:21:07,069 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 298 EpochTime = 45.408 (s) Losses = ['0.3433', '90.6250'] lr = 0.000001
+2023-11-01 20:21:14,083 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 298  acc = 83.8210
+2023-11-01 20:21:14,588 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 20:21:14,732 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-epoch-298.pth
+2023-11-01 20:22:00,020 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 299 EpochTime = 45.287 (s) Losses = ['0.3548', '90.3646'] lr = 0.000001
+2023-11-01 20:22:07,057 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 299  acc = 83.8210
+2023-11-01 20:22:07,750 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 20:22:07,874 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-epoch-299.pth
+2023-11-01 20:22:52,953 - finetune_scan_objonly_linear_classification - INFO - [Training] EPOCH: 300 EpochTime = 45.078 (s) Losses = ['0.3618', '89.9740'] lr = 0.000001
+2023-11-01 20:22:59,974 - finetune_scan_objonly_linear_classification - INFO - [Validation] EPOCH: 300  acc = 83.8210
+2023-11-01 20:23:00,458 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-last.pth
+2023-11-01 20:23:00,616 - finetune_scan_objonly_linear_classification - INFO - Save checkpoint at ./experiments/finetune_scan_objonly_linear_classification/cfgs/lr_0.0007/ckpt-epoch-300.pth
